@@ -4,15 +4,12 @@ import * as React from "react"
 import { ThemeProvider as NextThemesProvider, useTheme } from "next-themes"
 import posthog from "posthog-js"
 
-function ThemeProvider({
-  children,
-  ...props
-}: React.ComponentProps<typeof NextThemesProvider>) {
+function ThemeProvider({ children, ...props }: React.ComponentProps<typeof NextThemesProvider>) {
   return (
     <NextThemesProvider
-      attribute="class"
-      defaultTheme="system"
-      enableSystem
+      attribute="data-theme"
+      defaultTheme="dark"
+      enableSystem={false}
       disableTransitionOnChange
       {...props}
     >
@@ -23,10 +20,7 @@ function ThemeProvider({
 }
 
 function isTypingTarget(target: EventTarget | null) {
-  if (!(target instanceof HTMLElement)) {
-    return false
-  }
-
+  if (!(target instanceof HTMLElement)) return false
   return (
     target.isContentEditable ||
     target.tagName === "INPUT" ||
@@ -39,33 +33,16 @@ function ThemeHotkey() {
   const { resolvedTheme, setTheme } = useTheme()
 
   React.useEffect(() => {
-    function onKeyDown(event: KeyboardEvent) {
-      if (event.defaultPrevented || event.repeat) {
-        return
-      }
-
-      if (event.metaKey || event.ctrlKey || event.altKey) {
-        return
-      }
-
-      if (event.key.toLowerCase() !== "d") {
-        return
-      }
-
-      if (isTypingTarget(event.target)) {
-        return
-      }
-
-      const newTheme = resolvedTheme === "dark" ? "light" : "dark"
+    function onKeyDown(e: KeyboardEvent) {
+      if (e.defaultPrevented || e.repeat || e.metaKey || e.ctrlKey || e.altKey) return
+      if (e.key.toLowerCase() !== "d") return
+      if (isTypingTarget(e.target)) return
+      const newTheme = resolvedTheme === "light" ? "dark" : "light"
       setTheme(newTheme)
       posthog.capture("theme_toggled", { theme: newTheme })
     }
-
     window.addEventListener("keydown", onKeyDown)
-
-    return () => {
-      window.removeEventListener("keydown", onKeyDown)
-    }
+    return () => window.removeEventListener("keydown", onKeyDown)
   }, [resolvedTheme, setTheme])
 
   return null
