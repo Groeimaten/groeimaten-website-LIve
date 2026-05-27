@@ -12,6 +12,7 @@
     right: 0;
     z-index: 1000;
     padding: 22px 0;
+    border-bottom: 1px solid oklch(96% 0.008 85 / 0.10);
     transition: background 0.4s ease, padding 0.4s ease, box-shadow 0.4s ease;
 }
 
@@ -533,6 +534,11 @@
 .hero--fullscreen {
     background: oklch(9% 0.006 60);
     padding: 0;
+    align-items: flex-end;
+}
+
+.hero--fullscreen .hero__inner {
+    padding-bottom: 12vh;
 }
 .hero__bg {
     position: absolute;
