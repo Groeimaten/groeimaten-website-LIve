@@ -4,6 +4,7 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import Nav from "@/components/Nav"
 import Footer from "@/components/Footer"
+import ScrollRevealInit from "@/components/ScrollRevealInit"
 
 const playfair = localFont({
   src: [
@@ -51,6 +52,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Nav />
           {children}
           <Footer />
+          <ScrollRevealInit />
         </ThemeProvider>
       </body>
     </html>
