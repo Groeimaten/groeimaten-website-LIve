@@ -1,11 +1,43 @@
-node_modules/
-next-app/node_modules/
-next-app/.next/
-images/photos/
-images/photos.zip
-Foto's vanuit oude website/
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+.env.local
+
+# claude code
 .claude/
-*.log
-debug*.js
-build_images_csv.js
-scrape_images*.js
+
+images/photos.zip
+images/photos/
