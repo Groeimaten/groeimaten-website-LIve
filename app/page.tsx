@@ -213,7 +213,7 @@ export default function HomePage() {
             <Image src="/images/founders-working.webp" alt="Jelle en Thomas van Groeimaten" fill style={{ objectFit: "cover", objectPosition: "center top" }} sizes="33vw" />
           </div>
           <div className="photo-strip__item">
-            <Image src="/images/behind-the-scenes.webp" alt="Groeimaten achter de schermen" fill style={{ objectFit: "cover", objectPosition: "center" }} sizes="40vw" />
+            <Image src="/images/behind-the-scenes.webp" alt="Groeimaten achter de schermen" fill style={{ objectFit: "cover", objectPosition: "top" }} sizes="40vw" />
           </div>
           <div className="photo-strip__item">
             <Image src="/images/founders-discuss.webp" alt="Jelle en Thomas in overleg" fill style={{ objectFit: "cover", objectPosition: "center" }} sizes="33vw" />
