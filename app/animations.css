@@ -23,6 +23,22 @@
 .delay-4 { transition-delay: 0.38s; }
 .delay-5 { transition-delay: 0.48s; }
 
+/* ---- Hero CSS-only entry animation (geen JS dependency) ---- */
+@keyframes heroReveal {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-anim {
+    opacity: 0;
+    animation: heroReveal 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.hero-anim--1 { animation-delay: 0.05s; }
+.hero-anim--2 { animation-delay: 0.18s; }
+.hero-anim--3 { animation-delay: 0.30s; }
+.hero-anim--4 { animation-delay: 0.42s; }
+
 /* ---- Hero Glow Pulse ---- */
 @keyframes glowPulse {
     0%, 100% {

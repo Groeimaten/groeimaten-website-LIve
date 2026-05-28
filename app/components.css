@@ -1129,12 +1129,12 @@
 
 /* Werkwijze foto accent */
 .werkwijze-photo {
-    width: 100%;
-    aspect-ratio: 16 / 6;
-    border-radius: 12px;
+    aspect-ratio: 4/5;
+    border-radius: 16px;
     overflow: hidden;
-    margin-bottom: 64px;
-    border: 1px solid rgba(184, 154, 90, 0.12);
+    position: relative;
+    border: 1px solid rgba(184, 154, 90, 0.18);
+    background: #0D0D0D;
 }
 
 .werkwijze-photo img {
@@ -1148,6 +1148,29 @@
 
 .werkwijze-photo:hover img {
     transform: scale(1.02);
+}
+
+/* Resultaten bottom: foto links + commitments rechts */
+.resultaten-bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.resultaten-bottom .commitments {
+    grid-template-columns: 1fr;
+    border-top: 1px solid oklch(12% 0.008 60 / 0.09);
+}
+
+@media (min-width: 900px) {
+    .resultaten-bottom {
+        grid-template-columns: 1fr 1fr;
+        gap: 72px;
+    }
+    .resultaten-bottom .commitments {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Werkwijze CTA */
@@ -1304,11 +1327,9 @@
         border-right: 1px solid oklch(12% 0.008 60 / 0.08);
     }
     .stat-item:last-child { border-right: none; }
-    .commitments { grid-template-columns: 1fr 1fr; }
 }
 @media (min-width: 1024px) {
     .stat-item { padding: 60px 56px; }
-    .commitments { grid-template-columns: repeat(4, 1fr); }
 }
 
 /* ============================================

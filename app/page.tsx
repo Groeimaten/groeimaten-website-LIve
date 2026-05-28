@@ -62,20 +62,20 @@ export default function HomePage() {
         </div>
         <div className="container hero__inner">
           <div className="hero__content">
-            <h1 className="hero__title reveal-up delay-1">
+            <h1 className="hero__title hero-anim hero-anim--1">
               Meer showroom&shy;afspraken.<br />
               <em>Elke maand.</em>
             </h1>
-            <p className="hero__subtitle reveal-up delay-2">
+            <p className="hero__subtitle hero-anim hero-anim--2">
               Groeimaten helpt keuken- en badkamerbedrijven groeien met bewezen strategie. Van advertentie tot kwalitatieve afspraak die ook écht opdaagt.
             </p>
-            <div className="hero__actions reveal-up delay-3">
+            <div className="hero__actions hero-anim hero-anim--3">
               <Link href="/contact" className="btn btn--blue btn--lg">
                 Gratis strategiegesprek <ArrowRight />
               </Link>
               <Link href="/cases" className="btn btn--ghost btn--lg">Bekijk cases</Link>
             </div>
-            <div className="hero__proof reveal-up delay-4">
+            <div className="hero__proof hero-anim hero-anim--4">
               <div className="hero__proof-item">
                 <span className="hero__proof-number">35+</span>
                 <span className="hero__proof-label">merken geholpen groeien</span>
@@ -236,14 +236,16 @@ export default function HomePage() {
               <p className="stat-item__desc">5 reviews, allemaal 5 sterren.</p>
             </div>
           </ScrollReveal>
-          <ScrollReveal delay={2} className="commitments">
-            <p className="commitments__item">Een van de weinige specialisten in Nederland voor keuken- &amp; badkamerbedrijven</p>
-            <p className="commitments__item">Volledige ontzorging: van strategie tot afspraken in je agenda</p>
-            <p className="commitments__item">Directe communicatie, geen account managers, geen wachtrijen</p>
-            <p className="commitments__item">Maandelijkse rapportages met concrete cijfers</p>
-          </ScrollReveal>
-          <ScrollReveal delay={3} className="werkwijze-photo" style={{ marginTop: "48px", marginBottom: "0" }}>
-            <Image src="/images/founders-office.webp" alt="Jelle en Thomas van Groeimaten" width={1200} height={700} loading="lazy" />
+          <ScrollReveal delay={2} className="resultaten-bottom">
+            <div className="werkwijze-photo">
+              <Image src="/images/founders-office.webp" alt="Jelle en Thomas van Groeimaten" fill style={{ objectFit: "cover", objectPosition: "center" }} sizes="(min-width: 900px) 50vw, 100vw" />
+            </div>
+            <div className="commitments">
+              <p className="commitments__item">Een van de weinige specialisten in Nederland voor keuken- &amp; badkamerbedrijven</p>
+              <p className="commitments__item">Volledige ontzorging: van strategie tot afspraken in je agenda</p>
+              <p className="commitments__item">Directe communicatie, geen account managers, geen wachtrijen</p>
+              <p className="commitments__item">Maandelijkse rapportages met concrete cijfers</p>
+            </div>
           </ScrollReveal>
           <ScrollReveal className="resultaten-cta">
             <Link href="/cases" className="btn btn--blue btn--lg">Bekijk onze cases <ArrowRight /></Link>
