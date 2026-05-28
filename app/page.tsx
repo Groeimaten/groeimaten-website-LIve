@@ -206,12 +206,26 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* FOTO STRIP */}
+      <section className="photo-strip">
+        <div className="photo-strip__grid">
+          <div className="photo-strip__item">
+            <Image src="/images/founders-working.webp" alt="Jelle en Thomas van Groeimaten" fill style={{ objectFit: "cover", objectPosition: "center top" }} sizes="40vw" />
+          </div>
+          <div className="photo-strip__item">
+            <Image src="/images/founders-discuss.webp" alt="Jelle en Thomas in overleg" fill style={{ objectFit: "cover", objectPosition: "center" }} sizes="60vw" />
+          </div>
+        </div>
+      </section>
+
       {/* RESULTATEN */}
       <section className="resultaten-section" id="resultaten">
         <div className="resultaten-section__bg" aria-hidden="true" />
         <div className="container">
           <ScrollReveal className="resultaten-header">
-            <h2 className="section-title section-title--white">Cijfers die<br />voor ons spreken</h2>
+            <span className="section-label">Bewezen track record</span>
+            <h2 className="section-title resultaten-header__title">Cijfers die<br />voor ons spreken</h2>
+            <p className="resultaten-header__sub">Geen bureau-praatjes. Gewoon meetbare resultaten bij klanten in jouw sector.</p>
           </ScrollReveal>
           <ScrollReveal delay={1} className="stats-row">
             <div className="stat-item">
@@ -239,12 +253,19 @@ export default function HomePage() {
           <ScrollReveal delay={2} className="resultaten-bottom">
             <div className="werkwijze-photo">
               <Image src="/images/founders-office.webp" alt="Jelle en Thomas van Groeimaten" fill style={{ objectFit: "cover", objectPosition: "center" }} sizes="(min-width: 900px) 50vw, 100vw" />
+              <div className="werkwijze-photo__badge">
+                <span className="werkwijze-photo__badge-num">35+</span>
+                <span className="werkwijze-photo__badge-label">merken geholpen</span>
+              </div>
             </div>
-            <div className="commitments">
-              <p className="commitments__item">Een van de weinige specialisten in Nederland voor keuken- &amp; badkamerbedrijven</p>
-              <p className="commitments__item">Volledige ontzorging: van strategie tot afspraken in je agenda</p>
-              <p className="commitments__item">Directe communicatie, geen account managers, geen wachtrijen</p>
-              <p className="commitments__item">Maandelijkse rapportages met concrete cijfers</p>
+            <div className="resultaten-right">
+              <p className="resultaten-right__intro">Wij zijn een van de weinige marketingbureaus in Nederland die <strong>uitsluitend</strong> voor de keuken- en badkamersector werkt. Geen leercurve — dag één direct aan de slag.</p>
+              <div className="commitments">
+                <p className="commitments__item">Een van de weinige specialisten in Nederland voor keuken- &amp; badkamerbedrijven</p>
+                <p className="commitments__item">Volledige ontzorging: van strategie tot afspraken in je agenda</p>
+                <p className="commitments__item">Directe communicatie, geen account managers, geen wachtrijen</p>
+                <p className="commitments__item">Maandelijkse rapportages met concrete cijfers</p>
+              </div>
             </div>
           </ScrollReveal>
           <ScrollReveal className="resultaten-cta">
@@ -363,9 +384,27 @@ export default function HomePage() {
         <div className="container">
           <div className="home-founders__inner">
             <ScrollReveal className="home-founders__photo">
-              <div className="about-photo-frame">
-                <div className="about-photo-frame__glow" />
-                <Image src="/images/founders-hero.webp" alt="Jelle Westerbroek en Thomas Ghobadi van Groeimaten" width={600} height={700} loading="lazy" />
+              <div className="home-founders__photo-stack">
+                <div className="about-photo-frame">
+                  <div className="about-photo-frame__glow" />
+                  <Image src="/images/founders-hero.webp" alt="Jelle Westerbroek en Thomas Ghobadi van Groeimaten" width={600} height={500} loading="lazy" />
+                </div>
+                <div className="founders-duo">
+                  <div className="founder-mini">
+                    <Image src="/images/jelle-portrait.webp" alt="Jelle Westerbroek" fill style={{ objectFit: "cover", objectPosition: "center top" }} sizes="25vw" />
+                    <div className="founder-mini__label">
+                      <span className="founder-mini__name">Jelle Westerbroek</span>
+                      <span className="founder-mini__role">Strateeg &amp; CMO</span>
+                    </div>
+                  </div>
+                  <div className="founder-mini">
+                    <Image src="/images/thomas-portrait.webp" alt="Thomas Ghobadi" fill style={{ objectFit: "cover", objectPosition: "center top" }} sizes="25vw" />
+                    <div className="founder-mini__label">
+                      <span className="founder-mini__name">Thomas Ghobadi</span>
+                      <span className="founder-mini__role">CEO &amp; Operations</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={2} className="home-founders__content">

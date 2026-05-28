@@ -1332,6 +1332,168 @@
     .stat-item { padding: 60px 56px; }
 }
 
+/* Resultaten header subtitle */
+.resultaten-header__title {
+    color: oklch(10% 0.008 60);
+    margin-top: 10px;
+}
+
+.resultaten-header__sub {
+    font-size: 0.95rem;
+    color: oklch(50% 0.008 70);
+    margin-top: 14px;
+    line-height: 1.7;
+    max-width: 520px;
+}
+
+/* Werkwijze photo badge */
+.werkwijze-photo__badge {
+    position: absolute;
+    bottom: 18px;
+    right: 18px;
+    background: oklch(10% 0.006 60 / 0.88);
+    border: 1px solid rgba(184, 154, 90, 0.35);
+    border-radius: 10px;
+    padding: 12px 18px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    text-align: center;
+    z-index: 2;
+}
+
+.werkwijze-photo__badge-num {
+    display: block;
+    font-family: var(--font-serif);
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: var(--gold);
+    line-height: 1;
+}
+
+.werkwijze-photo__badge-label {
+    display: block;
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.65);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: 4px;
+}
+
+/* Resultaten right column */
+.resultaten-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.resultaten-right__intro {
+    font-size: 0.95rem;
+    color: oklch(35% 0.008 60);
+    line-height: 1.75;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid oklch(12% 0.008 60 / 0.08);
+}
+
+.resultaten-right__intro strong {
+    color: oklch(15% 0.008 60);
+    font-weight: 700;
+}
+
+/* Commitments items: dash → checkmark */
+.commitments__item::before {
+    content: '✓';
+    color: var(--gold);
+    margin-right: 12px;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+/* ============================================
+   FOTO STRIP
+   ============================================ */
+.photo-strip {
+    overflow: hidden;
+}
+
+.photo-strip__grid {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 3px;
+    height: 480px;
+}
+
+.photo-strip__item {
+    position: relative;
+    overflow: hidden;
+}
+
+.photo-strip__item img {
+    transition: transform 0.9s ease;
+}
+
+.photo-strip__item:hover img {
+    transform: scale(1.04);
+}
+
+@media (max-width: 768px) {
+    .photo-strip__grid {
+        grid-template-columns: 1fr;
+        height: 300px;
+    }
+    .photo-strip__item:last-child {
+        display: none;
+    }
+}
+
+/* ============================================
+   FOUNDERS DUO PORTRETTEN
+   ============================================ */
+.home-founders__photo-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.founders-duo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.founder-mini {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 3/4;
+    border: 1px solid rgba(184, 154, 90, 0.12);
+}
+
+.founder-mini__label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 14px 16px;
+    background: linear-gradient(to top, rgba(0,0,0,0.78) 0%, transparent 100%);
+}
+
+.founder-mini__name {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: white;
+    font-family: var(--font-sans);
+}
+
+.founder-mini__role {
+    display: block;
+    font-size: 0.68rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+    margin-top: 2px;
+}
+
 /* ============================================
    TESTIMONIALS SECTION — DARK
    ============================================ */
