@@ -210,10 +210,13 @@ export default function HomePage() {
       <section className="photo-strip">
         <div className="photo-strip__grid">
           <div className="photo-strip__item">
-            <Image src="/images/founders-working.webp" alt="Jelle en Thomas van Groeimaten" fill style={{ objectFit: "cover", objectPosition: "center top" }} sizes="40vw" />
+            <Image src="/images/founders-working.webp" alt="Jelle en Thomas van Groeimaten" fill style={{ objectFit: "cover", objectPosition: "center top" }} sizes="33vw" />
           </div>
           <div className="photo-strip__item">
-            <Image src="/images/founders-discuss.webp" alt="Jelle en Thomas in overleg" fill style={{ objectFit: "cover", objectPosition: "center" }} sizes="60vw" />
+            <Image src="/images/behind-the-scenes.webp" alt="Groeimaten achter de schermen" fill style={{ objectFit: "cover", objectPosition: "center" }} sizes="40vw" />
+          </div>
+          <div className="photo-strip__item">
+            <Image src="/images/founders-discuss.webp" alt="Jelle en Thomas in overleg" fill style={{ objectFit: "cover", objectPosition: "center" }} sizes="33vw" />
           </div>
         </div>
       </section>
@@ -379,6 +382,21 @@ export default function HomePage() {
         </ScrollReveal>
       </section>
 
+      {/* TEAM STRIP */}
+      <section className="team-strip">
+        <div className="team-strip__grid">
+          <div className="photo-strip__item">
+            <Image src="/images/founders-handshake.webp" alt="Jelle en Thomas van Groeimaten" fill style={{ objectFit: "cover", objectPosition: "center" }} sizes="33vw" />
+          </div>
+          <div className="photo-strip__item">
+            <Image src="/images/team-jelle.webp" alt="Jelle Westerbroek van Groeimaten" fill style={{ objectFit: "cover", objectPosition: "center top" }} sizes="33vw" />
+          </div>
+          <div className="photo-strip__item">
+            <Image src="/images/over-ons-thomas.webp" alt="Thomas Ghobadi van Groeimaten" fill style={{ objectFit: "cover", objectPosition: "center top" }} sizes="33vw" />
+          </div>
+        </div>
+      </section>
+
       {/* FOUNDERS */}
       <section className="home-founders">
         <div className="container">
@@ -391,18 +409,24 @@ export default function HomePage() {
                 </div>
                 <div className="founders-duo">
                   <div className="founder-mini">
-                    <Image src="/images/jelle-portrait.webp" alt="Jelle Westerbroek" fill style={{ objectFit: "cover", objectPosition: "center top" }} sizes="25vw" />
+                    <Image src="/images/jelle-portrait.webp" alt="Jelle Westerbroek" fill style={{ objectFit: "cover", objectPosition: "center top" }} sizes="20vw" />
                     <div className="founder-mini__label">
                       <span className="founder-mini__name">Jelle Westerbroek</span>
                       <span className="founder-mini__role">Strateeg &amp; CMO</span>
                     </div>
                   </div>
                   <div className="founder-mini">
-                    <Image src="/images/thomas-portrait.webp" alt="Thomas Ghobadi" fill style={{ objectFit: "cover", objectPosition: "center top" }} sizes="25vw" />
+                    <Image src="/images/thomas-portrait.webp" alt="Thomas Ghobadi" fill style={{ objectFit: "cover", objectPosition: "center top" }} sizes="20vw" />
                     <div className="founder-mini__label">
                       <span className="founder-mini__name">Thomas Ghobadi</span>
                       <span className="founder-mini__role">CEO &amp; Operations</span>
                     </div>
+                  </div>
+                  <div className="founder-mini">
+                    <Image src="/images/jelle-casual.webp" alt="Jelle Westerbroek" fill style={{ objectFit: "cover", objectPosition: "center top" }} sizes="20vw" />
+                  </div>
+                  <div className="founder-mini">
+                    <Image src="/images/thomas-casual.webp" alt="Thomas Ghobadi" fill style={{ objectFit: "cover", objectPosition: "center top" }} sizes="20vw" />
                   </div>
                 </div>
               </div>

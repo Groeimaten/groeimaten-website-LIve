@@ -1418,7 +1418,7 @@
 
 .photo-strip__grid {
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 1fr 2fr 1fr;
     gap: 3px;
     height: 480px;
 }
@@ -1438,10 +1438,34 @@
 
 @media (max-width: 768px) {
     .photo-strip__grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         height: 300px;
     }
     .photo-strip__item:last-child {
+        display: none;
+    }
+}
+
+/* ============================================
+   TEAM STRIP
+   ============================================ */
+.team-strip {
+    overflow: hidden;
+}
+
+.team-strip__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3px;
+    height: 360px;
+}
+
+@media (max-width: 768px) {
+    .team-strip__grid {
+        grid-template-columns: 1fr 1fr;
+        height: 240px;
+    }
+    .team-strip__grid .photo-strip__item:last-child {
         display: none;
     }
 }
@@ -1465,7 +1489,7 @@
     position: relative;
     border-radius: 12px;
     overflow: hidden;
-    aspect-ratio: 3/4;
+    aspect-ratio: 4/3;
     border: 1px solid rgba(184, 154, 90, 0.12);
 }
 
