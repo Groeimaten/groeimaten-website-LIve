@@ -1,16 +1,13 @@
 "use client"
 
 import { useEffect, useRef } from "react"
-import Image from "next/image"
 
 const logos = [
-  { src: "/logos/marquardt.webp", alt: "Marquardt Küchen", noFilter: true },
-  { src: "/logos/sanisale.png", alt: "Sanisale" },
-  { src: "/logos/stoop-keukens.png", alt: "Stoop Keukens" },
-  { src: "/logos/grando.svg", alt: "Grando" },
-  { src: "/logos/ter-haar.png", alt: "Ter Haar" },
-  { src: "/logos/Feenstra-Badkamers.svg", alt: "Feenstra Badkamers" },
-  { src: "/logos/Ontwerp-zonder-titel-79.png", alt: "Kort Keukens" },
+  { src: "/logos/marquardt.webp",              alt: "Marquardt Küchen",   noFilter: true, h: 26 },
+  { src: "/logos/stoop-keukens.png",           alt: "Stoop Keukens",      h: 24 },
+  { src: "/logos/grando.svg",                  alt: "Grando",              h: 18 },
+  { src: "/logos/sanisale.png",                alt: "Sanisale",            h: 20 },
+  { src: "/logos/Ontwerp-zonder-titel-79.png", alt: "Kort Keukens",        h: 28 },
 ]
 
 function buildProgressiveBlur(container: HTMLElement, direction: "left" | "right") {
@@ -46,17 +43,6 @@ export default function LogoStrip() {
     if (blurRightRef.current && !blurRightRef.current.children.length) {
       buildProgressiveBlur(blurRightRef.current, "right")
     }
-
-    const track = trackRef.current
-    if (!track) return
-    const onEnter = () => { track.style.animationDuration = "80s" }
-    const onLeave = () => { track.style.animationDuration = "30s" }
-    track.addEventListener("mouseenter", onEnter)
-    track.addEventListener("mouseleave", onLeave)
-    return () => {
-      track.removeEventListener("mouseenter", onEnter)
-      track.removeEventListener("mouseleave", onLeave)
-    }
   }, [])
 
   return (
@@ -66,7 +52,13 @@ export default function LogoStrip() {
         <div ref={blurLeftRef} className="logo-blur logo-blur--left" aria-hidden="true" />
         <div ref={trackRef} className="logo-track" id="logoTrack">
           {[...logos, ...logos].map((logo, i) => (
-            <img key={i} src={logo.src} alt={logo.alt} className={logo.noFilter ? "logo-no-filter" : ""} />
+            <img
+              key={i}
+              src={logo.src}
+              alt={logo.alt}
+              className={logo.noFilter ? "logo-no-filter" : ""}
+              style={{ height: `${logo.h}px` }}
+            />
           ))}
         </div>
         <div ref={blurRightRef} className="logo-blur logo-blur--right" aria-hidden="true" />
