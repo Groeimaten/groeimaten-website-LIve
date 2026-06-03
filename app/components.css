@@ -660,7 +660,7 @@
 .logo-track {
     display: flex;
     align-items: center;
-    gap: 72px;
+    gap: clamp(100px, 16vw, 300px);
     width: max-content;
     animation: marquee-ltr 30s linear infinite;
     will-change: transform;
@@ -695,7 +695,7 @@
 @media (max-width: 768px) {
     .logo-strip-section { padding: 36px 0 28px; }
     .logo-blur  { width: 80px; }
-    .logo-track { gap: 48px; }
+    .logo-track { gap: clamp(60px, 10vw, 120px); }
     .logo-track img {
         height: 22px;
         max-width: 110px;
