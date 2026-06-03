@@ -451,31 +451,41 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="cta-split" id="cta">
-        <div className="cta-split__image">
-          <Image
-            src="/images/founders-discuss.webp"
-            alt="Jelle en Thomas van Groeimaten in gesprek"
-            fill
-            style={{ objectFit: "cover", objectPosition: "center 35%" }}
-            sizes="50vw"
-            quality={90}
-            loading="lazy"
-          />
-        </div>
-        <div className="cta-split__content">
-          <ScrollReveal>
-            <span className="section-label section-label--blue">Groei zonder grenzen</span>
-            <h2 className="cta-title">Klaar om te groeien?</h2>
-            <p className="cta-subtitle">Plan een gratis strategiegesprek. We kijken samen naar jouw situatie en vertellen je eerlijk wat we voor jou kunnen doen.</p>
-            <Link href="/contact" className="btn btn--blue btn--xl">
-              Plan een gratis strategiegesprek
-              <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </Link>
-            <p className="cta-disclaimer">Geen verplichtingen. Wel eerlijk advies.</p>
-          </ScrollReveal>
+      <section className="page-hero page-hero--split" id="cta" style={{ paddingTop: "80px", paddingBottom: "80px" }}>
+        <div className="page-hero__glow page-hero__glow--1" aria-hidden="true"></div>
+        <div className="page-hero__glow page-hero__glow--2" aria-hidden="true"></div>
+        <div className="container">
+          <div className="page-hero__inner">
+            <ScrollReveal>
+              <div className="page-hero__content">
+                <span className="section-label section-label--blue">Groei zonder grenzen</span>
+                <h2 className="page-hero__title">Klaar om te<br /><em>groeien?</em></h2>
+                <p className="page-hero__subtitle">Plan een gratis strategiegesprek. We kijken samen naar jouw situatie en vertellen je eerlijk wat we voor jou kunnen doen.</p>
+                <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginTop: "8px" }}>
+                  <Link href="/contact" className="btn btn--blue btn--xl">
+                    Plan een gratis strategiegesprek
+                    <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                      <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </Link>
+                </div>
+                <p className="cta-disclaimer" style={{ marginTop: "12px" }}>Geen verplichtingen. Wel eerlijk advies.</p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={2}>
+              <div className="page-hero__visual">
+                <Image
+                  src="/images/founders-discuss.webp"
+                  alt="Jelle en Thomas van Groeimaten in gesprek"
+                  width={600}
+                  height={500}
+                  style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 35%", borderRadius: "12px" }}
+                  quality={90}
+                  loading="lazy"
+                />
+              </div>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
     </>

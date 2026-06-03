@@ -111,18 +111,12 @@ export default function CasesPage() {
                 </div>
               </div>
 
-              {/* Foto's */}
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 2fr", gap: "16px", margin: "28px 0" }}>
+              {/* Foto */}
+              <div style={{ margin: "28px 0" }}>
                 <img
                   src="/images/cases/stoop-erika.jpg"
                   alt="Erika Stoop, eigenaresse van Stoop Keukens"
-                  style={{ width: "100%", height: "320px", objectFit: "cover", objectPosition: "center 20%", borderRadius: "10px" }}
-                  loading="lazy"
-                />
-                <img
-                  src="/images/cases/stoop-resultaten.svg"
-                  alt="Stoop Keukens resultaten"
-                  style={{ width: "100%", height: "320px", objectFit: "cover", borderRadius: "10px", background: "#111" }}
+                  style={{ width: "100%", height: "360px", objectFit: "cover", objectPosition: "center 20%", borderRadius: "10px", display: "block" }}
                   loading="lazy"
                 />
               </div>
@@ -258,7 +252,7 @@ export default function CasesPage() {
               </div>
 
               {/* Voor/Na slider */}
-              <div style={{ margin: "28px 0" }}>
+              <div style={{ margin: "28px 0", maxWidth: "520px" }}>
                 <BeforeAfterSlider
                   clientName="Ter Haar Tegeltechniek"
                   description="Van drie verouderde trage sites naar één razendsnelle moderne webshop/website."
