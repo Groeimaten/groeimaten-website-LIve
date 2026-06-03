@@ -82,66 +82,54 @@ export default function CasesPage() {
 
           {/* Case 1: Stoop Keukens */}
           <ScrollReveal>
-            <article className="case-full">
-              <div className="case-full__header">
-                <div className="case-full__info">
+            <article className="case-full" style={{ marginBottom: "64px" }}>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "40px", alignItems: "start" }}>
+                {/* Links: foto */}
+                <img
+                  src="/images/cases/stoop-erika.jpg"
+                  alt="Erika Stoop, eigenaresse van Stoop Keukens"
+                  style={{ width: "100%", height: "480px", objectFit: "cover", objectPosition: "center 20%", borderRadius: "10px", display: "block" }}
+                  loading="lazy"
+                />
+                {/* Rechts: tekst */}
+                <div>
                   <div style={{ display: "flex", alignItems: "center", gap: "14px", marginBottom: "12px" }}>
                     <img src="/logos/stoop-keukens.png" alt="Stoop Keukens" style={{ height: "28px", width: "auto", filter: "brightness(0) invert(1)", opacity: 0.9 }} />
                     <span className="case-card__tag">Meta Ads</span>
                   </div>
-                  <h2>Stoop Keukens</h2>
-                  <p className="case-full__desc">
+                  <h2 style={{ marginBottom: "12px" }}>Stoop Keukens</h2>
+                  <p className="case-full__desc" style={{ marginBottom: "24px" }}>
                     Gevestigd keukenbedrijf met ambitie om meer kwalitatieve showroomafspraken te genereren. In
                     10 maanden uitgegroeid tot onze sterkste case — met €90.804 extra omzet als bewijs.
                   </p>
-                </div>
-                <div className="case-full__results">
-                  <div className="case-full__result">
-                    <span className="case-full__result-number">€90.804</span>
-                    <span className="case-full__result-label">Extra omzet excl. btw</span>
+                  <div className="case-full__results" style={{ marginBottom: "28px" }}>
+                    <div className="case-full__result">
+                      <span className="case-full__result-number">€90.804</span>
+                      <span className="case-full__result-label">Extra omzet excl. btw</span>
+                    </div>
+                    <div className="case-full__result">
+                      <span className="case-full__result-number">49</span>
+                      <span className="case-full__result-label">Afspraken in 10 maanden</span>
+                    </div>
+                    <div className="case-full__result">
+                      <span className="case-full__result-number">€69</span>
+                      <span className="case-full__result-label">Kosten per afspraak (eerste 100 d)</span>
+                    </div>
                   </div>
-                  <div className="case-full__result">
-                    <span className="case-full__result-number">49</span>
-                    <span className="case-full__result-label">Afspraken in 10 maanden</span>
+                  <div className="case-full__details">
+                    <div className="case-full__challenge">
+                      <h4>De uitdaging</h4>
+                      <p>Stoop Keukens had een sterke merknaam maar miste een structureel systeem voor nieuwe showroomafspraken. De instroom was onvoorspelbaar en afhankelijk van mond-tot-mondreclame.</p>
+                    </div>
+                    <div className="case-full__solution">
+                      <h4>Onze aanpak</h4>
+                      <p>We bouwden een gerichte Meta Ads funnel op het juiste klantsegment. Automatische lead-opvolging zorgde voor snelle reactietijd en een hogere opkomst bij afspraken.</p>
+                    </div>
+                    <div className="case-full__outcome">
+                      <h4>Het resultaat</h4>
+                      <p>In de eerste 100 dagen: 27 afspraken bij slechts €1.850 adspend — een CPA van €69. In totaal 49 showroomafspraken en €90.804 extra omzet exclusief btw in 10 maanden.</p>
+                    </div>
                   </div>
-                  <div className="case-full__result">
-                    <span className="case-full__result-number">€69</span>
-                    <span className="case-full__result-label">Kosten per afspraak (eerste 100 d)</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Foto */}
-              <div style={{ margin: "28px 0" }}>
-                <img
-                  src="/images/cases/stoop-erika.jpg"
-                  alt="Erika Stoop, eigenaresse van Stoop Keukens"
-                  style={{ width: "100%", height: "360px", objectFit: "cover", objectPosition: "center 20%", borderRadius: "10px", display: "block" }}
-                  loading="lazy"
-                />
-              </div>
-
-              <div className="case-full__details">
-                <div className="case-full__challenge">
-                  <h4>De uitdaging</h4>
-                  <p>
-                    Stoop Keukens had een sterke merknaam maar miste een structureel systeem voor nieuwe
-                    showroomafspraken. De instroom was onvoorspelbaar en afhankelijk van mond-tot-mondreclame.
-                  </p>
-                </div>
-                <div className="case-full__solution">
-                  <h4>Onze aanpak</h4>
-                  <p>
-                    We bouwden een gerichte Meta Ads funnel op het juiste klantsegment. Automatische
-                    lead-opvolging zorgde voor snelle reactietijd en een hogere opkomst bij afspraken.
-                  </p>
-                </div>
-                <div className="case-full__outcome">
-                  <h4>Het resultaat</h4>
-                  <p>
-                    In de eerste 100 dagen: 27 afspraken bij slechts €1.850 adspend — een CPA van €69. In
-                    totaal 49 showroomafspraken en €90.804 extra omzet exclusief btw in 10 maanden.
-                  </p>
                 </div>
               </div>
             </article>
@@ -149,7 +137,7 @@ export default function CasesPage() {
 
           {/* Case 2: Marquardt Küchen */}
           <ScrollReveal>
-            <article className="case-full">
+            <article className="case-full" style={{ marginBottom: "64px" }}>
               <div className="case-full__header">
                 <div className="case-full__info">
                   <div style={{ display: "flex", alignItems: "center", gap: "14px", marginBottom: "12px" }}>
@@ -223,69 +211,57 @@ export default function CasesPage() {
           {/* Case 3: Ter Haar Tegeltechniek */}
           <ScrollReveal>
             <article className="case-full">
-              <div className="case-full__header">
-                <div className="case-full__info">
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "40px", alignItems: "start" }}>
+                {/* Links: voor/na slider */}
+                <div>
+                  <BeforeAfterSlider
+                    clientName="Ter Haar Tegeltechniek"
+                    description=""
+                    beforeSrc="/images/ter-haar-oud.png"
+                    afterSrc="/images/ter-haar-nieuw.png"
+                    websiteUrl="https://www.terhaarvakwerk.nl/"
+                    websiteLabel="Bekijk de live website"
+                  />
+                </div>
+                {/* Rechts: tekst */}
+                <div>
                   <div style={{ display: "flex", alignItems: "center", gap: "14px", marginBottom: "12px" }}>
                     <img src="/logos/ter-haar-new.svg" alt="Ter Haar" style={{ height: "28px", width: "auto" }} />
                     <span className="case-card__tag">Website + Webshop</span>
                   </div>
-                  <h2>Ter Haar Tegeltechniek</h2>
-                  <p className="case-full__desc">
+                  <h2 style={{ marginBottom: "12px" }}>Ter Haar Tegeltechniek</h2>
+                  <p className="case-full__desc" style={{ marginBottom: "24px" }}>
                     Sanitair specialist met drie verouderde, extreem trage websites — waaronder een aparte webshop. De
                     wens was om alles samen te voegen in één snelle, moderne omgeving.
                   </p>
-                </div>
-                <div className="case-full__results">
-                  <div className="case-full__result">
-                    <span className="case-full__result-number">400+</span>
-                    <span className="case-full__result-label">Sanitairproducten online</span>
+                  <div className="case-full__results" style={{ marginBottom: "28px" }}>
+                    <div className="case-full__result">
+                      <span className="case-full__result-number">400+</span>
+                      <span className="case-full__result-label">Sanitairproducten online</span>
+                    </div>
+                    <div className="case-full__result">
+                      <span className="case-full__result-number">3 → 1</span>
+                      <span className="case-full__result-label">Websites samengevoegd</span>
+                    </div>
+                    <div className="case-full__result">
+                      <span className="case-full__result-number">Veel sneller</span>
+                      <span className="case-full__result-label">Laadtijd</span>
+                    </div>
                   </div>
-                  <div className="case-full__result">
-                    <span className="case-full__result-number">3 → 1</span>
-                    <span className="case-full__result-label">Websites samengevoegd</span>
+                  <div className="case-full__details">
+                    <div className="case-full__challenge">
+                      <h4>De uitdaging</h4>
+                      <p>Ter Haar Tegeltechniek had drie losse websites die allemaal verouderd en extreem traag waren. Eén van de drie was een webshop, maar door de verspreide opzet was het beheer omslachtig en de gebruikerservaring ondermaats.</p>
+                    </div>
+                    <div className="case-full__solution">
+                      <h4>Onze aanpak</h4>
+                      <p>We ontwikkelden één moderne omgeving die website én webshop combineert. Snelle laadtijden, overzichtelijk beheer en een naadloze koopervaring voor de bezoeker.</p>
+                    </div>
+                    <div className="case-full__outcome">
+                      <h4>Het resultaat</h4>
+                      <p>Drie trage verouderde sites vervangen door één razendsnelle webshop. Nu zijn meer dan 400 sanitairproducten direct online te bestellen.</p>
+                    </div>
                   </div>
-                  <div className="case-full__result">
-                    <span className="case-full__result-number">Veel sneller</span>
-                    <span className="case-full__result-label">Laadtijd</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Voor/Na slider */}
-              <div style={{ margin: "28px 0", maxWidth: "520px" }}>
-                <BeforeAfterSlider
-                  clientName="Ter Haar Tegeltechniek"
-                  description="Van drie verouderde trage sites naar één razendsnelle moderne webshop/website."
-                  beforeSrc="/images/ter-haar-oud.png"
-                  afterSrc="/images/ter-haar-nieuw.png"
-                  websiteUrl="https://www.terhaarvakwerk.nl/"
-                  websiteLabel="Bekijk de live website"
-                />
-              </div>
-
-              <div className="case-full__details">
-                <div className="case-full__challenge">
-                  <h4>De uitdaging</h4>
-                  <p>
-                    Ter Haar Tegeltechniek had drie losse websites die allemaal verouderd en extreem traag waren.
-                    Eén van de drie was een webshop, maar door de verspreide opzet was het beheer omslachtig en de
-                    gebruikerservaring voor bezoekers ondermaats.
-                  </p>
-                </div>
-                <div className="case-full__solution">
-                  <h4>Onze aanpak</h4>
-                  <p>
-                    We ontwikkelden één moderne omgeving die website én webshop combineert. Alles op één platform:
-                    snelle laadtijden, overzichtelijk beheer en een naadloze koopervaring voor de bezoeker.
-                  </p>
-                </div>
-                <div className="case-full__outcome">
-                  <h4>Het resultaat</h4>
-                  <p>
-                    Drie trage verouderde sites vervangen door één razendsnelle webshop/website. Nu zijn meer dan 400
-                    sanitairproducten direct online te bestellen, met een laadtijd die niet meer te vergelijken is
-                    met de oude situatie.
-                  </p>
                 </div>
               </div>
             </article>
