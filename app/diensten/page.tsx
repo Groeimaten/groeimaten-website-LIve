@@ -191,6 +191,13 @@ export default function DienstenPage() {
                   </div>
                 </div>
 
+                <div className="service-included-badge">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M20 6L9 17l-5-5" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span><strong>Google &amp; AI Ranking inbegrepen</strong> — SEO, lokale vindbaarheid én zichtbaarheid in AI-zoekmachines zitten standaard in elk websitetraject.</span>
+                </div>
+
                 <Link href="/contact" className="btn btn--blue btn--lg">
                   Website laten maken?
                   {arrowIcon}
@@ -199,29 +206,13 @@ export default function DienstenPage() {
             </ScrollReveal>
 
             <ScrollReveal delay={2}>
-              <div className="service-detail__visual" aria-hidden="true">
-                <div className="service-visual-card service-visual-card--browser">
-                  <div className="service-visual-card__glow"></div>
-                  <div className="browser-bar">
-                    <span className="browser-dot"></span>
-                    <span className="browser-dot"></span>
-                    <span className="browser-dot"></span>
-                    <span className="browser-url">www.jouwbedrijf.nl</span>
-                  </div>
-                  <div className="browser-content">
-                    <div className="browser-hero-block"></div>
-                    <div className="browser-lines">
-                      <div className="browser-line" style={{ width: "80%" }}></div>
-                      <div className="browser-line" style={{ width: "60%" }}></div>
-                      <div className="browser-line" style={{ width: "70%" }}></div>
-                    </div>
-                    <div className="browser-cards">
-                      <div className="browser-mini-card"></div>
-                      <div className="browser-mini-card"></div>
-                      <div className="browser-mini-card"></div>
-                    </div>
-                  </div>
-                </div>
+              <div className="service-detail__visual">
+                <img
+                  src="/images/websites-devices.png"
+                  alt="Klantwebsites van Groeimaten op laptop, tablet en telefoon"
+                  style={{ width: "100%", borderRadius: "12px", display: "block" }}
+                  loading="lazy"
+                />
               </div>
             </ScrollReveal>
           </div>
@@ -234,7 +225,7 @@ export default function DienstenPage() {
           <div className="service-detail__inner">
             <ScrollReveal>
               <div className="service-detail__content">
-                <span className="section-label">Dienst 03</span>
+                <span className="section-label">Inbegrepen bij Website</span>
                 <h2 className="section-title section-title--white">Google &amp; AI Ranking</h2>
                 <p>
                   Wanneer iemand zoekt op &quot;badkamerwinkel in de buurt&quot; of &quot;nieuwe keuken laten
