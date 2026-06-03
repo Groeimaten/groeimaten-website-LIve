@@ -211,56 +211,57 @@ export default function CasesPage() {
           {/* Case 3: Ter Haar Tegeltechniek */}
           <ScrollReveal>
             <article className="case-full">
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "40px", alignItems: "start" }}>
-                {/* Links: voor/na slider */}
-                <div>
-                  <BeforeAfterSlider
-                    clientName="Ter Haar Tegeltechniek"
-                    description=""
-                    beforeSrc="/images/ter-haar-oud.png"
-                    afterSrc="/images/ter-haar-nieuw.png"
-                    websiteUrl="https://www.terhaarvakwerk.nl/"
-                    websiteLabel="Bekijk de live website"
-                  />
-                </div>
-                {/* Rechts: tekst */}
-                <div>
+              {/* Header — vol breed */}
+              <div className="case-full__header">
+                <div className="case-full__info">
                   <div style={{ display: "flex", alignItems: "center", gap: "14px", marginBottom: "12px" }}>
                     <img src="/logos/ter-haar-new.svg" alt="Ter Haar" style={{ height: "28px", width: "auto" }} />
                     <span className="case-card__tag">Website + Webshop</span>
                   </div>
-                  <h2 style={{ marginBottom: "12px" }}>Ter Haar Tegeltechniek</h2>
-                  <p className="case-full__desc" style={{ marginBottom: "24px" }}>
+                  <h2>Ter Haar Tegeltechniek</h2>
+                  <p className="case-full__desc">
                     Sanitair specialist met drie verouderde, extreem trage websites — waaronder een aparte webshop. De
                     wens was om alles samen te voegen in één snelle, moderne omgeving.
                   </p>
-                  <div className="case-full__results" style={{ marginBottom: "28px" }}>
-                    <div className="case-full__result">
-                      <span className="case-full__result-number">400+</span>
-                      <span className="case-full__result-label">Sanitairproducten online</span>
-                    </div>
-                    <div className="case-full__result">
-                      <span className="case-full__result-number">3 → 1</span>
-                      <span className="case-full__result-label">Websites samengevoegd</span>
-                    </div>
-                    <div className="case-full__result">
-                      <span className="case-full__result-number">Veel sneller</span>
-                      <span className="case-full__result-label">Laadtijd</span>
-                    </div>
+                </div>
+                <div className="case-full__results">
+                  <div className="case-full__result">
+                    <span className="case-full__result-number">400+</span>
+                    <span className="case-full__result-label">Sanitairproducten online</span>
                   </div>
-                  <div className="case-full__details">
-                    <div className="case-full__challenge">
-                      <h4>De uitdaging</h4>
-                      <p>Ter Haar Tegeltechniek had drie losse websites die allemaal verouderd en extreem traag waren. Eén van de drie was een webshop, maar door de verspreide opzet was het beheer omslachtig en de gebruikerservaring ondermaats.</p>
-                    </div>
-                    <div className="case-full__solution">
-                      <h4>Onze aanpak</h4>
-                      <p>We ontwikkelden één moderne omgeving die website én webshop combineert. Snelle laadtijden, overzichtelijk beheer en een naadloze koopervaring voor de bezoeker.</p>
-                    </div>
-                    <div className="case-full__outcome">
-                      <h4>Het resultaat</h4>
-                      <p>Drie trage verouderde sites vervangen door één razendsnelle webshop. Nu zijn meer dan 400 sanitairproducten direct online te bestellen.</p>
-                    </div>
+                  <div className="case-full__result">
+                    <span className="case-full__result-number">3 → 1</span>
+                    <span className="case-full__result-label">Websites samengevoegd</span>
+                  </div>
+                  <div className="case-full__result">
+                    <span className="case-full__result-number">Veel sneller</span>
+                    <span className="case-full__result-label">Laadtijd</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Slider links, 3 tekstblokken rechts */}
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "40px", alignItems: "start", marginTop: "28px" }}>
+                <BeforeAfterSlider
+                  clientName="Ter Haar Tegeltechniek"
+                  description=""
+                  beforeSrc="/images/ter-haar-oud.png"
+                  afterSrc="/images/ter-haar-nieuw.png"
+                  websiteUrl="https://www.terhaarvakwerk.nl/"
+                  websiteLabel="Bekijk de live website"
+                />
+                <div className="case-full__details">
+                  <div className="case-full__challenge">
+                    <h4>De uitdaging</h4>
+                    <p>Ter Haar Tegeltechniek had drie losse websites die allemaal verouderd en extreem traag waren. Eén van de drie was een webshop, maar door de verspreide opzet was het beheer omslachtig en de gebruikerservaring ondermaats.</p>
+                  </div>
+                  <div className="case-full__solution">
+                    <h4>Onze aanpak</h4>
+                    <p>We ontwikkelden één moderne omgeving die website én webshop combineert. Snelle laadtijden, overzichtelijk beheer en een naadloze koopervaring voor de bezoeker.</p>
+                  </div>
+                  <div className="case-full__outcome">
+                    <h4>Het resultaat</h4>
+                    <p>Drie trage verouderde sites vervangen door één razendsnelle webshop. Nu zijn meer dan 400 sanitairproducten direct online te bestellen.</p>
                   </div>
                 </div>
               </div>
