@@ -14,6 +14,40 @@ export const metadata: Metadata = {
   description: "Groeimaten helpt keuken- en badkamerbedrijven groeien met bewezen strategie. Van advertentie tot kwalitatieve afspraak die ook écht opdaagt.",
 }
 
+const reviews = [
+  { name: "Kim Noach", meta: "een maand geleden", img: "/images/kim-noach.png", text: '"Zeer tevreden over het contact, hoe de samenwerking wordt onderhouden en de transparantie. Communicatie is erg fijn en er wordt snel geschakeld, hun manier van werken is innovatief en met doorzettingsvermogen. Erg fijn!"' },
+  { name: "Martin Stoop", meta: "Stoop Keukens · een maand geleden", img: "/images/stoop-keukens.png", text: '"Vanaf februari is onze nieuwe website echt goed vindbaar geworden. De leads worden steeds kwalitatiever, we krijgen meer serieuze aanvragen en daar komen ook daadwerkelijk opdrachten uit voort. We merken echt duidelijke groei."' },
+  { name: "Tegro BV", meta: "een maand geleden", img: "/images/tegro-review.png", text: '"Deze jonge enthousiaste ondernemers hebben onze website van Tegro ontwikkeld. Het resultaat mag er zijn. Het was een fijn traject waar op alle vlakken goed meegedacht werd. Ook het onderhoud van de site wordt met veel enthousiasme verzorgd."' },
+  { name: "Mido Ibrahim", meta: "een maand geleden", img: "/images/mido-ibrahim.png", text: '"De samenwerking met Thomas en Jelle heb ik als heel prettig ervaren. Ze luisterden goed naar mijn wensen en dachten actief mee. Het eindresultaat is een mooie, professionele website die helemaal past bij wat ik voor ogen had."' },
+  { name: "Richard Feenstra", meta: "6 dagen geleden", img: "/images/richard-feenstra.png", text: '"Thomas heeft mij geholpen om mijn website weer een beetje up-to-date te krijgen. De korte lijntjes zijn erg prettig. De afspraken zijn netjes nagekomen. Al met al een goede ervaring."' },
+]
+
+function ReviewCard({ r, prefix }: { r: typeof reviews[0], prefix: string }) {
+  return (
+    <div className="review-card" aria-hidden={prefix === "b" ? "true" : undefined}>
+      <svg className="review-card__quote" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+        <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" />
+        <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" />
+      </svg>
+      <div className="review-card__stars" aria-label="5 sterren">
+        {[...Array(5)].map((_, j) => (
+          <svg key={j} className="review-card__star" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor" />
+          </svg>
+        ))}
+      </div>
+      <p className="review-card__text">{r.text}</p>
+      <div className="review-card__author">
+        <img src={r.img} alt={r.name} className="review-card__avatar" width={42} height={42} loading="lazy" />
+        <div>
+          <span className="review-card__name">{r.name}</span>
+          <span className="review-card__meta">{r.meta}</span>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 const faqItems = [
   {
     question: "Werken jullie ook voor andere sectoren dan keuken en badkamer?",
@@ -55,6 +89,7 @@ export default function HomePage() {
             alt="Groeimaten team aan het werk"
             fill
             priority
+            quality={90}
             sizes="100vw"
             style={{ objectFit: "cover" }}
           />
@@ -206,21 +241,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* FOTO STRIP */}
-      <section className="photo-strip">
-        <div className="photo-strip__grid">
-          <div className="photo-strip__item">
-            <Image src="/images/founders-working.webp" alt="Jelle en Thomas van Groeimaten" fill style={{ objectFit: "cover", objectPosition: "center top" }} sizes="33vw" />
-          </div>
-          <div className="photo-strip__item">
-            <Image src="/images/behind-the-scenes.webp" alt="Groeimaten achter de schermen" fill style={{ objectFit: "cover", objectPosition: "top" }} sizes="40vw" />
-          </div>
-          <div className="photo-strip__item">
-            <Image src="/images/founders-discuss.webp" alt="Jelle en Thomas in overleg" fill style={{ objectFit: "cover", objectPosition: "center" }} sizes="33vw" />
-          </div>
-        </div>
-      </section>
-
       {/* RESULTATEN */}
       <section className="resultaten-section" id="resultaten">
         <div className="resultaten-section__bg" aria-hidden="true" />
@@ -255,7 +275,7 @@ export default function HomePage() {
           </ScrollReveal>
           <ScrollReveal delay={2} className="resultaten-bottom">
             <div className="werkwijze-photo">
-              <Image src="/images/founders-office.webp" alt="Jelle en Thomas van Groeimaten" fill style={{ objectFit: "cover", objectPosition: "center" }} sizes="(min-width: 900px) 50vw, 100vw" />
+              <Image src="/images/founders-office.webp" alt="Jelle en Thomas van Groeimaten" fill style={{ objectFit: "cover", objectPosition: "center 50%" }} sizes="(min-width: 900px) 50vw, 100vw" quality={90} />
               <div className="werkwijze-photo__badge">
                 <span className="werkwijze-photo__badge-num">35+</span>
                 <span className="werkwijze-photo__badge-label">merken geholpen</span>
@@ -302,20 +322,26 @@ export default function HomePage() {
           <div className="vn-grid">
             <ScrollReveal delay={1}>
               <BeforeAfterSlider
-                clientName="Stoop Keukens"
-                description="Van generieke WordPress site naar conversiegerichte showroom-website. +500% meer kwalitatieve afspraken per maand."
+                clientName="Tile Stones"
+                description="Van een drukke, kleurrijke site naar een strak premium design. Specialist in totaalrenovaties van badkamer, toilet en vloer."
+                beforeSrc="/images/tile-stones-oud.png"
+                afterSrc="/images/tile-stones-nieuw.png"
               />
             </ScrollReveal>
             <ScrollReveal delay={2}>
               <BeforeAfterSlider
-                clientName="Tegro"
-                description="Compleet nieuw premium ontwerp met focus op kwaliteitsuitstraling en lokale vindbaarheid in Google & AI-zoekmachines."
+                clientName="Ter Haar Tegeltechniek"
+                description="Van een generieke badkamersite naar een premium vakmanschap-uitstraling die vertrouwen wekt en meer afspraken genereert."
+                beforeSrc="/images/ter-haar-oud.png"
+                afterSrc="/images/ter-haar-nieuw.png"
+                websiteUrl="https://www.terhaarvakwerk.nl/"
+                websiteLabel="Bekijk de website van Ter Haar"
               />
             </ScrollReveal>
             <ScrollReveal delay={3}>
               <BeforeAfterSlider
-                clientName="Marquardt Amersfoort"
-                description="Modern premium design dat aansluit bij het hoogsegment publiek van de showroom en meer kwalitatieve aanvragen genereert."
+                clientName="Stoop Keukens"
+                description="Van generieke WordPress site naar conversiegerichte showroom-website. +500% meer kwalitatieve afspraken per maand."
               />
             </ScrollReveal>
           </div>
@@ -338,63 +364,35 @@ export default function HomePage() {
             </svg>
             <div className="google-badge__info">
               <span className="google-badge__stars" aria-hidden="true">★★★★★</span>
-              <span className="google-badge__text">5,0 · 5 reviews</span>
+              <span className="google-badge__text">5,0 · 6 reviews</span>
             </div>
           </a>
         </div>
         <div className="reviews-marquee__track-wrap">
           <div className="reviews-marquee__track" id="reviewsTrack">
-            {[
-              { name: "Kim Noach", meta: "een maand geleden", img: "/images/kim-noach.png", text: '"Zeer tevreden over het contact, hoe de samenwerking wordt onderhouden en de transparantie. Communicatie is erg fijn en er wordt snel geschakeld, hun manier van werken is innovatief en met doorzettingsvermogen. Erg fijn!"' },
-              { name: "Martin Stoop", meta: "Stoop Keukens · een maand geleden", img: "/images/stoop-keukens.png", text: '"Vanaf februari is onze nieuwe website echt goed vindbaar geworden. De leads worden steeds kwalitatiever, we krijgen meer serieuze aanvragen en daar komen ook daadwerkelijk opdrachten uit voort. We merken echt duidelijke groei."' },
-              { name: "Tegro BV", meta: "een maand geleden", img: "/images/tegro-review.png", text: '"Deze jonge enthousiaste ondernemers hebben onze website van Tegro ontwikkeld. Het resultaat mag er zijn. Het was een fijn traject waar op alle vlakken goed meegedacht werd. Ook het onderhoud van de site wordt met veel enthousiasme verzorgd."' },
-              { name: "Mido Ibrahim", meta: "een maand geleden", img: "/images/mido-ibrahim.png", text: '"De samenwerking met Thomas en Jelle heb ik als heel prettig ervaren. Ze luisterden goed naar mijn wensen en dachten actief mee. Het eindresultaat is een mooie, professionele website die helemaal past bij wat ik voor ogen had."' },
-            ].map((r, i) => (
-              <div key={i} className="review-card">
-                <svg className="review-card__quote" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
-                  <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" />
-                  <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" />
-                </svg>
-                <div className="review-card__stars" aria-label="5 sterren">
-                  {[...Array(5)].map((_, j) => (
-                    <svg key={j} className="review-card__star" viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor" />
-                    </svg>
-                  ))}
-                </div>
-                <p className="review-card__text">{r.text}</p>
-                <div className="review-card__author">
-                  <img src={r.img} alt={r.name} className="review-card__avatar" width={42} height={42} loading="lazy" />
-                  <div>
-                    <span className="review-card__name">{r.name}</span>
-                    <span className="review-card__meta">{r.meta}</span>
-                  </div>
-                </div>
-              </div>
-            ))}
+            {reviews.map((r, i) => <ReviewCard key={`a-${i}`} r={r} prefix="a" />)}
+            {reviews.map((r, i) => <ReviewCard key={`b-${i}`} r={r} prefix="b" />)}
           </div>
+        </div>
+        <div className="reviews-marquee__cta-wrap">
+          <a
+            href="https://www.google.com/search?sca_esv=9c28518ba62c7aef&rlz=1C1UEAD_nlNL1208NL1209&sxsrf=ANbL-n598i6QdZO7w-GhmmZnyMkNHnhR9A:1780240047357&q=Groeimaten+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIytjQwMjUxNjCxMLY0NTCyMDTfwMj4ilHIvSg_NTM3sSQ1TyEotSwztbx4ESsWQQA09Ek6QwAAAA&rldimm=390254304839502817&tbm=lcl&hl=nl-NL&sa=X&ved=2ahUKEwi42Yz95uOUAxVM-AIHHddxF8YQ9fQKegQIOhAG&biw=1280&bih=585&dpr=1.5#lkt=LocalPoiReviews"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="reviews-marquee__cta"
+          >
+            Bekijk onze reviews
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </a>
         </div>
         <ScrollReveal className="container reviews-marquee__stats">
           <div className="reviews-marquee__stat"><span className="reviews-marquee__stat-num">5,0</span><span className="reviews-marquee__stat-label">Google beoordeling</span></div>
-          <div className="reviews-marquee__stat"><span className="reviews-marquee__stat-num">17+</span><span className="reviews-marquee__stat-label">Actieve klanten</span></div>
-          <div className="reviews-marquee__stat"><span className="reviews-marquee__stat-num">82%</span><span className="reviews-marquee__stat-label">Gem. show-up rate</span></div>
+          <div className="reviews-marquee__stat"><span className="reviews-marquee__stat-num">€90.804</span><span className="reviews-marquee__stat-label">Extra omzet 1 klant</span></div>
+          <div className="reviews-marquee__stat"><span className="reviews-marquee__stat-num">€69</span><span className="reviews-marquee__stat-label">Laagste CPA ooit</span></div>
           <div className="reviews-marquee__stat"><span className="reviews-marquee__stat-num">100%</span><span className="reviews-marquee__stat-label">Sectorspecialist</span></div>
         </ScrollReveal>
-      </section>
-
-      {/* TEAM STRIP */}
-      <section className="team-strip">
-        <div className="team-strip__grid">
-          <div className="photo-strip__item">
-            <Image src="/images/founders-handshake.webp" alt="Jelle en Thomas van Groeimaten" fill style={{ objectFit: "cover", objectPosition: "center" }} sizes="33vw" />
-          </div>
-          <div className="photo-strip__item">
-            <Image src="/images/team-jelle.webp" alt="Jelle Westerbroek van Groeimaten" fill style={{ objectFit: "cover", objectPosition: "center top" }} sizes="33vw" />
-          </div>
-          <div className="photo-strip__item">
-            <Image src="/images/over-ons-thomas.webp" alt="Thomas Ghobadi van Groeimaten" fill style={{ objectFit: "cover", objectPosition: "center top" }} sizes="33vw" />
-          </div>
-        </div>
       </section>
 
       {/* FOUNDERS */}
@@ -405,28 +403,22 @@ export default function HomePage() {
               <div className="home-founders__photo-stack">
                 <div className="about-photo-frame">
                   <div className="about-photo-frame__glow" />
-                  <Image src="/images/founders-hero.webp" alt="Jelle Westerbroek en Thomas Ghobadi van Groeimaten" width={600} height={500} loading="lazy" />
+                  <Image src="/images/founders-hero.webp" alt="Jelle Westerbroek en Thomas Ghobadi van Groeimaten" width={600} height={500} loading="lazy" quality={90} style={{ objectFit: "cover", objectPosition: "center 40%" }} />
                 </div>
                 <div className="founders-duo">
                   <div className="founder-mini">
-                    <Image src="/images/jelle-portrait.webp" alt="Jelle Westerbroek" fill style={{ objectFit: "cover", objectPosition: "center top" }} sizes="20vw" />
+                    <Image src="/images/jelle-portrait.webp" alt="Jelle Westerbroek" fill style={{ objectFit: "cover", objectPosition: "center 30%" }} sizes="20vw" quality={90} />
                     <div className="founder-mini__label">
                       <span className="founder-mini__name">Jelle Westerbroek</span>
-                      <span className="founder-mini__role">Strateeg &amp; CMO</span>
+                      <span className="founder-mini__role">CEO · Ads &amp; Team</span>
                     </div>
                   </div>
                   <div className="founder-mini">
-                    <Image src="/images/thomas-portrait.webp" alt="Thomas Ghobadi" fill style={{ objectFit: "cover", objectPosition: "center top" }} sizes="20vw" />
+                    <Image src="/images/thomas-portrait.webp" alt="Thomas Ghobadi" fill style={{ objectFit: "cover", objectPosition: "center 30%" }} sizes="20vw" quality={90} />
                     <div className="founder-mini__label">
                       <span className="founder-mini__name">Thomas Ghobadi</span>
-                      <span className="founder-mini__role">CEO &amp; Operations</span>
+                      <span className="founder-mini__role">CEO · Websites &amp; Klantcontact</span>
                     </div>
-                  </div>
-                  <div className="founder-mini">
-                    <Image src="/images/jelle-casual.webp" alt="Jelle Westerbroek" fill style={{ objectFit: "cover", objectPosition: "center top" }} sizes="20vw" />
-                  </div>
-                  <div className="founder-mini">
-                    <Image src="/images/thomas-casual.webp" alt="Thomas Ghobadi" fill style={{ objectFit: "cover", objectPosition: "center top" }} sizes="20vw" />
                   </div>
                 </div>
               </div>
@@ -434,7 +426,7 @@ export default function HomePage() {
             <ScrollReveal delay={2} className="home-founders__content">
               <span className="section-label">Het team</span>
               <h2 className="section-title section-title--white">Twee founders.<br />Één focus.</h2>
-              <p>Jelle en Thomas richtten Groeimaten op met één doel: keuken- en badkamerbedrijven laten groeien met marketing die écht werkt. Geen groot bureau met honderd klanten. Directe communicatie, snelle uitvoering, echte resultaten.</p>
+              <p>Jelle en Thomas richten Groeimaten samen als VOF. Jelle stuurt de ads-afdeling en het team aan. Thomas beheert de website-afdeling en onderhoudt het klantcontact. Directe communicatie, snelle uitvoering, echte resultaten.</p>
               <p>Een van de weinige specialisten in Nederland die uitsluitend voor deze sector werkt. Meer dan 35 merken gingen al voor.</p>
               <Link href="/over-ons" className="btn btn--outline">
                 Leer ons kennen <ArrowRight />
@@ -459,11 +451,20 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="cta-section" id="cta">
-        <div className="cta-section__glow cta-section__glow--1" aria-hidden="true" />
-        <div className="cta-section__glow cta-section__glow--2" aria-hidden="true" />
-        <div className="container">
-          <ScrollReveal className="cta-inner">
+      <section className="cta-split" id="cta">
+        <div className="cta-split__image">
+          <Image
+            src="/images/founders-discuss.webp"
+            alt="Jelle en Thomas van Groeimaten in gesprek"
+            fill
+            style={{ objectFit: "cover", objectPosition: "center 35%" }}
+            sizes="50vw"
+            quality={90}
+            loading="lazy"
+          />
+        </div>
+        <div className="cta-split__content">
+          <ScrollReveal>
             <span className="section-label section-label--blue">Groei zonder grenzen</span>
             <h2 className="cta-title">Klaar om te groeien?</h2>
             <p className="cta-subtitle">Plan een gratis strategiegesprek. We kijken samen naar jouw situatie en vertellen je eerlijk wat we voor jou kunnen doen.</p>
