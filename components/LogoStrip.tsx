@@ -5,6 +5,7 @@ import { useEffect, useRef } from "react"
 const logos = [
   { src: "/logos/marquardt-slider.svg", alt: "Marquardt Küchen",   noFilter: true, h: 44 },
   { src: "/logos/stoop-slider.svg",     alt: "Stoop Keukens",      noFilter: true, h: 44 },
+  { src: "/logos/tegro-slider.svg",     alt: "Tegro",               noFilter: true, h: 44 },
   { src: "/logos/grando-slider.svg",    alt: "Grando",              noFilter: true, h: 22 },
   { src: "/logos/sanisale-slider.svg",  alt: "Sanisale",            noFilter: true, h: 38 },
   { src: "/logos/ter-haar-new.svg",     alt: "Ter Haar",            noFilter: true, h: 36 },
