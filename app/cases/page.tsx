@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
+import BeforeAfterSlider from "@/components/BeforeAfterSlider"
 
 export const metadata: Metadata = {
   title: "Cases | Groeimaten",
@@ -39,11 +40,7 @@ export default function CasesPage() {
             </ScrollReveal>
             <ScrollReveal delay={2}>
               <div className="page-hero__visual" aria-hidden="true">
-                <img
-                  src="/images/founders-light.webp"
-                  alt="Jelle en Thomas van Groeimaten"
-                  loading="eager"
-                />
+                <img src="/images/founders-light.webp" alt="Jelle en Thomas van Groeimaten" loading="eager" />
               </div>
             </ScrollReveal>
           </div>
@@ -83,12 +80,15 @@ export default function CasesPage() {
       <section className="cases-full-section">
         <div className="container">
 
-          {/* Case 1: Stoop Keukens — Sterkste case */}
+          {/* Case 1: Stoop Keukens */}
           <ScrollReveal>
             <article className="case-full">
               <div className="case-full__header">
                 <div className="case-full__info">
-                  <span className="case-card__tag">Meta Ads</span>
+                  <div style={{ display: "flex", alignItems: "center", gap: "14px", marginBottom: "12px" }}>
+                    <img src="/logos/stoop-keukens.png" alt="Stoop Keukens" style={{ height: "28px", width: "auto", filter: "brightness(0) invert(1)", opacity: 0.9 }} />
+                    <span className="case-card__tag">Meta Ads</span>
+                  </div>
                   <h2>Stoop Keukens</h2>
                   <p className="case-full__desc">
                     Gevestigd keukenbedrijf met ambitie om meer kwalitatieve showroomafspraken te genereren. In
@@ -110,6 +110,23 @@ export default function CasesPage() {
                   </div>
                 </div>
               </div>
+
+              {/* Foto's */}
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 2fr", gap: "16px", margin: "28px 0" }}>
+                <img
+                  src="/images/cases/stoop-erika.jpg"
+                  alt="Erika Stoop, eigenaresse van Stoop Keukens"
+                  style={{ width: "100%", height: "320px", objectFit: "cover", objectPosition: "center 20%", borderRadius: "10px" }}
+                  loading="lazy"
+                />
+                <img
+                  src="/images/cases/stoop-resultaten.svg"
+                  alt="Stoop Keukens resultaten"
+                  style={{ width: "100%", height: "320px", objectFit: "cover", borderRadius: "10px", background: "#111" }}
+                  loading="lazy"
+                />
+              </div>
+
               <div className="case-full__details">
                 <div className="case-full__challenge">
                   <h4>De uitdaging</h4>
@@ -136,12 +153,15 @@ export default function CasesPage() {
             </article>
           </ScrollReveal>
 
-          {/* Case 2: Marquardt Küchen Amersfoort */}
+          {/* Case 2: Marquardt Küchen */}
           <ScrollReveal>
             <article className="case-full">
               <div className="case-full__header">
                 <div className="case-full__info">
-                  <span className="case-card__tag">Meta Ads</span>
+                  <div style={{ display: "flex", alignItems: "center", gap: "14px", marginBottom: "12px" }}>
+                    <img src="/logos/marquardt.webp" alt="Marquardt Küchen" style={{ height: "24px", width: "auto" }} />
+                    <span className="case-card__tag">Meta Ads</span>
+                  </div>
                   <h2>Marquardt Küchen Amersfoort</h2>
                   <p className="case-full__desc">
                     Premium keukenmerk in het hoogsegment met showroom in Amersfoort. Doel: structureel meer
@@ -163,6 +183,23 @@ export default function CasesPage() {
                   </div>
                 </div>
               </div>
+
+              {/* Foto's */}
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px", margin: "28px 0" }}>
+                <img
+                  src="/images/cases/marquardt-adviesgesprek.jpg"
+                  alt="Adviesgesprek in de Marquardt showroom"
+                  style={{ width: "100%", height: "280px", objectFit: "cover", objectPosition: "center 30%", borderRadius: "10px" }}
+                  loading="lazy"
+                />
+                <img
+                  src="/images/cases/marquardt-showroom.webp"
+                  alt="Marquardt Küchen showroom"
+                  style={{ width: "100%", height: "280px", objectFit: "cover", objectPosition: "center 30%", borderRadius: "10px" }}
+                  loading="lazy"
+                />
+              </div>
+
               <div className="case-full__details">
                 <div className="case-full__challenge">
                   <h4>De uitdaging</h4>
@@ -189,176 +226,19 @@ export default function CasesPage() {
             </article>
           </ScrollReveal>
 
-          {/* Case 3: Grando Hoofddorp */}
+          {/* Case 3: Ter Haar Tegeltechniek */}
           <ScrollReveal>
             <article className="case-full">
               <div className="case-full__header">
                 <div className="case-full__info">
-                  <span className="case-card__tag">Meta Ads</span>
-                  <h2>Grando Hoofddorp</h2>
-                  <p className="case-full__desc">
-                    Keukenzaak in de regio Hoofddorp. In 87 dagen 9 showroomafspraken gerealiseerd via
-                    gerichte Meta Ads.
-                  </p>
-                </div>
-                <div className="case-full__results">
-                  <div className="case-full__result">
-                    <span className="case-full__result-number">9</span>
-                    <span className="case-full__result-label">Afspraken in 87 dagen</span>
+                  <div style={{ display: "flex", alignItems: "center", gap: "14px", marginBottom: "12px" }}>
+                    <img src="/logos/ter-haar-new.svg" alt="Ter Haar" style={{ height: "28px", width: "auto" }} />
+                    <span className="case-card__tag">Website + Webshop</span>
                   </div>
-                  <div className="case-full__result">
-                    <span className="case-full__result-number">€27</span>
-                    <span className="case-full__result-label">Kosten per lead</span>
-                  </div>
-                  <div className="case-full__result">
-                    <span className="case-full__result-number">€171</span>
-                    <span className="case-full__result-label">Kosten per afspraak</span>
-                  </div>
-                </div>
-              </div>
-              <div className="case-full__details">
-                <div className="case-full__challenge">
-                  <h4>De uitdaging</h4>
-                  <p>
-                    Grando Hoofddorp wilde structureel meer showroomafspraken maar had geen digitale
-                    advertentiestrategie om lokale kopers te bereiken.
-                  </p>
-                </div>
-                <div className="case-full__solution">
-                  <h4>Onze aanpak</h4>
-                  <p>
-                    Meta Ads campagne ingericht op de lokale doelgroep in de regio Hoofddorp, gericht op
-                    keukeninteresse en actieve renovatieplannen.
-                  </p>
-                </div>
-                <div className="case-full__outcome">
-                  <h4>Het resultaat</h4>
-                  <p>
-                    9 gekwalificeerde showroomafspraken in 87 dagen bij een CPL van €27. Structurele
-                    aanpak voor continue instroom van nieuwe klanten.
-                  </p>
-                </div>
-              </div>
-            </article>
-          </ScrollReveal>
-
-          {/* Case 4: VIA Creaties */}
-          <ScrollReveal>
-            <article className="case-full">
-              <div className="case-full__header">
-                <div className="case-full__info">
-                  <span className="case-card__tag">Meta Ads</span>
-                  <h2>VIA Creaties Arnhem</h2>
-                  <p className="case-full__desc">
-                    Keuken- en interieurspecialist in Arnhem. Binnen 56 dagen al 8 afspraken geboekt — en
-                    de laagste kosten per lead in ons gehele portfolio.
-                  </p>
-                </div>
-                <div className="case-full__results">
-                  <div className="case-full__result">
-                    <span className="case-full__result-number">8</span>
-                    <span className="case-full__result-label">Afspraken in 56 dagen</span>
-                  </div>
-                  <div className="case-full__result">
-                    <span className="case-full__result-number">€17</span>
-                    <span className="case-full__result-label">Laagste CPL in portfolio</span>
-                  </div>
-                  <div className="case-full__result">
-                    <span className="case-full__result-number">€106</span>
-                    <span className="case-full__result-label">Kosten per afspraak</span>
-                  </div>
-                </div>
-              </div>
-              <div className="case-full__details">
-                <div className="case-full__challenge">
-                  <h4>De uitdaging</h4>
-                  <p>
-                    VIA Creaties wilde hun showroom structureel vullen met gekwalificeerde leads in de
-                    regio Arnhem, zonder hoge kosten per aanvraag.
-                  </p>
-                </div>
-                <div className="case-full__solution">
-                  <h4>Onze aanpak</h4>
-                  <p>
-                    Meta Ads campagne met strakke doelgroeptargeting op interieur- en keukeninteresse in
-                    de regio. Snelle opvolging van inkomende leads voor maximale conversie.
-                  </p>
-                </div>
-                <div className="case-full__outcome">
-                  <h4>Het resultaat</h4>
-                  <p>
-                    8 showroomafspraken in slechts 56 dagen, bij €17 per lead — de laagste cost-per-lead
-                    in ons gehele portfolio tot nu toe.
-                  </p>
-                </div>
-              </div>
-            </article>
-          </ScrollReveal>
-
-          {/* Case 5: Bakker Tegels & Badkamers */}
-          <ScrollReveal>
-            <article className="case-full">
-              <div className="case-full__header">
-                <div className="case-full__info">
-                  <span className="case-card__tag">Meta Ads</span>
-                  <h2>Bakker Tegels &amp; Badkamers</h2>
-                  <p className="case-full__desc">
-                    Tegels en badkamers specialist in Vlaardingen. In 56 dagen 7 kwalitatieve
-                    showroomafspraken gerealiseerd via Meta Ads.
-                  </p>
-                </div>
-                <div className="case-full__results">
-                  <div className="case-full__result">
-                    <span className="case-full__result-number">7</span>
-                    <span className="case-full__result-label">Afspraken in 56 dagen</span>
-                  </div>
-                  <div className="case-full__result">
-                    <span className="case-full__result-number">€26</span>
-                    <span className="case-full__result-label">Kosten per lead</span>
-                  </div>
-                  <div className="case-full__result">
-                    <span className="case-full__result-number">€166</span>
-                    <span className="case-full__result-label">Kosten per afspraak</span>
-                  </div>
-                </div>
-              </div>
-              <div className="case-full__details">
-                <div className="case-full__challenge">
-                  <h4>De uitdaging</h4>
-                  <p>
-                    Bakker Tegels &amp; Badkamers wilde meer lokale bekendheid opbouwen en structureel
-                    meer showroombezoeken genereren in de regio Vlaardingen.
-                  </p>
-                </div>
-                <div className="case-full__solution">
-                  <h4>Onze aanpak</h4>
-                  <p>
-                    Locatiegerichte Meta Ads campagne met focus op badkamer- en tegelinteresse in de
-                    regio, gecombineerd met snelle lead-opvolging.
-                  </p>
-                </div>
-                <div className="case-full__outcome">
-                  <h4>Het resultaat</h4>
-                  <p>
-                    7 kwalitatieve showroomafspraken in 56 dagen bij een CPL van €26. Bewijs dat
-                    structurele advertenties ook voor een gespecialiseerde tegels- en badkamerzaak werken.
-                  </p>
-                </div>
-              </div>
-            </article>
-          </ScrollReveal>
-
-          {/* Case 6: Ter Haar Tegeltechniek */}
-          <ScrollReveal>
-            <article className="case-full">
-              <div className="case-full__header">
-                <div className="case-full__info">
-                  <span className="case-card__tag">Website + Webshop</span>
                   <h2>Ter Haar Tegeltechniek</h2>
                   <p className="case-full__desc">
                     Sanitair specialist met drie verouderde, extreem trage websites — waaronder een aparte webshop. De
-                    wens was om alles samen te voegen in één snelle, moderne omgeving waar klanten ook direct online
-                    kunnen bestellen.
+                    wens was om alles samen te voegen in één snelle, moderne omgeving.
                   </p>
                 </div>
                 <div className="case-full__results">
@@ -376,6 +256,19 @@ export default function CasesPage() {
                   </div>
                 </div>
               </div>
+
+              {/* Voor/Na slider */}
+              <div style={{ margin: "28px 0" }}>
+                <BeforeAfterSlider
+                  clientName="Ter Haar Tegeltechniek"
+                  description="Van drie verouderde trage sites naar één razendsnelle moderne webshop/website."
+                  beforeSrc="/images/ter-haar-oud.png"
+                  afterSrc="/images/ter-haar-nieuw.png"
+                  websiteUrl="https://www.terhaarvakwerk.nl/"
+                  websiteLabel="Bekijk de live website"
+                />
+              </div>
+
               <div className="case-full__details">
                 <div className="case-full__challenge">
                   <h4>De uitdaging</h4>
@@ -404,137 +297,6 @@ export default function CasesPage() {
             </article>
           </ScrollReveal>
 
-          {/* Case 7: Grando Hazerswoude */}
-          <ScrollReveal>
-            <article className="case-full">
-              <div className="case-full__header">
-                <div className="case-full__info">
-                  <span className="case-card__tag">Meta Ads</span>
-                  <h2>Grando Hazerswoude</h2>
-                  <p className="case-full__desc">
-                    Keukenzaak in de regio Hazerswoude. Lopend traject waarbij structureel gewerkt wordt
-                    aan meer showroomverkeer via Meta Ads.
-                  </p>
-                </div>
-                <div className="case-full__results">
-                  <div className="case-full__result">
-                    <span className="case-full__result-number">5</span>
-                    <span className="case-full__result-label">Afspraken gerealiseerd</span>
-                  </div>
-                  <div className="case-full__result">
-                    <span className="case-full__result-number">€28</span>
-                    <span className="case-full__result-label">Kosten per lead</span>
-                  </div>
-                  <div className="case-full__result">
-                    <span className="case-full__result-number">Lopend</span>
-                    <span className="case-full__result-label">Traject in opbouw</span>
-                  </div>
-                </div>
-              </div>
-              <div className="case-full__details">
-                <div className="case-full__challenge">
-                  <h4>De uitdaging</h4>
-                  <p>
-                    Grando Hazerswoude wilde meer structurele instroom van lokale keukenkopers, maar had
-                    geen digitale strategie om dit te realiseren.
-                  </p>
-                </div>
-                <div className="case-full__solution">
-                  <h4>Onze aanpak</h4>
-                  <p>
-                    Meta Ads campagne gericht op de lokale doelgroep in de regio, met continue optimalisatie
-                    op basis van inkomende leadkwaliteit.
-                  </p>
-                </div>
-                <div className="case-full__outcome">
-                  <h4>Het resultaat</h4>
-                  <p>
-                    5 showroomafspraken gerealiseerd bij een CPL van €28. Traject loopt door en wordt
-                    verder opgeschaald na kwaliteitsevaluatie.
-                  </p>
-                </div>
-              </div>
-            </article>
-          </ScrollReveal>
-
-          {/* Case 8: Kort Keukens */}
-          <ScrollReveal>
-            <article className="case-full">
-              <div className="case-full__header">
-                <div className="case-full__info">
-                  <span className="case-card__tag">Meta Ads</span>
-                  <h2>Kort Keukens</h2>
-                  <p className="case-full__desc">
-                    Keukenzaak met een sterke lokale reputatie. Samen werken we aan een digitale strategie
-                    om die reputatie ook online te laten renderen.
-                  </p>
-                </div>
-                <div className="case-full__results">
-                  <div className="case-full__result">
-                    <span className="case-full__result-number">Lopend</span>
-                    <span className="case-full__result-label">Actief traject</span>
-                  </div>
-                  <div className="case-full__result">
-                    <span className="case-full__result-number">Meta Ads</span>
-                    <span className="case-full__result-label">Kanaal</span>
-                  </div>
-                  <div className="case-full__result">
-                    <span className="case-full__result-number">2026</span>
-                    <span className="case-full__result-label">Gestart</span>
-                  </div>
-                </div>
-              </div>
-              <div className="case-full__details">
-                <div className="case-full__challenge">
-                  <h4>De uitdaging</h4>
-                  <p>
-                    Kort Keukens had een uitstekende lokale naam maar haalde online te weinig uit hun
-                    aanwezigheid. De showroom liep goed op aanbeveling, maar er was geen structurele
-                    digitale instroom.
-                  </p>
-                </div>
-                <div className="case-full__solution">
-                  <h4>Onze aanpak</h4>
-                  <p>
-                    We zijn gestart met een Meta Ads campagne gericht op de lokale doelgroep, met als doel
-                    structurele en voorspelbare aanvragen naar de showroom te leiden.
-                  </p>
-                </div>
-                <div className="case-full__outcome">
-                  <h4>Het resultaat</h4>
-                  <p>
-                    Traject is recent van start gegaan. We optimaliseren continu en rapporteren zodra de
-                    eerste resultaten beschikbaar zijn.
-                  </p>
-                </div>
-              </div>
-            </article>
-          </ScrollReveal>
-
-        </div>
-      </section>
-
-      {/* CLIENT WALL */}
-      <section className="client-wall-section">
-        <div className="container">
-          <ScrollReveal>
-            <div className="section-header">
-              <span className="section-label">Onze klanten</span>
-              <h2 className="section-title section-title--white">Bedrijven die ons vertrouwen</h2>
-            </div>
-          </ScrollReveal>
-          <ScrollReveal>
-            <div className="client-wall">
-              <div className="client-wall__item">Stoop Keukens</div>
-              <div className="client-wall__item">Marquardt Küchen</div>
-              <div className="client-wall__item">Grando Hoofddorp</div>
-              <div className="client-wall__item">VIA Creaties</div>
-              <div className="client-wall__item">Bakker Tegels &amp; Badkamers</div>
-              <div className="client-wall__item">Ter Haar Tegeltechniek</div>
-              <div className="client-wall__item">Grando Hazerswoude</div>
-              <div className="client-wall__item">Kort Keukens</div>
-            </div>
-          </ScrollReveal>
         </div>
       </section>
 
