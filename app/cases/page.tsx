@@ -56,21 +56,6 @@ export default function CasesPage() {
           <ScrollReveal>
             <div className="cases-stats__grid">
               <div className="cases-stats__item">
-                <span className="cases-stats__number">35+</span>
-                <span className="cases-stats__label">Merken geholpen</span>
-              </div>
-              <div className="cases-stats__divider" aria-hidden="true"></div>
-              <div className="cases-stats__item">
-                <span className="cases-stats__number">5,0 ★</span>
-                <span className="cases-stats__label">Google beoordeling</span>
-              </div>
-              <div className="cases-stats__divider" aria-hidden="true"></div>
-              <div className="cases-stats__item">
-                <span className="cases-stats__number">100%</span>
-                <span className="cases-stats__label">Sector specialist</span>
-              </div>
-              <div className="cases-stats__divider" aria-hidden="true"></div>
-              <div className="cases-stats__item">
                 <span className="cases-stats__number">100%</span>
                 <span className="cases-stats__label">Keuken &amp; badkamer</span>
               </div>
@@ -249,7 +234,63 @@ export default function CasesPage() {
             </article>
           </ScrollReveal>
 
-          {/* Case 4: Sanisale */}
+          {/* Case 4: Ter Haar Tegeltechniek */}
+          <ScrollReveal>
+            <article className="case-full">
+              <div className="case-full__header">
+                <div className="case-full__info">
+                  <span className="case-card__tag">Website + Webshop</span>
+                  <h2>Ter Haar Tegeltechniek</h2>
+                  <p className="case-full__desc">
+                    Sanitair specialist met drie verouderde, extreem trage websites — waaronder een aparte webshop. De
+                    wens was om alles samen te voegen in één snelle, moderne omgeving waar klanten ook direct online
+                    kunnen bestellen.
+                  </p>
+                </div>
+                <div className="case-full__results">
+                  <div className="case-full__result">
+                    <span className="case-full__result-number">400+</span>
+                    <span className="case-full__result-label">Sanitairproducten online</span>
+                  </div>
+                  <div className="case-full__result">
+                    <span className="case-full__result-number">3 → 1</span>
+                    <span className="case-full__result-label">Websites samengevoegd</span>
+                  </div>
+                  <div className="case-full__result">
+                    <span className="case-full__result-number">Veel sneller</span>
+                    <span className="case-full__result-label">Laadtijd</span>
+                  </div>
+                </div>
+              </div>
+              <div className="case-full__details">
+                <div className="case-full__challenge">
+                  <h4>De uitdaging</h4>
+                  <p>
+                    Ter Haar Tegeltechniek had drie losse websites die allemaal verouderd en extreem traag waren.
+                    Eén van de drie was een webshop, maar door de verspreide opzet was het beheer omslachtig en de
+                    gebruikerservaring voor bezoekers ondermaats.
+                  </p>
+                </div>
+                <div className="case-full__solution">
+                  <h4>Onze aanpak</h4>
+                  <p>
+                    We ontwikkelden één moderne omgeving die website én webshop combineert. Alles op één platform:
+                    snelle laadtijden, overzichtelijk beheer en een naadloze koopervaring voor de bezoeker.
+                  </p>
+                </div>
+                <div className="case-full__outcome">
+                  <h4>Het resultaat</h4>
+                  <p>
+                    Drie trage verouderde sites vervangen door één razendsnelle webshop/website. Nu zijn meer dan 400
+                    sanitairproducten direct online te bestellen, met een laadtijd die niet meer te vergelijken is
+                    met de oude situatie.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </ScrollReveal>
+
+          {/* Case 5: Sanisale */}
           <ScrollReveal>
             <article className="case-full">
               <div className="case-full__header">
