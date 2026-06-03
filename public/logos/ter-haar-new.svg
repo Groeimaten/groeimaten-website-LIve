@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 200" width="700" height="200">
+  <!-- 4 tiles -->
+  <rect x="40" y="40" width="56" height="56" fill="#FFFFFF"/>
+  <rect x="102" y="40" width="56" height="56" fill="#C9A84C"/>
+  <rect x="40" y="102" width="56" height="56" fill="#C9A84C" opacity="0.4"/>
+  <rect x="102" y="102" width="56" height="56" fill="#FFFFFF"/>
+
+  <!-- TER HAAR text -->
+  <text x="188" y="108"
+    font-family="'Futura', 'Century Gothic', 'Gill Sans', sans-serif"
+    font-size="72"
+    font-weight="300"
+    letter-spacing="12"
+    fill="#FFFFFF">TER HAAR</text>
+
+  <!-- gold line -->
+  <line x1="188" y1="122" x2="672" y2="122" stroke="#C9A84C" stroke-width="1.5"/>
+
+  <!-- subtitle -->
+  <text x="228" y="148"
+    font-family="'Futura', 'Century Gothic', 'Gill Sans', sans-serif"
+    font-size="13"
+    font-weight="400"
+    letter-spacing="6"
+    fill="#FFFFFF">TEGELS</text>
+  <circle cx="322" cy="141" r="3" fill="#C9A84C"/>
+  <text x="337" y="148"
+    font-family="'Futura', 'Century Gothic', 'Gill Sans', sans-serif"
+    font-size="13"
+    font-weight="400"
+    letter-spacing="6"
+    fill="#FFFFFF">SANITAIR</text>
+  <circle cx="448" cy="141" r="3" fill="#C9A84C"/>
+  <text x="463" y="148"
+    font-family="'Futura', 'Century Gothic', 'Gill Sans', sans-serif"
+    font-size="13"
+    font-weight="400"
+    letter-spacing="6"
+    fill="#FFFFFF">INSTALLATIE</text>
+</svg>
