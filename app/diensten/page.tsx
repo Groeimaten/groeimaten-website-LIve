@@ -197,22 +197,21 @@ export default function DienstenPage() {
                   </svg>
                   <span><strong>Google &amp; AI Ranking inbegrepen</strong> — SEO, lokale vindbaarheid én zichtbaarheid in AI-zoekmachines zitten standaard in elk websitetraject.</span>
                 </div>
-
-                <Link href="/contact" className="btn btn--blue btn--lg">
-                  Website laten maken?
-                  {arrowIcon}
-                </Link>
               </div>
             </ScrollReveal>
 
             <ScrollReveal delay={2}>
-              <div className="service-detail__visual">
+              <div className="service-detail__visual" style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
                 <img
                   src="/images/websites-devices.png"
                   alt="Klantwebsites van Groeimaten op laptop, tablet en telefoon"
-                  style={{ width: "100%", borderRadius: "12px", display: "block" }}
+                  style={{ width: "100%", borderRadius: "12px", display: "block", marginTop: "-32px" }}
                   loading="lazy"
                 />
+                <Link href="/contact" className="btn btn--blue btn--lg" style={{ alignSelf: "flex-start" }}>
+                  Website laten maken?
+                  {arrowIcon}
+                </Link>
               </div>
             </ScrollReveal>
           </div>
