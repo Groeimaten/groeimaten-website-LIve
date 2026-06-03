@@ -3,12 +3,12 @@
 import { useEffect, useRef } from "react"
 
 const logos = [
-  { src: "/logos/marquardt.webp",              alt: "Marquardt Küchen",   noFilter: true, h: 26 },
-  { src: "/logos/stoop-keukens.png",           alt: "Stoop Keukens",      h: 24 },
-  { src: "/logos/grando.svg",                  alt: "Grando",              h: 18 },
-  { src: "/logos/sanisale.png",                alt: "Sanisale",            h: 20 },
-  { src: "/logos/ter-haar-new.svg",            alt: "Ter Haar",            noFilter: true, h: 36 },
-  { src: "/logos/Ontwerp-zonder-titel-79.png", alt: "Kort Keukens",        h: 30 },
+  { src: "/logos/marquardt-slider.svg", alt: "Marquardt Küchen",   noFilter: true, h: 44 },
+  { src: "/logos/stoop-slider.svg",     alt: "Stoop Keukens",      noFilter: true, h: 44 },
+  { src: "/logos/grando-slider.svg",    alt: "Grando",              noFilter: true, h: 22 },
+  { src: "/logos/sanisale-slider.svg",  alt: "Sanisale",            noFilter: true, h: 38 },
+  { src: "/logos/ter-haar-new.svg",     alt: "Ter Haar",            noFilter: true, h: 36 },
+  { src: "/logos/kort-slider.svg",      alt: "Kort Keukens",        noFilter: true, h: 44 },
 ]
 
 function buildProgressiveBlur(container: HTMLElement, direction: "left" | "right") {
