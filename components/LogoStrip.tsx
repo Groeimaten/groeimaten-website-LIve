@@ -7,7 +7,8 @@ const logos = [
   { src: "/logos/stoop-keukens.png",           alt: "Stoop Keukens",      h: 24 },
   { src: "/logos/grando.svg",                  alt: "Grando",              h: 18 },
   { src: "/logos/sanisale.png",                alt: "Sanisale",            h: 20 },
-  { src: "/logos/Ontwerp-zonder-titel-79.png", alt: "Kort Keukens",        h: 28 },
+  { src: "/logos/ter-haar.png",                alt: "Ter Haar",            noFilter: true, h: 30 },
+  { src: "/logos/Ontwerp-zonder-titel-79.png", alt: "Kort Keukens",        h: 30 },
 ]
 
 function buildProgressiveBlur(container: HTMLElement, direction: "left" | "right") {
