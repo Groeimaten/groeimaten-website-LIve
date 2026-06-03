@@ -1,15 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 160">
-  <!-- oval -->
-  <ellipse cx="110" cy="80" rx="105" ry="72" fill="none" stroke="#FFFFFF" stroke-width="3"/>
-  <!-- triangle -->
-  <polygon points="110,14 52,100 168,100" fill="#FFFFFF"/>
-  <!-- TEGRO text over triangle -->
-  <text x="110" y="92" text-anchor="middle" font-family="'Arial Black','Helvetica Neue',sans-serif" font-size="28" font-weight="900" fill="#1a1a1a" letter-spacing="1">TEGRO</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 190">
+  <!-- yellow triangle -->
+  <polygon points="130,8 28,158 232,158" fill="#FFD400"/>
+  <!-- oval outline -->
+  <ellipse cx="130" cy="110" rx="122" ry="74" fill="none" stroke="#FFFFFF" stroke-width="3.5"/>
+  <!-- TEGRO text -->
+  <text x="130" y="132" text-anchor="middle" font-family="'Arial Black','Impact','Helvetica Neue',sans-serif" font-size="48" font-weight="900" fill="#FFFFFF" letter-spacing="2">TEGRO</text>
   <!-- curved subtitle -->
   <defs>
-    <path id="arc" d="M 20,100 A 92,55 0 0 0 200,100"/>
+    <path id="tegroArc" d="M 18,128 A 114,68 0 0 0 242,128"/>
   </defs>
-  <text font-family="'Arial','Helvetica Neue',sans-serif" font-size="8.5" font-weight="600" letter-spacing="0.5" fill="#FFFFFF">
-    <textPath href="#arc" startOffset="5%">SANITAIR · VERWARMING · ONDERDELEN · ADVIES</textPath>
+  <text font-family="'Arial','Helvetica Neue',sans-serif" font-size="9.5" font-weight="700" letter-spacing="0.8" fill="#FFFFFF">
+    <textPath href="#tegroArc" startOffset="3%">SANITAIR-VERWARMING-ONDERDELEN-ADVIES</textPath>
   </text>
 </svg>
