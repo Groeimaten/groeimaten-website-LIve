@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
 import FaqAccordion from "@/components/FaqAccordion"
@@ -31,10 +32,20 @@ export default function ContactPage() {
   return (
     <>
       {/* PAGE HERO */}
-      <section className="page-hero page-hero--compact">
-        <div className="page-hero__glow page-hero__glow--1" aria-hidden="true"></div>
-        <div className="page-hero__glow page-hero__glow--2" aria-hidden="true"></div>
-        <div className="container">
+      <section className="page-hero page-hero--compact page-hero--photo">
+        <div className="page-hero__bg" aria-hidden="true">
+          <Image
+            src="/images/founders-strategy.webp"
+            alt=""
+            fill
+            priority
+            quality={85}
+            sizes="100vw"
+            style={{ objectFit: "cover", objectPosition: "center 30%" }}
+          />
+          <div className="page-hero__bg-overlay" />
+        </div>
+        <div className="container" style={{ position: "relative", zIndex: 3 }}>
           <ScrollReveal>
             <div className="page-hero__content">
               <span className="section-label">Contact</span>
