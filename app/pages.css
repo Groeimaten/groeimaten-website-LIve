@@ -780,31 +780,44 @@ html[data-theme="light"] .page-hero--split {
 
 .cases-full-section {
     background: #0A0A0A;
-    padding: 80px 0;
+    padding: 100px 0 80px;
 }
 
 .case-full {
-    background: rgba(255,255,255,0.02);
-    border: 1px solid rgba(255,255,255,0.06);
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    margin-bottom: 40px;
-    transition: all var(--transition);
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    overflow: visible;
+    margin-bottom: 0;
+    padding-bottom: 100px;
+    transition: none;
 }
 
-.case-full:hover {
-    border-color: rgba(184, 154, 90, 0.15);
-    box-shadow: 0 0 40px rgba(184, 154, 90, 0.05);
+.case-full + .case-full {
+    padding-top: 100px;
+    border-top: 1px solid rgba(255,255,255,0.07);
 }
 
-.case-full:last-child { margin-bottom: 0; }
+.case-full:last-child { padding-bottom: 0; }
+
+.case-full__num {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    opacity: 0.65;
+    margin-bottom: 20px;
+}
 
 .case-full__header {
     display: grid;
     grid-template-columns: 1fr;
     gap: 32px;
-    padding: 40px 36px;
-    border-bottom: 1px solid rgba(255,255,255,0.04);
+    padding: 0 0 32px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    margin-bottom: 40px;
 }
 
 @media (min-width: 768px) {
@@ -856,6 +869,8 @@ html[data-theme="light"] .page-hero--split {
     grid-template-columns: 1fr;
     gap: 0;
     padding: 0;
+    margin-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.05);
 }
 
 @media (min-width: 768px) {

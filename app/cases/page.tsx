@@ -82,7 +82,8 @@ export default function CasesPage() {
 
           {/* Case 1: Stoop Keukens */}
           <ScrollReveal>
-            <article className="case-full" style={{ marginBottom: "64px" }}>
+            <article className="case-full">
+              <span className="case-full__num">Case 01 — Meta Ads</span>
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "40px", alignItems: "start" }}>
                 {/* Links: foto */}
                 <img
@@ -95,7 +96,6 @@ export default function CasesPage() {
                 <div>
                   <div style={{ display: "flex", alignItems: "center", gap: "14px", marginBottom: "12px" }}>
                     <img src="/logos/stoop-keukens.png" alt="Stoop Keukens" style={{ height: "28px", width: "auto", filter: "brightness(0) invert(1)", opacity: 0.9 }} />
-                    <span className="case-card__tag">Meta Ads</span>
                   </div>
                   <h2 style={{ marginBottom: "12px" }}>Stoop Keukens</h2>
                   <p className="case-full__desc" style={{ marginBottom: "24px" }}>
@@ -137,12 +137,12 @@ export default function CasesPage() {
 
           {/* Case 2: Marquardt Küchen */}
           <ScrollReveal>
-            <article className="case-full" style={{ marginBottom: "64px" }}>
+            <article className="case-full">
               <div className="case-full__header">
                 <div className="case-full__info">
+                  <span className="case-full__num">Case 02 — Meta Ads</span>
                   <div style={{ display: "flex", alignItems: "center", gap: "14px", marginBottom: "12px" }}>
                     <img src="/logos/marquardt.webp" alt="Marquardt Küchen" style={{ height: "24px", width: "auto" }} />
-                    <span className="case-card__tag">Meta Ads</span>
                   </div>
                   <h2>Marquardt Küchen Amersfoort</h2>
                   <p className="case-full__desc">
@@ -214,9 +214,9 @@ export default function CasesPage() {
               {/* Header — vol breed */}
               <div className="case-full__header">
                 <div className="case-full__info">
+                  <span className="case-full__num">Case 03 — Website + Webshop</span>
                   <div style={{ display: "flex", alignItems: "center", gap: "14px", marginBottom: "12px" }}>
                     <img src="/logos/ter-haar-new.svg" alt="Ter Haar" style={{ height: "28px", width: "auto" }} />
-                    <span className="case-card__tag">Website + Webshop</span>
                   </div>
                   <h2>Ter Haar Tegeltechniek</h2>
                   <p className="case-full__desc">
