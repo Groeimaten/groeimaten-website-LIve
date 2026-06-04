@@ -41,7 +41,7 @@ export default function ContactPage() {
             priority
             quality={85}
             sizes="100vw"
-            style={{ objectFit: "cover", objectPosition: "center 10%" }}
+            style={{ objectFit: "cover", objectPosition: "center 20%" }}
           />
           <div className="page-hero__bg-overlay" />
         </div>
