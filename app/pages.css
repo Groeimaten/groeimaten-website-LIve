@@ -780,41 +780,41 @@ html[data-theme="light"] .page-hero--split {
 
 .cases-full-section {
     background: #0A0A0A;
-    padding: 80px 0;
+    padding: 100px 0;
 }
 
 .case-full {
-    background: rgba(255,255,255,0.02);
-    border: 1px solid rgba(255,255,255,0.06);
+    background: rgba(255,255,255,0.025);
+    border: 1px solid rgba(255,255,255,0.08);
     border-radius: var(--radius-lg);
     overflow: hidden;
-    margin-bottom: 80px;
+    margin-bottom: 120px;
     transition: border-color var(--transition);
 }
 
 .case-full:hover {
-    border-color: rgba(184, 154, 90, 0.15);
+    border-color: rgba(184, 154, 90, 0.2);
 }
 
 .case-full:last-child { margin-bottom: 0; }
 
 .case-full__num {
     display: block;
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     font-weight: 700;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--gold);
-    opacity: 0.65;
-    margin-bottom: 16px;
+    opacity: 0.7;
+    margin-bottom: 20px;
 }
 
 .case-full__header {
     display: grid;
     grid-template-columns: 1fr;
     gap: 32px;
-    padding: 40px 36px;
-    border-bottom: 1px solid rgba(255,255,255,0.04);
+    padding: 44px 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
 @media (min-width: 768px) {
@@ -829,7 +829,8 @@ html[data-theme="light"] .page-hero--split {
 }
 
 .case-full__media {
-    padding: 0 36px 36px;
+    padding: 36px 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
 .case-full__media--2col {
@@ -840,7 +841,7 @@ html[data-theme="light"] .page-hero--split {
 
 .case-full__photo {
     width: 100%;
-    height: 300px;
+    height: 320px;
     object-fit: cover;
     object-position: center 30%;
     border-radius: 8px;
@@ -848,9 +849,39 @@ html[data-theme="light"] .page-hero--split {
 }
 
 .case-full__media:not(.case-full__media--2col) .case-full__photo {
-    height: 380px;
+    height: 420px;
     object-position: center 20%;
 }
+
+/* Slider naadloos in cases — geen dubbele kaart */
+.case-full__media .vn-card {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+}
+.case-full__media .vn-card__comparison {
+    border-radius: 8px;
+}
+.case-full__media .vn-card__info {
+    padding: 16px 0 0;
+}
+.case-full__media .vn-card__client {
+    display: none;
+}
+
+.vn-card__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--gold);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: gap var(--transition), opacity var(--transition);
+    margin-top: 4px;
+}
+.vn-card__link:hover { opacity: 0.75; gap: 10px; }
 
 .case-full__info .case-card__tag { margin-bottom: 16px; }
 
@@ -869,7 +900,8 @@ html[data-theme="light"] .page-hero--split {
 
 .case-full__results {
     display: flex;
-    gap: 28px;
+    gap: 32px;
+    flex-shrink: 0;
 }
 
 .case-full__result { text-align: center; }
@@ -877,7 +909,7 @@ html[data-theme="light"] .page-hero--split {
 .case-full__result-number {
     display: block;
     font-family: var(--font-serif);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 400;
     color: var(--blue);
     text-shadow: 0 0 14px rgba(184, 154, 90, 0.3);
@@ -885,18 +917,17 @@ html[data-theme="light"] .page-hero--split {
 }
 
 .case-full__result-label {
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     color: rgba(255,255,255,0.35);
     text-transform: uppercase;
     font-weight: 600;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.05em;
 }
 
 .case-full__details {
     display: grid;
     grid-template-columns: 1fr;
     gap: 0;
-    padding: 0;
 }
 
 @media (min-width: 768px) {
