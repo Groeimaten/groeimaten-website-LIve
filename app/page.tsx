@@ -338,12 +338,6 @@ export default function HomePage() {
                 websiteLabel="Bekijk de website van Ter Haar"
               />
             </ScrollReveal>
-            <ScrollReveal delay={3}>
-              <BeforeAfterSlider
-                clientName="Stoop Keukens"
-                description="Van generieke WordPress site naar conversiegerichte showroom-website. +500% meer kwalitatieve afspraken per maand."
-              />
-            </ScrollReveal>
           </div>
         </div>
       </section>

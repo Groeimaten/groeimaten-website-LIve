@@ -57,13 +57,13 @@ export default function BeforeAfterSlider({ clientName, description, beforeSrc, 
       <div ref={cardRef} className="vn-card__comparison">
         <div className="vn-card__after">
           {afterSrc
-            ? <img src={afterSrc} alt="Na" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+            ? <img src={afterSrc} alt="Na" className="vn-card__img" />
             : <div className="vn-card__placeholder vn-card__placeholder--after"><CameraIcon /><span>Na: nieuwe website</span></div>
           }
         </div>
         <div ref={beforeRef} className="vn-card__before">
           {beforeSrc
-            ? <img src={beforeSrc} alt="Voor" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+            ? <img src={beforeSrc} alt="Voor" className="vn-card__img" />
             : <div className="vn-card__placeholder"><CameraIcon /><span>Voor: oude website</span></div>
           }
         </div>
