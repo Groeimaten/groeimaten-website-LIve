@@ -324,16 +324,12 @@ export default function HomePage() {
               <BeforeAfterSlider
                 clientName="Tile Stones"
                 description="Van een drukke, kleurrijke site naar een strak premium design. Specialist in totaalrenovaties van badkamer, toilet en vloer."
-                beforeSrc="/images/tile-stones-oud.png"
-                afterSrc="/images/tile-stones-nieuw.png"
               />
             </ScrollReveal>
             <ScrollReveal delay={2}>
               <BeforeAfterSlider
                 clientName="Ter Haar Tegeltechniek"
                 description="Van een generieke badkamersite naar een premium vakmanschap-uitstraling die vertrouwen wekt en meer afspraken genereert."
-                beforeSrc="/images/ter-haar-oud.png"
-                afterSrc="/images/ter-haar-nieuw.png"
                 websiteUrl="https://www.terhaarvakwerk.nl/"
                 websiteLabel="Bekijk de website van Ter Haar"
               />

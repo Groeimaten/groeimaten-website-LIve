@@ -224,8 +224,6 @@ export default function CasesPage() {
                 <BeforeAfterSlider
                   clientName="Ter Haar Tegeltechniek"
                   description=""
-                  beforeSrc="/images/ter-haar-oud.png"
-                  afterSrc="/images/ter-haar-nieuw.png"
                   websiteUrl="https://www.terhaarvakwerk.nl/"
                   websiteLabel="Bekijk de live website"
                 />
