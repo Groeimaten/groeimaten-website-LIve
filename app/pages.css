@@ -783,19 +783,27 @@ html[data-theme="light"] .page-hero--split {
     padding: 80px 0 100px;
 }
 
-/* ---- Editorial case layout: geen kaartjes, duidelijke scheiding ---- */
+/* ---- 50/50 afwisselende case layout ---- */
 .case-full {
-    background: transparent;
-    border: none;
-    border-radius: 0;
-    overflow: visible;
     padding: 80px 0;
-    margin-bottom: 0;
     border-top: 1px solid rgba(255,255,255,0.07);
 }
-
 .case-full:first-child { border-top: none; padding-top: 0; }
 .case-full:last-child { padding-bottom: 0; }
+
+.case-full__split {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+@media (min-width: 768px) {
+    .case-full__split { grid-template-columns: 1fr 1fr; gap: 64px; }
+    .case-full--reversed .case-full__text { order: 2; }
+    .case-full--reversed .case-full__visual { order: 1; }
+}
 
 .case-full__num {
     display: block;
@@ -808,65 +816,75 @@ html[data-theme="light"] .page-hero--split {
     margin-bottom: 20px;
 }
 
-.case-full__header {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 32px;
-    padding: 0 0 36px;
-    margin-bottom: 0;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
-}
-
-@media (min-width: 768px) {
-    .case-full__header { grid-template-columns: 1fr auto; align-items: start; }
-}
-
 .case-full__logo {
     height: 24px;
     width: auto;
     display: block;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 }
 
-.case-full__media {
-    padding: 36px 0 0;
+.case-full__text h2 {
+    font-size: 1.6rem;
+    color: var(--white);
+    margin-bottom: 14px;
 }
 
-.case-full__media--2col {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
+.case-full__desc {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.75;
+    margin-bottom: 32px;
 }
 
-.case-full__photo {
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
-    object-position: center 30%;
-    border-radius: 8px;
+.case-full__results {
+    display: flex;
+    gap: 32px;
+}
+
+.case-full__result { text-align: left; }
+
+.case-full__result-number {
+    display: block;
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--blue);
+    text-shadow: 0 0 14px rgba(184, 154, 90, 0.3);
+    margin-bottom: 3px;
+    white-space: nowrap;
+}
+
+.case-full__result-label {
+    font-size: 0.64rem;
+    color: rgba(255,255,255,0.35);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.05em;
     display: block;
 }
 
-.case-full__media:not(.case-full__media--2col) .case-full__photo {
-    height: 320px;
-    object-position: center 20%;
+.case-full__img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    object-position: center 25%;
+    border-radius: 10px;
+    display: block;
 }
 
-/* Slider naadloos geïntegreerd */
-.case-full__media .vn-card {
+/* Slider naadloos in visual kolom */
+.case-full__visual .vn-card {
     background: transparent;
     border: none;
     border-radius: 0;
 }
-.case-full__media .vn-card__comparison {
-    border-radius: 8px;
+.case-full__visual .vn-card__comparison {
+    border-radius: 10px;
 }
-.case-full__media .vn-card__info {
+.case-full__visual .vn-card__info {
     padding: 14px 0 0;
 }
-.case-full__media .vn-card__client {
-    display: none;
-}
+.case-full__visual .vn-card__client { display: none; }
 
 .vn-card__link {
     display: inline-flex;
@@ -881,54 +899,10 @@ html[data-theme="light"] .page-hero--split {
 }
 .vn-card__link:hover { opacity: 0.75; gap: 10px; }
 
-.case-full__info h2 {
-    font-size: 1.5rem;
-    color: var(--white);
-    margin-bottom: 12px;
-}
-
-.case-full__desc {
-    font-size: 0.9rem;
-    color: rgba(255,255,255,0.5);
-    line-height: 1.7;
-    max-width: 520px;
-}
-
-.case-full__results {
-    display: flex;
-    gap: 36px;
-    flex-shrink: 0;
-    align-items: flex-start;
-}
-
-.case-full__result { text-align: center; }
-
-.case-full__result-number {
-    display: block;
-    font-family: var(--font-serif);
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: var(--blue);
-    text-shadow: 0 0 14px rgba(184, 154, 90, 0.3);
-    margin-bottom: 4px;
-    white-space: nowrap;
-}
-
-.case-full__result-label {
-    font-size: 0.65rem;
-    color: rgba(255,255,255,0.35);
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    max-width: 80px;
-    display: block;
-}
-
+/* 3-koloms details onderaan elke case */
 .case-full__details {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 0;
-    margin-top: 36px;
     border-top: 1px solid rgba(255,255,255,0.06);
 }
 
@@ -939,36 +913,32 @@ html[data-theme="light"] .page-hero--split {
 .case-full__challenge,
 .case-full__solution,
 .case-full__outcome {
-    padding: 32px 36px;
-    border-bottom: 1px solid rgba(255,255,255,0.04);
+    padding: 28px 0 0;
 }
 
 @media (min-width: 768px) {
-    .case-full__challenge,
-    .case-full__solution,
-    .case-full__outcome {
-        border-bottom: none;
-        border-right: 1px solid rgba(255,255,255,0.04);
-    }
-    .case-full__outcome { border-right: none; }
+    .case-full__challenge { padding-right: 40px; border-right: 1px solid rgba(255,255,255,0.04); }
+    .case-full__solution { padding: 28px 40px 0; border-right: 1px solid rgba(255,255,255,0.04); }
+    .case-full__outcome { padding-left: 40px; }
 }
 
 .case-full__challenge h4,
 .case-full__solution h4,
 .case-full__outcome h4 {
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--blue);
-    margin-bottom: 12px;
+    color: var(--gold);
+    margin-bottom: 10px;
     font-family: var(--font-sans);
+    opacity: 0.7;
 }
 
 .case-full__challenge p,
 .case-full__solution p,
 .case-full__outcome p {
-    font-size: 0.88rem;
+    font-size: 0.87rem;
     color: rgba(255,255,255,0.45);
     line-height: 1.7;
 }
