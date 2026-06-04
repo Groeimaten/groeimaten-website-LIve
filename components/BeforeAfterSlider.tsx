@@ -5,9 +5,13 @@ import { useEffect, useRef } from "react"
 interface Props {
   clientName: string
   description: string
+  beforeSrc?: string
+  afterSrc?: string
+  websiteUrl?: string
+  websiteLabel?: string
 }
 
-export default function BeforeAfterSlider({ clientName, description }: Props) {
+export default function BeforeAfterSlider({ clientName, description, beforeSrc, afterSrc, websiteUrl, websiteLabel }: Props) {
   const cardRef = useRef<HTMLDivElement>(null)
   const beforeRef = useRef<HTMLDivElement>(null)
   const handleRef = useRef<HTMLDivElement>(null)
@@ -52,16 +56,16 @@ export default function BeforeAfterSlider({ clientName, description }: Props) {
     <div className="vn-card">
       <div ref={cardRef} className="vn-card__comparison">
         <div className="vn-card__after">
-          <div className="vn-card__placeholder vn-card__placeholder--after">
-            <CameraIcon />
-            <span>Na: nieuwe website</span>
-          </div>
+          {afterSrc
+            ? <img src={afterSrc} alt="Na" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+            : <div className="vn-card__placeholder vn-card__placeholder--after"><CameraIcon /><span>Na: nieuwe website</span></div>
+          }
         </div>
         <div ref={beforeRef} className="vn-card__before">
-          <div className="vn-card__placeholder">
-            <CameraIcon />
-            <span>Voor: oude website</span>
-          </div>
+          {beforeSrc
+            ? <img src={beforeSrc} alt="Voor" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+            : <div className="vn-card__placeholder"><CameraIcon /><span>Voor: oude website</span></div>
+          }
         </div>
         <div className="vn-card__label-voor">Voor</div>
         <div className="vn-card__label-na">Na</div>
@@ -71,7 +75,8 @@ export default function BeforeAfterSlider({ clientName, description }: Props) {
       </div>
       <div className="vn-card__info">
         <p className="vn-card__client">{clientName}</p>
-        <p className="vn-card__vn-desc">{description}</p>
+        {description && <p className="vn-card__vn-desc">{description}</p>}
+        {websiteUrl && <a href={websiteUrl} target="_blank" rel="noopener noreferrer" className="vn-card__link">{websiteLabel ?? "Bekijk de website"}</a>}
       </div>
     </div>
   )
