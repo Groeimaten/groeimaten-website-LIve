@@ -788,8 +788,10 @@ html[data-theme="light"] .page-hero--split {
     padding: 100px 0;
     border-top: 1px solid rgba(255,255,255,0.07);
 }
-.case-full:first-child { border-top: none; padding-top: 0; }
-.case-full:last-child { padding-bottom: 0; }
+/* Eerste reveal-wrapper heeft geen top-border/padding */
+.reveal-up:first-child .case-full { border-top: none; padding-top: 0; }
+/* Laatste reveal-wrapper heeft geen bottom-padding */
+.reveal-up:last-child .case-full { padding-bottom: 0; }
 
 .case-full__split {
     display: grid;
