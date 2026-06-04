@@ -248,6 +248,7 @@ export default function HomePage() {
           <ScrollReveal className="resultaten-header">
             <span className="section-label">Bewezen track record</span>
             <h2 className="section-title resultaten-header__title">Cijfers die<br />voor ons spreken</h2>
+            <p className="resultaten-header__sub">Geen bureau-praatjes. Gewoon meetbare resultaten bij klanten in jouw sector.</p>
           </ScrollReveal>
           <ScrollReveal delay={1} className="stats-row">
             <div className="stat-item">
