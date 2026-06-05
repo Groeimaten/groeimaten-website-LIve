@@ -3,11 +3,13 @@ import Image from "next/image"
 import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
 import FaqAccordion from "@/components/FaqAccordion"
+import BookingWidget from "@/components/BookingWidget"
+import ContactForm from "@/components/ContactForm"
 
 export const metadata: Metadata = {
   title: "Contact | Groeimaten",
   description:
-    "Neem contact op met Groeimaten. Plan een gratis adviesgesprek en ontdek wat wij voor jouw keuken- of badkamerbedrijf kunnen doen.",
+    "Neem contact op met Groeimaten. Plan een gratis adviesgesprek en ontdek wat wij voor jouw keuken- of sanitairbedrijf kunnen doen.",
 }
 
 const faqItems = [
@@ -24,7 +26,7 @@ const faqItems = [
   {
     question: "Werken jullie ook buiten de Randstad?",
     answer:
-      "Absoluut. We werken landelijk met keuken- en badkamerbedrijven in heel Nederland. Alles gaat digitaal, dus locatie is geen beperking.",
+      "Absoluut. We werken landelijk met keuken- en sanitairbedrijven in heel Nederland. Alles gaat digitaal, dus locatie is geen beperking.",
   },
 ]
 
@@ -32,16 +34,16 @@ export default function ContactPage() {
   return (
     <>
       {/* PAGE HERO */}
-      <section className="page-hero page-hero--compact page-hero--photo">
+      <section className="page-hero page-hero--fullscreen page-hero--photo">
         <div className="page-hero__bg" aria-hidden="true">
           <Image
-            src="/images/founders-strategy.webp"
+            src="/images/jelle-thomas-laptops.jpg"
             alt=""
             fill
             priority
-            quality={85}
+            quality={100}
             sizes="100vw"
-            style={{ objectFit: "cover", objectPosition: "center 20%" }}
+            style={{ objectFit: "cover", objectPosition: "center 30%" }}
           />
           <div className="page-hero__bg-overlay" />
         </div>
@@ -55,91 +57,55 @@ export default function ContactPage() {
                 <em>kennismaken.</em>
               </h1>
               <p className="page-hero__subtitle">
-                Benieuwd wat Groeimaten voor jouw keuken- of badkamerbedrijf kan betekenen? Plan een vrijblijvend
+                Benieuwd wat Groeimaten voor jouw keuken- of sanitairbedrijf kan betekenen? Plan een vrijblijvend
                 adviesgesprek of stuur ons een bericht.
               </p>
+              <div className="contact-hero-proof">
+                <a href="https://www.google.com/search?q=Groeimaten+reviews" target="_blank" rel="noopener noreferrer" className="contact-hero-proof__google">
+                  <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                    <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" />
+                    <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853" />
+                    <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05" />
+                    <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" />
+                  </svg>
+                  <span className="contact-hero-proof__stars">★★★★★</span>
+                  <span className="contact-hero-proof__score">5,0</span>
+                  <span className="contact-hero-proof__count">· 6 reviews</span>
+                </a>
+                <div className="contact-hero-proof__divider" />
+                <div className="contact-hero-proof__stat">
+                  <span className="contact-hero-proof__num">35+</span>
+                  <span className="contact-hero-proof__label">klanten geholpen</span>
+                </div>
+                <div className="contact-hero-proof__divider" />
+                <div className="contact-hero-proof__stat">
+                  <span className="contact-hero-proof__num">100%</span>
+                  <span className="contact-hero-proof__label">keuken &amp; sanitair</span>
+                </div>
+              </div>
             </div>
           </ScrollReveal>
         </div>
       </section>
 
-      {/* CONTACT SECTION */}
+      {/* CONTACT + WIDGET SECTIE */}
       <section className="contact-section">
         <div className="container">
-          <div className="contact-inner">
-            {/* FORM */}
-            <ScrollReveal>
-              <div className="contact-form-wrapper">
-                <h2 className="contact-form__title">Stuur ons een bericht</h2>
-                <p className="contact-form__subtitle">
-                  Vul onderstaand formulier in en we nemen binnen 24 uur contact met je op.
-                </p>
+          <div className="contact-widget-grid">
 
-                <form className="contact-form" id="contactForm" action="#" method="POST">
-                  <div className="form-row">
-                    <div className="form-group">
-                      <label htmlFor="naam">Naam *</label>
-                      <input type="text" id="naam" name="naam" required placeholder="Jouw volledige naam" />
-                    </div>
-                    <div className="form-group">
-                      <label htmlFor="bedrijf">Bedrijfsnaam *</label>
-                      <input type="text" id="bedrijf" name="bedrijf" required placeholder="Naam van je bedrijf" />
-                    </div>
-                  </div>
+            {/* LINKS: Booking widget */}
+            <div className="contact-widget-left">
+              <span className="section-label">Afspraak inplannen</span>
+              <h2 className="contact-widget-title">Plan direct een<br /><em>gratis gesprek</em></h2>
+              <p className="contact-widget-sub">Kies een moment dat jou uitkomt. 30 minuten, geen verplichtingen.</p>
+              <BookingWidget />
+            </div>
 
-                  <div className="form-row">
-                    <div className="form-group">
-                      <label htmlFor="email">E-mailadres *</label>
-                      <input type="email" id="email" name="email" required placeholder="naam@bedrijf.nl" />
-                    </div>
-                    <div className="form-group">
-                      <label htmlFor="telefoon">Telefoonnummer</label>
-                      <input type="tel" id="telefoon" name="telefoon" placeholder="06 - 12345678" />
-                    </div>
-                  </div>
-
-                  <div className="form-group">
-                    <label htmlFor="dienst">Waar ben je in geïnteresseerd?</label>
-                    <select id="dienst" name="dienst">
-                      <option value="">Selecteer een optie</option>
-                      <option value="meta-ads">Meta Ads &amp; Funnels</option>
-                      <option value="website">Website Development</option>
-                      <option value="seo">Google &amp; AI Ranking</option>
-                      <option value="compleet">Compleet pakket</option>
-                      <option value="anders">Anders</option>
-                    </select>
-                  </div>
-
-                  <div className="form-group">
-                    <label htmlFor="bericht">Bericht *</label>
-                    <textarea
-                      id="bericht"
-                      name="bericht"
-                      rows={5}
-                      required
-                      placeholder="Vertel ons kort over jouw bedrijf en wat je wilt bereiken..."
-                    ></textarea>
-                  </div>
-
-                  <button type="submit" className="btn btn--blue btn--lg contact-form__submit">
-                    Verstuur bericht
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                      <path
-                        d="M3 8h10M9 4l4 4-4 4"
-                        stroke="currentColor"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </form>
-              </div>
-            </ScrollReveal>
-
-            {/* SIDEBAR */}
+            {/* RECHTS: Direct contact + formulier */}
             <ScrollReveal delay={2}>
-              <div className="contact-sidebar">
+              <div className="contact-right-col">
+
+                {/* Direct contact */}
                 <div className="contact-info-card">
                   <h3>Direct contact</h3>
                   <div className="contact-info-item">
@@ -157,11 +123,7 @@ export default function ContactPage() {
                   <div className="contact-info-item">
                     <div className="contact-info-item__icon" aria-hidden="true">
                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                        <path
-                          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
-                          stroke="currentColor"
-                          strokeWidth="1.8"
-                        />
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" strokeWidth="1.8" />
                       </svg>
                     </div>
                     <div>
@@ -183,70 +145,17 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="contact-info-card">
-                  <h3>Liever direct een gesprek?</h3>
-                  <p>
-                    Plan direct een vrijblijvend adviesgesprek van 30 minuten. We kijken samen naar jouw situatie en
-                    vertellen je eerlijk wat we voor je kunnen doen.
-                  </p>
-                  <a
-                    href="mailto:info@groeimaten.com"
-                    className="btn btn--blue btn--lg"
-                    style={{ width: "100%", justifyContent: "center" }}
-                  >
-                    Plan een adviesgesprek
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                      <path
-                        d="M3 8h10M9 4l4 4-4 4"
-                        stroke="currentColor"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </a>
-                </div>
-
-                <div className="contact-info-card contact-info-card--dark">
-                  <h3>Volg ons</h3>
-                  <div className="footer__socials" style={{ marginTop: "16px" }}>
-                    <a
-                      href="https://www.linkedin.com/company/groeimaten/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="LinkedIn"
-                    >
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
-                        <circle cx="4" cy="4" r="2" />
-                      </svg>
-                    </a>
-                    <a
-                      href="https://www.instagram.com/groeimaten/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Instagram"
-                    >
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                      </svg>
-                    </a>
-                    <a
-                      href="https://www.facebook.com/groeimaten/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Facebook"
-                    >
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
+                {/* Formulier */}
+                <div className="contact-form-wrapper">
+                <h2 className="contact-form__title">Stuur ons een bericht</h2>
+                <p className="contact-form__subtitle">
+                  Vul onderstaand formulier in en we nemen binnen 24 uur contact met je op.
+                </p>
+                <ContactForm />
+              </div>
               </div>
             </ScrollReveal>
+
           </div>
         </div>
       </section>

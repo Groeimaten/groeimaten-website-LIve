@@ -1,11 +1,12 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
 
 export const metadata: Metadata = {
   title: "Diensten | Groeimaten",
   description:
-    "Onze diensten: Meta Ads & Funnels, Website Development en SEO. Speciaal voor keuken- en badkamerbedrijven.",
+    "Onze diensten: Meta Ads & Funnels, Website Development en SEO. Speciaal voor keuken- en sanitairbedrijven.",
 }
 
 const checkIcon = (
@@ -39,7 +40,7 @@ export default function DienstenPage() {
                 </h1>
                 <p className="page-hero__subtitle">
                   Van advertenties en funnels tot websites en SEO. Wij bieden een compleet pakket, specifiek ontwikkeld
-                  voor keuken- en badkamerbedrijven.
+                  voor keuken- en sanitairbedrijven.
                 </p>
               </div>
             </ScrollReveal>
@@ -65,7 +66,7 @@ export default function DienstenPage() {
                   volledig systeem dat onbekende consumenten omzet in kwalitatieve showroomafspraken.
                 </p>
                 <p>
-                  Onze funnels zijn specifiek ontworpen voor de keuken- en badkamerbranche. We weten welke beelden,
+                  Onze funnels zijn specifiek ontworpen voor de keuken- en sanitairbranche. We weten welke beelden,
                   teksten en triggers werken bij jouw doelgroep.
                 </p>
 
@@ -110,29 +111,40 @@ export default function DienstenPage() {
             </ScrollReveal>
 
             <ScrollReveal delay={2}>
-              <div className="service-detail__visual" aria-hidden="true">
+              <div className="service-detail__visual" style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+                <div style={{ position: "relative", width: "100%", aspectRatio: "16/9", borderRadius: "12px", overflow: "hidden" }}>
+                  <Image
+                    src="/images/jelle-thomas-laptops.jpg"
+                    alt="Jelle en Thomas van Groeimaten"
+                    fill
+                    style={{ objectFit: "cover", objectPosition: "center 30%" }}
+                    sizes="(max-width: 900px) 100vw, 45vw"
+                    quality={80}
+                    loading="lazy"
+                  />
+                </div>
                 <div className="service-visual-card">
                   <div className="service-visual-card__glow"></div>
                   <div className="service-visual-card__stat">
-                    <span className="service-visual-card__number">35+</span>
-                    <span className="service-visual-card__label">Merken geholpen groeien</span>
+                    <span className="service-visual-card__number">100+</span>
+                    <span className="service-visual-card__label">Afspraken gegenereerd</span>
                   </div>
                   <div className="service-visual-card__bar">
-                    <div className="bar" style={{ width: "85%" }}></div>
+                    <div className="bar" style={{ width: "94%" }}></div>
                   </div>
                   <div className="service-visual-card__stat">
-                    <span className="service-visual-card__number">5,0 ★</span>
-                    <span className="service-visual-card__label">Google beoordeling</span>
+                    <span className="service-visual-card__number">€69</span>
+                    <span className="service-visual-card__label">Laagste kosten p/afspraak</span>
                   </div>
-                  <div className="service-visual-card__bar">
+                  <div className="service-visual-card__bar bar--green">
                     <div className="bar" style={{ width: "100%" }}></div>
                   </div>
                   <div className="service-visual-card__stat">
-                    <span className="service-visual-card__number">-40%</span>
-                    <span className="service-visual-card__label">Kosten per afspraak</span>
+                    <span className="service-visual-card__number">68%</span>
+                    <span className="service-visual-card__label">Booking rate (lead → afspraak)</span>
                   </div>
-                  <div className="service-visual-card__bar bar--green">
-                    <div className="bar" style={{ width: "60%" }}></div>
+                  <div className="service-visual-card__bar">
+                    <div className="bar" style={{ width: "68%" }}></div>
                   </div>
                 </div>
               </div>
@@ -195,7 +207,7 @@ export default function DienstenPage() {
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                     <path d="M20 6L9 17l-5-5" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                  <span><strong>Google &amp; AI Ranking inbegrepen</strong> — SEO, lokale vindbaarheid én zichtbaarheid in AI-zoekmachines zitten standaard in elk websitetraject.</span>
+                  <span><strong>Google &amp; AI Ranking inbegrepen:</strong> SEO, lokale vindbaarheid én zichtbaarheid in AI-zoekmachines zitten standaard in elk websitetraject.</span>
                 </div>
               </div>
             </ScrollReveal>
@@ -233,7 +245,7 @@ export default function DienstenPage() {
                 </p>
                 <p>
                   Wij combineren bewezen SEO-technieken met AI-zoekoptimalisatie speciaal voor de keuken- en
-                  badkamerbranche. Lokale én nationale zichtbaarheid. Duurzame groei via organisch verkeer dat je niet
+                  sanitairbranche. Lokale én nationale zichtbaarheid. Duurzame groei via organisch verkeer dat je niet
                   elke maand opnieuw hoeft te kopen.
                 </p>
 
@@ -284,7 +296,18 @@ export default function DienstenPage() {
             </ScrollReveal>
 
             <ScrollReveal delay={2}>
-              <div className="service-detail__visual" aria-hidden="true">
+              <div className="service-detail__visual" style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+                <div style={{ position: "relative", width: "100%", aspectRatio: "16/9", borderRadius: "12px", overflow: "hidden" }}>
+                  <Image
+                    src="/images/jelle-thomas-sitting.jpg"
+                    alt="Jelle en Thomas van Groeimaten"
+                    fill
+                    style={{ objectFit: "cover", objectPosition: "center 30%" }}
+                    sizes="(max-width: 900px) 100vw, 45vw"
+                    quality={80}
+                    loading="lazy"
+                  />
+                </div>
                 <div className="service-visual-card">
                   <div className="service-visual-card__glow"></div>
                   <div className="seo-ranking">

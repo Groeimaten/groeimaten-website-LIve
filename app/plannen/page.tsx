@@ -7,14 +7,14 @@ import FaqAccordion from "@/components/FaqAccordion"
 export const metadata: Metadata = {
   title: "Plannen | Groeimaten",
   description:
-    "Drie trajecten voor keuken- en badkamerbedrijven die willen groeien. Van adverteren tot complete marketing — kies jouw startpunt.",
+    "Drie trajecten voor keuken- en sanitairbedrijven die willen groeien. Van adverteren tot complete marketing. Kies jouw startpunt.",
 }
 
 const faqItems = [
   {
     question: "Waarom staan er geen prijzen bij de plannen?",
     answer:
-      "De investering hangt af van jouw situatie: je markt, het aantal vestigingen en welke resultaten je verwacht. In een gesprek geven we je een eerlijk beeld van wat het kost en wat je terugkrijgt — geen verrassingen achteraf.",
+      "De investering hangt af van jouw situatie: je markt, het aantal vestigingen en welke resultaten je verwacht. In een gesprek geven we je een eerlijk beeld van wat het kost en wat je terugkrijgt. Geen verrassingen achteraf.",
   },
   {
     question: "Kan ik een plan aanpassen of combineren?",
@@ -34,7 +34,7 @@ const faqItems = [
   {
     question: "Werken jullie ook met kleinere bedrijven?",
     answer:
-      "We werken met keuken- en badkamerbedrijven die serieus willen groeien. Grootte is minder relevant dan ambitie. Wat we wel willen weten: ben jij de beslisser, heb je een realistisch budget en wil je echt iets veranderen? Dan kijken we wat we voor jou kunnen betekenen.",
+      "We werken met keuken- en sanitairbedrijven die serieus willen groeien. Grootte is minder relevant dan ambitie. Wat we wel willen weten: ben jij de beslisser, heb je een realistisch budget en wil je echt iets veranderen? Dan kijken we wat we voor jou kunnen betekenen.",
   },
 ]
 
@@ -65,18 +65,18 @@ export default function PlannenPage() {
                   <em>Wij leveren de resultaten.</em>
                 </h1>
                 <p className="page-hero__subtitle">
-                  Drie plannen, elk gebouwd voor een andere groeifase. Van puur adverteren tot complete marketing — de investering stemmen we af in een persoonlijk gesprek.
+                  Drie plannen, elk gebouwd voor een andere groeifase. Van puur adverteren tot complete marketing. De investering stemmen we af in een persoonlijk gesprek.
                 </p>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={2}>
               <div className="page-hero__visual">
                 <Image
-                  src="/images/thomas-plannen.jpg"
-                  alt="Thomas Ghobadi van Groeimaten"
+                  src="/images/jelle-thomas-portrait.jpg"
+                  alt="Jelle en Thomas van Groeimaten"
                   width={600}
                   height={500}
-                  style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 18%", borderRadius: "12px" }}
+                  style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 20%", borderRadius: "12px" }}
                   priority
                   quality={90}
                 />
@@ -98,7 +98,7 @@ export default function PlannenPage() {
                 <span className="plan-card__badge">Populair</span>
                 <h3 className="plan-card__name">Show-up Engine</h3>
                 <p className="plan-card__tagline">Wij leveren de afspraken. Jij sluit de deals.</p>
-                <p className="plan-card__trajectory">5 maanden traject</p>
+                <p className="plan-card__trajectory">3 maanden traject</p>
                 <ul className="plan-card__features" role="list">
                   <li className="plan-card__feature"><CheckIcon />Meta Ads campagnebeheer</li>
                   <li className="plan-card__feature"><CheckIcon />Real-time opvolging (gebeld binnen 4 uur)</li>
@@ -213,30 +213,19 @@ export default function PlannenPage() {
         </ScrollReveal>
       </main>
 
-      {/* FAQ */}
-      <section className="pricing-faq">
-        <div className="container">
-          <ScrollReveal>
-            <div className="section-header">
-              <span className="section-label">Veelgestelde vragen</span>
-              <h2 className="section-title section-title--white">Wat wil je weten?</h2>
-            </div>
-          </ScrollReveal>
-          <FaqAccordion items={faqItems} />
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="cta-split cta-split--dark" id="cta">
-        <div className="cta-split__image">
-          <Image
-            src="/images/founders-handshake.webp"
-            alt="Jelle en Thomas van Groeimaten"
-            fill
-            style={{ objectFit: "cover", objectPosition: "center top" }}
-            sizes="50vw"
-            loading="lazy"
-          />
+        <div className="cta-split__image" style={{ padding: "40px 0 40px 48px", background: "oklch(11% 0.006 60)" }}>
+          <div style={{ position: "relative", height: "100%", minHeight: "420px", borderRadius: "12px", overflow: "hidden" }}>
+            <Image
+              src="/images/jelle-thomas-laptop-standing.jpg"
+              alt="Jelle en Thomas van Groeimaten"
+              fill
+              style={{ objectFit: "cover", objectPosition: "center 20%" }}
+              sizes="50vw"
+              loading="lazy"
+            />
+          </div>
         </div>
         <div className="cta-split__content">
           <ScrollReveal>
@@ -251,6 +240,19 @@ export default function PlannenPage() {
             </Link>
             <p className="cta-disclaimer">Geen verplichtingen. Wel eerlijk advies.</p>
           </ScrollReveal>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="pricing-faq">
+        <div className="container">
+          <ScrollReveal>
+            <div className="section-header">
+              <span className="section-label">Veelgestelde vragen</span>
+              <h2 className="section-title section-title--white">Wat wil je weten?</h2>
+            </div>
+          </ScrollReveal>
+          <FaqAccordion items={faqItems} />
         </div>
       </section>
     </>

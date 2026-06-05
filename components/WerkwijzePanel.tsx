@@ -11,6 +11,7 @@ const steps = [
     panelTitle: "Vrijblijvend gesprek",
     panelSub: "20–30 min · Eerlijk & zonder verplichtingen",
     img: "/images/founders-office.webp",
+    imgPos: "center center",
   },
   {
     num: "2 ·",
@@ -20,6 +21,7 @@ const steps = [
     panelTitle: "Plan van aanpak",
     panelSub: "Op maat · Voor jouw situatie",
     img: "/images/founders-discuss.webp",
+    imgPos: "center center",
   },
   {
     num: "3 ·",
@@ -28,7 +30,8 @@ const steps = [
     panelNum: "03",
     panelTitle: "Plan bespreken",
     panelSub: "Geen druk · Jij beslist wanneer je er klaar voor bent",
-    img: "/images/founders-handshake.webp",
+    img: "/images/jelle-thomas-couch.jpg",
+    imgPos: "center 15%",
   },
   {
     num: "4 ·",
@@ -38,6 +41,7 @@ const steps = [
     panelTitle: "Aan de slag",
     panelSub: "Wij regelen het · Jij groeit",
     img: "/images/founders-working.webp",
+    imgPos: "center 30%",
   },
 ]
 
@@ -69,7 +73,7 @@ export default function WerkwijzePanel() {
           <div
             key={i}
             className={`ww2__panel${active === i ? " ww2__panel--active" : ""}`}
-            style={{ backgroundImage: `url('${s.img}')`, backgroundSize: "cover", backgroundPosition: "center" }}
+            style={{ backgroundImage: `url('${s.img}')`, backgroundSize: "cover", backgroundPosition: s.imgPos }}
           >
             <div style={{ position: "absolute", inset: 0, background: "rgba(6,6,6,0.55)" }} />
             <div style={{ position: "relative", zIndex: 1, textAlign: "center" }}>

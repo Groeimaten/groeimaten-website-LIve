@@ -8,10 +8,11 @@ import CasesSlider from "@/components/CasesSlider"
 import FaqAccordion from "@/components/FaqAccordion"
 import StatsCounter from "@/components/StatsCounter"
 import BeforeAfterSlider from "@/components/BeforeAfterSlider"
+import ReviewsMarquee from "@/components/ReviewsMarquee"
 
 export const metadata: Metadata = {
-  title: "Groeimaten | Marketing voor Keuken- en Badkamerbedrijven",
-  description: "Groeimaten helpt keuken- en badkamerbedrijven groeien met bewezen strategie. Van advertentie tot kwalitatieve afspraak die ook écht opdaagt.",
+  title: "Groeimaten | Marketing voor Keuken- en Sanitairbedrijven",
+  description: "Groeimaten helpt keuken- en sanitairbedrijven groeien met bewezen strategie. Van advertentie tot kwalitatieve afspraak die ook écht opdaagt.",
 }
 
 const reviews = [
@@ -50,8 +51,8 @@ function ReviewCard({ r, prefix }: { r: typeof reviews[0], prefix: string }) {
 
 const faqItems = [
   {
-    question: "Werken jullie ook voor andere sectoren dan keuken en badkamer?",
-    answer: "Nee. Wij werken uitsluitend voor keuken- en badkamerbedrijven. Die focus is onze kracht: we kennen jouw klant, jouw sector en jouw uitdagingen als geen ander.",
+    question: "Werken jullie ook voor andere sectoren dan keuken en sanitair?",
+    answer: "Nee. Wij werken uitsluitend voor keuken- en sanitairbedrijven. Die focus is onze kracht: we kennen jouw klant, jouw sector en jouw uitdagingen als geen ander.",
   },
   {
     question: "Hoe snel zie ik resultaat?",
@@ -67,7 +68,7 @@ const faqItems = [
   },
   {
     question: "Wat maakt jullie anders dan een gewoon marketingbureau?",
-    answer: "Wij kennen de keuken- en badkamermarkt als geen ander. Geen leercurve, geen generieke aanpak. Dag 1 aan de slag. Een generiek bureau leert jouw markt misschien na maanden. Wij zijn er al.",
+    answer: "Wij kennen de keuken- en sanitairmarkt als geen ander. Geen leercurve, geen generieke aanpak. Dag 1 aan de slag. Een generiek bureau leert jouw markt misschien na maanden. Wij zijn er al.",
   },
 ]
 
@@ -102,7 +103,7 @@ export default function HomePage() {
               <em>Elke maand.</em>
             </h1>
             <p className="hero__subtitle hero-anim hero-anim--2">
-              Groeimaten helpt keuken- en badkamerbedrijven groeien met bewezen strategie. Van advertentie tot kwalitatieve afspraak die ook écht opdaagt.
+              Groeimaten helpt keuken- en sanitairbedrijven groeien met bewezen strategie. Van advertentie tot kwalitatieve afspraak die ook écht opdaagt.
             </p>
             <div className="hero__actions hero-anim hero-anim--3">
               <Link href="/contact" className="btn btn--blue btn--lg">
@@ -118,11 +119,11 @@ export default function HomePage() {
               <div className="hero__proof-divider" aria-hidden="true" />
               <div className="hero__proof-item">
                 <span className="hero__proof-number">100%</span>
-                <span className="hero__proof-label">keuken &amp; badkamer specialist</span>
+                <span className="hero__proof-label">keuken &amp; sanitair specialist</span>
               </div>
               <div className="hero__proof-divider" aria-hidden="true" />
               <div className="hero__proof-item">
-                <span className="hero__proof-number">5,0 ★</span>
+                <span className="hero__proof-number">5,0 <span style={{color:"#c9a24c"}}>★</span></span>
                 <span className="hero__proof-label">Google beoordeling</span>
               </div>
             </div>
@@ -139,7 +140,7 @@ export default function HomePage() {
           <div className="specialist-strip__inner">
             <div className="specialist-strip__eyebrow">Sector exclusief</div>
             <h2 className="specialist-strip__title" id="specialist-heading">
-              Wij werken <em>uitsluitend</em> voor keuken- en badkamerbedrijven.<br />Geen uitzonderingen.
+              Wij werken <em>uitsluitend</em> voor keuken- en sanitairbedrijven.<br />Geen uitzonderingen.
             </h2>
             <p className="specialist-strip__subtitle">
               Terwijl andere bureaus vandaag een bakkerij helpen en morgen een autogarage, doen wij maar één ding. Jouw branche. Elke dag. Dat is het verschil tussen een bureau dat jou begrijpt en één dat jou leert kennen.
@@ -147,7 +148,7 @@ export default function HomePage() {
             <div className="specialist-strip__sectors">
               {[
                 { icon: "home", label: "Keukenshowrooms" },
-                { icon: "bath", label: "Badkamerzaken" },
+                { icon: "bath", label: "Sanitairzaken" },
                 { icon: "grid", label: "Tegelbedrijven" },
                 { icon: "star", label: "Premium segment" },
                 { icon: "sun", label: "Midden- & hoogsegment" },
@@ -182,7 +183,7 @@ export default function HomePage() {
                 Uitgelicht in<br /><em>K&amp;D Magazine</em>
               </h2>
               <p className="media-mention__text">
-                Groeimaten werd door K&amp;D Magazine uitgelicht als dé specialist voor marketing in de keuken- en badkamersector. Een erkenning die bewijst dat onze aanpak werkt, niet alleen bij onze klanten, maar ook bij de sector zelf.
+                Groeimaten werd door K&amp;D Magazine uitgelicht als dé specialist voor marketing in de keuken- en sanitairsector. Een erkenning die bewijst dat onze aanpak werkt, niet alleen bij onze klanten, maar ook bij de sector zelf.
               </p>
               <blockquote className="media-mention__quote">"Met AI en marketing naar meer afspraken"</blockquote>
               <div className="media-mention__publication">
@@ -204,7 +205,7 @@ export default function HomePage() {
         <div className="container">
           <ScrollReveal className="pain-section__header">
             <h2 className="pain-section__title">Klinkt dit<br /><em>bekend?</em></h2>
-            <p className="pain-section__intro">Veel keuken- en badkamerbedrijven lopen tegen dezelfde uitdagingen aan. De problemen zijn voorspelbaar. De oplossing niet.</p>
+            <p className="pain-section__intro">Veel keuken- en sanitairbedrijven lopen tegen dezelfde uitdagingen aan. De problemen zijn voorspelbaar. De oplossing niet.</p>
           </ScrollReveal>
           <div className="pain-grid">
             {[
@@ -241,6 +242,9 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* REVIEWS */}
+      <ReviewsMarquee />
+
       {/* RESULTATEN */}
       <section className="resultaten-section" id="resultaten">
         <div className="resultaten-section__bg" aria-hidden="true" />
@@ -250,31 +254,8 @@ export default function HomePage() {
             <h2 className="section-title resultaten-header__title">Cijfers die<br />voor ons spreken</h2>
             <p className="resultaten-header__sub">Geen bureau-praatjes. Gewoon meetbare resultaten bij klanten in jouw sector.</p>
           </ScrollReveal>
-          <ScrollReveal delay={1} className="stats-row">
-            <div className="stat-item">
-              <div className="stat-item__value">
-                <StatsCounter target={100} suffix="%" />
-              </div>
-              <div className="stat-item__label">Sector specialist</div>
-              <p className="stat-item__desc">Uitsluitend keuken &amp; badkamer. Nooit een andere sector.</p>
-            </div>
-            <div className="stat-item__sep" aria-hidden="true" />
-            <div className="stat-item">
-              <div className="stat-item__value">
-                <StatsCounter target={35} suffix="+" />
-              </div>
-              <div className="stat-item__label">Merken geholpen groeien</div>
-              <p className="stat-item__desc">Keuken- en badkamerbedrijven in heel Nederland.</p>
-            </div>
-            <div className="stat-item__sep" aria-hidden="true" />
-            <div className="stat-item">
-              <div className="stat-item__value"><span>5,0 ★</span></div>
-              <div className="stat-item__label">Google beoordeling</div>
-              <p className="stat-item__desc">5 reviews, allemaal 5 sterren.</p>
-            </div>
-          </ScrollReveal>
-          <ScrollReveal delay={2} className="resultaten-bottom">
-            <div className="werkwijze-photo">
+          <ScrollReveal delay={1} className="resultaten-bottom">
+            <div className="werkwijze-photo werkwijze-photo--auto">
               <Image src="/images/founders-office.webp" alt="Jelle en Thomas van Groeimaten" fill style={{ objectFit: "cover", objectPosition: "center 50%" }} sizes="(min-width: 900px) 50vw, 100vw" quality={90} />
               <div className="werkwijze-photo__badge">
                 <span className="werkwijze-photo__badge-num">35+</span>
@@ -282,31 +263,14 @@ export default function HomePage() {
               </div>
             </div>
             <div className="resultaten-right">
-              <p className="resultaten-right__intro">Wij zijn een van de weinige marketingbureaus in Nederland die <strong>uitsluitend</strong> voor de keuken- en badkamersector werkt. Geen leercurve — dag één direct aan de slag.</p>
+              <p className="resultaten-right__intro">Wij zijn een van de weinige marketingbureaus in Nederland die <strong>uitsluitend</strong> voor de keuken- en sanitairsector werkt. Geen leercurve, dag één direct aan de slag.</p>
               <div className="commitments">
-                <p className="commitments__item">Een van de weinige specialisten in Nederland voor keuken- &amp; badkamerbedrijven</p>
+                <p className="commitments__item">Een van de weinige specialisten in Nederland voor keuken- &amp; sanitairbedrijven</p>
                 <p className="commitments__item">Volledige ontzorging: van strategie tot afspraken in je agenda</p>
                 <p className="commitments__item">Directe communicatie, geen account managers, geen wachtrijen</p>
                 <p className="commitments__item">Maandelijkse rapportages met concrete cijfers</p>
               </div>
             </div>
-          </ScrollReveal>
-          <ScrollReveal className="resultaten-cta">
-            <Link href="/cases" className="btn btn--blue btn--lg">Bekijk onze cases <ArrowRight /></Link>
-          </ScrollReveal>
-        </div>
-      </section>
-
-      {/* CASES SLIDER */}
-      <section className="cases-slider" id="cases">
-        <div className="container">
-          <ScrollReveal className="section-header">
-            <span className="section-label">Ons werk</span>
-            <h2 className="section-title section-title--white">Uitgelichte<br /><em>cases</em></h2>
-          </ScrollReveal>
-          <CasesSlider />
-          <ScrollReveal className="cases-cta">
-            <Link href="/cases" className="btn btn--blue btn--lg">Bekijk alle cases <ArrowRight /></Link>
           </ScrollReveal>
         </div>
       </section>
@@ -323,66 +287,23 @@ export default function HomePage() {
             <ScrollReveal delay={1}>
               <BeforeAfterSlider
                 clientName="Tile Stones"
-                description="Van een drukke, kleurrijke site naar een strak premium design. Specialist in totaalrenovaties van badkamer, toilet en vloer."
+                description="Van een rommelige structuur naar een doordachte gebruikerservaring, waarbij elk detail van het design de merkidentiteit versterkt."
+                beforeSrc="/images/voor-na/tile-stones-oud.png"
+                afterSrc="/images/voor-na/tile-stones-nieuw.png"
               />
             </ScrollReveal>
             <ScrollReveal delay={2}>
               <BeforeAfterSlider
                 clientName="Ter Haar Tegeltechniek"
-                description="Van een generieke badkamersite naar een premium vakmanschap-uitstraling die vertrouwen wekt en meer afspraken genereert."
+                description="Van drie trage, drukke en goedkoop ogende websites naar één ultrasnelle, moderne website met een luxe uitstraling die vertrouwen wekt en resultaat oplevert."
+                beforeSrc="/images/voor-na/ter-haar-oud.png"
+                afterSrc="/images/voor-na/ter-haar-nieuw.png"
                 websiteUrl="https://www.terhaarvakwerk.nl/"
                 websiteLabel="Bekijk de website van Ter Haar"
               />
             </ScrollReveal>
           </div>
         </div>
-      </section>
-
-      {/* REVIEWS */}
-      <section className="reviews-marquee" id="testimonials">
-        <div className="container reviews-marquee__top reveal-up">
-          <div>
-            <span className="section-label">Klantervaringen</span>
-            <h2 className="reviews-marquee__title">Wat klanten<br /><em>over ons zeggen</em></h2>
-          </div>
-          <a href="https://www.google.com/search?q=Groeimaten+reviews" target="_blank" rel="noopener noreferrer" className="google-badge" aria-label="Bekijk onze Google reviews: 5,0 sterren">
-            <svg className="google-badge__g" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-              <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" />
-              <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853" />
-              <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05" />
-              <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" />
-            </svg>
-            <div className="google-badge__info">
-              <span className="google-badge__stars" aria-hidden="true">★★★★★</span>
-              <span className="google-badge__text">5,0 · 6 reviews</span>
-            </div>
-          </a>
-        </div>
-        <div className="reviews-marquee__track-wrap">
-          <div className="reviews-marquee__track" id="reviewsTrack">
-            {reviews.map((r, i) => <ReviewCard key={`a-${i}`} r={r} prefix="a" />)}
-            {reviews.map((r, i) => <ReviewCard key={`b-${i}`} r={r} prefix="b" />)}
-          </div>
-        </div>
-        <div className="reviews-marquee__cta-wrap">
-          <a
-            href="https://www.google.com/search?sca_esv=9c28518ba62c7aef&rlz=1C1UEAD_nlNL1208NL1209&sxsrf=ANbL-n598i6QdZO7w-GhmmZnyMkNHnhR9A:1780240047357&q=Groeimaten+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIytjQwMjUxNjCxMLY0NTCyMDTfwMj4ilHIvSg_NTM3sSQ1TyEotSwztbx4ESsWQQA09Ek6QwAAAA&rldimm=390254304839502817&tbm=lcl&hl=nl-NL&sa=X&ved=2ahUKEwi42Yz95uOUAxVM-AIHHddxF8YQ9fQKegQIOhAG&biw=1280&bih=585&dpr=1.5#lkt=LocalPoiReviews"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="reviews-marquee__cta"
-          >
-            Bekijk onze reviews
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </a>
-        </div>
-        <ScrollReveal className="container reviews-marquee__stats">
-          <div className="reviews-marquee__stat"><span className="reviews-marquee__stat-num">5,0</span><span className="reviews-marquee__stat-label">Google beoordeling</span></div>
-          <div className="reviews-marquee__stat"><span className="reviews-marquee__stat-num">€90.804</span><span className="reviews-marquee__stat-label">Extra omzet 1 klant</span></div>
-          <div className="reviews-marquee__stat"><span className="reviews-marquee__stat-num">€69</span><span className="reviews-marquee__stat-label">Laagste CPA ooit</span></div>
-          <div className="reviews-marquee__stat"><span className="reviews-marquee__stat-num">100%</span><span className="reviews-marquee__stat-label">Sectorspecialist</span></div>
-        </ScrollReveal>
       </section>
 
       {/* FOUNDERS */}
@@ -426,16 +347,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="faq-section" id="faq">
+      {/* CASES SLIDER */}
+      <section className="cases-slider" id="cases">
         <div className="container">
           <ScrollReveal className="section-header">
-            <span className="section-label">Veelgestelde vragen</span>
-            <h2 className="section-title section-title--white">Alles wat je wil weten</h2>
+            <span className="section-label">Ons werk</span>
+            <h2 className="section-title section-title--white">Uitgelichte<br /><em>cases</em></h2>
           </ScrollReveal>
-          <FaqAccordion items={faqItems} />
-          <ScrollReveal className="faq-cta">
-            <Link href="/contact" className="btn btn--blue btn--lg">Nog vragen? Neem contact op <ArrowRight /></Link>
+          <CasesSlider />
+          <ScrollReveal className="cases-cta">
+            <Link href="/cases" className="btn btn--blue btn--lg">Bekijk alle cases <ArrowRight /></Link>
           </ScrollReveal>
         </div>
       </section>
@@ -476,6 +397,20 @@ export default function HomePage() {
               </div>
             </ScrollReveal>
           </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="faq-section" id="faq">
+        <div className="container">
+          <ScrollReveal className="section-header">
+            <span className="section-label">Veelgestelde vragen</span>
+            <h2 className="section-title section-title--white">Alles wat je wil weten</h2>
+          </ScrollReveal>
+          <FaqAccordion items={faqItems} />
+          <ScrollReveal className="faq-cta">
+            <Link href="/contact" className="btn btn--blue btn--lg">Nog vragen? Neem contact op <ArrowRight /></Link>
+          </ScrollReveal>
         </div>
       </section>
     </>

@@ -33,7 +33,7 @@ const faqItems = [
   {
     question: "Werken jullie ook met kleinere bedrijven?",
     answer:
-      "We werken met keuken- en badkamerbedrijven die serieus willen groeien. Grootte is minder relevant dan ambitie. Wat we wel willen weten: ben jij de beslisser, heb je een realistisch budget en wil je echt iets veranderen? Dan kijken we wat we voor jou kunnen betekenen.",
+      "We werken met keuken- en sanitairbedrijven die serieus willen groeien. Grootte is minder relevant dan ambitie. Wat we wel willen weten: ben jij de beslisser, heb je een realistisch budget en wil je echt iets veranderen? Dan kijken we wat we voor jou kunnen betekenen.",
   },
 ]
 
@@ -54,7 +54,7 @@ export default function PrijzenPage() {
               <em>Wel een plan dat past bij jou.</em>
             </h1>
             <p className="pricing-subtitle">
-              Elk keuken- of badkamerbedrijf is anders. Daarom beginnen wij altijd met een eerlijk gesprek, zodat we
+              Elk keuken- of sanitairbedrijf is anders. Daarom beginnen wij altijd met een eerlijk gesprek, zodat we
               precies begrijpen wat jij nodig hebt, en wat het realistisch kost.
             </p>
           </div>
@@ -163,7 +163,7 @@ export default function PrijzenPage() {
                 <h3>Meta Ads &amp; Funnels</h3>
                 <p>
                   Gerichte campagnes die de juiste huiseigenaren bereiken op het moment dat ze nadenken over hun keuken
-                  of badkamer. Van advertentie tot gekwalificeerde showroomafspraak.
+                  of sanitair. Van advertentie tot gekwalificeerde showroomafspraak.
                 </p>
                 <ul className="pricing-service-card__list" role="list">
                   <li>Strategie &amp; doelgroepanalyse</li>

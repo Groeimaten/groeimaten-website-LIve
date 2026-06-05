@@ -11,7 +11,7 @@
     --gold:         oklch(67% 0.090 75);     /* #b89a5a — enig accent             */
     --gold-dark:    oklch(58% 0.085 75);     /* #9a7d42 — goud hover/actief       */
     --gold-muted:   oklch(67% 0.035 75);     /* zacht goud tint                   */
-    --stone:        oklch(55% 0.010 70);     /* #8a8074 — secundaire tekst        */
+    --stone:        oklch(72% 0.010 70);     /* secundaire tekst                  */
     --stone-light:  oklch(75% 0.008 70);     /* dividers, borders                 */
 
     /* === Surfaces === */
@@ -187,17 +187,17 @@ section {
     font-weight: 700;
     letter-spacing: 0.16em;
     text-transform: uppercase;
-    color: var(--gold);
+    color: oklch(84% 0.07 75);
     margin-bottom: 20px;
     padding: 5px 14px;
     background: transparent;
-    border: 1px solid oklch(67% 0.09 75 / 0.35);
+    border: 1px solid oklch(84% 0.07 75 / 0.40);
     border-radius: 0;
 }
 
 .section-label--blue {
-    color: var(--gold);
-    border-color: oklch(67% 0.09 75 / 0.40);
+    color: oklch(84% 0.07 75);
+    border-color: oklch(84% 0.07 75 / 0.45);
 }
 
 .section-title {
@@ -235,10 +235,18 @@ section {
     border-radius: 0;          /* Strak, architectonisch */
     border: 1px solid transparent;
     cursor: pointer;
-    transition: all var(--transition);
+    transition: background var(--transition),
+                background-size 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+                color var(--transition),
+                border-color var(--transition),
+                transform var(--transition),
+                box-shadow var(--transition);
     white-space: nowrap;
     text-decoration: none;
     position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
 }
 
 .btn svg {
@@ -283,13 +291,14 @@ section {
 /* Ghost: transparant, wit border (op donkere bg) */
 .btn--ghost {
     background: transparent;
-    color: oklch(85% 0.006 70);
-    border-color: oklch(96% 0.008 85 / 0.22);
+    color: var(--warm-white);
+    border-color: oklch(96% 0.008 85 / 0.50);
 }
 
 .btn--ghost:hover {
     color: var(--warm-white);
-    border-color: oklch(96% 0.008 85 / 0.55);
+    background: oklch(96% 0.008 85 / 0.08);
+    border-color: oklch(96% 0.008 85 / 0.85);
     transform: translateY(-2px);
 }
 
@@ -311,7 +320,7 @@ section {
    Gebruikt background-size animatie — tekst zit ALTIJD boven de fill,
    ongeacht of er span-wrappers zijn of niet. */
 .btn--blue {
-    background-color: transparent;
+    background-color: oklch(67% 0.09 75 / 0.12);
     background-image: linear-gradient(var(--gold), var(--gold));
     background-size: 0% 100%;
     background-repeat: no-repeat;
@@ -344,8 +353,8 @@ section {
 }
 
 /* Sizes */
-.btn--lg { padding: 16px 40px; font-size: 0.85rem; }
-.btn--xl { padding: 20px 52px; font-size: 0.9rem; }
+.btn--lg { padding: 12px 26px; font-size: 0.78rem; }
+.btn--xl { padding: 14px 36px; font-size: 0.83rem; }
 
 /* =============================================
    MICRO CTA

@@ -32,11 +32,11 @@ const dmSans = localFont({
 
 export const metadata: Metadata = {
   title: {
-    default: "Groeimaten | Marketing voor Keuken- en Badkamerbedrijven",
+    default: "Groeimaten | Marketing voor Keuken- en Sanitairbedrijven",
     template: "%s | Groeimaten",
   },
   description:
-    "Groeimaten helpt keuken- en badkamerbedrijven groeien met bewezen marketing. Van advertentie tot kwalitatieve showroomafspraak. Specialist in keuken & badkamer.",
+    "Groeimaten helpt keuken- en sanitairbedrijven groeien met bewezen marketing. Van advertentie tot kwalitatieve showroomafspraak. Specialist in keuken & sanitair.",
   robots: { index: true, follow: true },
 }
 
@@ -47,6 +47,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       suppressHydrationWarning
       className={`${playfair.variable} ${dmSans.variable}`}
     >
+      <head>
+        <link rel="preconnect" href="https://link.growzy.io" />
+        <link rel="dns-prefetch" href="https://link.growzy.io" />
+      </head>
       <body>
         <ThemeProvider>
           <Nav />

@@ -2,10 +2,11 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
 import BeforeAfterSlider from "@/components/BeforeAfterSlider"
+import ReviewsMarquee from "@/components/ReviewsMarquee"
 
 export const metadata: Metadata = {
   title: "Cases | Groeimaten",
-  description: "Bekijk onze resultaten. Concrete cases van keuken- en badkamerbedrijven die we hebben geholpen groeien.",
+  description: "Bekijk onze resultaten. Concrete cases van keuken- en sanitairbedrijven die we hebben geholpen groeien.",
 }
 
 export default function CasesPage() {
@@ -21,7 +22,7 @@ export default function CasesPage() {
               <div className="page-hero__content">
                 <span className="section-label">Ons werk</span>
                 <h1 className="page-hero__title">Resultaten die<br /><em>voor zich spreken.</em></h1>
-                <p className="page-hero__subtitle">Geen vage verhalen. Concrete resultaten van keuken- en badkamerbedrijven die met Groeimaten samenwerken.</p>
+                <p className="page-hero__subtitle">Geen vage verhalen. Concrete resultaten van keuken- en sanitairbedrijven die met Groeimaten samenwerken.</p>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={2}>
@@ -39,23 +40,23 @@ export default function CasesPage() {
           <ScrollReveal>
             <div className="cases-stats__grid">
               <div className="cases-stats__item">
-                <span className="cases-stats__number">€90.804</span>
-                <span className="cases-stats__label">Extra omzet in 10 maanden</span>
+                <span className="cases-stats__number">€110.000</span>
+                <span className="cases-stats__label">Extra omzet, één klant</span>
               </div>
               <div className="cases-stats__divider" aria-hidden="true"></div>
               <div className="cases-stats__item">
-                <span className="cases-stats__number">49</span>
-                <span className="cases-stats__label">Showroomafspraken in 10 mnd</span>
+                <span className="cases-stats__number">100+</span>
+                <span className="cases-stats__label">Afspraken gegenereerd</span>
               </div>
               <div className="cases-stats__divider" aria-hidden="true"></div>
               <div className="cases-stats__item">
-                <span className="cases-stats__number">€69</span>
-                <span className="cases-stats__label">Laagste kosten per afspraak</span>
+                <span className="cases-stats__number">€25</span>
+                <span className="cases-stats__label">Gem. kosten per lead</span>
               </div>
               <div className="cases-stats__divider" aria-hidden="true"></div>
               <div className="cases-stats__item">
-                <span className="cases-stats__number">100%</span>
-                <span className="cases-stats__label">Keuken &amp; badkamer</span>
+                <span className="cases-stats__number">68%</span>
+                <span className="cases-stats__label">Booking rate</span>
               </div>
             </div>
           </ScrollReveal>
@@ -71,13 +72,13 @@ export default function CasesPage() {
             <article className="case-full">
               <div className="case-full__split">
                 <div className="case-full__text">
-                  <span className="case-full__num">Case 01 — Meta Ads</span>
+                  <span className="case-full__num">Case 01 · Meta Ads</span>
                   <img src="/logos/stoop-keukens.png" alt="Stoop Keukens" className="case-full__logo" style={{ filter: "brightness(0) invert(1)", opacity: 0.9 }} />
                   <h2>Stoop Keukens</h2>
-                  <p className="case-full__desc">Gevestigd keukenbedrijf met ambitie om meer kwalitatieve showroomafspraken te genereren. In 10 maanden uitgegroeid tot onze sterkste case — met €90.804 extra omzet als bewijs.</p>
+                  <p className="case-full__desc">Gevestigd keukenbedrijf met ambitie om meer kwalitatieve showroomafspraken te genereren. In 10 maanden uitgegroeid tot onze sterkste case, goed voor €110.000 extra omzet.</p>
                   <div className="case-full__results">
                     <div className="case-full__result">
-                      <span className="case-full__result-number">€90.804</span>
+                      <span className="case-full__result-number">€110.000</span>
                       <span className="case-full__result-label">Extra omzet excl. btw</span>
                     </div>
                     <div className="case-full__result">
@@ -105,7 +106,7 @@ export default function CasesPage() {
                 </div>
                 <div className="case-full__outcome">
                   <h4>Het resultaat</h4>
-                  <p>In de eerste 100 dagen: 27 afspraken bij slechts €1.850 adspend. In totaal 49 showroomafspraken en €90.804 extra omzet exclusief btw in 10 maanden.</p>
+                  <p>In de eerste 100 dagen: 27 afspraken bij slechts €1.850 adspend. In totaal 49 showroomafspraken en €110.000 extra omzet exclusief btw in 10 maanden.</p>
                 </div>
               </div>
             </article>
@@ -116,7 +117,7 @@ export default function CasesPage() {
             <article className="case-full case-full--reversed">
               <div className="case-full__split">
                 <div className="case-full__text">
-                  <span className="case-full__num">Case 02 — Meta Ads</span>
+                  <span className="case-full__num">Case 02 · Meta Ads</span>
                   <img src="/logos/marquardt.webp" alt="Marquardt Küchen" className="case-full__logo" />
                   <h2>Marquardt Küchen Amersfoort</h2>
                   <p className="case-full__desc">Premium keukenmerk in het hoogsegment met showroom in Amersfoort. Doel: structureel meer kwalitatieve leads van serieuze kopers aantrekken.</p>
@@ -161,10 +162,10 @@ export default function CasesPage() {
             <article className="case-full">
               <div className="case-full__split">
                 <div className="case-full__text">
-                  <span className="case-full__num">Case 03 — Website + Webshop</span>
+                  <span className="case-full__num">Case 03 · Website + Webshop</span>
                   <img src="/logos/ter-haar-new.svg" alt="Ter Haar Tegeltechniek" className="case-full__logo" />
                   <h2>Ter Haar Tegeltechniek</h2>
-                  <p className="case-full__desc">Sanitair specialist met drie verouderde, extreem trage websites — waaronder een aparte webshop. De wens was om alles samen te voegen in één snelle, moderne omgeving.</p>
+                  <p className="case-full__desc">Sanitair specialist met drie verouderde, extreem trage websites, waaronder een aparte webshop. De wens was om alles samen te voegen in één snelle, moderne omgeving.</p>
                   <div className="case-full__results">
                     <div className="case-full__result">
                       <span className="case-full__result-number">400+</span>
@@ -184,6 +185,8 @@ export default function CasesPage() {
                   <BeforeAfterSlider
                     clientName="Ter Haar Tegeltechniek"
                     description=""
+                    beforeSrc="/images/voor-na/ter-haar-oud.png"
+                    afterSrc="/images/voor-na/ter-haar-nieuw.png"
                     websiteUrl="https://www.terhaarvakwerk.nl/"
                     websiteLabel="Bekijk de live website"
                   />
@@ -209,49 +212,8 @@ export default function CasesPage() {
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
-      <section className="testimonials-section">
-        <div className="container">
-          <ScrollReveal>
-            <div className="section-header">
-              <span className="section-label">Klantreacties</span>
-              <h2 className="section-title section-title--white">Wat ze over ons zeggen</h2>
-            </div>
-          </ScrollReveal>
-          <div className="testimonials-grid">
-            <ScrollReveal delay={1}>
-              <article className="testimonial-card">
-                <div className="testimonial-card__stars">★★★★★</div>
-                <blockquote>&quot;Zeer tevreden over het contact, hoe de samenwerking wordt onderhouden en de transparantie. Communicatie is erg fijn en er wordt snel geschakeld.&quot;</blockquote>
-                <div className="testimonial-card__author">
-                  <img src="/images/kim-noach.png" alt="Kim Noach" className="author-avatar" width={44} height={44} loading="lazy" />
-                  <div><strong>Kim Noach</strong><span>Google review</span></div>
-                </div>
-              </article>
-            </ScrollReveal>
-            <ScrollReveal delay={2}>
-              <article className="testimonial-card">
-                <div className="testimonial-card__stars">★★★★★</div>
-                <blockquote>&quot;Vanaf februari is onze nieuwe website echt goed vindbaar geworden. De leads worden steeds kwalitatiever, we merken echt duidelijke groei.&quot;</blockquote>
-                <div className="testimonial-card__author">
-                  <img src="/images/stoop-keukens.png" alt="Martin Stoop" className="author-avatar" width={44} height={44} loading="lazy" />
-                  <div><strong>Martin Stoop</strong><span>Stoop Keukens</span></div>
-                </div>
-              </article>
-            </ScrollReveal>
-            <ScrollReveal delay={3}>
-              <article className="testimonial-card">
-                <div className="testimonial-card__stars">★★★★★</div>
-                <blockquote>&quot;Deze jonge enthousiaste ondernemers hebben onze website van Tegro ontwikkeld. Het resultaat mag er zijn. Het was een fijn traject.&quot;</blockquote>
-                <div className="testimonial-card__author">
-                  <img src="/images/tegro-review.png" alt="Tegro BV" className="author-avatar" width={44} height={44} loading="lazy" />
-                  <div><strong>Tegro BV</strong><span>Google review</span></div>
-                </div>
-              </article>
-            </ScrollReveal>
-          </div>
-        </div>
-      </section>
+      {/* REVIEWS */}
+      <ReviewsMarquee />
 
       {/* CTA */}
       <section className="cta-section">
@@ -262,7 +224,7 @@ export default function CasesPage() {
             <div className="cta-inner">
               <span className="section-label section-label--blue">Jouw beurt</span>
               <h2 className="cta-title">Word de volgende case</h2>
-              <p className="cta-subtitle">Plan een gratis adviesgesprek en ontdek wat Groeimaten voor jouw keuken- of badkamerbedrijf kan betekenen.</p>
+              <p className="cta-subtitle">Plan een gratis adviesgesprek en ontdek wat Groeimaten voor jouw keuken- of sanitairbedrijf kan betekenen.</p>
               <Link href="/contact" className="btn btn--blue btn--xl">
                 Plan je gratis gesprek
                 <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>

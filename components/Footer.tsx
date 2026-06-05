@@ -10,7 +10,7 @@ export default function Footer() {
             <span className="logo-subtitle">Sinds 2025</span>
           </Link>
           <p className="footer__tagline">Groei zonder grenzen</p>
-          <p className="footer__desc">De specialist in marketing voor keuken- en badkamerbedrijven in Nederland.</p>
+          <p className="footer__desc">De specialist in marketing voor keuken- en sanitairbedrijven in Nederland.</p>
         </div>
         <nav className="footer__nav" aria-label="Diensten navigatie">
           <h4>Diensten</h4>
