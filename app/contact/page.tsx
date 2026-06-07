@@ -92,7 +92,7 @@ export default function ContactPage() {
         <div className="container">
           <div className="contact-widget-grid">
 
-            {/* LINKS: Afspraak CTA */}
+            {/* LINKS: Afspraak CTA + Thomas foto */}
             <div className="contact-widget-left">
               <span className="section-label">Afspraak inplannen</span>
               <h2 className="contact-widget-title">Plan direct een<br /><em>gratis gesprek</em></h2>
@@ -101,6 +101,15 @@ export default function ContactPage() {
                 Plan een afspraak
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
               </Link>
+              <div className="contact-thomas-photo">
+                <Image
+                  src="/images/thomas-portrait.webp"
+                  alt="Thomas Ghobadi — Groeimaten"
+                  width={800}
+                  height={1200}
+                  className="contact-thomas-photo__img"
+                />
+              </div>
             </div>
 
             {/* RECHTS: Direct contact + formulier */}

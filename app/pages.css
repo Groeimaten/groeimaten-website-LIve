@@ -3630,6 +3630,20 @@ html[data-theme="light"] .photo-placeholder__size {
 }
 
 .contact-widget-left { display: flex; flex-direction: column; }
+.contact-thomas-photo {
+    margin-top: 32px;
+    flex: 1;
+    border-radius: 16px;
+    overflow: hidden;
+    min-height: 300px;
+}
+.contact-thomas-photo__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
 .contact-widget-title {
     font-family: var(--font-serif);
     font-size: clamp(1.8rem, 3vw, 2.8rem);
