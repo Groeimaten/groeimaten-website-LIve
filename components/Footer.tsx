@@ -60,6 +60,7 @@ export default function Footer() {
           <p>&copy; 2025–2026 Groeimaten. KVK 42025801 · BTW NL869360309B01</p>
           <div className="footer__legal">
             <a href="/algemene-voorwaarden.pdf" target="_blank" rel="noopener noreferrer">Algemene voorwaarden</a>
+            <a href="/privacy">Privacybeleid</a>
           </div>
         </div>
       </div>
