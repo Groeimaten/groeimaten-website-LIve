@@ -55,8 +55,8 @@ export default function CasesPage() {
               </div>
               <div className="cases-stats__divider" aria-hidden="true"></div>
               <div className="cases-stats__item">
-                <span className="cases-stats__number">68%</span>
-                <span className="cases-stats__label">Show-up rate</span>
+                <span className="cases-stats__number">5,0 ★</span>
+                <span className="cases-stats__label">Google review score</span>
               </div>
             </div>
           </ScrollReveal>
