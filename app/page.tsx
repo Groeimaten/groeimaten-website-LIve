@@ -140,7 +140,7 @@ export default function HomePage() {
           <div className="specialist-strip__inner">
             <div className="specialist-strip__eyebrow">Sector exclusief</div>
             <h2 className="specialist-strip__title" id="specialist-heading">
-              Wij werken <em>uitsluitend</em> voor keuken- en sanitairbedrijven.<br />Geen uitzonderingen.
+              Wij werken <em>uitsluitend</em> voor keuken- en sanitairbedrijven.
             </h2>
             <p className="specialist-strip__subtitle">
               Terwijl andere bureaus vandaag een bakkerij helpen en morgen een autogarage, doen wij maar één ding. Jouw branche. Elke dag. Dat is het verschil tussen een bureau dat jou begrijpt en één dat jou leert kennen.

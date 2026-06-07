@@ -21,7 +21,7 @@ const cases = [
     desc: "Gerichte Meta Ads campagnes op het premium kopersprofiel in de regio Amersfoort. Focus op kwaliteit boven kwantiteit.",
     stat1: { num: "21", label: "Afspraken in 150 dagen" },
     stat2: { num: "€31", label: "Kosten per lead" },
-    imgSrc: "/images/cases/marquardt-showroom.webp",
+    imgSrc: "/images/cases/marquardt-adviesgesprek.jpg",
     imgAlt: "Marquardt Amersfoort",
     imgPreviewSrc: "/images/cases/stoop-erika.jpg",
     imgPreviewAlt: "Stoop Keukens",
@@ -98,12 +98,8 @@ export default function CasesSlider() {
 
       <div className="cs-images">
         <div className="cs-img cs-img--main">
-          <Image src={c.imgSrc} alt={c.imgAlt} fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 55vw" />
+          <Image src={c.imgSrc} alt={c.imgAlt} fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 70vw" />
           <span className="cs-img-label">{c.imgAlt}</span>
-        </div>
-        <div className="cs-img cs-img--preview">
-          <Image src={c.imgPreviewSrc} alt={c.imgPreviewAlt} fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 25vw" />
-          <span className="cs-img-label">{c.imgPreviewAlt}</span>
         </div>
       </div>
     </div>

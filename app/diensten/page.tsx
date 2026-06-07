@@ -141,7 +141,7 @@ export default function DienstenPage() {
                   </div>
                   <div className="service-visual-card__stat">
                     <span className="service-visual-card__number">68%</span>
-                    <span className="service-visual-card__label">Booking rate (lead → afspraak)</span>
+                    <span className="service-visual-card__label">Show-up rate (lead → afspraak)</span>
                   </div>
                   <div className="service-visual-card__bar">
                     <div className="bar" style={{ width: "68%" }}></div>

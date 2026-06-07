@@ -804,6 +804,17 @@ html[data-theme="light"] .page-hero--split {
     line-height: 1.7;
 }
 
+.case-full__image {
+    margin: 28px 0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.case-full__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* ============================================
    ABOUT PAGE SECTIONS
    ============================================ */
@@ -3131,7 +3142,7 @@ html[data-theme="light"] .photo-placeholder__size {
     opacity: 0.65;
 }
 
-@media (min-width: 640px) { .cs-img--preview { display: block; } }
+/* Preview verborgen — volgende case pas zichtbaar na klik */
 
 .cs-img img {
     width: 100%;

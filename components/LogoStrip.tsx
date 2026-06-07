@@ -3,12 +3,14 @@
 import { useEffect, useRef } from "react"
 
 const logos = [
-  { src: "/logos/marquardt-slider.svg", alt: "Marquardt Küchen",   noFilter: true, h: 44 },
-  { src: "/logos/stoop-slider.svg",     alt: "Stoop Keukens",      noFilter: true, h: 44 },
-  { src: "/logos/grando-slider.svg",    alt: "Grando",              noFilter: true, h: 22 },
-  { src: "/logos/sanisale-slider.svg",  alt: "Sanisale",            noFilter: true, h: 38 },
-  { src: "/logos/ter-haar-new.svg",     alt: "Ter Haar",            noFilter: true, h: 36 },
-  { src: "/logos/kort-slider.svg",      alt: "Kort Keukens",        noFilter: true, h: 44 },
+  { src: "/logos/marquardt-slider.svg", alt: "Marquardt Küchen",          noFilter: true },
+  { src: "/logos/stoop-slider.svg",     alt: "Stoop Keukens",             noFilter: true },
+  { src: "/logos/grando-slider.svg",    alt: "Grando",                    noFilter: true },
+  { src: "/logos/sanisale-slider.svg",  alt: "Sanisale",                  noFilter: true },
+  { src: "/logos/ter-haar-new.svg",     alt: "Ter Haar",                  noFilter: true },
+  { src: "/logos/kort-slider.svg",      alt: "Kort Keukens",              noFilter: true },
+  { src: "/logos/bakker-slider.png",    alt: "Bakker Tegels & Badkamers", noFilter: true },
+  { src: "/logos/via-slider.png",       alt: "VIA Creaties",              noFilter: true },
 ]
 
 function buildProgressiveBlur(container: HTMLElement, direction: "left" | "right") {
@@ -58,7 +60,6 @@ export default function LogoStrip() {
               src={logo.src}
               alt={logo.alt}
               className={logo.noFilter ? "logo-no-filter" : ""}
-              style={{ height: `${logo.h}px` }}
             />
           ))}
         </div>

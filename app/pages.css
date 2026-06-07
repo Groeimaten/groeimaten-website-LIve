@@ -846,7 +846,7 @@ html[data-theme="light"] .page-hero--split {
 }
 
 .case-full__logo {
-    height: 24px;
+    height: 42px;
     width: auto;
     display: block;
     margin-bottom: 20px;
@@ -3412,7 +3412,7 @@ html[data-theme="light"] .photo-placeholder__size {
 }
 
 @media (min-width: 900px) {
-    .cs-inner { grid-template-columns: 260px 1fr; gap: 56px; }
+    .cs-inner { grid-template-columns: 1fr 340px; gap: 56px; }
 }
 
 .cs-meta {
@@ -3634,7 +3634,7 @@ html[data-theme="light"] .photo-placeholder__size {
     border: 1px solid rgba(255,255,255,0.06);
 }
 
-.cs-img--main { flex: 2; }
+.cs-img--main { flex: 1; max-height: 260px; }
 
 .cs-img--preview {
     flex: 1;

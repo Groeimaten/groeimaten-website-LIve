@@ -719,7 +719,7 @@
 .logo-track {
     display: flex;
     align-items: center;
-    gap: clamp(32px, 4vw, 64px);
+    gap: 80px;
     width: max-content;
     animation: marquee-ltr 30s linear infinite;
     will-change: transform;
@@ -732,9 +732,9 @@
 }
 
 .logo-track img {
-    height: 28px;
+    height: 36px;
     width: auto;
-    max-width: 160px;
+    max-width: 200px;
     object-fit: contain;
     flex-shrink: 0;
     filter: none;
@@ -754,10 +754,10 @@
 @media (max-width: 768px) {
     .logo-strip-section { padding: 36px 0 28px; }
     .logo-blur  { width: 80px; }
-    .logo-track { gap: clamp(60px, 10vw, 120px); }
+    .logo-track { gap: 48px; }
     .logo-track img {
-        height: 22px;
-        max-width: 110px;
+        height: 26px;
+        max-width: 140px;
     }
 }
 
@@ -2091,10 +2091,10 @@
 
 .footer__legal a {
     font-size: 0.78rem;
-    color: rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.5);
     transition: color var(--transition);
 }
-.footer__legal a:hover { color: rgba(255,255,255,0.4); }
+.footer__legal a:hover { color: rgba(255,255,255,0.8); }
 
 @media (min-width: 640px) {
     .footer__inner { grid-template-columns: 1fr 1fr; }

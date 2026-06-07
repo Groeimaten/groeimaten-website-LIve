@@ -56,7 +56,7 @@ export default function CasesPage() {
               <div className="cases-stats__divider" aria-hidden="true"></div>
               <div className="cases-stats__item">
                 <span className="cases-stats__number">68%</span>
-                <span className="cases-stats__label">Booking rate</span>
+                <span className="cases-stats__label">Show-up rate</span>
               </div>
             </div>
           </ScrollReveal>
@@ -131,13 +131,13 @@ export default function CasesPage() {
                       <span className="case-full__result-label">Kosten per lead</span>
                     </div>
                     <div className="case-full__result">
-                      <span className="case-full__result-number">5 mnd</span>
-                      <span className="case-full__result-label">Actief</span>
+                      <span className="case-full__result-number">18+</span>
+                      <span className="case-full__result-label">Maanden samenwerking</span>
                     </div>
                   </div>
                 </div>
                 <div className="case-full__visual">
-                  <img src="/images/cases/marquardt-showroom.webp" alt="Marquardt showroom" className="case-full__img" loading="lazy" />
+                  <img src="/images/cases/marquardt-adviesgesprek.jpg" alt="Marquardt Amersfoort adviesgesprek" className="case-full__img" loading="lazy" />
                 </div>
               </div>
               <div className="case-full__details">

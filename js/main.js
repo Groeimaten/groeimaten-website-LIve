@@ -395,7 +395,7 @@
             imgLabel: 'Tegro — campagne resultaten',
             imgSrc: 'images/founders-laptop.jpg',
             imgPreviewLabel: 'Marquardt',
-            imgPreviewSrc: 'images/founders-working.jpg'
+            imgPreviewSrc: 'images/cases/2022-MarquardtAmersfoort_Adviesgesprek-05-1-1200x676.jpg'
         },
         {
             tag: 'Website + SEO',
@@ -403,8 +403,8 @@
             desc: 'Nieuwe website en SEO-strategie voor een premium keukenshowroom. Hogere zichtbaarheid en meer showroombezoeken.',
             stat1: { num: '+210%', label: 'Organisch verkeer' },
             stat2: { num: '+65%', label: 'Showroombezoeken' },
-            imgLabel: 'Marquardt — website',
-            imgSrc: 'images/founders-working.jpg',
+            imgLabel: 'Marquardt Amersfoort — adviesgesprek',
+            imgSrc: 'images/cases/2022-MarquardtAmersfoort_Adviesgesprek-05-1-1200x676.jpg',
             imgPreviewLabel: 'Stoop Keukens',
             imgPreviewSrc: 'images/founders-strategy.jpg'
         }
