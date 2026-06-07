@@ -27,7 +27,7 @@ export default function DienstenPage() {
       {/* PAGE HERO */}
       <section className="page-hero page-hero--split">
         <div className="page-hero__mobile-bg" aria-hidden="true">
-          <img src="/images/founders-laptop.webp" alt="" />
+          <img src="/images/founders-laptop.webp" alt="" style={{ objectPosition: "center top" }} />
         </div>
         <div className="page-hero__glow page-hero__glow--1" aria-hidden="true"></div>
         <div className="page-hero__glow page-hero__glow--2" aria-hidden="true"></div>
@@ -49,7 +49,7 @@ export default function DienstenPage() {
             </ScrollReveal>
             <ScrollReveal delay={2}>
               <div className="page-hero__visual" aria-hidden="true">
-                <img src="/images/founders-laptop.webp" alt="Jelle en Thomas van Groeimaten" loading="eager" style={{ objectPosition: "center top" }} />
+                <img src="/images/founders-laptop.webp" alt="Jelle en Thomas van Groeimaten" loading="eager" />
               </div>
             </ScrollReveal>
           </div>
