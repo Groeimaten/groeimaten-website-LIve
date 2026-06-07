@@ -48,7 +48,7 @@ export default function ContactPage() {
           </div>
           <div className="page-hero__bg-wrap page-hero__bg-wrap--mobile">
             <Image
-              src="/images/thomas-portrait.webp"
+              src="/images/thomas-7485.jpg"
               alt=""
               fill
               priority
