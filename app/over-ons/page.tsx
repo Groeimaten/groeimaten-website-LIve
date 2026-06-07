@@ -20,6 +20,9 @@ export default function OverOnsPage() {
     <>
       {/* PAGE HERO */}
       <section className="page-hero page-hero--split">
+        <div className="page-hero__mobile-bg" aria-hidden="true">
+          <img src="/images/founders-office.webp" alt="" />
+        </div>
         <div className="page-hero__glow page-hero__glow--1" aria-hidden="true"></div>
         <div className="page-hero__glow page-hero__glow--2" aria-hidden="true"></div>
         <div className="container">

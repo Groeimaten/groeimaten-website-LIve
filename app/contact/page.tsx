@@ -36,13 +36,13 @@ export default function ContactPage() {
       <section className="page-hero page-hero--fullscreen page-hero--photo">
         <div className="page-hero__bg" aria-hidden="true">
           <Image
-            src="/images/jelle-thomas-laptops.jpg"
+            src="/images/jelle-thomas-couch.jpg"
             alt=""
             fill
             priority
             quality={100}
             sizes="100vw"
-            style={{ objectFit: "cover", objectPosition: "center 30%" }}
+            style={{ objectFit: "cover", objectPosition: "center 20%" }}
           />
           <div className="page-hero__bg-overlay" />
         </div>

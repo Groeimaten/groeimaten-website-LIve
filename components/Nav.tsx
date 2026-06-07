@@ -44,7 +44,7 @@ export default function Nav() {
   return (
     <nav
       ref={navRef}
-      className={`nav${scrolled ? " scrolled" : ""}`}
+      className={`nav${scrolled ? " scrolled" : ""}${menuOpen ? " menu-open" : ""}`}
       id="nav"
       role="navigation"
       aria-label="Hoofdnavigatie"

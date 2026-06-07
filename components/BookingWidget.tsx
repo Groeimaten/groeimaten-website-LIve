@@ -40,8 +40,7 @@ export default function BookingWidget() {
           <Script src="https://link.growzy.io/js/form_embed.js" strategy="afterInteractive" />
           <iframe
             src="https://link.growzy.io/widget/booking/fsskVvL2uoAh0tcbAXtj"
-            style={{ width: "100%", border: "none", overflow: "hidden", minHeight: "700px", borderRadius: "8px", opacity: loaded ? 1 : 0, transition: "opacity 0.3s" }}
-            scrolling="no"
+            style={{ width: "100%", border: "none", minHeight: "700px", borderRadius: "8px", opacity: loaded ? 1 : 0, transition: "opacity 0.3s", display: "block" }}
             id="fsskVvL2uoAh0tcbAXtj_1780588232352"
             title="Afspraak inplannen"
             onLoad={() => setLoaded(true)}
