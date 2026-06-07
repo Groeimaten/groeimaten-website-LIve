@@ -1413,11 +1413,109 @@ html[data-theme="light"] .page-hero--split {
 }
 
 .about-bts__photo .about-photo-frame img {
-    object-position: center center;
+    object-position: center 25%;
 }
 
 .about-niche__visual .about-photo-frame img {
-    object-position: center center;
+    object-position: center 25%;
+}
+
+/* ============================================
+   AFSPRAAK PAGINA
+   ============================================ */
+.booking-section {
+    padding: 160px 0 100px;
+    min-height: 100vh;
+}
+
+.booking-inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 56px;
+    align-items: start;
+}
+
+@media (min-width: 900px) {
+    .booking-inner { grid-template-columns: 420px 1fr; gap: 72px; }
+}
+
+.booking-title {
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    color: var(--warm-white);
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.booking-title em {
+    font-style: italic;
+    color: var(--gold);
+}
+
+.booking-sub {
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.booking-checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.booking-checklist li {
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.7);
+    padding-left: 20px;
+    position: relative;
+}
+
+.booking-checklist li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-weight: 700;
+}
+
+.booking-thomas {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(184,154,90,0.15);
+    border-radius: 12px;
+}
+
+.booking-thomas__photo {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    position: relative;
+    border: 2px solid rgba(184,154,90,0.3);
+}
+
+.booking-thomas__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.booking-thomas__info strong {
+    font-size: 0.9rem;
+    color: var(--warm-white);
+}
+
+.booking-thomas__info span {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.5);
 }
 
 .about-photo-frame:hover img {

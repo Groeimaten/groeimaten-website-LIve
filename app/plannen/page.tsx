@@ -104,7 +104,7 @@ export default function PlannenPage() {
                   <li className="plan-card__feature"><CheckIcon />Real-time opvolging (gebeld binnen 4 uur)</li>
                   <li className="plan-card__feature"><CheckIcon />Social media beheer</li>
                 </ul>
-                <Link href="/contact" className="plan-card__cta">Start de Show-up Engine</Link>
+                <Link href="/afspraak" className="plan-card__cta">Start de Show-up Engine</Link>
               </article>
 
               {/* Plan 2: Online Fundament */}
@@ -118,7 +118,7 @@ export default function PlannenPage() {
                   <li className="plan-card__feature"><CheckIcon />SEO opzet &amp; maandelijks beheer</li>
                   <li className="plan-card__feature"><CheckIcon />Google profiel beheer (GMB)</li>
                 </ul>
-                <Link href="/contact" className="plan-card__cta">Bouw mijn Fundament</Link>
+                <Link href="/afspraak" className="plan-card__cta">Bouw mijn Fundament</Link>
               </article>
 
               {/* Plan 3: Groeimaten Totaal */}
@@ -132,7 +132,7 @@ export default function PlannenPage() {
                   <li className="plan-card__feature"><CheckIcon />Alles uit Online Fundament</li>
                   <li className="plan-card__feature"><CheckIcon />Totale branding (logo, huisstijl, visuals)</li>
                 </ul>
-                <Link href="/contact" className="plan-card__cta plan-card__cta--featured">Haal het totaalpakket</Link>
+                <Link href="/afspraak" className="plan-card__cta plan-card__cta--featured">Haal het totaalpakket</Link>
               </article>
 
             </div>
@@ -232,7 +232,7 @@ export default function PlannenPage() {
             <span className="section-label section-label--blue">Klaar voor het gesprek?</span>
             <h2 className="cta-title">Plan een gratis kennismakingsgesprek</h2>
             <p className="cta-subtitle">30 minuten. Geen verplichtingen. Wel een eerlijk beeld van wat mogelijk is voor jouw bedrijf.</p>
-            <Link href="/contact" className="btn btn--blue btn--xl">
+            <Link href="/afspraak" className="btn btn--blue btn--xl">
               Gratis gesprek inplannen
               <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

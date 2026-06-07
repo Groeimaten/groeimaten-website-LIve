@@ -3,7 +3,6 @@ import Image from "next/image"
 import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
 import FaqAccordion from "@/components/FaqAccordion"
-import BookingWidget from "@/components/BookingWidget"
 import ContactForm from "@/components/ContactForm"
 
 export const metadata: Metadata = {
@@ -88,17 +87,20 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* CONTACT + WIDGET SECTIE */}
+      {/* CONTACT SECTIE */}
       <section className="contact-section">
         <div className="container">
           <div className="contact-widget-grid">
 
-            {/* LINKS: Booking widget */}
+            {/* LINKS: Afspraak CTA */}
             <div className="contact-widget-left">
               <span className="section-label">Afspraak inplannen</span>
               <h2 className="contact-widget-title">Plan direct een<br /><em>gratis gesprek</em></h2>
-              <p className="contact-widget-sub">Kies een moment dat jou uitkomt. 30 minuten, geen verplichtingen.</p>
-              <BookingWidget />
+              <p className="contact-widget-sub">Kies een moment dat jou uitkomt. 30 minuten, geen verplichtingen. Thomas staat klaar om jouw situatie te bespreken.</p>
+              <Link href="/afspraak" className="btn btn--blue btn--lg" style={{ marginTop: "8px", display: "inline-flex", alignItems: "center", gap: "8px" }}>
+                Plan een afspraak
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              </Link>
             </div>
 
             {/* RECHTS: Direct contact + formulier */}

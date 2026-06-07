@@ -116,7 +116,7 @@ export default function HomePage() {
               Groeimaten helpt keuken- en sanitairbedrijven groeien met bewezen strategie. Van advertentie tot kwalitatieve afspraak die ook écht opdaagt.
             </p>
             <div className="hero__actions hero-anim hero-anim--3">
-              <Link href="/contact" className="btn btn--blue btn--lg">
+              <Link href="/afspraak" className="btn btn--blue btn--lg">
                 Gratis strategiegesprek <ArrowRight />
               </Link>
               <Link href="/cases" className="btn btn--ghost btn--lg">Bekijk cases</Link>
@@ -232,7 +232,7 @@ export default function HomePage() {
             ))}
           </div>
           <ScrollReveal className="pain-cta">
-            <Link href="/contact" className="btn btn--blue btn--lg">Plan een gratis strategiegesprek <ArrowRight /></Link>
+            <Link href="/afspraak" className="btn btn--blue btn--lg">Plan een gratis strategiegesprek <ArrowRight /></Link>
           </ScrollReveal>
         </div>
       </section>
@@ -247,7 +247,7 @@ export default function HomePage() {
           </ScrollReveal>
           <WerkwijzePanel />
           <ScrollReveal className="werkwijze-cta">
-            <Link href="/contact" className="btn btn--blue btn--lg">Plan je gratis gesprek <ArrowRight /></Link>
+            <Link href="/afspraak" className="btn btn--blue btn--lg">Plan je gratis gesprek <ArrowRight /></Link>
           </ScrollReveal>
         </div>
       </section>
@@ -383,7 +383,7 @@ export default function HomePage() {
                 <h2 className="page-hero__title">Klaar om te<br /><em>groeien?</em></h2>
                 <p className="page-hero__subtitle">Plan een gratis strategiegesprek. We kijken samen naar jouw situatie en vertellen je eerlijk wat we voor jou kunnen doen.</p>
                 <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginTop: "8px" }}>
-                  <Link href="/contact" className="btn btn--blue btn--xl">
+                  <Link href="/afspraak" className="btn btn--blue btn--xl">
                     Plan een gratis strategiegesprek
                     <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                       <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

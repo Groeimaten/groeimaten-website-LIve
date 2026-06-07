@@ -259,7 +259,7 @@ export default function OverOnsPage() {
                   Dat jonge en energieke is precies ons voordeel. We kennen de nieuwste platforms, stappen snel mee met
                   algoritme-updates en zitten nooit vast in &quot;zo doen we het altijd&quot;.
                 </p>
-                <Link href="/contact" className="btn btn--blue">
+                <Link href="/afspraak" className="btn btn--blue">
                   Maak kennis met ons
                   {arrowIcon}
                 </Link>
@@ -425,7 +425,7 @@ export default function OverOnsPage() {
               <p className="cta-subtitle">
                 Plan een vrijblijvend gesprek en ontdek of Groeimaten de juiste partner is voor jouw groeiambitie.
               </p>
-              <Link href="/contact" className="btn btn--blue btn--xl">
+              <Link href="/afspraak" className="btn btn--blue btn--xl">
                 Plan je gratis gesprek
                 <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                   <path

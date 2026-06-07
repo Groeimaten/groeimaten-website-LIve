@@ -103,7 +103,7 @@ export default function DienstenPage() {
                   </div>
                 </div>
 
-                <Link href="/contact" className="btn btn--blue btn--lg">
+                <Link href="/afspraak" className="btn btn--blue btn--lg">
                   Meer weten over Meta Ads?
                   {arrowIcon}
                 </Link>
@@ -220,7 +220,7 @@ export default function DienstenPage() {
                   style={{ width: "100%", borderRadius: "12px", display: "block", marginTop: "-32px" }}
                   loading="lazy"
                 />
-                <Link href="/contact" className="btn btn--blue btn--lg" style={{ alignSelf: "flex-start" }}>
+                <Link href="/afspraak" className="btn btn--blue btn--lg" style={{ alignSelf: "flex-start" }}>
                   Website laten maken?
                   {arrowIcon}
                 </Link>
@@ -288,7 +288,7 @@ export default function DienstenPage() {
                   </div>
                 </div>
 
-                <Link href="/contact" className="btn btn--blue btn--lg">
+                <Link href="/afspraak" className="btn btn--blue btn--lg">
                   Google &amp; AI Ranking bespreken?
                   {arrowIcon}
                 </Link>
@@ -396,7 +396,7 @@ export default function DienstenPage() {
 
           <ScrollReveal>
             <div className="werkwijze-cta">
-              <Link href="/contact" className="btn btn--blue btn--lg">
+              <Link href="/afspraak" className="btn btn--blue btn--lg">
                 Start jouw groeitraject
                 {arrowIcon}
               </Link>
@@ -417,7 +417,7 @@ export default function DienstenPage() {
               <p className="cta-subtitle">
                 Plan een gratis adviesgesprek en ontdek wat Groeimaten voor jouw bedrijf kan betekenen.
               </p>
-              <Link href="/contact" className="btn btn--blue btn--xl">
+              <Link href="/afspraak" className="btn btn--blue btn--xl">
                 Plan je gratis gesprek
                 <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                   <path

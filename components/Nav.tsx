@@ -74,7 +74,7 @@ export default function Nav() {
         </ul>
 
         <div className="nav__right">
-          <Link href="/contact" className="btn nav__cta" onClick={closeMenu}>
+          <Link href="/afspraak" className="btn nav__cta" onClick={closeMenu}>
             Gratis strategiegesprek
           </Link>
         </div>

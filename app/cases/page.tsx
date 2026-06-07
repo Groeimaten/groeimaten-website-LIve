@@ -225,7 +225,7 @@ export default function CasesPage() {
               <span className="section-label section-label--blue">Jouw beurt</span>
               <h2 className="cta-title">Word de volgende case</h2>
               <p className="cta-subtitle">Plan een gratis adviesgesprek en ontdek wat Groeimaten voor jouw keuken- of sanitairbedrijf kan betekenen.</p>
-              <Link href="/contact" className="btn btn--blue btn--xl">
+              <Link href="/afspraak" className="btn btn--blue btn--xl">
                 Plan je gratis gesprek
                 <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
               </Link>

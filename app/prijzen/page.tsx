@@ -426,7 +426,7 @@ export default function PrijzenPage() {
               <p className="cta-subtitle">
                 30 minuten. Geen verplichtingen. Wel een eerlijk beeld van wat mogelijk is voor jouw bedrijf.
               </p>
-              <Link href="/contact" className="btn btn--blue btn--xl">
+              <Link href="/afspraak" className="btn btn--blue btn--xl">
                 Gratis gesprek inplannen
                 <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                   <path
