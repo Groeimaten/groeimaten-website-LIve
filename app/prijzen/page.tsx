@@ -11,16 +11,6 @@ export const metadata: Metadata = {
 
 const faqItems = [
   {
-    question: "Waarom werken jullie niet met vaste pakketten?",
-    answer:
-      "Omdat elk bedrijf anders is. Een showroom met 5 medewerkers in Groningen heeft andere behoeften dan een premium keukenspecialist in Amsterdam met drie vestigingen. Vaste pakketten leiden tot oplossingen die niet goed passen. Wij beginnen altijd met begrijpen, daarna volgt een voorstel op maat.",
-  },
-  {
-    question: "Wat kost het globaal?",
-    answer:
-      "De investering hangt volledig af van wat er nodig is. Een indicatie: advertentiebeheer start vanaf €800 per maand en een nieuwe website vanaf €3.000 eenmalig. Wat het voor jou wordt, bespreken we in het kennismakingsgesprek, op basis van jouw situatie, niet een prijslijst.",
-  },
-  {
     question: "Hoe lang duurt het kennismakingsgesprek?",
     answer:
       "Reken op 30 tot 45 minuten. We stellen gerichte vragen over jouw bedrijf, doelen en huidige situatie. Je kunt vragen stellen, en wij geven direct eerlijke inzichten, ook als we denken dat iets anders beter voor je werkt.",

@@ -59,10 +59,6 @@ const faqItems = [
     answer: "Bij Meta Ads zijn de eerste leads er vaak al binnen de eerste week. Google &amp; AI Ranking duurt 3–6 maanden voor structurele groei. We zijn altijd eerlijk over wat je wanneer kunt verwachten.",
   },
   {
-    question: "Wat kost het globaal?",
-    answer: "Dat hangt af van jouw situatie. Advertentiebeheer start vanaf €800 per maand, een website vanaf €3.000 eenmalig. We bespreken dit altijd in een gratis gesprek, geen verrassingen achteraf.",
-  },
-  {
     question: "Werken jullie ook met kleinere showrooms?",
     answer: "Ja, zolang je de ambitie hebt om te groeien zijn wij de juiste partner. Grootte maakt niet uit. Focus en wil om te groeien wel.",
   },
