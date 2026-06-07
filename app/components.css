@@ -553,6 +553,13 @@
     align-items: flex-end;
 }
 
+@media (max-width: 768px) {
+    .hero--fullscreen {
+        align-items: flex-start;
+        padding-top: 100px;
+    }
+}
+
 .hero--fullscreen .hero__inner {
     padding-bottom: 28px;
 }

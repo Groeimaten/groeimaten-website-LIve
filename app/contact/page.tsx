@@ -35,15 +35,28 @@ export default function ContactPage() {
       {/* PAGE HERO */}
       <section className="page-hero page-hero--fullscreen page-hero--photo">
         <div className="page-hero__bg" aria-hidden="true">
-          <Image
-            src="/images/jelle-thomas-laptops.jpg"
-            alt=""
-            fill
-            priority
-            quality={100}
-            sizes="100vw"
-            style={{ objectFit: "cover", objectPosition: "center 30%" }}
-          />
+          <div className="page-hero__bg-wrap page-hero__bg-wrap--desktop">
+            <Image
+              src="/images/jelle-thomas-laptops.jpg"
+              alt=""
+              fill
+              priority
+              quality={100}
+              sizes="100vw"
+              style={{ objectFit: "cover", objectPosition: "center 30%" }}
+            />
+          </div>
+          <div className="page-hero__bg-wrap page-hero__bg-wrap--mobile">
+            <Image
+              src="/images/thomas-portrait.webp"
+              alt=""
+              fill
+              priority
+              quality={100}
+              sizes="100vw"
+              style={{ objectFit: "cover", objectPosition: "center top" }}
+            />
+          </div>
           <div className="page-hero__bg-overlay" />
         </div>
         <div className="container" style={{ position: "relative", zIndex: 3 }}>

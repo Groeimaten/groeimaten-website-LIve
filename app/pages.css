@@ -102,6 +102,17 @@
     z-index: 0;
 }
 
+/* Wisselende foto desktop/mobiel in contact hero */
+.page-hero__bg-wrap {
+    position: absolute;
+    inset: 0;
+}
+.page-hero__bg-wrap--mobile { display: none; }
+@media (max-width: 640px) {
+    .page-hero__bg-wrap--desktop { display: none; }
+    .page-hero__bg-wrap--mobile  { display: block; }
+}
+
 .page-hero__bg-overlay {
     position: absolute;
     inset: 0;
