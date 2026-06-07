@@ -3708,7 +3708,7 @@ html[data-theme="light"] .photo-placeholder__size {
     /* Page hero subpages */
     .page-hero          { padding: 100px 0 50px; }
     .page-hero--compact { padding: 90px 0 40px; }
-    .page-hero--fullscreen { padding-top: 100px; padding-bottom: 48px; align-items: flex-start; }
+    .page-hero--fullscreen { padding-top: 100px; padding-bottom: 48px; align-items: flex-start; min-height: 0; }
 
     /* Cases stats — smaller font op mobile */
     .cases-stats__number { font-size: 1.8rem; }
