@@ -7,7 +7,7 @@ export default function BookingWidget() {
     <>
       <Script
         src="https://link.growzy.io/js/form_embed.js"
-        strategy="beforeInteractive"
+        strategy="afterInteractive"
       />
       <iframe
         src="https://link.growzy.io/widget/booking/fsskVvL2uoAh0tcbAXtj"

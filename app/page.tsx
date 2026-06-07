@@ -85,14 +85,24 @@ export default function HomePage() {
       <section className="hero hero--fullscreen" id="home">
         <div className="hero__bg">
           <Image
-            className="hero__bg-img"
+            className="hero__bg-img hero__bg-img--desktop"
             src="/images/hero.webp"
             alt="Groeimaten team aan het werk"
             fill
             priority
             quality={90}
             sizes="100vw"
-            style={{ objectFit: "cover" }}
+            style={{ objectFit: "cover", objectPosition: "center 30%" }}
+          />
+          <Image
+            className="hero__bg-img hero__bg-img--mobile"
+            src="/images/jelle-thomas-sitting.jpg"
+            alt="Jelle en Thomas van Groeimaten"
+            fill
+            priority
+            quality={90}
+            sizes="100vw"
+            style={{ objectFit: "cover", objectPosition: "center top" }}
           />
           <div className="hero__bg-overlay" />
         </div>
@@ -157,7 +167,7 @@ export default function HomePage() {
               ))}
             </div>
             <div className="specialist-strip__no-list">
-              {["Restaurants", "Kappers", "Webshops", "Autogarages", "Andere sectoren"].map((s) => (
+              {["Restaurants", "Kappers", "Autogarages", "Andere sectoren"].map((s) => (
                 <div key={s} className="sector-pill sector-pill--no">
                   <span className="sector-pill__cross">✕</span> {s}
                 </div>

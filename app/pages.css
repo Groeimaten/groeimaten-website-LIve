@@ -1412,6 +1412,14 @@ html[data-theme="light"] .page-hero--split {
     transition: transform 0.6s ease;
 }
 
+.about-bts__photo .about-photo-frame img {
+    object-position: center center;
+}
+
+.about-niche__visual .about-photo-frame img {
+    object-position: center center;
+}
+
 .about-photo-frame:hover img {
     transform: scale(1.03);
 }
@@ -2582,8 +2590,8 @@ html[data-theme="light"] .pricing-process__step p {
 
 .media-mention__stamp {
     position: absolute;
-    top: 16px;
-    left: 16px;
+    bottom: 16px;
+    right: 16px;
     background: oklch(67% 0.09 75);
     color: oklch(10% 0.006 60);
     font-size: 0.68rem;
