@@ -49,7 +49,7 @@ export default function DienstenPage() {
             </ScrollReveal>
             <ScrollReveal delay={2}>
               <div className="page-hero__visual" aria-hidden="true">
-                <img src="/images/founders-laptop.webp" alt="Jelle en Thomas van Groeimaten" loading="eager" style={{ objectPosition: "center 30%" }} />
+                <img src="/images/founders-laptop.webp" alt="Jelle en Thomas van Groeimaten" loading="eager" style={{ objectPosition: "center top" }} />
               </div>
             </ScrollReveal>
           </div>
