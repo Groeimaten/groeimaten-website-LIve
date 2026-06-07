@@ -205,7 +205,7 @@ export default function HomePage() {
                   Lees het artikel →
                 </Link>
                 <span className="media-mention__pub-dot" />
-                <a href="https://www.kd-nijmegen.nl/tips-voor-het-kiezen-van-een-keukenblad/" target="_blank" rel="noopener noreferrer" style={{ color: "oklch(67% 0.09 75)", textDecoration: "none", fontWeight: 600 }}>
+                <a href="https://www.kd-nijmegen.nl/" target="_blank" rel="noopener noreferrer" style={{ color: "oklch(67% 0.09 75)", textDecoration: "none", fontWeight: 600 }}>
                   Bekijk de K&amp;D →
                 </a>
               </div>
