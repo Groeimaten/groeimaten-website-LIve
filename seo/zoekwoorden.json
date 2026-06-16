@@ -1,0 +1,136 @@
+{
+  "gegenereerd_op": "2026-06-16",
+  "versie": 1,
+  "zoekwoorden": [
+    {
+      "term": "SEO voor keukenstudio",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/seo-voor-keukenstudio"
+    },
+    {
+      "term": "leads genereren bouwsector",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/leads-genereren-bouwsector"
+    },
+    {
+      "term": "meer klanten aannemer",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/meer-klanten-aannemer"
+    },
+    {
+      "term": "Google Ads badkamerbedrijf",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/google-ads-badkamerbedrijf"
+    },
+    {
+      "term": "lokale vindbaarheid installateurs",
+      "intentie": "informatief",
+      "prioriteit": "hoog",
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/lokale-vindbaarheid-installateurs"
+    },
+    {
+      "term": "marketing keukenstudio",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": true,
+      "gebruikt_in": "keukenstudio-marketing"
+    },
+    {
+      "term": "SEO voor badkamerbedrijven",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": true,
+      "gebruikt_in": "badkamerbedrijf-seo"
+    },
+    {
+      "term": "Google Ads aannemer",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": true,
+      "gebruikt_in": "aannemer-google-ads"
+    },
+    {
+      "term": "website laten maken installateur",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": true,
+      "gebruikt_in": "installateur-website"
+    },
+    {
+      "term": "leads genereren bouw",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": true,
+      "gebruikt_in": "leads-genereren-bouw"
+    },
+    {
+      "term": "digital marketing bureau keuken badkamer",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "website laten maken keukenbedrijf",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "SEO voor aannemers",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "online marketing badkamerbedrijf",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "leadgeneratie keukenbranche",
+      "intentie": "commercieel",
+      "prioriteit": "middel",
+      "al_gebruikt": false
+    },
+    {
+      "term": "marketingbureau bouwsector",
+      "intentie": "commercieel",
+      "prioriteit": "middel",
+      "al_gebruikt": false
+    },
+    {
+      "term": "Google Ads keukenbedrijf",
+      "intentie": "commercieel",
+      "prioriteit": "middel",
+      "al_gebruikt": false
+    },
+    {
+      "term": "meer showroomafspraken keukenstudio",
+      "intentie": "commercieel",
+      "prioriteit": "middel",
+      "al_gebruikt": false
+    },
+    {
+      "term": "Meta Ads voor badkamerbedrijven",
+      "intentie": "commercieel",
+      "prioriteit": "middel",
+      "al_gebruikt": false
+    },
+    {
+      "term": "online zichtbaarheid tegelzettersbedrijf",
+      "intentie": "informatief",
+      "prioriteit": "middel",
+      "al_gebruikt": false
+    }
+  ]
+}

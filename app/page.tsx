@@ -12,7 +12,17 @@ import ReviewsMarquee from "@/components/ReviewsMarquee"
 
 export const metadata: Metadata = {
   title: "Groeimaten | Marketing voor Keuken- en Sanitairbedrijven",
-  description: "Groeimaten helpt keuken- en sanitairbedrijven groeien met bewezen strategie. Van advertentie tot kwalitatieve afspraak die ook écht opdaagt.",
+  description:
+    "Groeimaten is het digital marketing bureau voor keuken- en sanitairbedrijven. Van advertentie tot kwalitatieve showroomafspraak die ook écht opdaagt.",
+  alternates: {
+    canonical: "https://groeimaten.com",
+  },
+  openGraph: {
+    title: "Groeimaten | Marketing voor Keuken- en Sanitairbedrijven",
+    description:
+      "Groeimaten is het digital marketing bureau voor keuken- en sanitairbedrijven. Van advertentie tot kwalitatieve showroomafspraak die ook écht opdaagt.",
+    url: "https://groeimaten.com",
+  },
 }
 
 const reviews = [
@@ -75,8 +85,51 @@ const ArrowRight = () => (
 )
 
 export default function HomePage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Werken jullie ook voor andere sectoren dan keuken en sanitair?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nee. Groeimaten werkt uitsluitend voor keuken- en sanitairbedrijven. Die focus is onze kracht: we kennen jouw klant, jouw sector en jouw uitdagingen als geen ander.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Hoe snel zie ik resultaat?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Bij Meta Ads zijn de eerste leads er vaak al binnen de eerste week. Google en AI Ranking duurt 3 tot 6 maanden voor structurele groei. We zijn altijd eerlijk over wat je wanneer kunt verwachten.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Werken jullie ook met kleinere showrooms?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja, zolang je de ambitie hebt om te groeien zijn wij de juiste partner. Grootte maakt niet uit. Focus en wil om te groeien wel.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Wat maakt Groeimaten anders dan een gewoon marketingbureau?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Groeimaten kent de keuken- en sanitairmarkt als geen ander. Geen leercurve, geen generieke aanpak. Dag 1 aan de slag. Een generiek bureau leert jouw markt misschien na maanden. Groeimaten is er al.",
+        },
+      },
+    ],
+  }
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* HERO */}
       <section className="hero hero--fullscreen" id="home">
         <div className="hero__bg">

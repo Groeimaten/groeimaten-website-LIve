@@ -31,6 +31,7 @@ const dmSans = localFont({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://groeimaten.com"),
   title: {
     default: "Groeimaten | Marketing voor Keuken- en Sanitairbedrijven",
     template: "%s | Groeimaten",
@@ -38,6 +39,33 @@ export const metadata: Metadata = {
   description:
     "Groeimaten helpt keuken- en sanitairbedrijven groeien met bewezen marketing. Van advertentie tot kwalitatieve showroomafspraak. Specialist in keuken & sanitair.",
   robots: { index: true, follow: true },
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "nl_NL",
+    url: "https://groeimaten.com",
+    siteName: "Groeimaten",
+    title: "Groeimaten | Marketing voor Keuken- en Sanitairbedrijven",
+    description:
+      "Groeimaten helpt keuken- en sanitairbedrijven groeien met bewezen marketing. Van advertentie tot kwalitatieve showroomafspraak.",
+    images: [
+      {
+        url: "/images/founders-hero.webp",
+        width: 1200,
+        height: 630,
+        alt: "Groeimaten – digital marketing bureau voor keuken- en sanitairbedrijven",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Groeimaten | Marketing voor Keuken- en Sanitairbedrijven",
+    description:
+      "Groeimaten helpt keuken- en sanitairbedrijven groeien met bewezen marketing. Specialist in keuken & sanitair.",
+    images: ["/images/founders-hero.webp"],
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -50,6 +78,41 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="preconnect" href="https://link.growzy.io" />
         <link rel="dns-prefetch" href="https://link.growzy.io" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ProfessionalService",
+              name: "Groeimaten",
+              url: "https://groeimaten.com",
+              description:
+                "Groeimaten is een digital marketing bureau gespecialiseerd in keuken- en sanitairbedrijven. Wij helpen keukenstudio's, badkamerbedrijven en bouwbedrijven groeien via Meta Ads, Google Ads, SEO en website development.",
+              foundingDate: "2023",
+              founder: [
+                { "@type": "Person", name: "Jelle Westerbroek" },
+                { "@type": "Person", name: "Thomas Ghobadi" },
+              ],
+              areaServed: { "@type": "Country", name: "Nederland" },
+              knowsAbout: [
+                "SEO",
+                "Google Ads",
+                "Meta Ads",
+                "Website development",
+                "Lead generatie",
+                "Keukenmarketing",
+                "Sanitairmarketing",
+                "Bouwsector marketing",
+              ],
+              contactPoint: {
+                "@type": "ContactPoint",
+                contactType: "customer service",
+                url: "https://groeimaten.com/contact",
+              },
+              sameAs: ["https://groeimaten.com"],
+            }),
+          }}
+        />
       </head>
       <body>
         <ThemeProvider>
