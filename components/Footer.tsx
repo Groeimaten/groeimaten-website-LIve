@@ -62,7 +62,7 @@ export default function Footer() {
           <div className="footer__legal">
             <a href="/algemene-voorwaarden.pdf" target="_blank" rel="noopener noreferrer">Algemene voorwaarden</a>
             <a href="/privacy">Privacybeleid</a>
-            <a href="/sitemap.xml">Sitemap</a>
+            <Link href="/sitemap">Sitemap</Link>
           </div>
         </div>
       </div>
