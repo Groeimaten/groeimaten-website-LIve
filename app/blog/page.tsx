@@ -19,6 +19,46 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "digital-marketing-bureau-keuken-badkamer",
+    titel: "Digital marketing bureau voor keuken en badkamer: wat je echt nodig hebt",
+    samenvatting:
+      "De meeste bureaus zeggen dat ze voor iedereen werken. Dat is precies het probleem als jij een keukenstudio of badkamerbedrijf bent. Wat maakt een specialist anders?",
+    datum: "22 juni 2026",
+    keyphrase: "Digital marketing bureau keuken badkamer",
+  },
+  {
+    slug: "website-laten-maken-keukenbedrijf",
+    titel: "Website laten maken als keukenbedrijf: wat werkt en wat je kunt overslaan",
+    samenvatting:
+      "Veel keukenbedrijven betalen voor een mooie website die toch geen afspraken genereert. Het verschil zit zelden in het design. Wat telt wel?",
+    datum: "22 juni 2026",
+    keyphrase: "Website laten maken keukenbedrijf",
+  },
+  {
+    slug: "seo-voor-aannemers",
+    titel: "SEO voor aannemers: gevonden worden door de juiste opdrachtgevers",
+    samenvatting:
+      "Mond-tot-mondreclame heeft zijn grenzen. Aannemers die structureel groeien bouwen ook online een positie op. Hoe werkt SEO specifiek voor aannemers?",
+    datum: "22 juni 2026",
+    keyphrase: "SEO voor aannemers",
+  },
+  {
+    slug: "online-marketing-badkamerbedrijf",
+    titel: "Online marketing voor je badkamerbedrijf: van zichtbaarheid naar boekingen",
+    samenvatting:
+      "Een badkamer is geen impulsaankoop. Welke marketingkanalen werken echt voor badkamerbedrijven en wat kun je veilig overslaan?",
+    datum: "22 juni 2026",
+    keyphrase: "Online marketing badkamerbedrijf",
+  },
+  {
+    slug: "leadgeneratie-keukenbranche",
+    titel: "Leadgeneratie in de keukenbranche: waarom standaard marketing hier niet werkt",
+    samenvatting:
+      "Veel aanvragen, weinig kwalitatieve showroomafspraken. Dat is het probleem dat keukenstudio's beschrijven. Het ligt zelden aan het advertentiebudget.",
+    datum: "22 juni 2026",
+    keyphrase: "Leadgeneratie keukenbranche",
+  },
+  {
     slug: "seo-voor-keukenstudio",
     titel: "SEO voor keukenstudio's: zo word je gevonden door koopklare klanten",
     samenvatting:

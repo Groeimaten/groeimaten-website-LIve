@@ -21,6 +21,37 @@ const SECTIONS = [
     ],
   },
   {
+    title: "Blog",
+    links: [
+      { href: "/blog", label: "Blog overzicht" },
+      { href: "/blog/seo-voor-keukenstudio", label: "SEO voor keukenstudio's" },
+      { href: "/blog/leads-genereren-bouwsector", label: "Leads genereren bouwsector" },
+      { href: "/blog/meer-klanten-aannemer", label: "Meer klanten als aannemer" },
+      { href: "/blog/google-ads-badkamerbedrijf", label: "Google Ads badkamerbedrijf" },
+      { href: "/blog/lokale-vindbaarheid-installateurs", label: "Lokale vindbaarheid installateurs" },
+      { href: "/blog/digital-marketing-bureau-keuken-badkamer", label: "Digital marketing bureau keuken badkamer" },
+      { href: "/blog/website-laten-maken-keukenbedrijf", label: "Website laten maken keukenbedrijf" },
+      { href: "/blog/seo-voor-aannemers", label: "SEO voor aannemers" },
+      { href: "/blog/online-marketing-badkamerbedrijf", label: "Online marketing badkamerbedrijf" },
+      { href: "/blog/leadgeneratie-keukenbranche", label: "Leadgeneratie keukenbranche" },
+    ],
+  },
+  {
+    title: "Landingspagina's",
+    links: [
+      { href: "/keukenstudio-marketing", label: "Marketing keukenstudio" },
+      { href: "/badkamerbedrijf-seo", label: "SEO badkamerbedrijf" },
+      { href: "/aannemer-google-ads", label: "Google Ads aannemer" },
+      { href: "/installateur-website", label: "Website installateur" },
+      { href: "/leads-genereren-bouw", label: "Leads genereren bouw" },
+      { href: "/marketingbureau-bouwsector", label: "Marketingbureau bouwsector" },
+      { href: "/keukenbedrijf-google-ads", label: "Google Ads keukenbedrijf" },
+      { href: "/meer-showroomafspraken", label: "Meer showroomafspraken" },
+      { href: "/meta-ads-badkamerbedrijven", label: "Meta Ads badkamerbedrijven" },
+      { href: "/tegelzettersbedrijf-marketing", label: "Marketing tegelzettersbedrijf" },
+    ],
+  },
+  {
     title: "Overig",
     links: [
       { href: "/privacy", label: "Privacybeleid" },
@@ -51,8 +82,6 @@ export default function SitemapPage() {
                     <Link
                       href={link.href}
                       style={{ fontSize: "0.9rem", color: "rgba(255,255,255,0.75)", textDecoration: "none", transition: "color 0.2s" }}
-                      onMouseEnter={(e) => (e.currentTarget.style.color = "oklch(67% 0.09 75)")}
-                      onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(255,255,255,0.75)")}
                     >
                       {link.label}
                     </Link>

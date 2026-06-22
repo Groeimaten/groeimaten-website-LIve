@@ -1,6 +1,7 @@
 {
   "gegenereerd_op": "2026-06-16",
-  "versie": 1,
+  "bijgewerkt_op": "2026-06-22",
+  "versie": 2,
   "zoekwoorden": [
     {
       "term": "SEO voor keukenstudio",
@@ -76,60 +77,130 @@
       "term": "digital marketing bureau keuken badkamer",
       "intentie": "commercieel",
       "prioriteit": "hoog",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/digital-marketing-bureau-keuken-badkamer"
     },
     {
       "term": "website laten maken keukenbedrijf",
       "intentie": "commercieel",
       "prioriteit": "hoog",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/website-laten-maken-keukenbedrijf"
     },
     {
       "term": "SEO voor aannemers",
       "intentie": "commercieel",
       "prioriteit": "hoog",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/seo-voor-aannemers"
     },
     {
       "term": "online marketing badkamerbedrijf",
       "intentie": "commercieel",
       "prioriteit": "hoog",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/online-marketing-badkamerbedrijf"
     },
     {
       "term": "leadgeneratie keukenbranche",
       "intentie": "commercieel",
       "prioriteit": "middel",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/leadgeneratie-keukenbranche"
     },
     {
       "term": "marketingbureau bouwsector",
       "intentie": "commercieel",
       "prioriteit": "middel",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "marketingbureau-bouwsector"
     },
     {
       "term": "Google Ads keukenbedrijf",
       "intentie": "commercieel",
       "prioriteit": "middel",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "keukenbedrijf-google-ads"
     },
     {
       "term": "meer showroomafspraken keukenstudio",
       "intentie": "commercieel",
       "prioriteit": "middel",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "meer-showroomafspraken"
     },
     {
       "term": "Meta Ads voor badkamerbedrijven",
       "intentie": "commercieel",
       "prioriteit": "middel",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "meta-ads-badkamerbedrijven"
     },
     {
       "term": "online zichtbaarheid tegelzettersbedrijf",
       "intentie": "informatief",
       "prioriteit": "middel",
+      "al_gebruikt": true,
+      "gebruikt_in": "tegelzettersbedrijf-marketing"
+    },
+    {
+      "term": "online marketing keukenbranche",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "adverteren bouwbedrijf",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "website aannemer laten maken",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "klanten werven badkamerbedrijf",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "digitale marketing installatiebedrijf",
+      "intentie": "commercieel",
+      "prioriteit": "middel",
+      "al_gebruikt": false
+    },
+    {
+      "term": "lead generatie keukenstudio",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "social media marketing badkamer",
+      "intentie": "commercieel",
+      "prioriteit": "middel",
+      "al_gebruikt": false
+    },
+    {
+      "term": "SEO bouwbedrijf",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "Google Mijn Bedrijf keukenstudio",
+      "intentie": "informatief",
+      "prioriteit": "middel",
+      "al_gebruikt": false
+    },
+    {
+      "term": "groeistrategie keuken sanitair",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
       "al_gebruikt": false
     }
   ]

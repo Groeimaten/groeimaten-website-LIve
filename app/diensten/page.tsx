@@ -4,9 +4,47 @@ import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
 
 export const metadata: Metadata = {
-  title: "Diensten | Groeimaten",
+  title: "Diensten voor Keuken en Sanitairbedrijven | Groeimaten",
   description:
-    "Onze diensten: Meta Ads & Funnels, Website Development en SEO. Speciaal voor keuken- en sanitairbedrijven.",
+    "Meta Ads, Google Ads, website development en SEO voor keuken- en sanitairbedrijven. Groeimaten levert alles wat je nodig hebt om structureel te groeien.",
+  alternates: {
+    canonical: "https://groeimaten.com/diensten",
+  },
+  openGraph: {
+    title: "Diensten voor Keuken en Sanitairbedrijven | Groeimaten",
+    description:
+      "Meta Ads, Google Ads, website development en SEO voor keuken- en sanitairbedrijven. Alles onder één dak.",
+    url: "https://groeimaten.com/diensten",
+  },
+}
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://groeimaten.com" },
+    { "@type": "ListItem", position: 2, name: "Diensten", item: "https://groeimaten.com/diensten" },
+  ],
+}
+
+const dienstenSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Marketing voor keuken en sanitairbedrijven",
+  provider: { "@type": "Organization", name: "Groeimaten", url: "https://groeimaten.com" },
+  description:
+    "Groeimaten levert Meta Ads, Google Ads, website development en SEO specifiek voor keuken- en sanitairbedrijven in Nederland.",
+  areaServed: { "@type": "Country", name: "Nederland" },
+  url: "https://groeimaten.com/diensten",
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Marketingdiensten",
+    itemListElement: [
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Meta Ads en Funnels" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Website Development" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Google en AI Ranking" } },
+    ],
+  },
 }
 
 const checkIcon = (
@@ -24,6 +62,8 @@ const arrowIcon = (
 export default function DienstenPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(dienstenSchema) }} />
       {/* PAGE HERO */}
       <section className="page-hero page-hero--split">
         <div className="page-hero__mobile-bg" aria-hidden="true">
