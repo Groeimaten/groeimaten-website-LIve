@@ -33,5 +33,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/meer-showroomafspraken`, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/meta-ads-badkamerbedrijven`, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/tegelzettersbedrijf-marketing`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/online-marketing-keukenbranche`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/blog/adverteren-bouwbedrijf`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/blog/website-aannemer-laten-maken`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/blog/klanten-werven-badkamerbedrijf`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/blog/seo-bouwbedrijf`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/lead-generatie-keukenstudio`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/groeistrategie-keuken-sanitair`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/digitale-marketing-installatiebedrijf`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/social-media-marketing-badkamer`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/google-mijn-bedrijf-keukenstudio`, changeFrequency: 'monthly', priority: 0.85 },
   ];
 }

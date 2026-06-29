@@ -5,13 +5,48 @@ import BeforeAfterSlider from "@/components/BeforeAfterSlider"
 import ReviewsMarquee from "@/components/ReviewsMarquee"
 
 export const metadata: Metadata = {
-  title: "Cases | Groeimaten",
-  description: "Bekijk onze resultaten. Concrete cases van keuken- en sanitairbedrijven die we hebben geholpen groeien.",
+  title: "Cases: Resultaten voor Keuken en Sanitair | Groeimaten",
+  description:
+    "Concrete resultaten van keuken-, badkamer- en bouwbedrijven die met Groeimaten groeien. Van Meta Ads tot website development: echte cijfers, echte cases.",
+  alternates: {
+    canonical: "https://groeimaten.com/cases",
+  },
+  openGraph: {
+    title: "Cases: Resultaten voor Keuken en Sanitair | Groeimaten",
+    description:
+      "Concrete resultaten van keuken-, badkamer- en bouwbedrijven die met Groeimaten groeien. Echte cijfers, echte cases.",
+    url: "https://groeimaten.com/cases",
+  },
+}
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://groeimaten.com" },
+    { "@type": "ListItem", position: 2, name: "Cases", item: "https://groeimaten.com/cases" },
+  ],
+}
+
+const collectionSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Cases: Resultaten voor Keuken en Sanitair",
+  description:
+    "Concrete resultaten van keuken-, badkamer- en bouwbedrijven die samenwerken met Groeimaten voor Meta Ads, Google Ads, SEO en website development.",
+  url: "https://groeimaten.com/cases",
+  publisher: {
+    "@type": "Organization",
+    name: "Groeimaten",
+    url: "https://groeimaten.com",
+  },
 }
 
 export default function CasesPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }} />
       {/* PAGE HERO */}
       <section className="page-hero page-hero--split">
         <div className="page-hero__mobile-bg" aria-hidden="true">

@@ -19,6 +19,46 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "online-marketing-keukenbranche",
+    titel: "Online marketing voor de keukenbranche: wat echt werkt",
+    samenvatting:
+      "Een keukenaankoop van 15.000 tot 50.000 euro vraagt om een andere marketingaanpak dan een standaard product. Welke kanalen passen bij het lange aankoopproces in de keukenbranche?",
+    datum: "29 juni 2026",
+    keyphrase: "Online marketing keukenbranche",
+  },
+  {
+    slug: "adverteren-bouwbedrijf",
+    titel: "Adverteren als bouwbedrijf: welke kanalen leveren echt op",
+    samenvatting:
+      "Veel bouwbedrijven adverteren pas wanneer de agenda leegloopt. Welke kanalen werken voor aannemers en renovatiebedrijven, en wat kun je veilig overslaan?",
+    datum: "29 juni 2026",
+    keyphrase: "Adverteren bouwbedrijf",
+  },
+  {
+    slug: "website-aannemer-laten-maken",
+    titel: "Website laten maken als aannemer: dit zijn de vereisten",
+    samenvatting:
+      "Veel aannemers hebben een website die er goed uitziet maar weinig aanvragen oplevert. Het probleem zit zelden in het design. Wat telt echt bij een aannemerswebsite?",
+    datum: "29 juni 2026",
+    keyphrase: "Website aannemer laten maken",
+  },
+  {
+    slug: "klanten-werven-badkamerbedrijf",
+    titel: "Klanten werven voor een badkamerbedrijf: zo pak je het structureel aan",
+    samenvatting:
+      "Een badkamerrenovatie kost 8.000 tot 25.000 euro en vraagt maanden voorbereiding. Hoe zorg je als badkamerbedrijf voor een constante stroom nieuwe klanten?",
+    datum: "29 juni 2026",
+    keyphrase: "Klanten werven badkamerbedrijf",
+  },
+  {
+    slug: "seo-bouwbedrijf",
+    titel: "SEO voor bouwbedrijven: gevonden worden zonder te adverteren",
+    samenvatting:
+      "Google Ads stopt zodra het budget op is. SEO niet. Een bouwbedrijf met een sterke organische positie trekt maand na maand aanvragen aan. Hoe bouw je die positie op?",
+    datum: "29 juni 2026",
+    keyphrase: "SEO bouwbedrijf",
+  },
+  {
     slug: "digital-marketing-bureau-keuken-badkamer",
     titel: "Digital marketing bureau voor keuken en badkamer: wat je echt nodig hebt",
     samenvatting:
