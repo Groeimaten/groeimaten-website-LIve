@@ -6,9 +6,18 @@ import FaqAccordion from "@/components/FaqAccordion"
 import ContactForm from "@/components/ContactForm"
 
 export const metadata: Metadata = {
-  title: "Contact | Groeimaten",
+  title: "Contact | Groeimaten — digital marketing bureau keuken en sanitair",
   description:
-    "Neem contact op met Groeimaten. Plan een gratis adviesgesprek en ontdek wat wij voor jouw keuken- of sanitairbedrijf kunnen doen.",
+    "Neem contact op met Groeimaten. Plan een gratis adviesgesprek voor jouw keuken, badkamer of bouwbedrijf. Geen verplichtingen.",
+  alternates: {
+    canonical: "https://groeimaten.com/contact",
+  },
+  openGraph: {
+    title: "Contact | Groeimaten — plan een gratis gesprek",
+    description:
+      "Neem contact op met Groeimaten. Plan een gratis adviesgesprek voor jouw keuken, badkamer of bouwbedrijf.",
+    url: "https://groeimaten.com/contact",
+  },
 }
 
 const faqItems = [

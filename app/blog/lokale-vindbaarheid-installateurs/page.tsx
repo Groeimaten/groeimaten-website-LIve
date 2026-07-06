@@ -37,10 +37,23 @@ const breadcrumbSchema = {
   ],
 }
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Lokale vindbaarheid voor installateurs: van onzichtbaar naar pagina 1",
+  description:
+    "Als iemand een installateur zoekt in jouw regio en jij staat er niet bij, belt hij iemand anders. Hoe verbeter je lokale vindbaarheid als installateur?",
+  author: { "@type": "Organization", name: "Groeimaten" },
+  publisher: { "@type": "Organization", name: "Groeimaten", url: "https://groeimaten.com" },
+  datePublished: "2026-06-16",
+  url: "https://groeimaten.com/blog/lokale-vindbaarheid-installateurs",
+}
+
 export default function BlogLokaleVindbaarheidsPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
       <section className="page-hero page-hero--split" style={{ paddingBottom: "48px" }}>
         <div className="page-hero__glow page-hero__glow--1" aria-hidden="true" />

@@ -37,10 +37,23 @@ const breadcrumbSchema = {
   ],
 }
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Meer klanten als aannemer zonder cold calling",
+  description:
+    "Druk zijn is niet hetzelfde als groeien. Aannemers die de juiste klanten aantrekken, doen een paar dingen structureel anders.",
+  author: { "@type": "Organization", name: "Groeimaten" },
+  publisher: { "@type": "Organization", name: "Groeimaten", url: "https://groeimaten.com" },
+  datePublished: "2026-06-16",
+  url: "https://groeimaten.com/blog/meer-klanten-aannemer",
+}
+
 export default function BlogMeerKlantenAannemerPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
       <section className="page-hero page-hero--split" style={{ paddingBottom: "48px" }}>
         <div className="page-hero__glow page-hero__glow--1" aria-hidden="true" />

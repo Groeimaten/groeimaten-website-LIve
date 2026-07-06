@@ -37,10 +37,23 @@ const breadcrumbSchema = {
   ],
 }
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Google Ads voor je badkamerbedrijf: zo wordt elk euro goed besteed",
+  description:
+    "Google Ads is voor een badkamerbedrijf een van de meest directe manieren om koopklare klanten te bereiken.",
+  author: { "@type": "Organization", name: "Groeimaten" },
+  publisher: { "@type": "Organization", name: "Groeimaten", url: "https://groeimaten.com" },
+  datePublished: "2026-06-16",
+  url: "https://groeimaten.com/blog/google-ads-badkamerbedrijf",
+}
+
 export default function BlogGoogleAdsBadkamerbedrijfPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
       <section className="page-hero page-hero--split" style={{ paddingBottom: "48px" }}>
         <div className="page-hero__glow page-hero__glow--1" aria-hidden="true" />

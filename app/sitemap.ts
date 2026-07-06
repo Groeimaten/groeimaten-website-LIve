@@ -43,5 +43,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/digitale-marketing-installatiebedrijf`, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/social-media-marketing-badkamer`, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/google-mijn-bedrijf-keukenstudio`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/online-marketing-renovatiebedrijf`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/blog/google-ads-voor-installateurs`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/blog/seo-specialist-bouwsector`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/blog/leadgeneratie-sanitairbedrijf`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/blog/badkamer-leads-genereren`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/keuken-website-bouwen`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/online-groei-aannemersbedrijf`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/marketing-uitbesteden-bouw`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/facebook-advertenties-installateur`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/website-laten-maken-tegelzettersbedrijf`, changeFrequency: 'monthly', priority: 0.85 },
   ];
 }

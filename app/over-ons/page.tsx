@@ -4,9 +4,18 @@ import ScrollReveal from "@/components/ScrollReveal"
 import ReviewsMarquee from "@/components/ReviewsMarquee"
 
 export const metadata: Metadata = {
-  title: "Over ons | Groeimaten",
+  title: "Over ons | Digital marketing bureau keuken en sanitair",
   description:
-    "Leer Groeimaten kennen. Jong, ambitieus en 100% gespecialiseerd in marketing voor keuken- en sanitairbedrijven.",
+    "Groeimaten is een digital marketing bureau gespecialiseerd in keuken, badkamer en bouw. Leer de founders Jelle Westerbroek en Thomas Ghobadi kennen.",
+  alternates: {
+    canonical: "https://groeimaten.com/over-ons",
+  },
+  openGraph: {
+    title: "Over ons | Groeimaten — sectorspecialist keuken en sanitair",
+    description:
+      "Groeimaten is een digital marketing bureau gespecialiseerd in keuken, badkamer en bouw. Opgericht door Jelle Westerbroek en Thomas Ghobadi.",
+    url: "https://groeimaten.com/over-ons",
+  },
 }
 
 const arrowIcon = (
@@ -15,9 +24,44 @@ const arrowIcon = (
   </svg>
 )
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://groeimaten.com" },
+    { "@type": "ListItem", position: 2, name: "Over ons", item: "https://groeimaten.com/over-ons" },
+  ],
+}
+
+const teamSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Groeimaten",
+  url: "https://groeimaten.com",
+  description:
+    "Digital marketing bureau gespecialiseerd in keuken, badkamer en bouw. Opgericht door Jelle Westerbroek en Thomas Ghobadi.",
+  foundingDate: "2024",
+  employee: [
+    {
+      "@type": "Person",
+      name: "Thomas Ghobadi",
+      jobTitle: "Co-founder en CEO",
+      knowsAbout: ["Website development", "SEO", "Google ranking", "Conversie-optimalisatie"],
+    },
+    {
+      "@type": "Person",
+      name: "Jelle Westerbroek",
+      jobTitle: "Co-founder en CMO",
+      knowsAbout: ["Meta Ads", "Funnel-strategie", "Lead-opvolging", "Campagne-optimalisatie"],
+    },
+  ],
+}
+
 export default function OverOnsPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(teamSchema) }} />
       {/* PAGE HERO */}
       <section className="page-hero page-hero--split">
         <div className="page-hero__mobile-bg" aria-hidden="true">

@@ -19,6 +19,46 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "online-marketing-renovatiebedrijf",
+    titel: "Online marketing voor een renovatiebedrijf: wat echt werkt",
+    samenvatting:
+      "Renovatieopdrachten komen niet vanzelf. Wie alleen vertrouwt op doorverwijzingen zit afhankelijk van zijn netwerk. Welke kanalen werken echt voor renovatiebedrijven?",
+    datum: "6 juli 2026",
+    keyphrase: "Online marketing renovatiebedrijf",
+  },
+  {
+    slug: "google-ads-voor-installateurs",
+    titel: "Google Ads voor installateurs: zo trek je klanten die vandaag zoeken",
+    samenvatting:
+      "Wie een loodgieter of elektricien zoekt, wacht niet. Die persoon googelt direct. Google Ads voor installateurs zorgt dat jij op dat moment bovenaan staat.",
+    datum: "6 juli 2026",
+    keyphrase: "Google Ads voor installateurs",
+  },
+  {
+    slug: "seo-specialist-bouwsector",
+    titel: "SEO specialist voor de bouwsector: wat je moet weten voor je kiest",
+    samenvatting:
+      "Elke SEO specialist beweert dat hij voor iedereen werkt. Maar resultaten hangen sterk af van sectorkennis. Wat onderscheidt een echte bouwspecialist?",
+    datum: "6 juli 2026",
+    keyphrase: "SEO specialist bouwsector",
+  },
+  {
+    slug: "leadgeneratie-sanitairbedrijf",
+    titel: "Leadgeneratie voor sanitairbedrijven: van aanvraag tot afspraak",
+    samenvatting:
+      "Sanitairbedrijven hebben twee soorten klanten: spoedgevallen en renovatieklanten. Effectieve leadgeneratie bereikt beide groepen op het juiste moment.",
+    datum: "6 juli 2026",
+    keyphrase: "Leadgeneratie sanitairbedrijf",
+  },
+  {
+    slug: "badkamer-leads-genereren",
+    titel: "Badkamer leads genereren: de aanpak die ook kwalitatieve aanvragen oplevert",
+    samenvatting:
+      "Veel badkamerbedrijven hebben aanvragen, maar te weinig afspraken die ook opdrachten worden. Het probleem zit in de kwaliteit, niet het aantal.",
+    datum: "6 juli 2026",
+    keyphrase: "Badkamer leads genereren",
+  },
+  {
     slug: "online-marketing-keukenbranche",
     titel: "Online marketing voor de keukenbranche: wat echt werkt",
     samenvatting:

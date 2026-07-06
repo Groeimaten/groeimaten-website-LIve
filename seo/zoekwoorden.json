@@ -1,7 +1,7 @@
 {
   "gegenereerd_op": "2026-06-16",
-  "bijgewerkt_op": "2026-06-29",
-  "versie": 3,
+  "bijgewerkt_op": "2026-07-06",
+  "versie": 4,
   "zoekwoorden": [
     {
       "term": "SEO voor keukenstudio",
@@ -217,58 +217,128 @@
       "term": "online marketing renovatiebedrijf",
       "intentie": "commercieel",
       "prioriteit": "hoog",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/online-marketing-renovatiebedrijf"
     },
     {
       "term": "Google Ads voor installateurs",
       "intentie": "commercieel",
       "prioriteit": "hoog",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/google-ads-voor-installateurs"
     },
     {
       "term": "SEO specialist bouwsector",
       "intentie": "commercieel",
       "prioriteit": "hoog",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/seo-specialist-bouwsector"
     },
     {
       "term": "leadgeneratie sanitairbedrijf",
       "intentie": "commercieel",
       "prioriteit": "hoog",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/leadgeneratie-sanitairbedrijf"
     },
     {
       "term": "keuken website bouwen",
       "intentie": "commercieel",
       "prioriteit": "hoog",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "keuken-website-bouwen"
     },
     {
       "term": "badkamer leads genereren",
       "intentie": "commercieel",
       "prioriteit": "hoog",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/badkamer-leads-genereren"
     },
     {
       "term": "Facebook advertenties installateur",
       "intentie": "commercieel",
       "prioriteit": "middel",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "facebook-advertenties-installateur"
     },
     {
       "term": "online groei aannemersbedrijf",
       "intentie": "commercieel",
       "prioriteit": "hoog",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "online-groei-aannemersbedrijf"
     },
     {
       "term": "marketing uitbesteden bouw",
       "intentie": "commercieel",
       "prioriteit": "hoog",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "marketing-uitbesteden-bouw"
     },
     {
       "term": "website laten maken tegelzettersbedrijf",
+      "intentie": "commercieel",
+      "prioriteit": "middel",
+      "al_gebruikt": true,
+      "gebruikt_in": "website-laten-maken-tegelzettersbedrijf"
+    },
+    {
+      "term": "online zichtbaarheid renovatiebedrijf",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "marketing voor schildersbedrijf",
+      "intentie": "commercieel",
+      "prioriteit": "middel",
+      "al_gebruikt": false
+    },
+    {
+      "term": "Google Ads voor dakdekkers",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "website laten maken loodgieter",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "meer opdrachten aannemer online",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "Google ranking keukenbedrijf",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "social media voor bouwbedrijven",
+      "intentie": "commercieel",
+      "prioriteit": "middel",
+      "al_gebruikt": false
+    },
+    {
+      "term": "advertentiebureau keuken badkamer bouw",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "leads kopen voor badkamerbedrijf",
+      "intentie": "commercieel",
+      "prioriteit": "middel",
+      "al_gebruikt": false
+    },
+    {
+      "term": "SEO voor interieurontwerpers",
       "intentie": "commercieel",
       "prioriteit": "middel",
       "al_gebruikt": false

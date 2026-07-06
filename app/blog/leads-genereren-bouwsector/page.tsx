@@ -38,10 +38,23 @@ const breadcrumbSchema = {
   ],
 }
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Leads genereren in de bouwsector: wat werkt en wat niet",
+  description:
+    "Mond-tot-mondreclame is onvoorspelbaar. Hoe genereer je als bouwbedrijf structureel kwalitatieve aanvragen?",
+  author: { "@type": "Organization", name: "Groeimaten" },
+  publisher: { "@type": "Organization", name: "Groeimaten", url: "https://groeimaten.com" },
+  datePublished: "2026-06-16",
+  url: "https://groeimaten.com/blog/leads-genereren-bouwsector",
+}
+
 export default function BlogLeadsGenerenBouwsectorPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
       <section className="page-hero page-hero--split" style={{ paddingBottom: "48px" }}>
         <div className="page-hero__glow page-hero__glow--1" aria-hidden="true" />
