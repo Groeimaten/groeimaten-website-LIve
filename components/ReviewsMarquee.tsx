@@ -6,6 +6,7 @@ const reviews = [
   { name: "Tegro BV", meta: "een maand geleden", img: "/images/tegro-review.png", text: '"Deze jonge enthousiaste ondernemers hebben onze website van Tegro ontwikkeld. Het resultaat mag er zijn. Het was een fijn traject waar op alle vlakken goed meegedacht werd. Ook het onderhoud van de site wordt met veel enthousiasme verzorgd."' },
   { name: "Mido Ibrahim", meta: "een maand geleden", img: "/images/mido-ibrahim.png", text: '"De samenwerking met Thomas en Jelle heb ik als heel prettig ervaren. Ze luisterden goed naar mijn wensen en dachten actief mee. Het eindresultaat is een mooie, professionele website die helemaal past bij wat ik voor ogen had."' },
   { name: "Richard Feenstra", meta: "6 dagen geleden", img: "/images/richard-feenstra.png", text: '"Thomas heeft mij geholpen om mijn website weer een beetje up-to-date te krijgen. De korte lijntjes zijn erg prettig. De afspraken zijn netjes nagekomen. Al met al een goede ervaring."' },
+  { name: "Marcel ter Haar", meta: "Ter Haar Tegeltechniek · een maand geleden", img: "/images/marcel-ter-haar.png", text: '"Zeer tevreden over de samenwerking met Groeimaten. Thomas en Samuel hebben ons uitstekend geholpen met de ontwikkeling van onze nieuwe website en webshop. Professioneel, snel in communicatie en altijd bereid om mee te denken. Het eindresultaat sluit perfect aan bij onze wensen."' },
 ]
 
 function ReviewCard({ r, prefix }: { r: typeof reviews[0], prefix: string }) {
@@ -42,7 +43,7 @@ export default function ReviewsMarquee() {
           <span className="section-label">Klantervaringen</span>
           <h2 className="reviews-marquee__title">Wat klanten<br /><em>over ons zeggen</em></h2>
         </div>
-        <a href="https://www.google.com/search?q=Groeimaten+reviews" target="_blank" rel="noopener noreferrer" className="google-badge" aria-label="Bekijk onze Google reviews: 5,0 sterren">
+        <a href="https://www.google.com/maps?cid=390254304839502817" target="_blank" rel="noopener noreferrer" className="google-badge" aria-label="Bekijk onze Google reviews: 5,0 sterren">
           <svg className="google-badge__g" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
             <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" />
             <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853" />
@@ -63,7 +64,7 @@ export default function ReviewsMarquee() {
       </div>
       <div className="reviews-marquee__cta-wrap">
         <a
-          href="https://www.google.com/search?sca_esv=9c28518ba62c7aef&rlz=1C1UEAD_nlNL1208NL1209&sxsrf=ANbL-n598i6QdZO7w-GhmmZnyMkNHnhR9A:1780240047357&q=Groeimaten+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIytjQwMjUxNjCxMLY0NTCyMDTfwMj4ilHIvSg_NTM3sSQ1TyEotSwztbx4ESsWQQA09Ek6QwAAAA&rldimm=390254304839502817&tbm=lcl&hl=nl-NL&sa=X&ved=2ahUKEwi42Yz95uOUAxVM-AIHHddxF8YQ9fQKegQIOhAG&biw=1280&bih=585&dpr=1.5#lkt=LocalPoiReviews"
+          href="https://www.google.com/maps?cid=390254304839502817"
           target="_blank"
           rel="noopener noreferrer"
           className="reviews-marquee__cta"

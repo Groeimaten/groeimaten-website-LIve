@@ -162,7 +162,7 @@ export default function HomePage() {
               <em>Elke maand.</em>
             </h1>
             <p className="hero__subtitle hero-anim hero-anim--2">
-              Groeimaten helpt keuken- en sanitairbedrijven groeien met bewezen strategie. Van advertentie tot kwalitatieve afspraak die ook écht opdaagt.
+              Groeimaten helpt keuken- en sanitairbedrijven groeien met bewezen strategie. Geen generiek marketingbureau, maar de specialist voor de keuken- en sanitairbranche.
             </p>
             <div className="hero__actions hero-anim hero-anim--3">
               <Link href="/afspraak" className="btn btn--blue btn--lg">
@@ -363,6 +363,14 @@ export default function HomePage() {
                 afterSrc="/images/voor-na/ter-haar-nieuw.png"
                 websiteUrl="https://www.terhaarvakwerk.nl/"
                 websiteLabel="Bekijk de website van Ter Haar"
+              />
+            </ScrollReveal>
+            <ScrollReveal delay={3}>
+              <BeforeAfterSlider
+                clientName="Stoop Keukens"
+                description="Van een gedateerde website naar een moderne, snelle showroom-ervaring die veel beter vindbaar is en meer serieuze aanvragen oplevert."
+                beforeSrc="/images/voor-na/stoop-keukens-oud.jpeg"
+                afterSrc="/images/voor-na/stoop-keukens-nieuw.png"
               />
             </ScrollReveal>
           </div>
