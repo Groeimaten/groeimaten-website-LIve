@@ -3882,10 +3882,16 @@ html[data-theme="light"] .photo-placeholder__size {
     margin-top: 56px;
 }
 
-@media (min-width: 680px) {
+@media (min-width: 680px) and (max-width: 899px) {
   .vn-grid {
     grid-template-columns: repeat(2, minmax(0, 680px));
     justify-content: center;
+  }
+}
+
+@media (min-width: 900px) {
+  .vn-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 

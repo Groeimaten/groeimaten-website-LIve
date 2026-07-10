@@ -349,14 +349,6 @@ export default function HomePage() {
           <div className="vn-grid">
             <ScrollReveal delay={1}>
               <BeforeAfterSlider
-                clientName="Tile Stones"
-                description="Van een rommelige structuur naar een doordachte gebruikerservaring, waarbij elk detail van het design de merkidentiteit versterkt."
-                beforeSrc="/images/voor-na/tile-stones-oud.png"
-                afterSrc="/images/voor-na/tile-stones-nieuw.png"
-              />
-            </ScrollReveal>
-            <ScrollReveal delay={2}>
-              <BeforeAfterSlider
                 clientName="Ter Haar Tegeltechniek"
                 description="Van drie trage, drukke en goedkoop ogende websites naar één ultrasnelle, moderne website met een luxe uitstraling die vertrouwen wekt en resultaat oplevert."
                 beforeSrc="/images/voor-na/ter-haar-oud.png"
@@ -365,12 +357,20 @@ export default function HomePage() {
                 websiteLabel="Bekijk de website van Ter Haar"
               />
             </ScrollReveal>
-            <ScrollReveal delay={3}>
+            <ScrollReveal delay={2}>
               <BeforeAfterSlider
                 clientName="Stoop Keukens"
                 description="Van een gedateerde website naar een moderne, snelle showroom-ervaring die veel beter vindbaar is en meer serieuze aanvragen oplevert."
                 beforeSrc="/images/voor-na/stoop-keukens-oud.jpeg"
                 afterSrc="/images/voor-na/stoop-keukens-nieuw.png"
+              />
+            </ScrollReveal>
+            <ScrollReveal delay={3}>
+              <BeforeAfterSlider
+                clientName="Tile Stones"
+                description="Van een rommelige structuur naar een doordachte gebruikerservaring, waarbij elk detail van het design de merkidentiteit versterkt."
+                beforeSrc="/images/voor-na/tile-stones-oud.png"
+                afterSrc="/images/voor-na/tile-stones-nieuw.png"
               />
             </ScrollReveal>
           </div>
