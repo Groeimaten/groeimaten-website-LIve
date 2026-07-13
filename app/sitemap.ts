@@ -53,5 +53,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/marketing-uitbesteden-bouw`, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/facebook-advertenties-installateur`, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/website-laten-maken-tegelzettersbedrijf`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/online-zichtbaarheid-renovatiebedrijf`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/blog/google-ads-dakdekkers`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/blog/meer-opdrachten-aannemer-online`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/blog/advertentiebureau-keuken-badkamer`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/blog/google-ranking-keukenbedrijf`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/loodgieter-website`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/schildersbedrijf-marketing`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/social-media-bouwbedrijven`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/leads-badkamerbedrijf`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/seo-interieurontwerpers`, changeFrequency: 'monthly', priority: 0.85 },
   ];
 }

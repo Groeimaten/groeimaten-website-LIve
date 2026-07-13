@@ -1,7 +1,7 @@
 {
   "gegenereerd_op": "2026-06-16",
-  "bijgewerkt_op": "2026-07-06",
-  "versie": 4,
+  "bijgewerkt_op": "2026-07-13",
+  "versie": 5,
   "zoekwoorden": [
     {
       "term": "SEO voor keukenstudio",
@@ -287,60 +287,130 @@
       "term": "online zichtbaarheid renovatiebedrijf",
       "intentie": "commercieel",
       "prioriteit": "hoog",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/online-zichtbaarheid-renovatiebedrijf"
     },
     {
       "term": "marketing voor schildersbedrijf",
       "intentie": "commercieel",
       "prioriteit": "middel",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "schildersbedrijf-marketing"
     },
     {
       "term": "Google Ads voor dakdekkers",
       "intentie": "commercieel",
       "prioriteit": "hoog",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/google-ads-dakdekkers"
     },
     {
       "term": "website laten maken loodgieter",
       "intentie": "commercieel",
       "prioriteit": "hoog",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "loodgieter-website"
     },
     {
       "term": "meer opdrachten aannemer online",
       "intentie": "commercieel",
       "prioriteit": "hoog",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/meer-opdrachten-aannemer-online"
     },
     {
       "term": "Google ranking keukenbedrijf",
       "intentie": "commercieel",
       "prioriteit": "hoog",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/google-ranking-keukenbedrijf"
     },
     {
       "term": "social media voor bouwbedrijven",
       "intentie": "commercieel",
       "prioriteit": "middel",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "social-media-bouwbedrijven"
     },
     {
       "term": "advertentiebureau keuken badkamer bouw",
       "intentie": "commercieel",
       "prioriteit": "hoog",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/advertentiebureau-keuken-badkamer"
     },
     {
       "term": "leads kopen voor badkamerbedrijf",
       "intentie": "commercieel",
       "prioriteit": "middel",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "leads-badkamerbedrijf"
     },
     {
       "term": "SEO voor interieurontwerpers",
       "intentie": "commercieel",
       "prioriteit": "middel",
+      "al_gebruikt": true,
+      "gebruikt_in": "seo-interieurontwerpers"
+    },
+    {
+      "term": "conversie optimalisatie website bouwbedrijf",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "website laten maken dakdekker",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "content marketing voor aannemers",
+      "intentie": "informatief",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "naamsbekendheid bouwbedrijf vergroten",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "online reputatie aannemer",
+      "intentie": "informatief",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "email marketing keukenbranche",
+      "intentie": "commercieel",
+      "prioriteit": "middel",
+      "al_gebruikt": false
+    },
+    {
+      "term": "Google reviews verzamelen keukenstudio",
+      "intentie": "informatief",
+      "prioriteit": "middel",
+      "al_gebruikt": false
+    },
+    {
+      "term": "landingspagina laten maken installateur",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "lead nurturing keuken sanitair",
+      "intentie": "informatief",
+      "prioriteit": "middel",
+      "al_gebruikt": false
+    },
+    {
+      "term": "marketingstrategie voor renovatiebedrijf",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
       "al_gebruikt": false
     }
   ]

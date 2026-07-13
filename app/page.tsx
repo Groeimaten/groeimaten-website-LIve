@@ -11,16 +11,16 @@ import BeforeAfterSlider from "@/components/BeforeAfterSlider"
 import ReviewsMarquee from "@/components/ReviewsMarquee"
 
 export const metadata: Metadata = {
-  title: "Groeimaten | Marketing voor Keuken- en Sanitairbedrijven",
+  title: "Groeimaten | Digital marketing bureau keuken, badkamer en bouw",
   description:
-    "Groeimaten is het digital marketing bureau voor keuken- en sanitairbedrijven. Van advertentie tot kwalitatieve showroomafspraak die ook écht opdaagt.",
+    "Groeimaten is het digital marketing bureau voor keuken-, badkamer- en bouwbedrijven. Meer showroomafspraken en kwalitatieve aanvragen via SEO, Google Ads en Meta Ads.",
   alternates: {
     canonical: "https://groeimaten.com",
   },
   openGraph: {
-    title: "Groeimaten | Marketing voor Keuken- en Sanitairbedrijven",
+    title: "Groeimaten | Digital marketing bureau keuken, badkamer en bouw",
     description:
-      "Groeimaten is het digital marketing bureau voor keuken- en sanitairbedrijven. Van advertentie tot kwalitatieve showroomafspraak die ook écht opdaagt.",
+      "Groeimaten helpt keuken-, badkamer- en bouwbedrijven groeien. Meer showroomafspraken en kwalitatieve aanvragen via bewezen marketing.",
     url: "https://groeimaten.com",
   },
 }
@@ -94,7 +94,7 @@ export default function HomePage() {
         name: "Werken jullie ook voor andere sectoren dan keuken en sanitair?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Nee. Groeimaten werkt uitsluitend voor keuken- en sanitairbedrijven. Die focus is onze kracht: we kennen jouw klant, jouw sector en jouw uitdagingen als geen ander.",
+          text: "Nee. Groeimaten werkt uitsluitend voor keuken-, badkamer- en bouwbedrijven. Die focus is onze kracht: we kennen jouw klant, jouw sector en jouw uitdagingen als geen ander.",
         },
       },
       {
@@ -102,12 +102,12 @@ export default function HomePage() {
         name: "Hoe snel zie ik resultaat?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Bij Meta Ads zijn de eerste leads er vaak al binnen de eerste week. Google en AI Ranking duurt 3 tot 6 maanden voor structurele groei. We zijn altijd eerlijk over wat je wanneer kunt verwachten.",
+          text: "Bij Meta Ads zijn de eerste leads er vaak al binnen de eerste week. Google Ads levert direct aanvragen op zodra de campagne live gaat. SEO duurt 3 tot 6 maanden voor structurele groei. We zijn altijd eerlijk over wat je wanneer kunt verwachten.",
         },
       },
       {
         "@type": "Question",
-        name: "Werken jullie ook met kleinere showrooms?",
+        name: "Werken jullie ook met kleinere showrooms of bouwbedrijven?",
         acceptedAnswer: {
           "@type": "Answer",
           text: "Ja, zolang je de ambitie hebt om te groeien zijn wij de juiste partner. Grootte maakt niet uit. Focus en wil om te groeien wel.",
@@ -118,7 +118,23 @@ export default function HomePage() {
         name: "Wat maakt Groeimaten anders dan een gewoon marketingbureau?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Groeimaten kent de keuken- en sanitairmarkt als geen ander. Geen leercurve, geen generieke aanpak. Dag 1 aan de slag. Een generiek bureau leert jouw markt misschien na maanden. Groeimaten is er al.",
+          text: "Groeimaten werkt uitsluitend voor bedrijven in de keuken-, badkamer- en bouwsector. Geen leercurve, geen generieke aanpak. Dag 1 aan de slag. Een generiek bureau leert jouw markt misschien na maanden. Groeimaten is er al.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Wat kost online marketing voor een keukenstudio of bouwbedrijf?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "De kosten hangen af van de kanalen en het gewenste resultaat. In een gratis gesprek leggen we uit wat een realistisch budget is en wat dat oplevert. We werken nooit met vage contracten.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Kunnen jullie ook helpen met een website voor een aannemer of installateur?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja. Groeimaten bouwt websites voor aannemers, installateurs, keukenstudio's en badkamerbedrijven. Websites die gevonden worden op Google en aanvragen genereren, niet alleen goed uitzien.",
         },
       },
     ],

@@ -19,6 +19,46 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "online-zichtbaarheid-renovatiebedrijf",
+    titel: "Online zichtbaarheid renovatiebedrijf: zo bouw je een constante instroom op",
+    samenvatting:
+      "Renovatiebedrijven die uitsluitend op aanbevelingen draaien zijn kwetsbaar. Hoe bouw je een online fundament dat maand na maand aanvragen oplevert, ongeacht het netwerk?",
+    datum: "13 juli 2026",
+    keyphrase: "Online zichtbaarheid renovatiebedrijf",
+  },
+  {
+    slug: "google-ads-dakdekkers",
+    titel: "Google Ads voor dakdekkers: aanvragen op het moment dat het er toe doet",
+    samenvatting:
+      "Iemand met een daklekkage googelt direct. Google Ads voor dakdekkers zorgt dat jij op dat moment bovenaan staat. Hoe richt je een campagne in die winstgevend is?",
+    datum: "13 juli 2026",
+    keyphrase: "Google Ads voor dakdekkers",
+  },
+  {
+    slug: "meer-opdrachten-aannemer-online",
+    titel: "Meer opdrachten als aannemer via online kanalen: wat werkt en wat niet",
+    samenvatting:
+      "Aannemers die uitsluitend op aanbevelingen vertrouwen, zijn afhankelijk van hun netwerk. Welke online kanalen leveren structureel meer opdrachten op?",
+    datum: "13 juli 2026",
+    keyphrase: "Meer opdrachten aannemer online",
+  },
+  {
+    slug: "advertentiebureau-keuken-badkamer",
+    titel: "Advertentiebureau keuken badkamer bouw: wat je echt zoekt in een partner",
+    samenvatting:
+      "Er zijn duizenden advertentiebureaus. De meeste werken voor iedereen. Wat maakt een bureau met specifieke sectorkennis zo bepalend voor het resultaat van advertenties?",
+    datum: "13 juli 2026",
+    keyphrase: "Advertentiebureau keuken badkamer bouw",
+  },
+  {
+    slug: "google-ranking-keukenbedrijf",
+    titel: "Google ranking keukenbedrijf verbeteren: de aanpak die structureel werkt",
+    samenvatting:
+      "Een betere Google ranking als keukenbedrijf levert aanvragen op van mensen die actief zoeken. Welke factoren bepalen jouw positie en hoe verbeter je die stap voor stap?",
+    datum: "13 juli 2026",
+    keyphrase: "Google ranking keukenbedrijf",
+  },
+  {
     slug: "online-marketing-renovatiebedrijf",
     titel: "Online marketing voor een renovatiebedrijf: wat echt werkt",
     samenvatting:
