@@ -19,6 +19,46 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "marketingstrategie-renovatiebedrijf",
+    titel: "Marketingstrategie voor een renovatiebedrijf: wat werkt en wat kost geld",
+    samenvatting:
+      "Renovatieopdrachten hebben een lange aanlooptijd. Een goede marketingstrategie houdt rekening met het beslisproces en is aanwezig in elke fase. Welke kanalen werken en welke verspillen budget?",
+    datum: "20 juli 2026",
+    keyphrase: "Marketingstrategie voor renovatiebedrijf",
+  },
+  {
+    slug: "online-reputatie-aannemer",
+    titel: "Online reputatie als aannemer: hoe reviews je agenda vullen",
+    samenvatting:
+      "Een aannemer met 54 reviews trekt structureel meer aanvragen dan een aannemer met 12, ook als de website minder goed is. Hoe bouw je een sterke online reputatie op?",
+    datum: "20 juli 2026",
+    keyphrase: "Online reputatie aannemer",
+  },
+  {
+    slug: "naamsbekendheid-bouwbedrijf",
+    titel: "Naamsbekendheid vergroten als bouwbedrijf: wat werkt in de praktijk",
+    samenvatting:
+      "Naamsbekendheid en leadgeneratie zijn niet hetzelfde. Welke kanalen zorgen dat jouw bouwbedrijf herkend wordt op het moment dat iemand klaar is om te verbouwen?",
+    datum: "20 juli 2026",
+    keyphrase: "Naamsbekendheid bouwbedrijf vergroten",
+  },
+  {
+    slug: "content-marketing-aannemers",
+    titel: "Content marketing voor aannemers: vertrouwen opbouwen voor de eerste afspraak",
+    samenvatting:
+      "Iemand die een verbouwing van 50.000 euro plant, beslist niet op basis van één advertentie. Content marketing zorgt dat jij zichtbaar bent tijdens de maanden die daaraan voorafgaan.",
+    datum: "20 juli 2026",
+    keyphrase: "Content marketing voor aannemers",
+  },
+  {
+    slug: "conversie-optimalisatie-bouwbedrijf",
+    titel: "Conversie optimalisatie website bouwbedrijf: meer aanvragen uit hetzelfde verkeer",
+    samenvatting:
+      "Een bouwbedrijf dat zijn conversiepercentage verdubbelt van 0,6 naar 1,2 procent, krijgt dubbel zoveel aanvragen zonder extra advertentiebudget. Wat zijn de aanpassingen die het meeste opleveren?",
+    datum: "20 juli 2026",
+    keyphrase: "Conversie optimalisatie website bouwbedrijf",
+  },
+  {
     slug: "online-zichtbaarheid-renovatiebedrijf",
     titel: "Online zichtbaarheid renovatiebedrijf: zo bouw je een constante instroom op",
     samenvatting:

@@ -4,17 +4,23 @@ import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
 
 export const metadata: Metadata = {
-  title: "Diensten voor Keuken en Sanitairbedrijven | Groeimaten",
+  title: "Marketingdiensten voor keuken, badkamer en bouw | Groeimaten",
   description:
-    "Meta Ads, Google Ads, website development en SEO voor keuken- en sanitairbedrijven. Groeimaten levert alles wat je nodig hebt om structureel te groeien.",
+    "Meta Ads, Google Ads, website development en SEO voor keuken-, badkamer- en bouwbedrijven. Groeimaten levert alles wat je nodig hebt om structureel meer klanten te krijgen.",
   alternates: {
     canonical: "https://groeimaten.com/diensten",
   },
   openGraph: {
-    title: "Diensten voor Keuken en Sanitairbedrijven | Groeimaten",
+    title: "Marketingdiensten voor keuken, badkamer en bouw | Groeimaten",
     description:
-      "Meta Ads, Google Ads, website development en SEO voor keuken- en sanitairbedrijven. Alles onder één dak.",
+      "Meta Ads, Google Ads, website development en SEO voor keuken-, badkamer- en bouwbedrijven. Alles onder één dak.",
     url: "https://groeimaten.com/diensten",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Marketingdiensten voor keuken, badkamer en bouw | Groeimaten",
+    description:
+      "Meta Ads, Google Ads, website development en SEO voor keuken-, badkamer- en bouwbedrijven. Groeimaten levert alles onder één dak.",
   },
 }
 
@@ -30,19 +36,21 @@ const breadcrumbSchema = {
 const dienstenSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Marketing voor keuken en sanitairbedrijven",
+  name: "Marketing voor keuken, badkamer en bouwbedrijven",
   provider: { "@type": "Organization", name: "Groeimaten", url: "https://groeimaten.com" },
   description:
-    "Groeimaten levert Meta Ads, Google Ads, website development en SEO specifiek voor keuken- en sanitairbedrijven in Nederland.",
+    "Groeimaten levert Meta Ads, Google Ads, website development en SEO specifiek voor keuken-, badkamer- en bouwbedrijven in Nederland.",
   areaServed: { "@type": "Country", name: "Nederland" },
   url: "https://groeimaten.com/diensten",
   hasOfferCatalog: {
     "@type": "OfferCatalog",
-    name: "Marketingdiensten",
+    name: "Marketingdiensten keuken badkamer bouw",
     itemListElement: [
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Meta Ads en Funnels" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Google Ads voor keuken en bouw" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Website Development" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Google en AI Ranking" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Lead generatie voor aannemers" } },
     ],
   },
 }
@@ -77,13 +85,13 @@ export default function DienstenPage() {
               <div className="page-hero__content">
                 <span className="section-label">Onze diensten</span>
                 <h1 className="page-hero__title">
-                  Alles wat je nodig hebt.
+                  Marketing voor keuken,
                   <br />
-                  <em>Onder één dak.</em>
+                  <em>badkamer en bouw.</em>
                 </h1>
                 <p className="page-hero__subtitle">
-                  Van advertenties en funnels tot websites en SEO. Wij bieden een compleet pakket, specifiek ontwikkeld
-                  voor keuken- en sanitairbedrijven.
+                  Van Meta Ads en Google Ads tot websites en SEO. Een compleet pakket, specifiek ontwikkeld
+                  voor keuken-, badkamer- en bouwbedrijven die structureel meer klanten willen.
                 </p>
               </div>
             </ScrollReveal>

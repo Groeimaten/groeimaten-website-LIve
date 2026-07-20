@@ -63,5 +63,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/social-media-bouwbedrijven`, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/leads-badkamerbedrijf`, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/seo-interieurontwerpers`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/conversie-optimalisatie-bouwbedrijf`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/blog/content-marketing-aannemers`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/blog/naamsbekendheid-bouwbedrijf`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/blog/online-reputatie-aannemer`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/blog/marketingstrategie-renovatiebedrijf`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/dakdekker-website`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/landingspagina-installateur`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/email-marketing-keuken`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/google-reviews-keukenstudio`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/lead-nurturing-keuken-sanitair`, changeFrequency: 'monthly', priority: 0.85 },
   ];
 }
