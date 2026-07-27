@@ -73,5 +73,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/email-marketing-keuken`, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/google-reviews-keukenstudio`, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/lead-nurturing-keuken-sanitair`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/seo-voor-schildersbedrijven`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/blog/meer-aanvragen-dakdekker`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/blog/google-ads-voor-loodgieters`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/blog/website-optimaliseren-bouwbedrijf`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/blog/leads-genereren-elektricien`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/lokale-seo-aannemers`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/stukadoor-marketing`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/kozijnenbedrijf-website`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/badkamerinstallateur-adverteren`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/cv-installateur-marketing`, changeFrequency: 'monthly', priority: 0.85 },
   ];
 }

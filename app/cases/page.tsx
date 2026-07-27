@@ -5,17 +5,32 @@ import BeforeAfterSlider from "@/components/BeforeAfterSlider"
 import ReviewsMarquee from "@/components/ReviewsMarquee"
 
 export const metadata: Metadata = {
-  title: "Cases: Resultaten voor Keuken en Sanitair | Groeimaten",
+  title: "Cases: Resultaten voor Keuken, Badkamer en Bouw | Groeimaten",
   description:
-    "Concrete resultaten van keuken-, badkamer- en bouwbedrijven die met Groeimaten groeien. Van Meta Ads tot website development: echte cijfers, echte cases.",
+    "Concrete marketingresultaten van keuken-, badkamer- en bouwbedrijven die met Groeimaten werken. €110.000 extra omzet, €25 per lead. Echte cijfers, echte cases.",
   alternates: {
     canonical: "https://groeimaten.com/cases",
   },
   openGraph: {
-    title: "Cases: Resultaten voor Keuken en Sanitair | Groeimaten",
+    title: "Cases: Resultaten voor Keuken, Badkamer en Bouw | Groeimaten",
     description:
-      "Concrete resultaten van keuken-, badkamer- en bouwbedrijven die met Groeimaten groeien. Echte cijfers, echte cases.",
+      "€110.000 extra omzet, €25 per lead. Concrete marketingresultaten van keuken-, badkamer- en bouwbedrijven die met Groeimaten werken.",
     url: "https://groeimaten.com/cases",
+    images: [
+      {
+        url: "/images/founders-light.webp",
+        width: 1200,
+        height: 630,
+        alt: "Cases van Groeimaten: resultaten voor keuken, badkamer en bouwbedrijven",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cases: Resultaten voor Keuken, Badkamer en Bouw | Groeimaten",
+    description:
+      "€110.000 extra omzet, €25 per lead. Concrete marketingresultaten van keuken-, badkamer- en bouwbedrijven.",
+    images: ["/images/founders-light.webp"],
   },
 }
 
@@ -59,8 +74,8 @@ export default function CasesPage() {
             <ScrollReveal>
               <div className="page-hero__content">
                 <span className="section-label">Ons werk</span>
-                <h1 className="page-hero__title">Resultaten die<br /><em>voor zich spreken.</em></h1>
-                <p className="page-hero__subtitle">Geen vage verhalen. Concrete resultaten van keuken- en sanitairbedrijven die met Groeimaten samenwerken.</p>
+                <h1 className="page-hero__title">Resultaten voor keuken,<br /><em>badkamer en bouw.</em></h1>
+                <p className="page-hero__subtitle">Geen vage verhalen. Concrete resultaten van keuken-, badkamer- en bouwbedrijven die met Groeimaten samenwerken. Van Meta Ads tot volledige website development.</p>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={2}>

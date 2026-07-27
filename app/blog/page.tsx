@@ -19,6 +19,46 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "leads-genereren-elektricien",
+    titel: "Leads genereren als elektricien: eigen aanvragen versus leadplatforms",
+    samenvatting:
+      "Platforms verkopen leads aan meerdere elektriciens tegelijk. Eigen aanvragen via je website of advertenties komen alleen bij jou binnen. Wat is structureel goedkoper en effectiever?",
+    datum: "27 juli 2026",
+    keyphrase: "Leads genereren elektricien",
+  },
+  {
+    slug: "website-optimaliseren-bouwbedrijf",
+    titel: "Website optimaliseren als bouwbedrijf: meer aanvragen uit hetzelfde verkeer",
+    samenvatting:
+      "Een bouwbedrijf dat zijn conversiepercentage verdubbelt van 0,6 naar 1,2 procent krijgt dubbel zoveel aanvragen zonder extra advertentiebudget. Welke aanpassingen leveren het meeste op?",
+    datum: "27 juli 2026",
+    keyphrase: "Website optimaliseren bouwbedrijf",
+  },
+  {
+    slug: "google-ads-voor-loodgieters",
+    titel: "Google Ads voor loodgieters: bovenaan op het moment dat het telt",
+    samenvatting:
+      "Iemand met een gesprongen leiding googelt niet om zich te oriënteren. Hij googelt om zo snel mogelijk iemand te bereiken. Hoe richt je een Google Ads-campagne in die winstgevend is?",
+    datum: "27 juli 2026",
+    keyphrase: "Google Ads voor loodgieters",
+  },
+  {
+    slug: "meer-aanvragen-dakdekker",
+    titel: "Meer aanvragen als dakdekker: twee soorten klanten, twee aanpakken",
+    samenvatting:
+      "De spoedklant belt vandaag. De planklant vraagt drie offertes aan. Beide zijn waardevol maar vinden je op een andere manier. Hoe richt je marketing in die voor beide werkt?",
+    datum: "27 juli 2026",
+    keyphrase: "Meer aanvragen dakdekker",
+  },
+  {
+    slug: "seo-voor-schildersbedrijven",
+    titel: "SEO voor schildersbedrijven: gevonden worden in jouw regio",
+    samenvatting:
+      "SEO voor schildersbedrijven is vrijwel altijd lokaal. Hoe bouw je een positie op die maand na maand aanvragen oplevert, zonder elke maand advertentiebudget uit te geven?",
+    datum: "27 juli 2026",
+    keyphrase: "SEO voor schildersbedrijven",
+  },
+  {
     slug: "marketingstrategie-renovatiebedrijf",
     titel: "Marketingstrategie voor een renovatiebedrijf: wat werkt en wat kost geld",
     samenvatting:
