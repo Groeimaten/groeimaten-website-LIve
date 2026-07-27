@@ -377,7 +377,7 @@ export default function HomePage() {
               <BeforeAfterSlider
                 clientName="Stoop Keukens"
                 description="Van een gedateerde website naar een moderne, snelle showroom-ervaring die veel beter vindbaar is en meer serieuze aanvragen oplevert."
-                beforeSrc="/images/voor-na/stoop-keukens-oud.jpeg"
+                beforeSrc="/images/voor-na/stoop-keukens-oud-v2.jpeg"
                 afterSrc="/images/voor-na/stoop-keukens-nieuw.jpeg"
               />
             </ScrollReveal>
