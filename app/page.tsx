@@ -266,9 +266,9 @@ export default function HomePage() {
                 <span className="media-mention__pub-dot" />
                 <span>Keuken &amp; Bad vakblad</span>
                 <span className="media-mention__pub-dot" />
-                <Link href="/over-ons#media" style={{ color: "oklch(67% 0.09 75)", textDecoration: "none", fontWeight: 600 }}>
+                <a href="https://keukenendesign.nl/het-verhaal-achter-groeimaten-met-ai-en-marketing-naar-meer-afspraken/" target="_blank" rel="noopener noreferrer" style={{ color: "oklch(67% 0.09 75)", textDecoration: "none", fontWeight: 600 }}>
                   Lees het artikel →
-                </Link>
+                </a>
                 <span className="media-mention__pub-dot" />
                 <a href="https://keukenendesign.nl/" target="_blank" rel="noopener noreferrer" style={{ color: "oklch(67% 0.09 75)", textDecoration: "none", fontWeight: 600 }}>
                   Bekijk de K&amp;D →
