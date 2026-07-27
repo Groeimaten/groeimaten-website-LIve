@@ -19,6 +19,126 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "leads-genereren-elektricien",
+    titel: "Leads genereren als elektricien: eigen aanvragen versus leadplatforms",
+    samenvatting:
+      "Platforms verkopen leads aan meerdere elektriciens tegelijk. Eigen aanvragen via je website of advertenties komen alleen bij jou binnen. Wat is structureel goedkoper en effectiever?",
+    datum: "27 juli 2026",
+    keyphrase: "Leads genereren elektricien",
+  },
+  {
+    slug: "website-optimaliseren-bouwbedrijf",
+    titel: "Website optimaliseren als bouwbedrijf: meer aanvragen uit hetzelfde verkeer",
+    samenvatting:
+      "Een bouwbedrijf dat zijn conversiepercentage verdubbelt van 0,6 naar 1,2 procent krijgt dubbel zoveel aanvragen zonder extra advertentiebudget. Welke aanpassingen leveren het meeste op?",
+    datum: "27 juli 2026",
+    keyphrase: "Website optimaliseren bouwbedrijf",
+  },
+  {
+    slug: "google-ads-voor-loodgieters",
+    titel: "Google Ads voor loodgieters: bovenaan op het moment dat het telt",
+    samenvatting:
+      "Iemand met een gesprongen leiding googelt niet om zich te oriënteren. Hij googelt om zo snel mogelijk iemand te bereiken. Hoe richt je een Google Ads-campagne in die winstgevend is?",
+    datum: "27 juli 2026",
+    keyphrase: "Google Ads voor loodgieters",
+  },
+  {
+    slug: "meer-aanvragen-dakdekker",
+    titel: "Meer aanvragen als dakdekker: twee soorten klanten, twee aanpakken",
+    samenvatting:
+      "De spoedklant belt vandaag. De planklant vraagt drie offertes aan. Beide zijn waardevol maar vinden je op een andere manier. Hoe richt je marketing in die voor beide werkt?",
+    datum: "27 juli 2026",
+    keyphrase: "Meer aanvragen dakdekker",
+  },
+  {
+    slug: "seo-voor-schildersbedrijven",
+    titel: "SEO voor schildersbedrijven: gevonden worden in jouw regio",
+    samenvatting:
+      "SEO voor schildersbedrijven is vrijwel altijd lokaal. Hoe bouw je een positie op die maand na maand aanvragen oplevert, zonder elke maand advertentiebudget uit te geven?",
+    datum: "27 juli 2026",
+    keyphrase: "SEO voor schildersbedrijven",
+  },
+  {
+    slug: "marketingstrategie-renovatiebedrijf",
+    titel: "Marketingstrategie voor een renovatiebedrijf: wat werkt en wat kost geld",
+    samenvatting:
+      "Renovatieopdrachten hebben een lange aanlooptijd. Een goede marketingstrategie houdt rekening met het beslisproces en is aanwezig in elke fase. Welke kanalen werken en welke verspillen budget?",
+    datum: "20 juli 2026",
+    keyphrase: "Marketingstrategie voor renovatiebedrijf",
+  },
+  {
+    slug: "online-reputatie-aannemer",
+    titel: "Online reputatie als aannemer: hoe reviews je agenda vullen",
+    samenvatting:
+      "Een aannemer met 54 reviews trekt structureel meer aanvragen dan een aannemer met 12, ook als de website minder goed is. Hoe bouw je een sterke online reputatie op?",
+    datum: "20 juli 2026",
+    keyphrase: "Online reputatie aannemer",
+  },
+  {
+    slug: "naamsbekendheid-bouwbedrijf",
+    titel: "Naamsbekendheid vergroten als bouwbedrijf: wat werkt in de praktijk",
+    samenvatting:
+      "Naamsbekendheid en leadgeneratie zijn niet hetzelfde. Welke kanalen zorgen dat jouw bouwbedrijf herkend wordt op het moment dat iemand klaar is om te verbouwen?",
+    datum: "20 juli 2026",
+    keyphrase: "Naamsbekendheid bouwbedrijf vergroten",
+  },
+  {
+    slug: "content-marketing-aannemers",
+    titel: "Content marketing voor aannemers: vertrouwen opbouwen voor de eerste afspraak",
+    samenvatting:
+      "Iemand die een verbouwing van 50.000 euro plant, beslist niet op basis van één advertentie. Content marketing zorgt dat jij zichtbaar bent tijdens de maanden die daaraan voorafgaan.",
+    datum: "20 juli 2026",
+    keyphrase: "Content marketing voor aannemers",
+  },
+  {
+    slug: "conversie-optimalisatie-bouwbedrijf",
+    titel: "Conversie optimalisatie website bouwbedrijf: meer aanvragen uit hetzelfde verkeer",
+    samenvatting:
+      "Een bouwbedrijf dat zijn conversiepercentage verdubbelt van 0,6 naar 1,2 procent, krijgt dubbel zoveel aanvragen zonder extra advertentiebudget. Wat zijn de aanpassingen die het meeste opleveren?",
+    datum: "20 juli 2026",
+    keyphrase: "Conversie optimalisatie website bouwbedrijf",
+  },
+  {
+    slug: "online-zichtbaarheid-renovatiebedrijf",
+    titel: "Online zichtbaarheid renovatiebedrijf: zo bouw je een constante instroom op",
+    samenvatting:
+      "Renovatiebedrijven die uitsluitend op aanbevelingen draaien zijn kwetsbaar. Hoe bouw je een online fundament dat maand na maand aanvragen oplevert, ongeacht het netwerk?",
+    datum: "13 juli 2026",
+    keyphrase: "Online zichtbaarheid renovatiebedrijf",
+  },
+  {
+    slug: "google-ads-dakdekkers",
+    titel: "Google Ads voor dakdekkers: aanvragen op het moment dat het er toe doet",
+    samenvatting:
+      "Iemand met een daklekkage googelt direct. Google Ads voor dakdekkers zorgt dat jij op dat moment bovenaan staat. Hoe richt je een campagne in die winstgevend is?",
+    datum: "13 juli 2026",
+    keyphrase: "Google Ads voor dakdekkers",
+  },
+  {
+    slug: "meer-opdrachten-aannemer-online",
+    titel: "Meer opdrachten als aannemer via online kanalen: wat werkt en wat niet",
+    samenvatting:
+      "Aannemers die uitsluitend op aanbevelingen vertrouwen, zijn afhankelijk van hun netwerk. Welke online kanalen leveren structureel meer opdrachten op?",
+    datum: "13 juli 2026",
+    keyphrase: "Meer opdrachten aannemer online",
+  },
+  {
+    slug: "advertentiebureau-keuken-badkamer",
+    titel: "Advertentiebureau keuken badkamer bouw: wat je echt zoekt in een partner",
+    samenvatting:
+      "Er zijn duizenden advertentiebureaus. De meeste werken voor iedereen. Wat maakt een bureau met specifieke sectorkennis zo bepalend voor het resultaat van advertenties?",
+    datum: "13 juli 2026",
+    keyphrase: "Advertentiebureau keuken badkamer bouw",
+  },
+  {
+    slug: "google-ranking-keukenbedrijf",
+    titel: "Google ranking keukenbedrijf verbeteren: de aanpak die structureel werkt",
+    samenvatting:
+      "Een betere Google ranking als keukenbedrijf levert aanvragen op van mensen die actief zoeken. Welke factoren bepalen jouw positie en hoe verbeter je die stap voor stap?",
+    datum: "13 juli 2026",
+    keyphrase: "Google ranking keukenbedrijf",
+  },
+  {
     slug: "online-marketing-renovatiebedrijf",
     titel: "Online marketing voor een renovatiebedrijf: wat echt werkt",
     samenvatting:

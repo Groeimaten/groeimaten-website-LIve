@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import Nav from "@/components/Nav"
 import Footer from "@/components/Footer"
 import ScrollRevealInit from "@/components/ScrollRevealInit"
+import { GoogleAnalytics } from "@next/third-parties/google"
 
 const playfair = localFont({
   src: [
@@ -121,6 +122,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Footer />
           <ScrollRevealInit />
         </ThemeProvider>
+        <GoogleAnalytics gaId="G-R6H96537CE" />
       </body>
     </html>
   )

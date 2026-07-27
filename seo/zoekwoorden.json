@@ -1,7 +1,7 @@
 {
   "gegenereerd_op": "2026-06-16",
-  "bijgewerkt_op": "2026-07-06",
-  "versie": 4,
+  "bijgewerkt_op": "2026-07-27",
+  "versie": 7,
   "zoekwoorden": [
     {
       "term": "SEO voor keukenstudio",
@@ -287,58 +287,268 @@
       "term": "online zichtbaarheid renovatiebedrijf",
       "intentie": "commercieel",
       "prioriteit": "hoog",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/online-zichtbaarheid-renovatiebedrijf"
     },
     {
       "term": "marketing voor schildersbedrijf",
       "intentie": "commercieel",
       "prioriteit": "middel",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "schildersbedrijf-marketing"
     },
     {
       "term": "Google Ads voor dakdekkers",
       "intentie": "commercieel",
       "prioriteit": "hoog",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/google-ads-dakdekkers"
     },
     {
       "term": "website laten maken loodgieter",
       "intentie": "commercieel",
       "prioriteit": "hoog",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "loodgieter-website"
     },
     {
       "term": "meer opdrachten aannemer online",
       "intentie": "commercieel",
       "prioriteit": "hoog",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/meer-opdrachten-aannemer-online"
     },
     {
       "term": "Google ranking keukenbedrijf",
       "intentie": "commercieel",
       "prioriteit": "hoog",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/google-ranking-keukenbedrijf"
     },
     {
       "term": "social media voor bouwbedrijven",
       "intentie": "commercieel",
       "prioriteit": "middel",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "social-media-bouwbedrijven"
     },
     {
       "term": "advertentiebureau keuken badkamer bouw",
       "intentie": "commercieel",
       "prioriteit": "hoog",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/advertentiebureau-keuken-badkamer"
     },
     {
       "term": "leads kopen voor badkamerbedrijf",
       "intentie": "commercieel",
       "prioriteit": "middel",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "leads-badkamerbedrijf"
     },
     {
       "term": "SEO voor interieurontwerpers",
+      "intentie": "commercieel",
+      "prioriteit": "middel",
+      "al_gebruikt": true,
+      "gebruikt_in": "seo-interieurontwerpers"
+    },
+    {
+      "term": "conversie optimalisatie website bouwbedrijf",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/conversie-optimalisatie-bouwbedrijf"
+    },
+    {
+      "term": "website laten maken dakdekker",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": true,
+      "gebruikt_in": "dakdekker-website"
+    },
+    {
+      "term": "content marketing voor aannemers",
+      "intentie": "informatief",
+      "prioriteit": "hoog",
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/content-marketing-aannemers"
+    },
+    {
+      "term": "naamsbekendheid bouwbedrijf vergroten",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/naamsbekendheid-bouwbedrijf"
+    },
+    {
+      "term": "online reputatie aannemer",
+      "intentie": "informatief",
+      "prioriteit": "hoog",
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/online-reputatie-aannemer"
+    },
+    {
+      "term": "email marketing keukenbranche",
+      "intentie": "commercieel",
+      "prioriteit": "middel",
+      "al_gebruikt": true,
+      "gebruikt_in": "email-marketing-keuken"
+    },
+    {
+      "term": "Google reviews verzamelen keukenstudio",
+      "intentie": "informatief",
+      "prioriteit": "middel",
+      "al_gebruikt": true,
+      "gebruikt_in": "google-reviews-keukenstudio"
+    },
+    {
+      "term": "landingspagina laten maken installateur",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": true,
+      "gebruikt_in": "landingspagina-installateur"
+    },
+    {
+      "term": "lead nurturing keuken sanitair",
+      "intentie": "informatief",
+      "prioriteit": "middel",
+      "al_gebruikt": true,
+      "gebruikt_in": "lead-nurturing-keuken-sanitair"
+    },
+    {
+      "term": "marketingstrategie voor renovatiebedrijf",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/marketingstrategie-renovatiebedrijf"
+    },
+    {
+      "term": "SEO voor schildersbedrijven",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/seo-voor-schildersbedrijven"
+    },
+    {
+      "term": "meer aanvragen dakdekker",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/meer-aanvragen-dakdekker"
+    },
+    {
+      "term": "Google Ads voor loodgieters",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/google-ads-voor-loodgieters"
+    },
+    {
+      "term": "website optimaliseren bouwbedrijf",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/website-optimaliseren-bouwbedrijf"
+    },
+    {
+      "term": "leads genereren elektricien",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/leads-genereren-elektricien"
+    },
+    {
+      "term": "lokale SEO voor aannemers",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": true,
+      "gebruikt_in": "lokale-seo-aannemers"
+    },
+    {
+      "term": "online marketing stukadoor",
+      "intentie": "commercieel",
+      "prioriteit": "middel",
+      "al_gebruikt": true,
+      "gebruikt_in": "stukadoor-marketing"
+    },
+    {
+      "term": "website laten maken kozijnenbedrijf",
+      "intentie": "commercieel",
+      "prioriteit": "middel",
+      "al_gebruikt": true,
+      "gebruikt_in": "kozijnenbedrijf-website"
+    },
+    {
+      "term": "adverteren voor badkamerinstallateurs",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": true,
+      "gebruikt_in": "badkamerinstallateur-adverteren"
+    },
+    {
+      "term": "marketing voor cv-installateurs",
+      "intentie": "commercieel",
+      "prioriteit": "middel",
+      "al_gebruikt": true,
+      "gebruikt_in": "cv-installateur-marketing"
+    },
+    {
+      "term": "marketing voor verwarmingsbedrijf",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "Google Ads voor renovatiebedrijven",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "leads genereren voor schilders",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "meer klanten elektricien",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "website laten maken ventilatiebedrijf",
+      "intentie": "commercieel",
+      "prioriteit": "middel",
+      "al_gebruikt": false
+    },
+    {
+      "term": "SEO voor loodgieters",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "Meta Ads voor aannemers",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "klanten werven keukenstudio",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "online marketing kozijnenbedrijf",
+      "intentie": "commercieel",
+      "prioriteit": "middel",
+      "al_gebruikt": false
+    },
+    {
+      "term": "digitale marketing dakkapelbedrijf",
       "intentie": "commercieel",
       "prioriteit": "middel",
       "al_gebruikt": false
