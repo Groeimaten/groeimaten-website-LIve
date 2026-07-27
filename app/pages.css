@@ -3006,16 +3006,10 @@ html[data-theme="light"] .media-mention__frame {
     padding: 10px 20px;
     background: oklch(16% 0.007 65);
     border: 1px solid oklch(67% 0.09 75 / 0.22);
-    border-radius: 100px;
+    border-radius: 8px;
     font-size: 0.85rem;
     font-weight: 500;
     color: oklch(84% 0.005 80);
-    transition: border-color 0.25s ease, background 0.25s ease;
-}
-
-.sector-pill:hover {
-    border-color: oklch(67% 0.09 75 / 0.45);
-    background: oklch(67% 0.09 75 / 0.07);
 }
 
 .sector-pill__icon { color: oklch(67% 0.09 75); }

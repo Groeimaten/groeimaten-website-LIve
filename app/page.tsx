@@ -378,7 +378,7 @@ export default function HomePage() {
                 clientName="Stoop Keukens"
                 description="Van een gedateerde website naar een moderne, snelle showroom-ervaring die veel beter vindbaar is en meer serieuze aanvragen oplevert."
                 beforeSrc="/images/voor-na/stoop-keukens-oud.jpeg"
-                afterSrc="/images/voor-na/stoop-keukens-nieuw.png"
+                afterSrc="/images/voor-na/stoop-keukens-nieuw.jpeg"
               />
             </ScrollReveal>
             <ScrollReveal delay={3}>
