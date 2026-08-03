@@ -6,7 +6,7 @@ import FaqAccordion from "@/components/FaqAccordion"
 import ContactForm from "@/components/ContactForm"
 
 export const metadata: Metadata = {
-  title: "Contact | Groeimaten — digital marketing bureau keuken en sanitair",
+  title: "Contact | Groeimaten — gratis gesprek inplannen",
   description:
     "Neem contact op met Groeimaten. Plan een gratis adviesgesprek voor jouw keuken, badkamer of bouwbedrijf. Geen verplichtingen.",
   alternates: {

@@ -83,5 +83,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/kozijnenbedrijf-website`, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/badkamerinstallateur-adverteren`, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/cv-installateur-marketing`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/marketing-verwarmingsbedrijf`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/blog/google-ads-renovatiebedrijven`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/blog/leads-genereren-schilders`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/blog/meer-klanten-elektricien`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/blog/seo-voor-loodgieters`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/meta-ads-aannemers`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/klanten-werven-keukenstudio`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/online-marketing-kozijnenbedrijf`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/ventilatiebedrijf-website`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/dakkapelbedrijf-marketing`, changeFrequency: 'monthly', priority: 0.85 },
   ];
 }

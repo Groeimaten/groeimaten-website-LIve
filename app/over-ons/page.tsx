@@ -4,16 +4,16 @@ import ScrollReveal from "@/components/ScrollReveal"
 import ReviewsMarquee from "@/components/ReviewsMarquee"
 
 export const metadata: Metadata = {
-  title: "Over ons | Digital marketing bureau keuken en sanitair",
+  title: "Over Groeimaten | Marketing bureau keuken, badkamer en bouw",
   description:
-    "Groeimaten is een digital marketing bureau gespecialiseerd in keuken, badkamer en bouw. Leer de founders Jelle Westerbroek en Thomas Ghobadi kennen.",
+    "Groeimaten is een digital marketing bureau voor keuken-, badkamer- en bouwbedrijven in Nederland. Opgericht door Jelle Westerbroek en Thomas Ghobadi. Specialist in leadgeneratie en online groei.",
   alternates: {
     canonical: "https://groeimaten.com/over-ons",
   },
   openGraph: {
-    title: "Over ons | Groeimaten — sectorspecialist keuken en sanitair",
+    title: "Over Groeimaten | Marketing bureau keuken, badkamer en bouw",
     description:
-      "Groeimaten is een digital marketing bureau gespecialiseerd in keuken, badkamer en bouw. Opgericht door Jelle Westerbroek en Thomas Ghobadi.",
+      "Groeimaten is een digital marketing bureau voor keuken-, badkamer- en bouwbedrijven. Opgericht door Jelle Westerbroek en Thomas Ghobadi. Specialist in leadgeneratie.",
     url: "https://groeimaten.com/over-ons",
   },
 }
