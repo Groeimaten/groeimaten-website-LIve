@@ -22,10 +22,12 @@ const INITIAL: FormState = {
 
 export default function ContactForm() {
   const [form, setForm] = useState<FormState>(INITIAL)
+  const [honeypot, setHoneypot] = useState("")
   const [isLoading, setIsLoading] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const formRef = useRef<HTMLFormElement>(null)
+  const renderedAt = useRef(Date.now())
 
   const update = (field: keyof FormState) => (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -40,7 +42,7 @@ export default function ContactForm() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        body: JSON.stringify({ ...form, _hp: honeypot, _ts: renderedAt.current }),
       })
       const json = await res.json()
 
@@ -49,6 +51,8 @@ export default function ContactForm() {
       } else {
         setIsSubmitted(true)
         setForm(INITIAL)
+        setHoneypot("")
+        renderedAt.current = Date.now()
       }
     } catch {
       setError("Verbinding mislukt. Controleer je internet en probeer opnieuw.")
@@ -81,6 +85,22 @@ export default function ContactForm() {
 
   return (
     <form className="contact-form" ref={formRef} onSubmit={handleSubmit} noValidate>
+      <div
+        style={{ position: "absolute", left: "-9999px", top: "-9999px", opacity: 0, height: 0, overflow: "hidden" }}
+        aria-hidden="true"
+      >
+        <label htmlFor="bedrijfswebsite">Bedrijfswebsite</label>
+        <input
+          type="text"
+          id="bedrijfswebsite"
+          name="bedrijfswebsite"
+          tabIndex={-1}
+          autoComplete="off"
+          value={honeypot}
+          onChange={(e) => setHoneypot(e.target.value)}
+        />
+      </div>
+
       <div className="form-row">
         <div className="form-group">
           <label htmlFor="naam">Naam *</label>

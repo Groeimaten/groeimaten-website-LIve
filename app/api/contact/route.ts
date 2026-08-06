@@ -19,7 +19,18 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Ongeldig verzoek." }, { status: 400 })
   }
 
-  const { naam, bedrijf, email, telefoon, dienst, bericht } = body
+  const { naam, bedrijf, email, telefoon, dienst, bericht, _hp, _ts } = body as Record<string, string>
+
+  // Honeypot: bots vullen dit verborgen veld in, mensen niet.
+  if (_hp) {
+    return NextResponse.json({ success: true })
+  }
+
+  // Timing-check: bots versturen het formulier vrijwel direct na laden.
+  const renderedAt = Number(_ts)
+  if (!renderedAt || Date.now() - renderedAt < 2500) {
+    return NextResponse.json({ success: true })
+  }
 
   if (!naam?.trim() || !bedrijf?.trim() || !email?.trim() || !bericht?.trim()) {
     return NextResponse.json({ error: "Vul alle verplichte velden in." }, { status: 400 })
@@ -28,6 +39,12 @@ export async function POST(req: NextRequest) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
   if (!emailRegex.test(email)) {
     return NextResponse.json({ error: "Ongeldig e-mailadres." }, { status: 400 })
+  }
+
+  // Linkspam-heuristiek: legitieme berichten bevatten zelden meerdere URL's.
+  const urlMatches = bericht.match(/https?:\/\/|www\./gi) ?? []
+  if (urlMatches.length >= 2) {
+    return NextResponse.json({ success: true })
   }
 
   const data: ContactFormData = { naam, bedrijf, email, telefoon, dienst, bericht }
