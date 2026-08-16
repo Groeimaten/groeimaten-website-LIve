@@ -13,15 +13,21 @@ import ReviewsMarquee from "@/components/ReviewsMarquee"
 export const metadata: Metadata = {
   title: "Groeimaten | Digital marketing bureau keuken, badkamer en bouw",
   description:
-    "Groeimaten is het digital marketing bureau voor keuken-, badkamer- en bouwbedrijven. Meer showroomafspraken en kwalitatieve aanvragen via SEO, Google Ads en Meta Ads.",
+    "Groeimaten helpt keuken, badkamer en bouwbedrijven aan meer klanten via SEO, Google Ads en Meta Ads. Alleen serieuze aanvragen die ook echt komen opdagen.",
   alternates: {
     canonical: "https://groeimaten.com",
   },
   openGraph: {
     title: "Groeimaten | Digital marketing bureau keuken, badkamer en bouw",
     description:
-      "Groeimaten helpt keuken-, badkamer- en bouwbedrijven groeien. Meer showroomafspraken en kwalitatieve aanvragen via bewezen marketing.",
+      "Groeimaten helpt keuken, badkamer en bouwbedrijven groeien. Meer showroomafspraken en kwalitatieve aanvragen via SEO, Google Ads en Meta Ads.",
     url: "https://groeimaten.com",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Groeimaten | Digital marketing bureau keuken, badkamer en bouw",
+    description:
+      "Groeimaten helpt keuken, badkamer en bouwbedrijven aan meer klanten via SEO, Google Ads en Meta Ads.",
   },
 }
 
@@ -75,6 +81,14 @@ const faqItems = [
   {
     question: "Wat maakt jullie anders dan een gewoon marketingbureau?",
     answer: "Wij kennen de keuken- en sanitairmarkt als geen ander. Geen leercurve, geen generieke aanpak. Dag 1 aan de slag. Een generiek bureau leert jouw markt misschien na maanden. Wij zijn er al.",
+  },
+  {
+    question: "Helpen jullie ook loodgieters, elektriciens en andere installateurs?",
+    answer: "Ja. Groeimaten werkt voor de hele keuken, badkamer en bouwsector. Dat omvat ook installateurs, loodgieters, elektriciens, aannemers en afbouwbedrijven. We kennen de markt en weten welke kanalen voor jouw type bedrijf het beste werken.",
+  },
+  {
+    question: "Wat is leadgeneratie en hoe werkt dat voor een bouwbedrijf of keukenstudio?",
+    answer: "Leadgeneratie is het proces waarmee je potentiële klanten aantrekt die interesse tonen in jouw diensten, via je website, Google Ads of sociale media. Voor bouwbedrijven en keukenstudio's betekent dat: mensen die een formulier invullen, een telefoonnummer achterlaten of een showroomafspraak inplannen. Groeimaten richt dat hele systeem voor je in.",
   },
 ]
 
@@ -135,6 +149,22 @@ export default function HomePage() {
         acceptedAnswer: {
           "@type": "Answer",
           text: "Ja. Groeimaten bouwt websites voor aannemers, installateurs, keukenstudio's en badkamerbedrijven. Websites die gevonden worden op Google en aanvragen genereren, niet alleen goed uitzien.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Helpen jullie ook loodgieters, elektriciens en andere installateurs?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja. Groeimaten werkt voor de hele keuken, badkamer en bouwsector, inclusief installateurs, loodgieters, elektriciens, aannemers en afbouwbedrijven. We kennen de markt en weten welke kanalen voor jouw type bedrijf het beste werken.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Wat is leadgeneratie en hoe werkt dat voor een bouwbedrijf of keukenstudio?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Leadgeneratie is het proces waarmee een bedrijf potentiële klanten aantrekt die interesse tonen via de website, Google Ads of sociale media. Voor bouwbedrijven en keukenstudio's betekent dat: mensen die een formulier invullen, een telefoonnummer achterlaten of een showroomafspraak inplannen. Groeimaten richt dat systeem volledig in.",
         },
       },
     ],

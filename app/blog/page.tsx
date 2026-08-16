@@ -19,6 +19,46 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "conversie-optimalisatie-keukenstudio",
+    titel: "Conversie optimalisatie voor een keukenstudio: van bezoeker naar showroomafspraak",
+    samenvatting:
+      "Negen van de tien bezoekers verlaten een keukenstudiowebsite zonder contact op te nemen. Maar er is een groot verschil tussen een studio die 8 procent converteert en een studio die 1 procent converteert. Waar zit die kloof?",
+    datum: "10 augustus 2026",
+    keyphrase: "Conversie optimalisatie keukenstudio",
+  },
+  {
+    slug: "meer-aanvragen-keukenstudio",
+    titel: "Meer aanvragen voor je keukenstudio: drie plekken waar je winst pakt",
+    samenvatting:
+      "Een keukenstudio die zijn conversiepercentage van 0,8 naar 1,6 procent brengt, verdubbelt zijn showroomafspraken zonder extra bezoekers. Waar zit die winst precies?",
+    datum: "10 augustus 2026",
+    keyphrase: "Meer aanvragen keukenstudio",
+  },
+  {
+    slug: "leadgeneratie-bouwbedrijf",
+    titel: "Leadgeneratie voor bouwbedrijven: minder afhankelijk van wie je kent",
+    samenvatting:
+      "De meeste bouwbedrijven groeien via mond-tot-mondreclame. Dat werkt totdat het niet meer werkt. Hoe bouw je een eigen aanvragenstroom op die niet afhankelijk is van je netwerk?",
+    datum: "10 augustus 2026",
+    keyphrase: "Leadgeneratie bouwbedrijf",
+  },
+  {
+    slug: "seo-voor-elektriciens",
+    titel: "SEO voor elektriciens: gevonden worden terwijl je aan het werk bent",
+    samenvatting:
+      "Als iemand zoekt naar een elektricien in jouw stad, heeft hij al besloten dat hij er een nodig heeft. De vraag is alleen nog welke. Wie bovenaan staat, krijgt het telefoontje.",
+    datum: "10 augustus 2026",
+    keyphrase: "SEO voor elektriciens",
+  },
+  {
+    slug: "meer-klanten-loodgieter",
+    titel: "Meer klanten als loodgieter: structureel eigen aanvragen genereren",
+    samenvatting:
+      "Loodgieters die afhankelijk zijn van mond-tot-mondreclame groeien niet voorspelbaar. Hoe bouw je een constante stroom eigen aanvragen op via je website en Google?",
+    datum: "10 augustus 2026",
+    keyphrase: "Meer klanten loodgieter",
+  },
+  {
     slug: "leads-genereren-elektricien",
     titel: "Leads genereren als elektricien: eigen aanvragen versus leadplatforms",
     samenvatting:

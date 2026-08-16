@@ -1,7 +1,7 @@
 {
   "gegenereerd_op": "2026-06-16",
-  "bijgewerkt_op": "2026-08-03",
-  "versie": 8,
+  "bijgewerkt_op": "2026-08-10",
+  "versie": 9,
   "zoekwoorden": [
     {
       "term": "SEO voor keukenstudio",
@@ -567,60 +567,130 @@
       "term": "meer klanten loodgieter",
       "intentie": "commercieel",
       "prioriteit": "hoog",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/meer-klanten-loodgieter"
     },
     {
       "term": "SEO voor elektriciens",
       "intentie": "commercieel",
       "prioriteit": "hoog",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/seo-voor-elektriciens"
     },
     {
       "term": "online marketing afbouwbedrijf",
       "intentie": "commercieel",
       "prioriteit": "middel",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "online-marketing-afbouwbedrijf"
     },
     {
       "term": "leadgeneratie bouwbedrijf",
       "intentie": "commercieel",
       "prioriteit": "hoog",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/leadgeneratie-bouwbedrijf"
     },
     {
       "term": "website laten maken hoveniersbedrijf",
       "intentie": "commercieel",
       "prioriteit": "middel",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "hoveniersbedrijf-website"
     },
     {
       "term": "Google Ads voor schildersbedrijven",
       "intentie": "commercieel",
       "prioriteit": "hoog",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "google-ads-schildersbedrijven"
     },
     {
       "term": "meer aanvragen keukenstudio",
       "intentie": "commercieel",
       "prioriteit": "hoog",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/meer-aanvragen-keukenstudio"
     },
     {
       "term": "marketing voor zonweringsbedrijf",
       "intentie": "commercieel",
       "prioriteit": "middel",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "marketing-zonweringsbedrijf"
     },
     {
       "term": "conversie optimalisatie keukenstudio",
       "intentie": "commercieel",
       "prioriteit": "hoog",
-      "al_gebruikt": false
+      "al_gebruikt": true,
+      "gebruikt_in": "blog/conversie-optimalisatie-keukenstudio"
     },
     {
       "term": "website laten maken glazenwasserij",
       "intentie": "commercieel",
       "prioriteit": "laag",
+      "al_gebruikt": true,
+      "gebruikt_in": "glazenwasserij-website"
+    },
+    {
+      "term": "marketing bureau voor installateurs",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "SEO voor dakdekkers",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "leads genereren hoveniersbedrijf",
+      "intentie": "commercieel",
+      "prioriteit": "middel",
+      "al_gebruikt": false
+    },
+    {
+      "term": "Google Ads voor stukadoors",
+      "intentie": "commercieel",
+      "prioriteit": "middel",
+      "al_gebruikt": false
+    },
+    {
+      "term": "website laten maken afbouwbedrijf",
+      "intentie": "commercieel",
+      "prioriteit": "middel",
+      "al_gebruikt": false
+    },
+    {
+      "term": "online marketing voor elektriciens",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "meer klanten stukadoor",
+      "intentie": "commercieel",
+      "prioriteit": "hoog",
+      "al_gebruikt": false
+    },
+    {
+      "term": "website laten maken isolatiebedrijf",
+      "intentie": "commercieel",
+      "prioriteit": "middel",
+      "al_gebruikt": false
+    },
+    {
+      "term": "marketing voor isolatiebedrijf",
+      "intentie": "commercieel",
+      "prioriteit": "middel",
+      "al_gebruikt": false
+    },
+    {
+      "term": "Google Ads voor hoveniersbedrijven",
+      "intentie": "commercieel",
+      "prioriteit": "middel",
       "al_gebruikt": false
     }
   ]

@@ -93,5 +93,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/online-marketing-kozijnenbedrijf`, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/ventilatiebedrijf-website`, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/dakkapelbedrijf-marketing`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/blog/meer-klanten-loodgieter`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/blog/seo-voor-elektriciens`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/blog/leadgeneratie-bouwbedrijf`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/blog/meer-aanvragen-keukenstudio`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/blog/conversie-optimalisatie-keukenstudio`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/hoveniersbedrijf-website`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/google-ads-schildersbedrijven`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/marketing-zonweringsbedrijf`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/online-marketing-afbouwbedrijf`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/glazenwasserij-website`, changeFrequency: 'monthly', priority: 0.85 },
   ];
 }
