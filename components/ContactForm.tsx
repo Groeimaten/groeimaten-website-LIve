@@ -49,6 +49,9 @@ export default function ContactForm() {
       if (!res.ok) {
         setError(json.error ?? "Er is iets misgegaan. Probeer het opnieuw.")
       } else {
+        (window as Window & { gtag?: (...args: unknown[]) => void }).gtag?.("event", "generate_lead", {
+          form_name: "contact_form",
+        })
         setIsSubmitted(true)
         setForm(INITIAL)
         setHoneypot("")
