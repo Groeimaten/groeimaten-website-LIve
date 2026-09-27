@@ -15,6 +15,7 @@ export default function Footer() {
           <h4>Diensten</h4>
           <ul>
             <li><Link href="/diensten#meta-ads">Meta Ads &amp; Funnels</Link></li>
+            <li><Link href="/kigo">Kigo</Link></li>
             <li><Link href="/diensten#websites">Website Development</Link></li>
             <li><Link href="/diensten#seo">Google &amp; AI Ranking</Link></li>
           </ul>

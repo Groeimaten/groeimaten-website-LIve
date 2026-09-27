@@ -9,25 +9,26 @@ import FaqAccordion from "@/components/FaqAccordion"
 import StatsCounter from "@/components/StatsCounter"
 import BeforeAfterSlider from "@/components/BeforeAfterSlider"
 import ReviewsMarquee from "@/components/ReviewsMarquee"
+import KigoTeaser from "@/components/KigoTeaser"
 
 export const metadata: Metadata = {
-  title: "Groeimaten | Digital marketing bureau keuken, badkamer en bouw",
+  title: "Groeimaten | Meta Ads en Google Ads voor keuken, badkamer en bouw",
   description:
-    "Groeimaten helpt keuken, badkamer en bouwbedrijven aan meer klanten via SEO, Google Ads en Meta Ads. Alleen serieuze aanvragen die ook echt komen opdagen.",
+    "Groeimaten helpt keuken-, badkamer- en bouwbedrijven aan meer showroomafspraken met Meta Ads, Google Ads en Kigo, onze eigen AI-tool. Alleen serieuze aanvragen die ook echt komen opdagen.",
   alternates: {
     canonical: "https://groeimaten.com",
   },
   openGraph: {
-    title: "Groeimaten | Digital marketing bureau keuken, badkamer en bouw",
+    title: "Groeimaten | Meta Ads en Google Ads voor keuken, badkamer en bouw",
     description:
-      "Groeimaten helpt keuken, badkamer en bouwbedrijven groeien. Meer showroomafspraken en kwalitatieve aanvragen via SEO, Google Ads en Meta Ads.",
+      "Groeimaten helpt keuken-, badkamer- en bouwbedrijven groeien. Meer showroomafspraken en kwalitatieve aanvragen via Meta Ads, Google Ads en Kigo.",
     url: "https://groeimaten.com",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Groeimaten | Digital marketing bureau keuken, badkamer en bouw",
+    title: "Groeimaten | Meta Ads en Google Ads voor keuken, badkamer en bouw",
     description:
-      "Groeimaten helpt keuken, badkamer en bouwbedrijven aan meer klanten via SEO, Google Ads en Meta Ads.",
+      "Groeimaten helpt keuken-, badkamer- en bouwbedrijven aan meer klanten via Meta Ads, Google Ads en Kigo.",
   },
 }
 
@@ -67,6 +68,10 @@ function ReviewCard({ r, prefix }: { r: typeof reviews[0], prefix: string }) {
 
 const faqItems = [
   {
+    question: "Wat is Kigo?",
+    answer: "Kigo is een AI-tool die Groeimaten zelf heeft ontwikkeld voor keuken- en badkamerbedrijven. Je klant beleeft zijn nieuwe keuken of badkamer al voordat hij in de showroom staat, en jij krijgt een aanvraag met wensen en stijl erbij. We zetten Kigo in onze campagnes in. Hoe het precies werkt, laten we je graag zien in een gesprek.",
+  },
+  {
     question: "Werken jullie ook voor andere sectoren dan keuken en sanitair?",
     answer: "Nee. Wij werken uitsluitend voor keuken- en sanitairbedrijven. Die focus is onze kracht: we kennen jouw klant, jouw sector en jouw uitdagingen als geen ander.",
   },
@@ -103,6 +108,14 @@ export default function HomePage() {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: [
+      {
+        "@type": "Question",
+        name: "Wat is Kigo?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Kigo is een AI-tool die Groeimaten zelf heeft ontwikkeld voor keuken- en badkamerbedrijven. Je klant beleeft zijn nieuwe keuken of badkamer al voordat hij in de showroom staat, en jij krijgt een aanvraag met wensen en stijl erbij. We zetten Kigo in onze campagnes in. Hoe het precies werkt, laten we je graag zien in een gesprek.",
+        },
+      },
       {
         "@type": "Question",
         name: "Werken jullie ook voor andere sectoren dan keuken en sanitair?",
@@ -208,7 +221,7 @@ export default function HomePage() {
               <em>Elke maand.</em>
             </h1>
             <p className="hero__subtitle hero-anim hero-anim--2">
-              Groeimaten helpt keuken- en sanitairbedrijven groeien met bewezen strategie. Geen generiek marketingbureau, maar de specialist voor de keuken- en sanitairbranche.
+              Wij draaien Meta Ads en Google Ads voor keuken- en sanitairbedrijven. Campagnes die serieuze aanvragen opleveren, en opvolging die ze in je showroom krijgt. Geen generiek bureau, maar de specialist in jouw branche.
             </p>
             <div className="hero__actions hero-anim hero-anim--3">
               <Link href="/afspraak" className="btn btn--blue btn--lg">
@@ -224,7 +237,7 @@ export default function HomePage() {
               <div className="hero__proof-divider" aria-hidden="true" />
               <div className="hero__proof-item">
                 <span className="hero__proof-number">100%</span>
-                <span className="hero__proof-label">keuken &amp; sanitair specialist</span>
+                <span className="hero__proof-label">focus op ads &amp; afspraken</span>
               </div>
               <div className="hero__proof-divider" aria-hidden="true" />
               <div className="hero__proof-item">
@@ -336,6 +349,9 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* KIGO */}
+      <KigoTeaser />
+
       {/* WERKWIJZE */}
       <section className="ww2" id="werkwijze">
         <div className="container">
@@ -384,6 +400,61 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* FOUNDERS */}
+      <section className="home-founders">
+        <div className="container">
+          <div className="home-founders__inner">
+            <ScrollReveal className="home-founders__photo">
+              <div className="home-founders__photo-stack">
+                <div className="about-photo-frame">
+                  <div className="about-photo-frame__glow" />
+                  <Image src="/images/founders-hero.webp" alt="Jelle Westerbroek en Thomas Ghobadi van Groeimaten" width={600} height={500} loading="lazy" quality={90} style={{ objectFit: "cover", objectPosition: "center 40%" }} />
+                </div>
+                <div className="founders-duo">
+                  <div className="founder-mini">
+                    <Image src="/images/jelle-portrait.webp" alt="Jelle Westerbroek" fill style={{ objectFit: "cover", objectPosition: "center 30%" }} sizes="20vw" quality={90} />
+                    <div className="founder-mini__label">
+                      <span className="founder-mini__name">Jelle Westerbroek</span>
+                      <span className="founder-mini__role">CEO · Ads &amp; Team</span>
+                    </div>
+                  </div>
+                  <div className="founder-mini">
+                    <Image src="/images/thomas-portrait.webp" alt="Thomas Ghobadi" fill style={{ objectFit: "cover", objectPosition: "center 30%" }} sizes="20vw" quality={90} />
+                    <div className="founder-mini__label">
+                      <span className="founder-mini__name">Thomas Ghobadi</span>
+                      <span className="founder-mini__role">CEO · Websites &amp; Klantcontact</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={2} className="home-founders__content">
+              <span className="section-label">Het team</span>
+              <h2 className="section-title section-title--white">Twee founders.<br />Één focus.</h2>
+              <p>Jelle en Thomas richten Groeimaten samen als VOF. Jelle stuurt de ads-afdeling en het team aan, het hart van wat we doen. Thomas bewaakt het klantcontact en de websites die onder de campagnes liggen. Directe communicatie, snelle uitvoering, echte resultaten.</p>
+              <p>Een van de weinige specialisten in Nederland die uitsluitend voor deze sector werkt. Meer dan 35 merken gingen al voor.</p>
+              <Link href="/over-ons" className="btn btn--outline">
+                Leer ons kennen <ArrowRight />
+              </Link>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* CASES SLIDER */}
+      <section className="cases-slider" id="cases">
+        <div className="container">
+          <ScrollReveal className="section-header">
+            <span className="section-label">Ons werk</span>
+            <h2 className="section-title section-title--white">Uitgelichte<br /><em>cases</em></h2>
+          </ScrollReveal>
+          <CasesSlider />
+          <ScrollReveal className="cases-cta">
+            <Link href="/cases" className="btn btn--blue btn--lg">Bekijk alle cases <ArrowRight /></Link>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* VOOR EN NA */}
       <section className="voor-na" id="voor-na">
         <div className="container">
@@ -420,61 +491,6 @@ export default function HomePage() {
               />
             </ScrollReveal>
           </div>
-        </div>
-      </section>
-
-      {/* FOUNDERS */}
-      <section className="home-founders">
-        <div className="container">
-          <div className="home-founders__inner">
-            <ScrollReveal className="home-founders__photo">
-              <div className="home-founders__photo-stack">
-                <div className="about-photo-frame">
-                  <div className="about-photo-frame__glow" />
-                  <Image src="/images/founders-hero.webp" alt="Jelle Westerbroek en Thomas Ghobadi van Groeimaten" width={600} height={500} loading="lazy" quality={90} style={{ objectFit: "cover", objectPosition: "center 40%" }} />
-                </div>
-                <div className="founders-duo">
-                  <div className="founder-mini">
-                    <Image src="/images/jelle-portrait.webp" alt="Jelle Westerbroek" fill style={{ objectFit: "cover", objectPosition: "center 30%" }} sizes="20vw" quality={90} />
-                    <div className="founder-mini__label">
-                      <span className="founder-mini__name">Jelle Westerbroek</span>
-                      <span className="founder-mini__role">CEO · Ads &amp; Team</span>
-                    </div>
-                  </div>
-                  <div className="founder-mini">
-                    <Image src="/images/thomas-portrait.webp" alt="Thomas Ghobadi" fill style={{ objectFit: "cover", objectPosition: "center 30%" }} sizes="20vw" quality={90} />
-                    <div className="founder-mini__label">
-                      <span className="founder-mini__name">Thomas Ghobadi</span>
-                      <span className="founder-mini__role">CEO · Websites &amp; Klantcontact</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </ScrollReveal>
-            <ScrollReveal delay={2} className="home-founders__content">
-              <span className="section-label">Het team</span>
-              <h2 className="section-title section-title--white">Twee founders.<br />Één focus.</h2>
-              <p>Jelle en Thomas richten Groeimaten samen als VOF. Jelle stuurt de ads-afdeling en het team aan. Thomas beheert de website-afdeling en onderhoudt het klantcontact. Directe communicatie, snelle uitvoering, echte resultaten.</p>
-              <p>Een van de weinige specialisten in Nederland die uitsluitend voor deze sector werkt. Meer dan 35 merken gingen al voor.</p>
-              <Link href="/over-ons" className="btn btn--outline">
-                Leer ons kennen <ArrowRight />
-              </Link>
-            </ScrollReveal>
-          </div>
-        </div>
-      </section>
-
-      {/* CASES SLIDER */}
-      <section className="cases-slider" id="cases">
-        <div className="container">
-          <ScrollReveal className="section-header">
-            <span className="section-label">Ons werk</span>
-            <h2 className="section-title section-title--white">Uitgelichte<br /><em>cases</em></h2>
-          </ScrollReveal>
-          <CasesSlider />
-          <ScrollReveal className="cases-cta">
-            <Link href="/cases" className="btn btn--blue btn--lg">Bekijk alle cases <ArrowRight /></Link>
-          </ScrollReveal>
         </div>
       </section>
 

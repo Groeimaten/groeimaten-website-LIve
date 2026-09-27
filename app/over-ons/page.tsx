@@ -185,7 +185,7 @@ export default function OverOnsPage() {
                   <em>K&amp;D Magazine</em>
                 </h2>
                 <p className="media-mention__text">
-                  K&amp;D Magazine, hét vakblad voor de keuken- en sanitairsector, schreef over de aanpak van
+                  <a href="https://www.keukenendesign.nl/" target="_blank" rel="noopener" className="media-mention__link">K&amp;D Magazine</a>, hét vakblad voor de keuken- en sanitairsector, schreef over de aanpak van
                   Groeimaten. Hoe wij als jonge specialist met AI en marketing keuken- en sanitairbedrijven helpen aan
                   meer showroomafspraken.
                 </p>
@@ -197,7 +197,18 @@ export default function OverOnsPage() {
                   <span className="media-mention__pub-dot"></span>
                   <span>Keuken &amp; Bad vakblad</span>
                   <span className="media-mention__pub-dot"></span>
-                  <span>Groeimaten als sectorspecialist</span>
+                  <a
+                    href="https://keukenendesign.nl/het-verhaal-achter-groeimaten-met-ai-en-marketing-naar-meer-afspraken/"
+                    target="_blank"
+                    rel="noopener"
+                    className="media-mention__link"
+                  >
+                    Lees het artikel op keukenendesign.nl →
+                  </a>
+                  <span className="media-mention__pub-dot"></span>
+                  <a href="https://www.keukenendesign.nl/" target="_blank" rel="noopener" className="media-mention__link">
+                    Bekijk K&amp;D →
+                  </a>
                 </div>
               </div>
             </ScrollReveal>
@@ -352,8 +363,9 @@ export default function OverOnsPage() {
                 <div className="value-card__number" aria-hidden="true">03</div>
                 <h3>Innovatief</h3>
                 <p>
-                  We zijn jong en hongerig. Nieuwe platforms, technieken en trends passen we als eerste toe. Geen
-                  verouderde aanpak, geen &quot;zo doen we het altijd&quot;.
+                  We zijn jong en hongerig. Nieuwe platforms, technieken en trends passen we als eerste toe. Daarom
+                  bouwden we <Link href="/kigo" className="media-mention__link">Kigo</Link>, onze eigen AI-tool voor
+                  keuken- en badkamerbedrijven.
                 </p>
               </div>
             </ScrollReveal>

@@ -2,11 +2,12 @@ import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
+import KigoTeaser from "@/components/KigoTeaser"
 
 export const metadata: Metadata = {
   title: "Marketingdiensten voor keuken, badkamer en bouw | Groeimaten",
   description:
-    "Meta Ads, Google Ads, website development en SEO voor keuken-, badkamer- en bouwbedrijven. Groeimaten levert alles wat je nodig hebt om structureel meer klanten te krijgen.",
+    "Meta Ads, Google Ads en Kigo, onze eigen AI-tool, voor keuken-, badkamer- en bouwbedrijven. Aangevuld met websites en SEO als basis onder je campagnes.",
   alternates: {
     canonical: "https://groeimaten.com/diensten",
   },
@@ -90,8 +91,8 @@ export default function DienstenPage() {
                   <em>badkamer en bouw.</em>
                 </h1>
                 <p className="page-hero__subtitle">
-                  Van Meta Ads en Google Ads tot websites en SEO. Een compleet pakket, specifiek ontwikkeld
-                  voor keuken-, badkamer- en bouwbedrijven die structureel meer klanten willen.
+                  Advertenties staan centraal. Met Meta Ads, Google Ads en Kigo halen we serieuze aanvragen
+                  binnen. Een snelle website en goede vindbaarheid zorgen dat die campagnes maximaal renderen.
                 </p>
               </div>
             </ScrollReveal>
@@ -110,7 +111,7 @@ export default function DienstenPage() {
           <div className="service-detail__inner">
             <ScrollReveal>
               <div className="service-detail__content">
-                <span className="section-label">Dienst 01</span>
+                <span className="section-label">Onze kern · Dienst 01</span>
                 <h2 className="section-title section-title--white">Meta Ads &amp; Funnels</h2>
                 <p>
                   Wij bouwen en beheren je campagnes op Facebook en Instagram. Niet zomaar advertenties, maar een
@@ -204,13 +205,16 @@ export default function DienstenPage() {
         </div>
       </section>
 
+      {/* KIGO */}
+      <KigoTeaser id="kigo-dienst" />
+
       {/* SERVICE: WEBSITE */}
       <section className="service-detail service-detail--alt" id="websites">
         <div className="container">
           <div className="service-detail__inner service-detail__inner--reversed">
             <ScrollReveal>
               <div className="service-detail__content">
-                <span className="section-label">Dienst 02</span>
+                <span className="section-label">Aanvullend · De basis onder je ads</span>
                 <h2 className="section-title section-title--white">Website Development</h2>
                 <p>
                   Jouw showroom is prachtig. Jouw website moet dat ook zijn. Wij ontwerpen en bouwen conversiegerichte

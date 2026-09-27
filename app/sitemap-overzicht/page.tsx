@@ -13,6 +13,7 @@ const SECTIONS = [
     links: [
       { href: "/", label: "Home" },
       { href: "/diensten", label: "Diensten" },
+      { href: "/kigo", label: "Kigo" },
       { href: "/cases", label: "Cases" },
       { href: "/over-ons", label: "Over ons" },
       { href: "/prijzen", label: "Prijzen" },
