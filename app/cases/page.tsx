@@ -56,17 +56,17 @@ const funnelCases: FunnelCase[] = [
     results: [
       { num: "€42.149", label: "Omzet excl. btw" },
       { num: "9,8x", label: "ROAS" },
-      { num: "67%", label: "Opkomst bij afspraken" },
+      { num: "€21", label: "Per aanvraag" },
     ],
     funnel: [
       { num: "202", label: "Aanvragen" },
       { num: "12", label: "Afspraken" },
-      { num: "8", label: "Showroombezoeken" },
       { num: "2", label: "Nieuwe klanten" },
+      { num: "€42.149", label: "Omzet excl. btw" },
     ],
     challenge: "Bakker had een mooie showroom, maar geen voorspelbare manier om nieuwe badkamerklanten binnen te halen. Nieuwe aanvragen kwamen vooral uit mond-tot-mondreclame.",
     approach: "Meta Ads-campagnes gericht op huiseigenaren in de regio die een nieuwe badkamer overwegen, met een aanvraagfunnel en snelle opvolging zodat afspraken ook echt doorgaan.",
-    outcome: "Sinds april 2026: 202 aanvragen voor €21,25 per stuk, 12 afspraken waarvan twee derde ook echt kwam, en 2 nieuwe klanten. Samen goed voor €42.149 omzet excl. btw bij €4.292 adspend.",
+    outcome: "Sinds april 2026: 202 aanvragen voor €21,25 per stuk, 12 afspraken en 2 nieuwe klanten. Samen goed voor €42.149 omzet excl. btw bij €4.292 adspend.",
   },
   {
     num: "Case 04 · Meta Ads",
@@ -82,8 +82,8 @@ const funnelCases: FunnelCase[] = [
     funnel: [
       { num: "293", label: "Aanvragen" },
       { num: "14", label: "Afspraken" },
-      { num: "5", label: "Showroombezoeken" },
       { num: "2", label: "Nieuwe klanten" },
+      { num: "€27.273+", label: "Omzet excl. btw" },
     ],
     challenge: "In de regio zitten veel keukenzaken dicht op elkaar. Grando wilde opvallen bij mensen die serieus een nieuwe keuken zoeken, zonder te concurreren op prijs.",
     approach: "Meta Ads op het juiste kopersprofiel in de regio, met creatives die de showroom en het vakmanschap laten zien in plaats van kortingen.",

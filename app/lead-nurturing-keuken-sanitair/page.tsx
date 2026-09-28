@@ -162,8 +162,8 @@ export default function LeadNurturingKeukenSanitairPage() {
                 <div className="service-visual-card">
                   <div className="service-visual-card__glow" />
                   <div className="service-visual-card__stat">
-                    <span className="service-visual-card__number">67%</span>
-                    <span className="service-visual-card__label">opkomst bij afspraken (Bakker Badkamers)</span>
+                    <span className="service-visual-card__number">€279k+</span>
+                    <span className="service-visual-card__label">omzet uit ads voor één klant (Stoop Keukens)</span>
                   </div>
                   <div className="service-visual-card__bar">
                     <div className="bar" style={{ width: "88%" }} />
