@@ -185,8 +185,8 @@ export default function DienstenPage() {
                     <div className="bar" style={{ width: "94%" }}></div>
                   </div>
                   <div className="service-visual-card__stat">
-                    <span className="service-visual-card__number">35x</span>
-                    <span className="service-visual-card__label">ROAS bij Stoop Keukens</span>
+                    <span className="service-visual-card__number">€36</span>
+                    <span className="service-visual-card__label">Gem. kosten per afspraak</span>
                   </div>
                   <div className="service-visual-card__bar bar--green">
                     <div className="bar" style={{ width: "100%" }}></div>
