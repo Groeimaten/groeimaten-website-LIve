@@ -2098,7 +2098,6 @@ html[data-theme="light"] .page-hero--split {
     z-index: 1;
     background: rgba(6, 6, 6, 0.9);
     backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
     padding: 100px 0;
 }
 
@@ -2120,7 +2119,6 @@ html[data-theme="light"] .page-hero--split {
 .pricing-page .cta-section {
     background: rgba(6, 6, 6, 0.92);
     backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
 }
 
 .pricing-page .footer {

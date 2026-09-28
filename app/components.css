@@ -25,7 +25,6 @@
 .nav.scrolled {
     background: rgba(10, 10, 10, 0.92);
     backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
     padding: 14px 0;
     box-shadow: 0 1px 0 rgba(184, 154, 90, 0.08), 0 4px 30px rgba(0,0,0,0.3);
 }
@@ -151,7 +150,6 @@
     border-radius: 6px;
     border: 1px solid rgba(255,255,255,0.18);
     backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
     position: relative;
     z-index: 1001;
 }
@@ -549,14 +547,15 @@
 /* Full-screen hero */
 .hero--fullscreen {
     background: oklch(9% 0.006 60);
-    padding: 0;
+    /* Ruimte voor de vaste header, zodat de hero-tekst er op lage schermen niet onder schuift */
+    padding: 120px 0 0;
     align-items: flex-end;
 }
 
 @media (max-width: 768px) {
     .hero--fullscreen {
         align-items: flex-start;
-        padding-top: 100px;
+        padding-top: 112px;
     }
 }
 
@@ -1446,7 +1445,6 @@
     border-radius: 10px;
     padding: 12px 18px;
     backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
     text-align: center;
     z-index: 2;
 }
