@@ -207,8 +207,8 @@ export default function KlantenWervenKeukenstudioPage() {
                     <div className="bar" style={{ width: "88%" }} />
                   </div>
                   <div className="service-visual-card__stat">
-                    <span className="service-visual-card__number">100k+</span>
-                    <span className="service-visual-card__label">Extra omzet gegenereerd</span>
+                    <span className="service-visual-card__number">€390k+</span>
+                    <span className="service-visual-card__label">Omzet uit Meta Ads (4 cases)</span>
                   </div>
                   <div className="service-visual-card__bar bar--green">
                     <div className="bar" style={{ width: "95%" }} />

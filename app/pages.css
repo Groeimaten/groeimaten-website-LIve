@@ -4640,3 +4640,44 @@ html[data-theme="light"] .kigo-card { box-shadow: 0 20px 56px oklch(10% 0.006 60
 }
 .media-mention__link:hover { text-decoration: underline; }
 .page-hero__visual:has(.kigo-card) { aspect-ratio: auto; overflow: visible; }
+
+/* Case-funnel (cases zonder foto) */
+.case-funnel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 36px 28px;
+    border-radius: 16px;
+    background: linear-gradient(160deg, oklch(17% 0.008 60), oklch(12% 0.006 60));
+    border: 1px solid oklch(67% 0.09 75 / 0.22);
+    box-shadow: 0 32px 80px oklch(0% 0 0 / 0.35);
+}
+.case-funnel__logo {
+    background: oklch(96% 0.008 85);
+    border-radius: 10px;
+    padding: 12px 20px;
+    margin-bottom: 14px;
+}
+.case-funnel__logo img { display: block; height: 40px; width: auto; max-width: 200px; object-fit: contain; }
+.case-funnel__step {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 14px 20px;
+    border-radius: 8px;
+    background: oklch(67% 0.09 75 / 0.1);
+    border: 1px solid oklch(67% 0.09 75 / 0.25);
+}
+.case-funnel__step:last-child { background: var(--gold); border-color: var(--gold); }
+.case-funnel__num { font-size: 1.5rem; font-weight: 800; color: oklch(96% 0.005 80); letter-spacing: -0.02em; }
+.case-funnel__label { font-size: 0.85rem; color: oklch(75% 0.005 80); }
+.case-funnel__step:last-child .case-funnel__num,
+.case-funnel__step:last-child .case-funnel__label { color: oklch(10% 0.006 60); }
+.cases-source-note { font-size: 0.85rem; color: var(--stone); margin-bottom: 48px; text-align: center; }
+@media (max-width: 600px) {
+    .case-funnel { padding: 24px 16px; }
+    .case-funnel__step { width: 100% !important; }
+}
+.case-funnel__logo--dark { background: transparent; padding: 0; }

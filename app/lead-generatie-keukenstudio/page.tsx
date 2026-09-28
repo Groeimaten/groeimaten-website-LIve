@@ -165,15 +165,15 @@ export default function LeadGeneratieKeukenstudioPage() {
                 <div className="service-visual-card">
                   <div className="service-visual-card__glow" />
                   <div className="service-visual-card__stat">
-                    <span className="service-visual-card__number">49</span>
-                    <span className="service-visual-card__label">afspraken in 10 maanden (Stoop Keukens)</span>
+                    <span className="service-visual-card__number">45</span>
+                    <span className="service-visual-card__label">showroombezoeken (Stoop Keukens)</span>
                   </div>
                   <div className="service-visual-card__bar">
                     <div className="bar" style={{ width: "90%" }} />
                   </div>
                   <div className="service-visual-card__stat">
-                    <span className="service-visual-card__number">€69</span>
-                    <span className="service-visual-card__label">gemiddelde kosten per showroomafspraak</span>
+                    <span className="service-visual-card__number">€177</span>
+                    <span className="service-visual-card__label">kosten per showroombezoek (Stoop Keukens)</span>
                   </div>
                   <div className="service-visual-card__bar bar--green">
                     <div className="bar" style={{ width: "75%" }} />

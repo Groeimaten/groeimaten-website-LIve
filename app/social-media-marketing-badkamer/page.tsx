@@ -166,22 +166,22 @@ export default function SocialMediaMarketingBadkamerPage() {
                 <div className="service-visual-card">
                   <div className="service-visual-card__glow" />
                   <div className="service-visual-card__stat">
-                    <span className="service-visual-card__number">21</span>
-                    <span className="service-visual-card__label">afspraken in 150 dagen (Marquardt Küchen)</span>
+                    <span className="service-visual-card__number">30</span>
+                    <span className="service-visual-card__label">afspraken sinds januari 2026 (Marquardt Küchen)</span>
                   </div>
                   <div className="service-visual-card__bar">
                     <div className="bar" style={{ width: "85%" }} />
                   </div>
                   <div className="service-visual-card__stat">
-                    <span className="service-visual-card__number">€31</span>
-                    <span className="service-visual-card__label">kosten per lead</span>
+                    <span className="service-visual-card__number">&lt;€27</span>
+                    <span className="service-visual-card__label">kosten per aanvraag</span>
                   </div>
                   <div className="service-visual-card__bar bar--green">
                     <div className="bar" style={{ width: "65%" }} />
                   </div>
                   <div className="service-visual-card__stat">
-                    <span className="service-visual-card__number">18+</span>
-                    <span className="service-visual-card__label">maanden samenwerking</span>
+                    <span className="service-visual-card__number">€41k+</span>
+                    <span className="service-visual-card__label">omzet uit ads</span>
                   </div>
                   <div className="service-visual-card__bar">
                     <div className="bar" style={{ width: "90%" }} />

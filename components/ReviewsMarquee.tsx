@@ -78,8 +78,8 @@ export default function ReviewsMarquee() {
       </div>
       <ScrollReveal className="container reviews-marquee__stats">
         <div className="reviews-marquee__stat"><span className="reviews-marquee__stat-num">5,0</span><span className="reviews-marquee__stat-label">Google beoordeling</span></div>
-        <div className="reviews-marquee__stat"><span className="reviews-marquee__stat-num">100k+</span><span className="reviews-marquee__stat-label">Extra omzet 1 klant</span></div>
-        <div className="reviews-marquee__stat"><span className="reviews-marquee__stat-num">€69</span><span className="reviews-marquee__stat-label">Laagste CPA ooit</span></div>
+        <div className="reviews-marquee__stat"><span className="reviews-marquee__stat-num">€279k+</span><span className="reviews-marquee__stat-label">Omzet uit ads, 1 klant</span></div>
+        <div className="reviews-marquee__stat"><span className="reviews-marquee__stat-num">35x</span><span className="reviews-marquee__stat-label">ROAS, 1 klant</span></div>
         <div className="reviews-marquee__stat"><span className="reviews-marquee__stat-num">100%</span><span className="reviews-marquee__stat-label">Sectorspecialist</span></div>
       </ScrollReveal>
     </section>

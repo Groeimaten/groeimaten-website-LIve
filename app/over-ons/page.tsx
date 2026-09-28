@@ -130,10 +130,10 @@ export default function OverOnsPage() {
                   </div>
                   <div className="about-num">
                     <div className="about-num__row">
-                      <span className="about-num__val">100k</span>
+                      <span className="about-num__val">€279k</span>
                       <span className="about-num__plus">+</span>
                     </div>
-                    <span className="about-num__label">Extra omzet, één klant</span>
+                    <span className="about-num__label">Omzet uit ads, één klant</span>
                   </div>
                   <div className="about-num">
                     <div className="about-num__row">

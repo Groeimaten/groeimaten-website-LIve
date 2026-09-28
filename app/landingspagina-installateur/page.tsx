@@ -168,7 +168,7 @@ export default function LandingspaginaInstallateurPage() {
                     <div className="bar" style={{ width: "90%" }} />
                   </div>
                   <div className="service-visual-card__stat">
-                    <span className="service-visual-card__number">€69</span>
+                    <span className="service-visual-card__number">&lt;€15</span>
                     <span className="service-visual-card__label">laagste kosten per aanvraag bij klanten</span>
                   </div>
                   <div className="service-visual-card__bar bar--green">

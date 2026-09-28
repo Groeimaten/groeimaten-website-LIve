@@ -162,8 +162,8 @@ export default function MarketingUitbestedenBouwPage() {
                 <div className="service-visual-card">
                   <div className="service-visual-card__glow" />
                   <div className="service-visual-card__stat">
-                    <span className="service-visual-card__number">€110k</span>
-                    <span className="service-visual-card__label">extra omzet voor één klant in 10 maanden</span>
+                    <span className="service-visual-card__number">€279k+</span>
+                    <span className="service-visual-card__label">omzet uit Meta Ads voor één klant</span>
                   </div>
                   <div className="service-visual-card__bar">
                     <div className="bar" style={{ width: "100%" }} />

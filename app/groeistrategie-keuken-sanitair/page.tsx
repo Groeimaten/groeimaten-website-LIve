@@ -172,8 +172,8 @@ export default function GroeistrategieKeukensanitairPage() {
                     <div className="bar" style={{ width: "90%" }} />
                   </div>
                   <div className="service-visual-card__stat">
-                    <span className="service-visual-card__number">€110.000</span>
-                    <span className="service-visual-card__label">extra omzet voor één klant in 10 maanden</span>
+                    <span className="service-visual-card__number">€279k+</span>
+                    <span className="service-visual-card__label">omzet uit Meta Ads voor één klant</span>
                   </div>
                   <div className="service-visual-card__bar bar--green">
                     <div className="bar" style={{ width: "100%" }} />
