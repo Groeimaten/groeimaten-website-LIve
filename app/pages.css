@@ -4679,3 +4679,82 @@ html[data-theme="light"] .kigo-card { box-shadow: 0 20px 56px oklch(10% 0.006 60
     .case-funnel__step { width: 100% !important; }
 }
 .case-funnel__logo--dark { background: transparent; padding: 0; }
+
+/* ============================================
+   KOSTENLADDER (klik tot klant)
+   ============================================ */
+.cost-ladder-section { padding: 80px 0 0; }
+.cost-ladder { margin-top: 56px; }
+.cost-ladder-section .cost-ladder { margin-top: 0; }
+.cost-ladder__head { max-width: 620px; margin-bottom: 32px; }
+.cost-ladder__title {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-size: clamp(1.8rem, 3.4vw, 2.6rem);
+    line-height: 1.15;
+    color: oklch(96% 0.005 80);
+    margin: 10px 0 12px;
+}
+.cost-ladder__title em { font-style: normal; color: var(--gold); }
+.cost-ladder__intro { color: oklch(66% 0.005 80); line-height: 1.7; }
+.cost-ladder__steps {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    counter-reset: step;
+}
+.cost-ladder__step {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 24px 22px;
+    border-radius: 12px;
+    background: oklch(15% 0.006 60);
+    border: 1px solid oklch(67% 0.09 75 / 0.18);
+}
+.cost-ladder__step:not(:last-child)::after {
+    content: '→';
+    position: absolute;
+    right: -11px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    font-size: 0.75rem;
+    background: oklch(11% 0.006 60);
+    border: 1px solid oklch(67% 0.09 75 / 0.35);
+    color: var(--gold);
+    z-index: 1;
+}
+.cost-ladder__num { font-size: 2rem; font-weight: 800; letter-spacing: -0.03em; color: oklch(96% 0.005 80); }
+.cost-ladder__label { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold); }
+.cost-ladder__sub { font-size: 0.88rem; color: oklch(62% 0.005 80); line-height: 1.5; margin-top: 4px; }
+.cost-ladder__step--final { background: var(--gold); border-color: var(--gold); }
+.cost-ladder__step--final .cost-ladder__num,
+.cost-ladder__step--final .cost-ladder__label,
+.cost-ladder__step--final .cost-ladder__sub { color: oklch(12% 0.006 60); }
+@media (max-width: 900px) {
+    .cost-ladder__steps { grid-template-columns: 1fr 1fr; }
+    .cost-ladder__step:nth-child(2)::after { display: none; }
+}
+@media (max-width: 520px) {
+    .cost-ladder__steps { grid-template-columns: 1fr; }
+    .cost-ladder__step:not(:last-child)::after { content: '↓'; right: auto; left: 50%; top: auto; bottom: -11px; transform: translateX(-50%); display: grid; }
+}
+html[data-theme="light"] .cost-ladder__title { color: oklch(12% 0.008 60); }
+html[data-theme="light"] .cost-ladder__intro { color: oklch(40% 0.008 70); }
+html[data-theme="light"] .cost-ladder__step:not(.cost-ladder__step--final) { background: oklch(97% 0.005 80); border-color: oklch(67% 0.09 75 / 0.3); }
+html[data-theme="light"] .cost-ladder__step:not(.cost-ladder__step--final) .cost-ladder__num { color: oklch(12% 0.008 60); }
+html[data-theme="light"] .cost-ladder__step:not(.cost-ladder__step--final) .cost-ladder__sub { color: oklch(42% 0.008 70); }
+/* Kostenladder op lichte resultaten-sectie (homepage) */
+.resultaten-section .cost-ladder__title { color: oklch(10% 0.008 60); }
+.resultaten-section .cost-ladder__intro { color: oklch(35% 0.008 60); }
+.resultaten-section .cost-ladder__step:not(.cost-ladder__step--final) { background: oklch(100% 0 0); border-color: oklch(67% 0.09 75 / 0.3); box-shadow: 0 8px 24px oklch(10% 0.006 60 / 0.06); }
+.resultaten-section .cost-ladder__step:not(.cost-ladder__step--final) .cost-ladder__num { color: oklch(12% 0.008 60); }
+.resultaten-section .cost-ladder__step:not(.cost-ladder__step--final) .cost-ladder__sub { color: oklch(42% 0.008 70); }
+.resultaten-section .cost-ladder__step:not(:last-child)::after { background: oklch(100% 0 0); }
