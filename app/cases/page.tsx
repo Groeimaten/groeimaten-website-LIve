@@ -3,19 +3,18 @@ import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
 import BeforeAfterSlider from "@/components/BeforeAfterSlider"
 import ReviewsMarquee from "@/components/ReviewsMarquee"
-import CostLadder from "@/components/CostLadder"
 
 export const metadata: Metadata = {
   title: "Cases: Resultaten voor Keuken, Badkamer en Bouw | Groeimaten",
   description:
-    "Concrete resultaten van keuken- en badkamerbedrijven die met Groeimaten adverteren. €390.000+ omzet uit Meta Ads, €36 per afspraak. Echte cijfers, echte cases.",
+    "Concrete resultaten van keuken- en badkamerbedrijven die met Groeimaten adverteren. €390.000+ omzet uit Meta Ads, tot 35x ROAS. Echte cijfers, echte cases.",
   alternates: {
     canonical: "https://groeimaten.com/cases",
   },
   openGraph: {
     title: "Cases: Resultaten voor Keuken, Badkamer en Bouw | Groeimaten",
     description:
-      "€390.000+ omzet uit Meta Ads, €36 per afspraak. Concrete resultaten van keuken- en badkamerbedrijven die met Groeimaten adverteren.",
+      "€390.000+ omzet uit Meta Ads, tot 35x ROAS. Concrete resultaten van keuken- en badkamerbedrijven die met Groeimaten adverteren.",
     url: "https://groeimaten.com/cases",
     images: [
       {
@@ -30,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Cases: Resultaten voor Keuken, Badkamer en Bouw | Groeimaten",
     description:
-      "€390.000+ omzet uit Meta Ads, €36 per afspraak. Concrete resultaten van keuken- en badkamerbedrijven.",
+      "€390.000+ omzet uit Meta Ads, tot 35x ROAS. Concrete resultaten van keuken- en badkamerbedrijven.",
     images: ["/images/founders-light.webp"],
   },
 }
@@ -152,17 +151,17 @@ export default function CasesPage() {
             <div className="cases-stats__grid">
               <div className="cases-stats__item">
                 <span className="cases-stats__number">€390.000+</span>
-                <span className="cases-stats__label">Omzet uit Meta Ads</span>
+                <span className="cases-stats__label">Omzet uit Meta Ads (4 cases)</span>
               </div>
               <div className="cases-stats__divider" aria-hidden="true"></div>
               <div className="cases-stats__item">
-                <span className="cases-stats__number">€36</span>
-                <span className="cases-stats__label">Gem. kosten per afspraak</span>
+                <span className="cases-stats__number">1.100+</span>
+                <span className="cases-stats__label">Aanvragen (4 cases)</span>
               </div>
               <div className="cases-stats__divider" aria-hidden="true"></div>
               <div className="cases-stats__item">
-                <span className="cases-stats__number">€19</span>
-                <span className="cases-stats__label">Gem. kosten per aanvraag</span>
+                <span className="cases-stats__number">35x</span>
+                <span className="cases-stats__label">ROAS bij Stoop Keukens</span>
               </div>
               <div className="cases-stats__divider" aria-hidden="true"></div>
               <div className="cases-stats__item">
@@ -174,17 +173,10 @@ export default function CasesPage() {
         </div>
       </section>
 
-      {/* KOSTENLADDER */}
-      <section className="cost-ladder-section">
-        <div className="container">
-          <CostLadder />
-        </div>
-      </section>
-
       {/* CASES */}
       <section className="cases-full-section">
         <div className="container">
-          <p className="cases-source-note">Stand 27 september 2026, opgeteld vanaf de start van de campagnes. Gemiddelde kosten per afspraak en per aanvraag gelden voor al onze ads-klanten. Omzet is exclusief btw.</p>
+          <p className="cases-source-note">Stand 27 september 2026, opgeteld vanaf de start van de campagnes. Omzet is exclusief btw.</p>
 
           {/* Case 1: Stoop Keukens — tekst links, foto rechts */}
           <ScrollReveal>

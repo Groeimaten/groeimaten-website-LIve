@@ -151,8 +151,8 @@ export default function MeerShowroomafsprakenPage() {
                 <div className="service-visual-card">
                   <div className="service-visual-card__glow" />
                   <div className="service-visual-card__stat">
-                    <span className="service-visual-card__number">€36</span>
-                    <span className="service-visual-card__label">Gem. kosten per showroomafspraak</span>
+                    <span className="service-visual-card__number">35x</span>
+                    <span className="service-visual-card__label">ROAS bij Stoop Keukens</span>
                   </div>
                   <div className="service-visual-card__bar">
                     <div className="bar" style={{ width: "90%" }} />

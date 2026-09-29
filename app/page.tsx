@@ -10,7 +10,6 @@ import StatsCounter from "@/components/StatsCounter"
 import BeforeAfterSlider from "@/components/BeforeAfterSlider"
 import ReviewsMarquee from "@/components/ReviewsMarquee"
 import KigoTeaser from "@/components/KigoTeaser"
-import CostLadder from "@/components/CostLadder"
 
 export const metadata: Metadata = {
   title: "Groeimaten | Meta Ads en Google Ads voor keuken, badkamer en bouw",
@@ -398,7 +397,6 @@ export default function HomePage() {
               </div>
             </div>
           </ScrollReveal>
-          <CostLadder id="home-kosten" />
         </div>
       </section>
 
