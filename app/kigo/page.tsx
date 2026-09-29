@@ -91,6 +91,17 @@ export default function KigoPage() {
                     Plan een gesprek over Kigo {arrowIcon}
                   </Link>
                 </div>
+                <p className="kigo-press">
+                  Bekend uit K&amp;D Magazine:{" "}
+                  <a
+                    href="https://keukenendesign.nl/het-verhaal-achter-groeimaten-met-ai-en-marketing-naar-meer-afspraken/"
+                    target="_blank"
+                    rel="noopener"
+                    className="media-mention__link"
+                  >
+                    &quot;Met AI en marketing naar meer afspraken&quot; →
+                  </a>
+                </p>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={2}>

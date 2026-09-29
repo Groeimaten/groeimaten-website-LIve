@@ -4679,3 +4679,4 @@ html[data-theme="light"] .kigo-card { box-shadow: 0 20px 56px oklch(10% 0.006 60
     .case-funnel__step { width: 100% !important; }
 }
 .case-funnel__logo--dark { background: transparent; padding: 0; }
+.kigo-press { margin-top: 20px; font-size: 0.9rem; color: var(--stone); }
