@@ -111,7 +111,7 @@ export default function KeukenstudioWebsiteBouwenPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>SEO-geoptimaliseerde structuur</h4>
+                      <h3>SEO-geoptimaliseerde structuur</h3>
                       <p>
                         De website is gebouwd om gevonden te worden. Elke pagina heeft een duidelijke focus
                         op zoekwoorden die jouw potentiële klanten gebruiken.
@@ -121,7 +121,7 @@ export default function KeukenstudioWebsiteBouwenPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Portfolio dat overtuigt</h4>
+                      <h3>Portfolio dat overtuigt</h3>
                       <p>
                         Projectfoto&apos;s zijn de kern van een keukenstudio website. We zorgen dat jouw
                         afgeronde projecten prominent en professioneel worden gepresenteerd.
@@ -131,7 +131,7 @@ export default function KeukenstudioWebsiteBouwenPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Conversie-optimalisatie</h4>
+                      <h3>Conversie-optimalisatie</h3>
                       <p>
                         Elk element op de pagina stuurt naar één doel: een afspraak of aanvraag. Van de
                         header tot de footer, de site is gebouwd om te converteren.
@@ -141,7 +141,7 @@ export default function KeukenstudioWebsiteBouwenPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Snel en mobielvriendelijk</h4>
+                      <h3>Snel en mobielvriendelijk</h3>
                       <p>
                         Meer dan de helft van het verkeer naar keukensites komt van mobiel. De website
                         laadt snel en werkt perfect op elk apparaat.

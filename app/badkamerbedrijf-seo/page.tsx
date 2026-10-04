@@ -115,7 +115,7 @@ export default function BadkamerbedrijfSeoPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Lokale SEO per stad en regio</h4>
+                      <h3>Lokale SEO per stad en regio</h3>
                       <p>
                         Zichtbaar in Google voor &ldquo;badkamerbedrijf [jouw stad]&rdquo; en alle
                         omliggende plaatsen in jouw werkgebied.
@@ -125,7 +125,7 @@ export default function BadkamerbedrijfSeoPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Google Mijn Bedrijf optimalisatie</h4>
+                      <h3>Google Mijn Bedrijf optimalisatie</h3>
                       <p>
                         Een volledig en actief GMB-profiel dat bovenaan staat in de lokale zoekresultaten
                         en Maps.
@@ -135,7 +135,7 @@ export default function BadkamerbedrijfSeoPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Technische SEO en snelheid</h4>
+                      <h3>Technische SEO en snelheid</h3>
                       <p>
                         Een snelle, technisch correcte website is de basis. We zorgen dat Google jouw
                         website goed kan lezen en indexeren.
@@ -145,7 +145,7 @@ export default function BadkamerbedrijfSeoPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>AI-zoekoptimalisatie</h4>
+                      <h3>AI-zoekoptimalisatie</h3>
                       <p>
                         Zichtbaar in ChatGPT, Gemini en Copilot. De toekomst van zoeken is nu, wij
                         bereiden jouw badkamerbedrijf voor.

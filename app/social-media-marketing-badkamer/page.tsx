@@ -116,7 +116,7 @@ export default function SocialMediaMarketingBadkamerPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Meta Ads campagnebeheer</h4>
+                      <h3>Meta Ads campagnebeheer</h3>
                       <p>
                         We bouwen en beheren campagnes op Facebook en Instagram gericht op jouw ideale
                         klantprofiel in jouw werkgebied.
@@ -126,7 +126,7 @@ export default function SocialMediaMarketingBadkamerPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Creatieve uitingen</h4>
+                      <h3>Creatieve uitingen</h3>
                       <p>
                         We adviseren over de beste foto&apos;s en teksten voor jouw advertenties op
                         basis van wat aantoonbaar werkt in de badkamersector.
@@ -136,7 +136,7 @@ export default function SocialMediaMarketingBadkamerPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Doelgroep en regio targeting</h4>
+                      <h3>Doelgroep en regio targeting</h3>
                       <p>
                         Nauwkeurig ingestelde doelgroepen op basis van demografische kenmerken, interesses
                         en locatie zodat jij de juiste mensen bereikt.
@@ -146,7 +146,7 @@ export default function SocialMediaMarketingBadkamerPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Lead formulieren en opvolging</h4>
+                      <h3>Lead formulieren en opvolging</h3>
                       <p>
                         Geïntegreerde leadformulieren in de advertentie voor een lage drempel en snelle
                         opvolging van nieuwe aanvragen.

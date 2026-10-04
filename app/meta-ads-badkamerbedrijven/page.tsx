@@ -105,7 +105,7 @@ export default function MetaAdsBadkamerbedrijvenPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Doelgroeptargeting op levensfase</h4>
+                      <h3>Doelgroeptargeting op levensfase</h3>
                       <p>
                         Mensen bereiken die in de markt zijn voor een badkamerrenovatie op basis van levensfase, gedrag en interesses.
                       </p>
@@ -114,7 +114,7 @@ export default function MetaAdsBadkamerbedrijvenPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Campagnebeelden die converteren</h4>
+                      <h3>Campagnebeelden die converteren</h3>
                       <p>
                         Beeldmateriaal dat de kwaliteit van jouw showroom laat zien en aanzet tot een afspraak.
                       </p>
@@ -123,7 +123,7 @@ export default function MetaAdsBadkamerbedrijvenPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Retargeting funnel</h4>
+                      <h3>Retargeting funnel</h3>
                       <p>
                         Mensen die jouw website of advertentie al hebben gezien opnieuw bereiken op het moment dat ze klaar zijn om een stap te zetten.
                       </p>
@@ -132,7 +132,7 @@ export default function MetaAdsBadkamerbedrijvenPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>A/B-testing en optimalisatie</h4>
+                      <h3>A/B-testing en optimalisatie</h3>
                       <p>
                         Doorlopende tests op beelden, teksten en doelgroepen voor structureel betere resultaten.
                       </p>

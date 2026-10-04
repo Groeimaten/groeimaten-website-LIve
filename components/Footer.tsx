@@ -12,7 +12,7 @@ export default function Footer() {
           <p className="footer__desc">De specialist in marketing voor keuken- en sanitairbedrijven in Nederland.</p>
         </div>
         <nav className="footer__nav" aria-label="Diensten navigatie">
-          <h4>Diensten</h4>
+          <h3>Diensten</h3>
           <ul>
             <li><Link href="/diensten#meta-ads">Meta Ads &amp; Funnels</Link></li>
             <li><Link href="/kigo">Kigo</Link></li>
@@ -21,7 +21,7 @@ export default function Footer() {
           </ul>
         </nav>
         <nav className="footer__nav" aria-label="Bedrijf navigatie">
-          <h4>Bedrijf</h4>
+          <h3>Bedrijf</h3>
           <ul>
             <li><Link href="/over-ons">Over ons</Link></li>
             <li><Link href="/cases">Cases</Link></li>
@@ -30,7 +30,7 @@ export default function Footer() {
           </ul>
         </nav>
         <div className="footer__contact">
-          <h4>Contact</h4>
+          <h3>Contact</h3>
           <a href="mailto:info@groeimaten.com">info@groeimaten.com</a>
           <a href="tel:+31629193444" style={{ display: "block", marginTop: "6px", fontSize: "0.85rem", color: "rgba(255,255,255,0.5)" }}>
             +31 6 29193444

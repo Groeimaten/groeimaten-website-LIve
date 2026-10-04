@@ -111,7 +111,7 @@ export default function LeadsBadkamerbedrijfPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Google Ads met koopintentie</h4>
+                      <h3>Google Ads met koopintentie</h3>
                       <p>
                         Campagnes gericht op mensen die nu zoeken naar een badkamerrenovatie in
                         jouw regio. Hoge intentie, directe aanvragen.
@@ -121,7 +121,7 @@ export default function LeadsBadkamerbedrijfPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>SEO die blijft werken</h4>
+                      <h3>SEO die blijft werken</h3>
                       <p>
                         Organische positie op &ldquo;badkamer verbouwen [stad]&rdquo; en vergelijkbare
                         zoektermen. Aanvragen zonder doorlopend advertentiebudget.
@@ -131,7 +131,7 @@ export default function LeadsBadkamerbedrijfPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Meta Ads voor latente vraag</h4>
+                      <h3>Meta Ads voor latente vraag</h3>
                       <p>
                         Huiseigenaren bereiken die nog niet zoeken maar wél open staan voor
                         een nieuwe badkamer. Aanvragen van mensen die jij anders niet bereikt.
@@ -141,7 +141,7 @@ export default function LeadsBadkamerbedrijfPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Inzicht in kosten per aanvraag</h4>
+                      <h3>Inzicht in kosten per aanvraag</h3>
                       <p>
                         Geen vage rapporten. Jij ziet hoeveel elke aanvraag kost en hoeveel
                         aanvragen er per maand binnenkomen via welk kanaal.

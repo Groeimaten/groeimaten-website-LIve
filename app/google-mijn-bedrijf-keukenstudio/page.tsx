@@ -116,7 +116,7 @@ export default function GoogleMijnBedrijfKeukenstudioPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Volledig profiel optimalisatie</h4>
+                      <h3>Volledig profiel optimalisatie</h3>
                       <p>
                         Alle velden ingevuld met relevante zoektermen, accurate openingstijden,
                         contactgegevens en een sterke beschrijving van jouw diensten.
@@ -126,7 +126,7 @@ export default function GoogleMijnBedrijfKeukenstudioPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Foto strategie</h4>
+                      <h3>Foto strategie</h3>
                       <p>
                         Profielen met actuele en kwalitatieve foto&apos;s van afgeronde keukens worden
                         vaker bekeken en genereren meer kliks naar de website.
@@ -136,7 +136,7 @@ export default function GoogleMijnBedrijfKeukenstudioPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Review strategie</h4>
+                      <h3>Review strategie</h3>
                       <p>
                         Een systeem om na elk afgerond project een review te verzamelen. Een hoge
                         reviewscore vergroot de zichtbaarheid en het vertrouwen van nieuwe klanten.
@@ -146,7 +146,7 @@ export default function GoogleMijnBedrijfKeukenstudioPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Q en A en berichten</h4>
+                      <h3>Q en A en berichten</h3>
                       <p>
                         Actief bijhouden van de vraag en antwoord sectie en regelmatige berichten voor
                         betere zichtbaarheid in de lokale zoekresultaten.

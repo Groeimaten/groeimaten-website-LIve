@@ -2040,7 +2040,8 @@
     line-height: 1.7;
 }
 
-.footer__nav h4 {
+.footer__nav h4,
+.footer__nav h3 {
     font-size: 0.72rem;
     font-weight: 700;
     letter-spacing: 0.1em;
@@ -2058,7 +2059,8 @@
 }
 .footer__nav ul a:hover { color: var(--blue); }
 
-.footer__contact h4 {
+.footer__contact h4,
+.footer__contact h3 {
     font-size: 0.72rem;
     font-weight: 700;
     letter-spacing: 0.1em;

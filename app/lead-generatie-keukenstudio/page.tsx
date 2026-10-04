@@ -115,7 +115,7 @@ export default function LeadGeneratieKeukenstudioPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Meta Ads campagnes</h4>
+                      <h3>Meta Ads campagnes</h3>
                       <p>
                         Gerichte campagnes op Facebook en Instagram die keukenstudio bezoekers bereiken
                         in de oriëntatiefase, op het juiste moment in het aankoopproces.
@@ -125,7 +125,7 @@ export default function LeadGeneratieKeukenstudioPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Google Ads voor koopklare zoekers</h4>
+                      <h3>Google Ads voor koopklare zoekers</h3>
                       <p>
                         Bovenaan verschijnen wanneer iemand actief zoekt op &ldquo;keukenstudio [stad]&rdquo;
                         of &ldquo;nieuwe keuken laten plaatsen.&rdquo;
@@ -135,7 +135,7 @@ export default function LeadGeneratieKeukenstudioPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Leadopvolging en kwalificatie</h4>
+                      <h3>Leadopvolging en kwalificatie</h3>
                       <p>
                         Automatische opvolging van nieuwe aanvragen zodat geen lead verloren gaat en
                         de afspraakratio hoog blijft.
@@ -145,7 +145,7 @@ export default function LeadGeneratieKeukenstudioPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Maandelijkse rapportage</h4>
+                      <h3>Maandelijkse rapportage</h3>
                       <p>
                         Inzicht in kosten per lead, kosten per afspraak en het totale rendement van
                         de campagnes per maand.

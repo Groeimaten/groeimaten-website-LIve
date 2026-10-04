@@ -112,7 +112,7 @@ export default function LeadNurturingKeukenSanitairPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Geautomatiseerde opvolgflows</h4>
+                      <h3>Geautomatiseerde opvolgflows</h3>
                       <p>
                         Elke nieuwe lead ontvangt automatisch een reeks contactmomenten afgestemd op
                         het aankoopproces in keuken en sanitair.
@@ -122,7 +122,7 @@ export default function LeadNurturingKeukenSanitairPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Meerdere kanalen</h4>
+                      <h3>Meerdere kanalen</h3>
                       <p>
                         E-mail, SMS en WhatsApp gecombineerd voor maximale bereikbaarheid op het moment
                         dat de lead klaar is voor een afspraak.
@@ -132,7 +132,7 @@ export default function LeadNurturingKeukenSanitairPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Inspelend op het beslisproces</h4>
+                      <h3>Inspelend op het beslisproces</h3>
                       <p>
                         De content in de flows sluit aan bij de fase van het beslisproces: inspiratie
                         vroeg, keuzehulp later, actie-uitnodiging op het juiste moment.
@@ -142,7 +142,7 @@ export default function LeadNurturingKeukenSanitairPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Hogere show-up bij afspraken</h4>
+                      <h3>Hogere show-up bij afspraken</h3>
                       <p>
                         Automatische herinneringen verhogen de show-up bij showroomafspraken, zodat
                         minder afspraken op het laatste moment afgezegd worden.

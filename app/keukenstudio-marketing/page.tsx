@@ -115,7 +115,7 @@ export default function KeukenstudioMarketingPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Meta Ads voor keukenstudio&apos;s</h4>
+                      <h3>Meta Ads voor keukenstudio&apos;s</h3>
                       <p>
                         Gerichte campagnes op Facebook en Instagram die jouw doelgroep bereiken op het
                         moment dat ze oriënteren.
@@ -125,7 +125,7 @@ export default function KeukenstudioMarketingPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Google Ads voor keukens</h4>
+                      <h3>Google Ads voor keukens</h3>
                       <p>
                         Bovenaan staan wanneer iemand zoekt op &ldquo;keukenstudio [jouw stad]&rdquo; of
                         &ldquo;maatwerk keuken laten plaatsen&rdquo;.
@@ -135,7 +135,7 @@ export default function KeukenstudioMarketingPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>SEO voor keukenstudio</h4>
+                      <h3>SEO voor keukenstudio</h3>
                       <p>
                         Structurele organische zichtbaarheid op de zoekwoorden die jouw klant gebruikt
                         tijdens zijn oriëntatie.
@@ -145,7 +145,7 @@ export default function KeukenstudioMarketingPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Website development</h4>
+                      <h3>Website development</h3>
                       <p>
                         Een conversiegerichte website die de kwaliteit van jouw showroom weerspiegelt en
                         bezoekers omzet in afspraken.
