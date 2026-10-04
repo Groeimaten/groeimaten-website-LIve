@@ -1,0 +1,25 @@
+# Groeimaten
+
+> Groeimaten is een marketingbureau gespecialiseerd in de keuken- en
+> sanitairbranche in Nederland. Wij helpen keukenzaken, badkamerspecialisten
+> en sanitairinstallateurs aan meer geplande strategiegesprekken via SEO,
+> Google Ads, Meta Ads en website-ontwikkeling.
+
+Groeimaten werkt uitsluitend voor bedrijven in keuken en sanitair of
+badkamer, niets anders. Diensten: Meta Ads & Funnels, Website Development,
+Google & AI Ranking.
+
+## Kernpagina's
+
+- [Home](https://groeimaten.com/): positionering en overzicht diensten
+- [Diensten](https://groeimaten.com/diensten): volledige dienstenlijst
+- [Prijzen](https://groeimaten.com/prijzen): tarieven
+- [Plannen](https://groeimaten.com/plannen): pakketten/plannen
+- [Over ons](https://groeimaten.com/over-ons): team en werkwijze
+- [Cases](https://groeimaten.com/cases): klantresultaten
+- [Afspraak](https://groeimaten.com/afspraak): gratis strategiegesprek plannen
+
+## Blog
+
+Zie https://groeimaten.com/sitemap.xml voor de volledige, actuele lijst
+artikelen over marketing voor de keuken- en sanitairbranche.
