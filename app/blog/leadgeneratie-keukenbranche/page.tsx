@@ -38,7 +38,7 @@ const articleSchema = {
   headline: "Leadgeneratie in de keukenbranche: waarom standaard marketing hier niet werkt",
   description:
     "Hoe genereer je de juiste leads in de keukenbranche en waarom is een sectorspecifieke aanpak noodzakelijk?",
-  author: { "@type": "Organization", name: "Groeimaten" },
+  author: { "@type": "Person", name: "Thomas Ghobadi", sameAs: "https://www.linkedin.com/in/thomasghobadi/" },
   publisher: { "@type": "Organization", name: "Groeimaten", url: "https://groeimaten.com" },
   datePublished: "2026-06-22",
   url: "https://groeimaten.com/blog/leadgeneratie-keukenbranche",
@@ -73,7 +73,7 @@ export default function BlogLeadgeneratieKeukenbranchePage() {
               Veel aanvragen, weinig kwalitatieve showroomafspraken. Dat is het probleem dat keukenstudio&apos;s beschrijven als ze voor het eerst over leadgeneratie praten. Het ligt zelden aan het advertentiebudget.
             </p>
             <p style={{ color: "oklch(55% 0 0)", fontSize: "0.88rem", marginTop: "12px" }}>
-              Groeimaten · 22 juni 2026 · 7 min lezen
+              Thomas Ghobadi · 22 juni 2026 · 7 min lezen
             </p>
           </div>
         </div>

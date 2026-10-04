@@ -44,7 +44,7 @@ const articleSchema = {
   headline: "SEO voor keukenstudio's: zo word je gevonden door koopklare klanten",
   description:
     "Keukenstudio's die bovenaan Google staan trekken andere klanten aan. Hoe werkt SEO voor een keukenstudio en wat zijn de drie gebieden die direct verschil maken?",
-  author: { "@type": "Organization", name: "Groeimaten" },
+  author: { "@type": "Person", name: "Thomas Ghobadi", sameAs: "https://www.linkedin.com/in/thomasghobadi/" },
   publisher: { "@type": "Organization", name: "Groeimaten", url: "https://groeimaten.com" },
   datePublished: "2026-06-16",
   url: "https://groeimaten.com/blog/seo-voor-keukenstudio",
@@ -80,7 +80,7 @@ export default function BlogSeoKeukenstudioPage() {
               bezoek aflegt. Als jouw studio niet bovenaan staat in Google, besta je niet voor die klant.
             </p>
             <p style={{ color: "oklch(55% 0 0)", fontSize: "0.88rem", marginTop: "12px" }}>
-              Groeimaten · 16 juni 2026 · 5 min lezen
+              Thomas Ghobadi · 16 juni 2026 · 5 min lezen
             </p>
           </div>
         </div>

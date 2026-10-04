@@ -43,7 +43,7 @@ const articleSchema = {
   headline: "Advertentiebureau keuken badkamer bouw: wat je echt zoekt in een partner",
   description:
     "Waarom sectorkennis bepalend is voor het resultaat van advertenties in keuken, badkamer en bouw.",
-  author: { "@type": "Organization", name: "Groeimaten" },
+  author: { "@type": "Person", name: "Thomas Ghobadi", sameAs: "https://www.linkedin.com/in/thomasghobadi/" },
   publisher: { "@type": "Organization", name: "Groeimaten", url: "https://groeimaten.com" },
   datePublished: "2026-07-13",
   url: "https://groeimaten.com/blog/advertentiebureau-keuken-badkamer",
@@ -81,7 +81,7 @@ export default function BlogAdvertentiebureauKeukenBadkamerPage() {
               moet dat allemaal leren. Een sectorspecialist weet het al.
             </p>
             <p style={{ color: "oklch(55% 0 0)", fontSize: "0.88rem", marginTop: "12px" }}>
-              Groeimaten · 13 juli 2026 · 6 min lezen
+              Thomas Ghobadi · 13 juli 2026 · 6 min lezen
             </p>
           </div>
         </div>

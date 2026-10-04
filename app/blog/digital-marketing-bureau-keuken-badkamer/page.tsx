@@ -38,7 +38,7 @@ const articleSchema = {
   headline: "Digital marketing bureau voor keuken en badkamer: wat je echt nodig hebt",
   description:
     "Wat maakt een digital marketing bureau gespecialiseerd in keuken en badkamer anders dan een generiek bureau?",
-  author: { "@type": "Organization", name: "Groeimaten" },
+  author: { "@type": "Person", name: "Thomas Ghobadi", sameAs: "https://www.linkedin.com/in/thomasghobadi/" },
   publisher: { "@type": "Organization", name: "Groeimaten", url: "https://groeimaten.com" },
   datePublished: "2026-06-22",
   url: "https://groeimaten.com/blog/digital-marketing-bureau-keuken-badkamer",
@@ -73,7 +73,7 @@ export default function BlogDigitalMarketingBureauPage() {
               De meeste bureaus zeggen dat ze voor iedereen werken. Dat is precies het probleem als jij een keukenstudio of badkamerbedrijf bent.
             </p>
             <p style={{ color: "oklch(55% 0 0)", fontSize: "0.88rem", marginTop: "12px" }}>
-              Groeimaten · 22 juni 2026 · 6 min lezen
+              Thomas Ghobadi · 22 juni 2026 · 6 min lezen
             </p>
           </div>
         </div>

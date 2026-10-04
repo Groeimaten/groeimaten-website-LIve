@@ -43,7 +43,7 @@ const articleSchema = {
   headline: "Badkamer leads genereren: de aanpak die ook kwalitatieve aanvragen oplevert",
   description:
     "Hoe zorg je als badkamerbedrijf voor een constante stroom aanvragen van klanten met een serieus renovatieplan?",
-  author: { "@type": "Organization", name: "Groeimaten" },
+  author: { "@type": "Person", name: "Thomas Ghobadi", sameAs: "https://www.linkedin.com/in/thomasghobadi/" },
   publisher: { "@type": "Organization", name: "Groeimaten", url: "https://groeimaten.com" },
   datePublished: "2026-07-06",
   url: "https://groeimaten.com/blog/badkamer-leads-genereren",
@@ -80,7 +80,7 @@ export default function BlogBadkamerLeadsGenerenPage() {
               Een goede strategie voor badkamer leads genereren gaat over beide.
             </p>
             <p style={{ color: "oklch(55% 0 0)", fontSize: "0.88rem", marginTop: "12px" }}>
-              Groeimaten · 6 juli 2026 · 6 min lezen
+              Thomas Ghobadi · 6 juli 2026 · 6 min lezen
             </p>
           </div>
         </div>
