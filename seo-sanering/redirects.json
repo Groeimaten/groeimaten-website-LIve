@@ -1,1 +1,54 @@
-[]
+[
+  {
+    "source": "/blog/adverteren-bouwbedrijf",
+    "destination": "/badkamerinstallateur-adverteren"
+  },
+  {
+    "source": "/blog/conversie-optimalisatie-bouwbedrijf",
+    "destination": "/blog/conversie-optimalisatie-keukenstudio"
+  },
+  {
+    "source": "/blog/google-ads-dakdekkers",
+    "destination": "/blog/google-ads-badkamerbedrijf"
+  },
+  {
+    "source": "/blog/google-ads-renovatiebedrijven",
+    "destination": "/blog/google-ads-badkamerbedrijf"
+  },
+  {
+    "source": "/blog/google-ads-voor-installateurs",
+    "destination": "/blog/google-ads-badkamerbedrijf"
+  },
+  {
+    "source": "/blog/google-ads-voor-loodgieters",
+    "destination": "/blog/google-ads-badkamerbedrijf"
+  },
+  {
+    "source": "/blog/leadgeneratie-bouwbedrijf",
+    "destination": "/blog/leadgeneratie-keukenbranche"
+  },
+  {
+    "source": "/blog/leads-genereren-bouwsector",
+    "destination": "/blog/leadgeneratie-keukenbranche"
+  },
+  {
+    "source": "/blog/leads-genereren-elektricien",
+    "destination": "/leads-badkamerbedrijf"
+  },
+  {
+    "source": "/blog/lokale-vindbaarheid-installateurs",
+    "destination": "/google-mijn-bedrijf-keukenstudio"
+  },
+  {
+    "source": "/blog/marketing-verwarmingsbedrijf",
+    "destination": "/blog/online-marketing-badkamerbedrijf"
+  },
+  {
+    "source": "/blog/marketingstrategie-renovatiebedrijf",
+    "destination": "/blog/online-marketing-keukenbranche"
+  },
+  {
+    "source": "/blog/meer-aanvragen-dakdekker",
+    "destination": "/blog/leadgeneratie-sanitairbedrijf"
+  }
+]
