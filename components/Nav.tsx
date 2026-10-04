@@ -3,8 +3,9 @@
 import { useEffect, useRef, useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { KIGO_LIVE } from "@/lib/features"
 
-const navLinks = [
+const allNavLinks = [
   { href: "/", label: "Home" },
   { href: "/diensten", label: "Diensten" },
   { href: "/kigo", label: "Kigo" },
@@ -13,6 +14,8 @@ const navLinks = [
   { href: "/over-ons", label: "Over ons" },
   { href: "/contact", label: "Contact" },
 ]
+
+const navLinks = allNavLinks.filter((l) => KIGO_LIVE || l.href !== "/kigo")
 
 export default function Nav() {
   const pathname = usePathname()

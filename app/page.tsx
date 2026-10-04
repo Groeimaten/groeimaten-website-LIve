@@ -10,25 +10,32 @@ import StatsCounter from "@/components/StatsCounter"
 import BeforeAfterSlider from "@/components/BeforeAfterSlider"
 import ReviewsMarquee from "@/components/ReviewsMarquee"
 import KigoTeaser from "@/components/KigoTeaser"
+import { KIGO_LIVE } from "@/lib/features"
 
 export const metadata: Metadata = {
   title: "Groeimaten | Meta Ads en Google Ads voor keuken, badkamer en bouw",
   description:
-    "Groeimaten helpt keuken-, badkamer- en bouwbedrijven aan meer showroomafspraken met Meta Ads, Google Ads en Kigo, onze eigen AI-tool. Alleen serieuze aanvragen die ook echt komen opdagen.",
+    KIGO_LIVE
+      ? "Groeimaten helpt keuken-, badkamer- en bouwbedrijven aan meer showroomafspraken met Meta Ads, Google Ads en Kigo, onze eigen AI-tool. Alleen serieuze aanvragen die ook echt komen opdagen."
+      : "Groeimaten helpt keuken-, badkamer- en bouwbedrijven aan meer showroomafspraken met Meta Ads en Google Ads. Alleen serieuze aanvragen die ook echt komen opdagen.",
   alternates: {
     canonical: "https://groeimaten.com",
   },
   openGraph: {
     title: "Groeimaten | Meta Ads en Google Ads voor keuken, badkamer en bouw",
     description:
-      "Groeimaten helpt keuken-, badkamer- en bouwbedrijven groeien. Meer showroomafspraken en kwalitatieve aanvragen via Meta Ads, Google Ads en Kigo.",
+      KIGO_LIVE
+      ? "Groeimaten helpt keuken-, badkamer- en bouwbedrijven groeien. Meer showroomafspraken en kwalitatieve aanvragen via Meta Ads, Google Ads en Kigo."
+      : "Groeimaten helpt keuken-, badkamer- en bouwbedrijven groeien. Meer showroomafspraken en kwalitatieve aanvragen via Meta Ads en Google Ads.",
     url: "https://groeimaten.com",
   },
   twitter: {
     card: "summary_large_image",
     title: "Groeimaten | Meta Ads en Google Ads voor keuken, badkamer en bouw",
     description:
-      "Groeimaten helpt keuken-, badkamer- en bouwbedrijven aan meer klanten via Meta Ads, Google Ads en Kigo.",
+      KIGO_LIVE
+      ? "Groeimaten helpt keuken-, badkamer- en bouwbedrijven aan meer klanten via Meta Ads, Google Ads en Kigo."
+      : "Groeimaten helpt keuken-, badkamer- en bouwbedrijven aan meer klanten via Meta Ads en Google Ads.",
   },
 }
 
@@ -66,11 +73,13 @@ function ReviewCard({ r, prefix }: { r: typeof reviews[0], prefix: string }) {
   )
 }
 
+const kigoFaq = {
+  question: "Wat is Kigo?",
+  answer: "Kigo is een AI-tool die Groeimaten zelf heeft ontwikkeld voor keuken- en badkamerbedrijven. Je klant beleeft zijn nieuwe keuken of badkamer al voordat hij in de showroom staat, en jij krijgt een aanvraag met wensen en stijl erbij. We zetten Kigo in onze campagnes in. Hoe het precies werkt, laten we je graag zien in een gesprek.",
+}
+
 const faqItems = [
-  {
-    question: "Wat is Kigo?",
-    answer: "Kigo is een AI-tool die Groeimaten zelf heeft ontwikkeld voor keuken- en badkamerbedrijven. Je klant beleeft zijn nieuwe keuken of badkamer al voordat hij in de showroom staat, en jij krijgt een aanvraag met wensen en stijl erbij. We zetten Kigo in onze campagnes in. Hoe het precies werkt, laten we je graag zien in een gesprek.",
-  },
+  ...(KIGO_LIVE ? [kigoFaq] : []),
   {
     question: "Werken jullie ook voor andere sectoren dan keuken en sanitair?",
     answer: "Nee. Wij werken uitsluitend voor keuken- en sanitairbedrijven. Die focus is onze kracht: we kennen jouw klant, jouw sector en jouw uitdagingen als geen ander.",
@@ -108,14 +117,9 @@ export default function HomePage() {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: [
-      {
-        "@type": "Question",
-        name: "Wat is Kigo?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Kigo is een AI-tool die Groeimaten zelf heeft ontwikkeld voor keuken- en badkamerbedrijven. Je klant beleeft zijn nieuwe keuken of badkamer al voordat hij in de showroom staat, en jij krijgt een aanvraag met wensen en stijl erbij. We zetten Kigo in onze campagnes in. Hoe het precies werkt, laten we je graag zien in een gesprek.",
-        },
-      },
+      ...(KIGO_LIVE
+        ? [{ "@type": "Question", name: kigoFaq.question, acceptedAnswer: { "@type": "Answer", text: kigoFaq.answer } }]
+        : []),
       {
         "@type": "Question",
         name: "Werken jullie ook voor andere sectoren dan keuken en sanitair?",
@@ -350,7 +354,7 @@ export default function HomePage() {
       </section>
 
       {/* KIGO */}
-      <KigoTeaser />
+      {KIGO_LIVE && <KigoTeaser />}
 
       {/* WERKWIJZE */}
       <section className="ww2" id="werkwijze">

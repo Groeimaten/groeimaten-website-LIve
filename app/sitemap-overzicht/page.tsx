@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import { KIGO_LIVE } from "@/lib/features"
 
 export const metadata: Metadata = {
   title: "Sitemap | Groeimaten",
@@ -13,7 +14,7 @@ const SECTIONS = [
     links: [
       { href: "/", label: "Home" },
       { href: "/diensten", label: "Diensten" },
-      { href: "/kigo", label: "Kigo" },
+      ...(KIGO_LIVE ? [{ href: "/kigo", label: "Kigo" }] : []),
       { href: "/cases", label: "Cases" },
       { href: "/over-ons", label: "Over ons" },
       { href: "/prijzen", label: "Prijzen" },

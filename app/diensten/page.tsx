@@ -3,11 +3,14 @@ import Image from "next/image"
 import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
 import KigoTeaser from "@/components/KigoTeaser"
+import { KIGO_LIVE } from "@/lib/features"
 
 export const metadata: Metadata = {
   title: "Marketingdiensten voor keuken, badkamer en bouw | Groeimaten",
   description:
-    "Meta Ads, Google Ads en Kigo, onze eigen AI-tool, voor keuken-, badkamer- en bouwbedrijven. Aangevuld met websites en SEO als basis onder je campagnes.",
+    KIGO_LIVE
+      ? "Meta Ads, Google Ads en Kigo, onze eigen AI-tool, voor keuken-, badkamer- en bouwbedrijven. Aangevuld met websites en SEO als basis onder je campagnes."
+      : "Meta Ads en Google Ads voor keuken-, badkamer- en bouwbedrijven. Aangevuld met websites en SEO als basis onder je campagnes.",
   alternates: {
     canonical: "https://groeimaten.com/diensten",
   },
@@ -91,7 +94,7 @@ export default function DienstenPage() {
                   <em>badkamer en bouw.</em>
                 </h1>
                 <p className="page-hero__subtitle">
-                  Advertenties staan centraal. Met Meta Ads, Google Ads en Kigo halen we serieuze aanvragen
+                  Advertenties staan centraal. Met Meta Ads{KIGO_LIVE ? ", Google Ads en Kigo" : " en Google Ads"} halen we serieuze aanvragen
                   binnen. Een snelle website en goede vindbaarheid zorgen dat die campagnes maximaal renderen.
                 </p>
               </div>
@@ -206,7 +209,7 @@ export default function DienstenPage() {
       </section>
 
       {/* KIGO */}
-      <KigoTeaser id="kigo-dienst" />
+      {KIGO_LIVE && <KigoTeaser id="kigo-dienst" />}
 
       {/* SERVICE: WEBSITE */}
       <section className="service-detail service-detail--alt" id="websites">
