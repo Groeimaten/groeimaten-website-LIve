@@ -5,16 +5,23 @@ import Script from "next/script"
 
 const BOOKING_URL = "https://link.growzy.io/widget/booking/fsskVvL2uoAh0tcbAXtj"
 
-// Het iframe staat direct in de server-HTML, zodat zoekmachines en AI-crawlers
-// zonder JavaScript zien dat hier een afspraak gepland kan worden.
+// Het Growzy-iframe moet tegelijk met form_embed.js mounten (dat script verbergt
+// het iframe tot het een signaal ontvangt). Daarom blijft het client-side; de
+// directe agendalink hieronder staat wel in de server-HTML voor crawlers.
 export default function BookingWidget() {
   const ref = useRef<HTMLDivElement>(null)
   const [loaded, setLoaded] = useState(false)
+  const [visible, setVisible] = useState(false)
 
-  // Valt onLoad weg omdat het iframe al geladen was vóór hydratie, toon het dan toch.
   useEffect(() => {
-    const t = setTimeout(() => setLoaded(true), 2500)
-    return () => clearTimeout(t)
+    const el = ref.current
+    if (!el) return
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) { setVisible(true); observer.disconnect() } },
+      { rootMargin: "200px" }
+    )
+    observer.observe(el)
+    return () => observer.disconnect()
   }, [])
 
   return (
@@ -34,7 +41,8 @@ export default function BookingWidget() {
           Agenda laden…
         </div>
       )}
-      <>
+      {visible && (
+        <>
           <Script src="https://link.growzy.io/js/form_embed.js" strategy="afterInteractive" />
           <iframe
             src={BOOKING_URL}
@@ -43,7 +51,8 @@ export default function BookingWidget() {
             title="Afspraak inplannen"
             onLoad={() => setLoaded(true)}
           />
-      </>
+        </>
+      )}
     </div>
     <p style={{ marginTop: "12px", fontSize: "0.85rem", color: "rgba(255,255,255,0.5)" }}>
       Laadt de agenda niet? <a href={BOOKING_URL} target="_blank" rel="noopener" style={{ textDecoration: "underline" }}>Open de agenda in een nieuw venster</a> of <a href="/contact" style={{ textDecoration: "underline" }}>neem contact op</a>.
