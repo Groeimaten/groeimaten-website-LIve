@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
 import ReviewsMarquee from "@/components/ReviewsMarquee"
+import { KIGO_LIVE } from "@/lib/features"
 
 export const metadata: Metadata = {
   title: "Over Groeimaten | Marketing bureau keuken, badkamer en bouw",
@@ -363,9 +364,13 @@ export default function OverOnsPage() {
                 <div className="value-card__number" aria-hidden="true">03</div>
                 <h3>Innovatief</h3>
                 <p>
-                  We zijn jong en hongerig. Nieuwe platforms, technieken en trends passen we als eerste toe. Daarom
-                  bouwden we <Link href="/kigo" className="media-mention__link">Kigo</Link>, onze eigen AI-tool voor
-                  keuken- en badkamerbedrijven.
+                  We zijn jong en hongerig. Nieuwe platforms, technieken en trends passen we als eerste toe.
+                  {KIGO_LIVE && (
+                    <>
+                      {" "}Daarom bouwden we <Link href="/kigo" className="media-mention__link">Kigo</Link>, onze eigen
+                      AI-tool voor keuken- en badkamerbedrijven.
+                    </>
+                  )}
                 </p>
               </div>
             </ScrollReveal>

@@ -1,5 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import { redirect } from "next/navigation"
+import { KIGO_LIVE } from "@/lib/features"
 import ScrollReveal from "@/components/ScrollReveal"
 
 export const metadata: Metadata = {
@@ -9,6 +11,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://groeimaten.com/kigo",
   },
+  robots: KIGO_LIVE ? undefined : { index: false },
   openGraph: {
     title: "Kigo | AI-tool voor keuken- en badkamerbedrijven",
     description:
@@ -63,6 +66,8 @@ const voordelen = [
 ]
 
 export default function KigoPage() {
+  if (!KIGO_LIVE) redirect("/diensten")
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />

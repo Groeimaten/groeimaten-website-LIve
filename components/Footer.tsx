@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { KIGO_LIVE } from "@/lib/features"
 
 export default function Footer() {
   return (
@@ -15,7 +16,7 @@ export default function Footer() {
           <h3>Diensten</h3>
           <ul>
             <li><Link href="/diensten#meta-ads">Meta Ads &amp; Funnels</Link></li>
-            <li><Link href="/kigo">Kigo</Link></li>
+            {KIGO_LIVE && <li><Link href="/kigo">Kigo</Link></li>}
             <li><Link href="/diensten#websites">Website Development</Link></li>
             <li><Link href="/diensten#seo">Google &amp; AI Ranking</Link></li>
           </ul>
