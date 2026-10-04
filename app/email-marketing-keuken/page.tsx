@@ -111,7 +111,7 @@ export default function EmailMarketingKeukenPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Geautomatiseerde opvolgflows</h4>
+                      <h3>Geautomatiseerde opvolgflows</h3>
                       <p>
                         Na een eerste contactmoment volgt een reeks geautomatiseerde e-mails die de
                         interesse warm houden.
@@ -121,7 +121,7 @@ export default function EmailMarketingKeukenPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Relevante content per fase</h4>
+                      <h3>Relevante content per fase</h3>
                       <p>
                         Inspiratie, keuzehulp, praktische tips: de inhoud sluit aan bij waar de lead
                         zich in het beslisproces bevindt.
@@ -131,7 +131,7 @@ export default function EmailMarketingKeukenPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Uitnodiging voor showroombezoek</h4>
+                      <h3>Uitnodiging voor showroombezoek</h3>
                       <p>
                         Op het juiste moment in de flow een concrete uitnodiging voor een persoonlijk
                         gesprek of showroombezoek.
@@ -141,7 +141,7 @@ export default function EmailMarketingKeukenPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Meetbaar in resultaten</h4>
+                      <h3>Meetbaar in resultaten</h3>
                       <p>
                         Open rates, klikraten en conversies bijgehouden, zodat de flows doorlopend
                         verbeterd kunnen worden.

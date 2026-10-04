@@ -115,7 +115,7 @@ export default function GroeistrategieKeukensanitairPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Analyse van jouw huidige positie</h4>
+                      <h3>Analyse van jouw huidige positie</h3>
                       <p>
                         We beginnen met een eerlijk beeld van waar jij staat: online zichtbaarheid,
                         leadinstroom, conversieratio en vergelijking met concurrenten in jouw markt.
@@ -125,7 +125,7 @@ export default function GroeistrategieKeukensanitairPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Strategie op maat</h4>
+                      <h3>Strategie op maat</h3>
                       <p>
                         Geen standaardpakket. We kiezen de kanalen en aanpak die passen bij jouw bedrijf,
                         jouw doelgroep en jouw budget.
@@ -135,7 +135,7 @@ export default function GroeistrategieKeukensanitairPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Uitvoering door specialisten</h4>
+                      <h3>Uitvoering door specialisten</h3>
                       <p>
                         Groeimaten voert zelf uit. Geen uitbesteding naar derde partijen die jouw sector
                         niet kennen. We doen alles intern.
@@ -145,7 +145,7 @@ export default function GroeistrategieKeukensanitairPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Transparante resultaten</h4>
+                      <h3>Transparante resultaten</h3>
                       <p>
                         Maandelijkse rapportage met concrete cijfers: leads, afspraken, kosten en omzet.
                         Geen vage statistieken.

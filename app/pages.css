@@ -350,7 +350,8 @@ html[data-theme="light"] .page-hero--split {
     margin-top: 2px;
 }
 
-.service-feature h4 {
+.service-feature h4,
+.service-feature h3 {
     font-size: 0.92rem;
     font-weight: 700;
     color: var(--white);

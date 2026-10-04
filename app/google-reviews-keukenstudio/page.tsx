@@ -111,7 +111,7 @@ export default function GoogleReviewsKeukenstudioPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Automatisch na oplevering</h4>
+                      <h3>Automatisch na oplevering</h3>
                       <p>
                         Geen handmatig nadenken. Na elke geplaatste keuken volgt automatisch een
                         reviewverzoek op het juiste moment.
@@ -121,7 +121,7 @@ export default function GoogleReviewsKeukenstudioPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Directe Google-link</h4>
+                      <h3>Directe Google-link</h3>
                       <p>
                         Geen omweg. De klant klikt op een link en komt direct op de reviewpagina van
                         jouw Google-profiel terecht.
@@ -131,7 +131,7 @@ export default function GoogleReviewsKeukenstudioPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Betere lokale ranking</h4>
+                      <h3>Betere lokale ranking</h3>
                       <p>
                         Meer recente reviews verbeteren de positie in Google Maps en de lokale
                         zoekresultaten direct.
@@ -141,7 +141,7 @@ export default function GoogleReviewsKeukenstudioPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Meer vertrouwen bij nieuwe bezoekers</h4>
+                      <h3>Meer vertrouwen bij nieuwe bezoekers</h3>
                       <p>
                         Een hoog aantal recente reviews overtuigt nieuwe bezoekers sneller dan
                         tekst of foto&apos;s alleen.

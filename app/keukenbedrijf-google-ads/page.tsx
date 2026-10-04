@@ -105,7 +105,7 @@ export default function KeukenbedrijfGoogleAdsPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Zoekwoordstrategie op maat</h4>
+                      <h3>Zoekwoordstrategie op maat</h3>
                       <p>
                         Alleen de zoekwoorden die koopklare klanten in jouw regio gebruiken. Geen verspild budget.
                       </p>
@@ -114,7 +114,7 @@ export default function KeukenbedrijfGoogleAdsPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Conversiegerichte landingspagina</h4>
+                      <h3>Conversiegerichte landingspagina</h3>
                       <p>
                         Een pagina die aansluit bij de zoekintentie en bezoekers omzet in concrete aanvragen.
                       </p>
@@ -123,7 +123,7 @@ export default function KeukenbedrijfGoogleAdsPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Doorlopend campagnebeheer</h4>
+                      <h3>Doorlopend campagnebeheer</h3>
                       <p>
                         Wekelijkse optimalisatie, A/B-tests en rapportage. Elke maand betere resultaten.
                       </p>
@@ -132,7 +132,7 @@ export default function KeukenbedrijfGoogleAdsPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Lokale en regionale targeting</h4>
+                      <h3>Lokale en regionale targeting</h3>
                       <p>
                         Zichtbaar in jouw verzorgingsgebied op het moment dat iemand actief zoekt naar jouw type keuken.
                       </p>

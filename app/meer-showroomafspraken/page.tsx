@@ -105,7 +105,7 @@ export default function MeerShowroomafsprakenPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Kwalificerende funnel</h4>
+                      <h3>Kwalificerende funnel</h3>
                       <p>
                         Aanvragers beantwoorden kwalificatievragen voor de afspraak. Slechte leads haken af, goede leads staan in jouw agenda.
                       </p>
@@ -114,7 +114,7 @@ export default function MeerShowroomafsprakenPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Geautomatiseerde opvolging</h4>
+                      <h3>Geautomatiseerde opvolging</h3>
                       <p>
                         Bevestigingen, herinneringen en follow-ups via SMS en e-mail die no-shows drastisch verlagen.
                       </p>
@@ -123,7 +123,7 @@ export default function MeerShowroomafsprakenPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Meta en Google Ads</h4>
+                      <h3>Meta en Google Ads</h3>
                       <p>
                         Gerichte advertenties op het juiste moment voor mensen met de juiste koopintentie in jouw regio.
                       </p>
@@ -132,7 +132,7 @@ export default function MeerShowroomafsprakenPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Maandelijkse rapportage</h4>
+                      <h3>Maandelijkse rapportage</h3>
                       <p>
                         Inzicht in het aantal afspraken, het opkomstpercentage en de kosten per kwalitatieve afspraak.
                       </p>

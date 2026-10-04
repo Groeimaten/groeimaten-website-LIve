@@ -850,7 +850,8 @@ html[data-theme="light"] .service-detail__content > p {
     color: oklch(38% 0.008 70);
 }
 
-html[data-theme="light"] .service-feature h4 {
+html[data-theme="light"] .service-feature h4,
+html[data-theme="light"] .service-feature h3 {
     color: oklch(12% 0.008 60);
 }
 

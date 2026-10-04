@@ -117,7 +117,7 @@ export default function BadkamerinstellateurAdverterenPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Google Ads op zoekintentie</h4>
+                      <h3>Google Ads op zoekintentie</h3>
                       <p>
                         Campagnes gericht op actieve zoekopdrachten zoals &ldquo;badkamer
                         verbouwen [stad]&rdquo; en &ldquo;badkamerinstallateur offerte aanvragen&rdquo;.
@@ -127,7 +127,7 @@ export default function BadkamerinstellateurAdverterenPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Meta Ads voor oriëntatiefase</h4>
+                      <h3>Meta Ads voor oriëntatiefase</h3>
                       <p>
                         Inspirerende advertenties op Facebook en Instagram bereiken mensen
                         die nog in de vroege oriëntatiefase zitten voor een badkamerrenovatie.
@@ -137,7 +137,7 @@ export default function BadkamerinstellateurAdverterenPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Retargeting voor twijfelaars</h4>
+                      <h3>Retargeting voor twijfelaars</h3>
                       <p>
                         Bezoekers die jouw website hebben bezocht maar nog geen contact opnamen,
                         worden opnieuw bereikt met gerichte advertenties.
@@ -147,7 +147,7 @@ export default function BadkamerinstellateurAdverterenPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Kwalitatieve leads, niet bulk</h4>
+                      <h3>Kwalitatieve leads, niet bulk</h3>
                       <p>
                         We richten campagnes in op kwaliteit. Minder aanvragen van twijfelaars,
                         meer aanvragen van mensen die serieus een badkamer willen laten renoveren.

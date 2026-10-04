@@ -126,21 +126,21 @@ export default function DienstenPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Campagne strategie &amp; setup</h4>
+                      <h3>Campagne strategie &amp; setup</h3>
                       <p>Targeting, budgetverdeling en campagnestructuur op maat van jouw segment.</p>
                     </div>
                   </div>
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Funnel architectuur</h4>
+                      <h3>Funnel architectuur</h3>
                       <p>Landingspagina&apos;s, formulieren en kwalificatiestappen die slechte leads filteren.</p>
                     </div>
                   </div>
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Lead kwalificatie &amp; opvolging</h4>
+                      <h3>Lead kwalificatie &amp; opvolging</h3>
                       <p>
                         Geautomatiseerde opvolging via GoHighLevel. SMS, e-mail en herinneringen voor maximale show-up.
                       </p>
@@ -149,7 +149,7 @@ export default function DienstenPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Doorlopende optimalisatie</h4>
+                      <h3>Doorlopende optimalisatie</h3>
                       <p>A/B-tests, creative rotatie en data-analyse voor steeds betere resultaten.</p>
                     </div>
                   </div>
@@ -229,21 +229,21 @@ export default function DienstenPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Premium design op maat</h4>
+                      <h3>Premium design op maat</h3>
                       <p>Uniek design dat de kwaliteit van jouw showroom weerspiegelt. Geen templates.</p>
                     </div>
                   </div>
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Razendsnel (Core Web Vitals)</h4>
+                      <h3>Razendsnel (Core Web Vitals)</h3>
                       <p>Lichtsnelle laadtijden die Google beloont en bezoekers niet laat wachten.</p>
                     </div>
                   </div>
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Conversie geoptimaliseerd</h4>
+                      <h3>Conversie geoptimaliseerd</h3>
                       <p>
                         Strategische CTA-plaatsing, contactformulieren en heatmap-analyses voor maximale conversie.
                       </p>
@@ -252,7 +252,7 @@ export default function DienstenPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Mobiel-first &amp; SEO-ready</h4>
+                      <h3>Mobiel-first &amp; SEO-ready</h3>
                       <p>Responsive design met schone code en technische SEO-basis ingebakken.</p>
                     </div>
                   </div>
@@ -308,14 +308,14 @@ export default function DienstenPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Lokale &amp; nationale SEO</h4>
+                      <h3>Lokale &amp; nationale SEO</h3>
                       <p>Google Mijn Bedrijf, lokale zoektermen en landelijke rankings zodat jij gevonden wordt.</p>
                     </div>
                   </div>
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>AI-zoekoptimalisatie</h4>
+                      <h3>AI-zoekoptimalisatie</h3>
                       <p>
                         Zichtbaar in ChatGPT, Gemini en Copilot. De toekomst van zoeken is nu, wij bereiden je voor.
                       </p>
@@ -324,7 +324,7 @@ export default function DienstenPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Technische &amp; content optimalisatie</h4>
+                      <h3>Technische &amp; content optimalisatie</h3>
                       <p>
                         Site speed, structured data, sterke copywriting en relevante content die organisch verkeer
                         aantrekt.
@@ -334,7 +334,7 @@ export default function DienstenPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Maandelijkse rapportage</h4>
+                      <h3>Maandelijkse rapportage</h3>
                       <p>
                         Transparante rapportages met rankings, verkeer en conversies. Altijd inzicht in wat je groei
                         drijft.

@@ -150,7 +150,7 @@ export default function KlantenWervenKeukenstudioPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Meta Ads gericht op oriënterende kopers</h4>
+                      <h3>Meta Ads gericht op oriënterende kopers</h3>
                       <p>
                         Facebook en Instagram advertenties die mensen bereiken die actief bezig zijn
                         met het vernieuwen van hun keuken, op basis van gedrag en interesses.
@@ -160,7 +160,7 @@ export default function KlantenWervenKeukenstudioPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Google Ads voor actieve zoekers</h4>
+                      <h3>Google Ads voor actieve zoekers</h3>
                       <p>
                         Wie googelt op "keuken laten plaatsen Rotterdam" of "keukenstudio showroom",
                         ziet jouw advertentie bovenaan. Hoge koopintentie, directe aanvragen.
@@ -170,7 +170,7 @@ export default function KlantenWervenKeukenstudioPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>Geautomatiseerde opvolging via SMS en e-mail</h4>
+                      <h3>Geautomatiseerde opvolging via SMS en e-mail</h3>
                       <p>
                         Leads die een formulier invullen ontvangen automatisch een bevestiging en
                         herinnering. Minder no-shows, meer afspraken die daadwerkelijk plaatsvinden.
@@ -180,7 +180,7 @@ export default function KlantenWervenKeukenstudioPage() {
                   <div className="service-feature">
                     <div className="service-feature__icon" aria-hidden="true">{checkIcon}</div>
                     <div>
-                      <h4>SEO voor langdurige organische zichtbaarheid</h4>
+                      <h3>SEO voor langdurige organische zichtbaarheid</h3>
                       <p>
                         Organische posities op termen als "keukenstudio [stad]" bouwen een kanaal op
                         dat aanvragen oplevert zonder doorlopende advertentiekosten.
