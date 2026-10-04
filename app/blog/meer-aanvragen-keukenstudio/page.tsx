@@ -44,7 +44,7 @@ const articleSchema = {
   headline: "Meer aanvragen voor je keukenstudio: drie plekken waar je winst pakt",
   description:
     "Waar keukenstudio's de meeste winst pakken als het gaat om meer aanvragen en showroomafspraken.",
-  author: { "@type": "Organization", name: "Groeimaten" },
+  author: { "@type": "Person", name: "Thomas Ghobadi", sameAs: "https://www.linkedin.com/in/thomasghobadi/" },
   publisher: { "@type": "Organization", name: "Groeimaten", url: "https://groeimaten.com" },
   datePublished: "2026-08-10",
   url: "https://groeimaten.com/blog/meer-aanvragen-keukenstudio",
@@ -78,6 +78,9 @@ export default function BlogMeerAanvragenKeukenstudioPage() {
             <p className="page-hero__subtitle" style={{ marginTop: "20px" }}>
               De meeste keukenstudio&apos;s kijken naar hun aantal bezoekers als er te weinig aanvragen binnenkomen. Maar bezoekers zijn niet het probleem. Het probleem zit in wat er met die bezoekers gebeurt nadat ze op de website zijn.
             </p>
+          <p style={{ color: "oklch(55% 0 0)", fontSize: "0.88rem", marginTop: "12px" }}>
+            Thomas Ghobadi · 10 augustus 2026 · 6 min lezen
+          </p>
           </div>
         </div>
       </section>

@@ -43,7 +43,7 @@ const articleSchema = {
   headline: "Google Ads voor je badkamerbedrijf: zo wordt elk euro goed besteed",
   description:
     "Google Ads is voor een badkamerbedrijf een van de meest directe manieren om koopklare klanten te bereiken.",
-  author: { "@type": "Organization", name: "Groeimaten" },
+  author: { "@type": "Person", name: "Thomas Ghobadi", sameAs: "https://www.linkedin.com/in/thomasghobadi/" },
   publisher: { "@type": "Organization", name: "Groeimaten", url: "https://groeimaten.com" },
   datePublished: "2026-06-16",
   url: "https://groeimaten.com/blog/google-ads-badkamerbedrijf",
@@ -80,7 +80,7 @@ export default function BlogGoogleAdsBadkamerbedrijfPage() {
               ingestelde campagne kost in korte tijd veel geld zonder een enkele kwalitatieve aanvraag op te leveren.
             </p>
             <p style={{ color: "oklch(55% 0 0)", fontSize: "0.88rem", marginTop: "12px" }}>
-              Groeimaten · 16 juni 2026 · 5 min lezen
+              Thomas Ghobadi · 16 juni 2026 · 5 min lezen
             </p>
           </div>
         </div>

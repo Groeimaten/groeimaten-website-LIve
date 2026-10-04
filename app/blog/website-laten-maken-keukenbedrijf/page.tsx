@@ -38,7 +38,7 @@ const articleSchema = {
   headline: "Website laten maken als keukenbedrijf: wat werkt en wat je kunt overslaan",
   description:
     "Welke elementen maken echt het verschil voor een website van een keukenbedrijf?",
-  author: { "@type": "Organization", name: "Groeimaten" },
+  author: { "@type": "Person", name: "Thomas Ghobadi", sameAs: "https://www.linkedin.com/in/thomasghobadi/" },
   publisher: { "@type": "Organization", name: "Groeimaten", url: "https://groeimaten.com" },
   datePublished: "2026-06-22",
   url: "https://groeimaten.com/blog/website-laten-maken-keukenbedrijf",
@@ -73,7 +73,7 @@ export default function BlogWebsiteKeukenbedrijfPage() {
               Veel keukenbedrijven betalen voor een mooie website die toch geen afspraken genereert. Het verschil zit zelden in het design.
             </p>
             <p style={{ color: "oklch(55% 0 0)", fontSize: "0.88rem", marginTop: "12px" }}>
-              Groeimaten · 22 juni 2026 · 5 min lezen
+              Thomas Ghobadi · 22 juni 2026 · 5 min lezen
             </p>
           </div>
         </div>

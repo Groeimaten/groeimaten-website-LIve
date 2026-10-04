@@ -43,7 +43,7 @@ const articleSchema = {
   headline: "Google ranking keukenbedrijf verbeteren: de aanpak die structureel werkt",
   description:
     "Welke factoren bepalen de Google ranking van een keukenbedrijf en hoe verbeter je die systematisch.",
-  author: { "@type": "Organization", name: "Groeimaten" },
+  author: { "@type": "Person", name: "Thomas Ghobadi", sameAs: "https://www.linkedin.com/in/thomasghobadi/" },
   publisher: { "@type": "Organization", name: "Groeimaten", url: "https://groeimaten.com" },
   datePublished: "2026-07-13",
   url: "https://groeimaten.com/blog/google-ranking-keukenbedrijf",
@@ -81,7 +81,7 @@ export default function BlogGoogleRankingKeukenbedrijfPage() {
               opbouwen vraagt meer dan een mooie website.
             </p>
             <p style={{ color: "oklch(55% 0 0)", fontSize: "0.88rem", marginTop: "12px" }}>
-              Groeimaten · 13 juli 2026 · 7 min lezen
+              Thomas Ghobadi · 13 juli 2026 · 7 min lezen
             </p>
           </div>
         </div>

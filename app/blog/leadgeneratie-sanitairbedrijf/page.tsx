@@ -43,7 +43,7 @@ const articleSchema = {
   headline: "Leadgeneratie voor sanitairbedrijven: van aanvraag tot afspraak",
   description:
     "Hoe genereer je als sanitairbedrijf structureel kwalitatieve aanvragen voor sanitairinstallatie en badkamerrenovatie?",
-  author: { "@type": "Organization", name: "Groeimaten" },
+  author: { "@type": "Person", name: "Thomas Ghobadi", sameAs: "https://www.linkedin.com/in/thomasghobadi/" },
   publisher: { "@type": "Organization", name: "Groeimaten", url: "https://groeimaten.com" },
   datePublished: "2026-07-06",
   url: "https://groeimaten.com/blog/leadgeneratie-sanitairbedrijf",
@@ -80,7 +80,7 @@ export default function BlogLeadgeneratieSanitairbedrijfPage() {
               leadgeneratie voor sanitairbedrijven houdt daar rekening mee.
             </p>
             <p style={{ color: "oklch(55% 0 0)", fontSize: "0.88rem", marginTop: "12px" }}>
-              Groeimaten · 6 juli 2026 · 6 min lezen
+              Thomas Ghobadi · 6 juli 2026 · 6 min lezen
             </p>
           </div>
         </div>

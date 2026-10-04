@@ -38,7 +38,7 @@ const articleSchema = {
   headline: "Online marketing voor je badkamerbedrijf: van zichtbaarheid naar boekingen",
   description:
     "Welke online marketing aanpak werkt echt voor een badkamerbedrijf?",
-  author: { "@type": "Organization", name: "Groeimaten" },
+  author: { "@type": "Person", name: "Thomas Ghobadi", sameAs: "https://www.linkedin.com/in/thomasghobadi/" },
   publisher: { "@type": "Organization", name: "Groeimaten", url: "https://groeimaten.com" },
   datePublished: "2026-06-22",
   url: "https://groeimaten.com/blog/online-marketing-badkamerbedrijf",
@@ -73,7 +73,7 @@ export default function BlogOnlineMarketingBadkamerbedrijfPage() {
               Een badkamer is geen impulsaankoop. Je klant oriënteert zich weken lang en vergelijkt meerdere showrooms. Online marketing die aansluit bij dat proces levert betere leads op dan een campagne die gewoon bereik maximaliseert.
             </p>
             <p style={{ color: "oklch(55% 0 0)", fontSize: "0.88rem", marginTop: "12px" }}>
-              Groeimaten · 22 juni 2026 · 6 min lezen
+              Thomas Ghobadi · 22 juni 2026 · 6 min lezen
             </p>
           </div>
         </div>

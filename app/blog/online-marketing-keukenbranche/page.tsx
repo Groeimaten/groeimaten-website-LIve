@@ -43,7 +43,7 @@ const articleSchema = {
   headline: "Online marketing voor de keukenbranche: wat echt werkt",
   description:
     "De keukenbranche heeft een lang aankoopproces en hoge orderwaarden. Welke online marketing kanalen passen daarbij en wat kun je het beste vermijden?",
-  author: { "@type": "Organization", name: "Groeimaten" },
+  author: { "@type": "Person", name: "Thomas Ghobadi", sameAs: "https://www.linkedin.com/in/thomasghobadi/" },
   publisher: { "@type": "Organization", name: "Groeimaten", url: "https://groeimaten.com" },
   datePublished: "2026-06-29",
   url: "https://groeimaten.com/blog/online-marketing-keukenbranche",
@@ -79,7 +79,7 @@ export default function BlogOnlineMarketingKeukenbranchePage() {
               ligt hoog en de klant vergelijkt actief. Dat vraagt om een andere aanpak dan standaard online marketing.
             </p>
             <p style={{ color: "oklch(55% 0 0)", fontSize: "0.88rem", marginTop: "12px" }}>
-              Groeimaten · 29 juni 2026 · 7 min lezen
+              Thomas Ghobadi · 29 juni 2026 · 7 min lezen
             </p>
           </div>
         </div>

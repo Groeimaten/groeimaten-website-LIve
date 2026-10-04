@@ -44,7 +44,7 @@ const articleSchema = {
   headline: "Conversie optimalisatie keukenstudio: van bezoeker naar afspraak",
   description:
     "Waarom bezoekers van keukenstudiowebsites vertrekken zonder contact en wat je eraan kunt doen.",
-  author: { "@type": "Organization", name: "Groeimaten" },
+  author: { "@type": "Person", name: "Thomas Ghobadi", sameAs: "https://www.linkedin.com/in/thomasghobadi/" },
   publisher: { "@type": "Organization", name: "Groeimaten", url: "https://groeimaten.com" },
   datePublished: "2026-08-10",
   url: "https://groeimaten.com/blog/conversie-optimalisatie-keukenstudio",
@@ -78,6 +78,9 @@ export default function BlogConversieOptimalisatieKeukenstudioPage() {
             <p className="page-hero__subtitle" style={{ marginTop: "20px" }}>
               Negen van de tien bezoekers verlaten een keukenstudiowebsite zonder contact op te nemen. Dat is normaal. Maar er is een groot verschil tussen een studio die 8 procent converteert en een studio die 1 procent converteert. Die kloof zit bijna nooit in het verkeer, maar in de website zelf.
             </p>
+          <p style={{ color: "oklch(55% 0 0)", fontSize: "0.88rem", marginTop: "12px" }}>
+            Thomas Ghobadi · 10 augustus 2026 · 6 min lezen
+          </p>
           </div>
         </div>
       </section>

@@ -43,7 +43,7 @@ const articleSchema = {
   headline: "Klanten werven voor een badkamerbedrijf: zo pak je het structureel aan",
   description:
     "Hoe zorg je als badkamerbedrijf voor een constante stroom nieuwe klanten?",
-  author: { "@type": "Organization", name: "Groeimaten" },
+  author: { "@type": "Person", name: "Thomas Ghobadi", sameAs: "https://www.linkedin.com/in/thomasghobadi/" },
   publisher: { "@type": "Organization", name: "Groeimaten", url: "https://groeimaten.com" },
   datePublished: "2026-06-29",
   url: "https://groeimaten.com/blog/klanten-werven-badkamerbedrijf",
@@ -80,7 +80,7 @@ export default function BlogKlantenWervenBadkamerbedrijfPage() {
               klantenwerving dan bij een product met een korte aankoopbeslissing.
             </p>
             <p style={{ color: "oklch(55% 0 0)", fontSize: "0.88rem", marginTop: "12px" }}>
-              Groeimaten · 29 juni 2026 · 7 min lezen
+              Thomas Ghobadi · 29 juni 2026 · 7 min lezen
             </p>
           </div>
         </div>
