@@ -3,107 +3,115 @@ import Image from "next/image"
 import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
 import LogoStrip from "@/components/LogoStrip"
-import WerkwijzePanel from "@/components/WerkwijzePanel"
-import CasesSlider from "@/components/CasesSlider"
 import FaqAccordion from "@/components/FaqAccordion"
-import StatsCounter from "@/components/StatsCounter"
-import BeforeAfterSlider from "@/components/BeforeAfterSlider"
-import ReviewsMarquee from "@/components/ReviewsMarquee"
 import KigoTeaser from "@/components/KigoTeaser"
 import { KIGO_LIVE } from "@/lib/features"
 
+const OFFER_DESCRIPTION =
+  "15 echte showroomafspraken in 90 dagen, gegarandeerd. Halen we het niet, dan werken we gratis door. Meta Ads en Google Ads voor keuken- en badkamerbedrijven."
+
 export const metadata: Metadata = {
-  title: "Groeimaten | Meta Ads en Google Ads voor keuken, badkamer en bouw",
-  description:
-    KIGO_LIVE
-      ? "Groeimaten helpt keuken-, badkamer- en bouwbedrijven aan meer showroomafspraken met Meta Ads, Google Ads en Kigo, onze eigen AI-tool. Alleen serieuze aanvragen die ook echt komen opdagen."
-      : "Groeimaten helpt keuken-, badkamer- en bouwbedrijven aan meer showroomafspraken met Meta Ads en Google Ads. Alleen serieuze aanvragen die ook echt komen opdagen.",
+  title: "Groeimaten | 15 showroomafspraken in 90 dagen, gegarandeerd",
+  description: OFFER_DESCRIPTION,
   alternates: {
     canonical: "https://groeimaten.com",
   },
   openGraph: {
-    title: "Groeimaten | Meta Ads en Google Ads voor keuken, badkamer en bouw",
-    description:
-      KIGO_LIVE
-      ? "Groeimaten helpt keuken-, badkamer- en bouwbedrijven groeien. Meer showroomafspraken en kwalitatieve aanvragen via Meta Ads, Google Ads en Kigo."
-      : "Groeimaten helpt keuken-, badkamer- en bouwbedrijven groeien. Meer showroomafspraken en kwalitatieve aanvragen via Meta Ads en Google Ads.",
+    title: "Groeimaten | 15 showroomafspraken in 90 dagen, gegarandeerd",
+    description: OFFER_DESCRIPTION,
     url: "https://groeimaten.com",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Groeimaten | Meta Ads en Google Ads voor keuken, badkamer en bouw",
-    description:
-      KIGO_LIVE
-      ? "Groeimaten helpt keuken-, badkamer- en bouwbedrijven aan meer klanten via Meta Ads, Google Ads en Kigo."
-      : "Groeimaten helpt keuken-, badkamer- en bouwbedrijven aan meer klanten via Meta Ads en Google Ads.",
+    title: "Groeimaten | 15 showroomafspraken in 90 dagen, gegarandeerd",
+    description: OFFER_DESCRIPTION,
   },
 }
 
-const reviews = [
-  { name: "Kim Noach", meta: "een maand geleden", img: "/images/kim-noach.png", text: '"Zeer tevreden over het contact, hoe de samenwerking wordt onderhouden en de transparantie. Communicatie is erg fijn en er wordt snel geschakeld, hun manier van werken is innovatief en met doorzettingsvermogen. Erg fijn!"' },
-  { name: "Martin Stoop", meta: "Stoop Keukens · een maand geleden", img: "/images/stoop-keukens.png", text: '"Vanaf februari is onze nieuwe website echt goed vindbaar geworden. De leads worden steeds kwalitatiever, we krijgen meer serieuze aanvragen en daar komen ook daadwerkelijk opdrachten uit voort. We merken echt duidelijke groei."' },
-  { name: "Tegro BV", meta: "een maand geleden", img: "/images/tegro-review.png", text: '"Deze jonge enthousiaste ondernemers hebben onze website van Tegro ontwikkeld. Het resultaat mag er zijn. Het was een fijn traject waar op alle vlakken goed meegedacht werd. Ook het onderhoud van de site wordt met veel enthousiasme verzorgd."' },
-  { name: "Mido Ibrahim", meta: "een maand geleden", img: "/images/mido-ibrahim.png", text: '"De samenwerking met Thomas en Jelle heb ik als heel prettig ervaren. Ze luisterden goed naar mijn wensen en dachten actief mee. Het eindresultaat is een mooie, professionele website die helemaal past bij wat ik voor ogen had."' },
-  { name: "Richard Feenstra", meta: "6 dagen geleden", img: "/images/richard-feenstra.png", text: '"Thomas heeft mij geholpen om mijn website weer een beetje up-to-date te krijgen. De korte lijntjes zijn erg prettig. De afspraken zijn netjes nagekomen. Al met al een goede ervaring."' },
+const pains = [
+  {
+    title: "Aanvragen die nooit komen opdagen",
+    body: "Je belt na, plant in, en de showroom blijft leeg.",
+  },
+  {
+    title: "De ene maand druk, de andere stil",
+    body: "Geen vaste instroom, dus geen grip op je omzet.",
+  },
+  {
+    title: "Uren kwijt aan prijsjagers",
+    body: "Mensen die alleen een offerte willen om te vergelijken.",
+  },
 ]
 
-function ReviewCard({ r, prefix }: { r: typeof reviews[0], prefix: string }) {
-  return (
-    <div className="review-card" aria-hidden={prefix === "b" ? "true" : undefined}>
-      <svg className="review-card__quote" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
-        <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" />
-        <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" />
-      </svg>
-      <div className="review-card__stars" aria-label="5 sterren">
-        {[...Array(5)].map((_, j) => (
-          <svg key={j} className="review-card__star" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor" />
-          </svg>
-        ))}
-      </div>
-      <p className="review-card__text">{r.text}</p>
-      <div className="review-card__author">
-        <img src={r.img} alt={r.name} className="review-card__avatar" width={42} height={42} loading="lazy" />
-        <div>
-          <span className="review-card__name">{r.name}</span>
-          <span className="review-card__meta">{r.meta}</span>
-        </div>
-      </div>
-    </div>
-  )
-}
+const steps = [
+  {
+    n: "01",
+    title: "Adverteren op het juiste kopersprofiel",
+    body: "Meta Ads en Google Ads, alleen gericht op mensen in jouw regio die nu een keuken of badkamer zoeken.",
+  },
+  {
+    n: "02",
+    title: "Filteren vóór de afspraak",
+    body: "Onze funnel vraagt naar wensen, budget en planning. Wie niet past, haakt af voordat jij er tijd in steekt.",
+  },
+  {
+    n: "03",
+    title: "Opvolging tot in de showroom",
+    body: "Automatische opvolging zorgt dat de aanvraag een afspraak wordt, en dat de klant ook echt komt.",
+  },
+]
+
+const cases = [
+  {
+    name: "Stoop Keukens",
+    result: "45 showroombezoeken",
+    detail: "13 nieuwe klanten, bijna €280.000 omzet",
+  },
+  {
+    name: "Marquardt Amersfoort",
+    result: "30 showroomafspraken",
+    detail: "Sinds januari 2026, voor minder dan €27 per aanvraag",
+  },
+]
+
+const reviews = [
+  {
+    name: "Martin Stoop",
+    meta: "Stoop Keukens",
+    img: "/images/stoop-keukens.png",
+    text: "De leads worden steeds kwalitatiever, we krijgen meer serieuze aanvragen en daar komen ook daadwerkelijk opdrachten uit voort.",
+  },
+  {
+    name: "Kim Noach",
+    meta: "Google review",
+    img: "/images/kim-noach.png",
+    text: "Communicatie is erg fijn en er wordt snel geschakeld, hun manier van werken is innovatief en met doorzettingsvermogen.",
+  },
+]
 
 const kigoFaq = {
   question: "Wat is Kigo?",
-  answer: "Kigo is een AI-tool die Groeimaten zelf heeft ontwikkeld voor keuken- en badkamerbedrijven. Je klant beleeft zijn nieuwe keuken of badkamer al voordat hij in de showroom staat, en jij krijgt een aanvraag met wensen en stijl erbij. We zetten Kigo in onze campagnes in. Hoe het precies werkt, laten we je graag zien in een gesprek.",
+  answer: "Kigo is een AI-tool die Groeimaten zelf heeft ontwikkeld voor keuken- en badkamerbedrijven. Je klant beleeft zijn nieuwe keuken of badkamer al voordat hij in de showroom staat, en jij krijgt een aanvraag met wensen en stijl erbij.",
 }
 
 const faqItems = [
-  ...(KIGO_LIVE ? [kigoFaq] : []),
   {
-    question: "Werken jullie ook voor andere sectoren dan keuken en sanitair?",
-    answer: "Nee. Wij werken uitsluitend voor keuken- en sanitairbedrijven. Die focus is onze kracht: we kennen jouw klant, jouw sector en jouw uitdagingen als geen ander.",
+    question: "Wat telt als showroomafspraak?",
+    answer: "Alleen een afspraak waarbij de klant ook echt in je showroom staat. Aanvragen of no-shows tellen niet mee.",
+  },
+  {
+    question: "Wat als jullie de 15 afspraken niet halen?",
+    answer: "Dan werken we gratis door tot de 15 afspraken er zijn. Jij betaalt niets extra.",
+  },
+  {
+    question: "Voor wie is dit?",
+    answer: "Voor keuken-, badkamer- en sanitairbedrijven met een showroom die willen groeien. We werken uitsluitend in deze branche.",
   },
   {
     question: "Hoe snel zie ik resultaat?",
-    answer: "Bij Meta Ads zijn de eerste leads er vaak al binnen de eerste week. Google &amp; AI Ranking duurt 3–6 maanden voor structurele groei. We zijn altijd eerlijk over wat je wanneer kunt verwachten.",
+    answer: "Campagnes staan meestal binnen een week live. De eerste aanvragen komen vaak al in de eerste week binnen.",
   },
-  {
-    question: "Werken jullie ook met kleinere showrooms?",
-    answer: "Ja, zolang je de ambitie hebt om te groeien zijn wij de juiste partner. Grootte maakt niet uit. Focus en wil om te groeien wel.",
-  },
-  {
-    question: "Wat maakt jullie anders dan een gewoon marketingbureau?",
-    answer: "Wij kennen de keuken- en sanitairmarkt als geen ander. Geen leercurve, geen generieke aanpak. Dag 1 aan de slag. Een generiek bureau leert jouw markt misschien na maanden. Wij zijn er al.",
-  },
-  {
-    question: "Helpen jullie ook loodgieters, elektriciens en andere installateurs?",
-    answer: "Ja. Groeimaten werkt voor de hele keuken, badkamer en bouwsector. Dat omvat ook installateurs, loodgieters, elektriciens, aannemers en afbouwbedrijven. We kennen de markt en weten welke kanalen voor jouw type bedrijf het beste werken.",
-  },
-  {
-    question: "Wat is leadgeneratie en hoe werkt dat voor een bouwbedrijf of keukenstudio?",
-    answer: "Leadgeneratie is het proces waarmee je potentiële klanten aantrekt die interesse tonen in jouw diensten, via je website, Google Ads of sociale media. Voor bouwbedrijven en keukenstudio's betekent dat: mensen die een formulier invullen, een telefoonnummer achterlaten of een showroomafspraak inplannen. Groeimaten richt dat hele systeem voor je in.",
-  },
+  ...(KIGO_LIVE ? [kigoFaq] : []),
 ]
 
 const ArrowRight = () => (
@@ -112,444 +120,183 @@ const ArrowRight = () => (
   </svg>
 )
 
+const Check = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M5 12.5l4.5 4.5L19 7.5" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+)
+
 export default function HomePage() {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: [
-      ...(KIGO_LIVE
-        ? [{ "@type": "Question", name: kigoFaq.question, acceptedAnswer: { "@type": "Answer", text: kigoFaq.answer } }]
-        : []),
-      {
-        "@type": "Question",
-        name: "Werken jullie ook voor andere sectoren dan keuken en sanitair?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Nee. Groeimaten werkt uitsluitend voor keuken-, badkamer- en bouwbedrijven. Die focus is onze kracht: we kennen jouw klant, jouw sector en jouw uitdagingen als geen ander.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Hoe snel zie ik resultaat?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Bij Meta Ads zijn de eerste leads er vaak al binnen de eerste week. Google Ads levert direct aanvragen op zodra de campagne live gaat. SEO duurt 3 tot 6 maanden voor structurele groei. We zijn altijd eerlijk over wat je wanneer kunt verwachten.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Werken jullie ook met kleinere showrooms of bouwbedrijven?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Ja, zolang je de ambitie hebt om te groeien zijn wij de juiste partner. Grootte maakt niet uit. Focus en wil om te groeien wel.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Wat maakt Groeimaten anders dan een gewoon marketingbureau?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Groeimaten werkt uitsluitend voor bedrijven in de keuken-, badkamer- en bouwsector. Geen leercurve, geen generieke aanpak. Dag 1 aan de slag. Een generiek bureau leert jouw markt misschien na maanden. Groeimaten is er al.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Wat kost online marketing voor een keukenstudio of bouwbedrijf?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "De kosten hangen af van de kanalen en het gewenste resultaat. In een gratis gesprek leggen we uit wat een realistisch budget is en wat dat oplevert. We werken nooit met vage contracten.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Kunnen jullie ook helpen met een website voor een aannemer of installateur?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Ja. Groeimaten bouwt websites voor aannemers, installateurs, keukenstudio's en badkamerbedrijven. Websites die gevonden worden op Google en aanvragen genereren, niet alleen goed uitzien.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Helpen jullie ook loodgieters, elektriciens en andere installateurs?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Ja. Groeimaten werkt voor de hele keuken, badkamer en bouwsector, inclusief installateurs, loodgieters, elektriciens, aannemers en afbouwbedrijven. We kennen de markt en weten welke kanalen voor jouw type bedrijf het beste werken.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Wat is leadgeneratie en hoe werkt dat voor een bouwbedrijf of keukenstudio?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Leadgeneratie is het proces waarmee een bedrijf potentiële klanten aantrekt die interesse tonen via de website, Google Ads of sociale media. Voor bouwbedrijven en keukenstudio's betekent dat: mensen die een formulier invullen, een telefoonnummer achterlaten of een showroomafspraak inplannen. Groeimaten richt dat systeem volledig in.",
-        },
-      },
-    ],
+    mainEntity: faqItems.map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: { "@type": "Answer", text: f.answer },
+    })),
   }
 
   return (
-    <>
+    <div className="lean">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      {/* HERO */}
-      <section className="hero hero--fullscreen" id="home">
-        <div className="hero__bg">
-          <Image
-            className="hero__bg-img hero__bg-img--desktop"
-            src="/images/hero.webp"
-            alt="Groeimaten team aan het werk"
-            fill
-            priority
-            quality={90}
-            sizes="100vw"
-            style={{ objectFit: "cover", objectPosition: "center 30%" }}
-          />
-          <Image
-            className="hero__bg-img hero__bg-img--mobile"
-            src="/images/jelle-thomas-sitting.jpg"
-            alt="Jelle en Thomas van Groeimaten"
-            fill
-            priority
-            quality={90}
-            sizes="100vw"
-            style={{ objectFit: "cover", objectPosition: "center top" }}
-          />
-          <div className="hero__bg-overlay" />
-        </div>
-        <div className="container hero__inner">
-          <div className="hero__content">
-            <h1 className="hero__title hero-anim hero-anim--1">
-              Meer showroom&shy;afspraken.<br />
-              <em>Elke maand.</em>
+
+      {/* HERO: het offer */}
+      <section className="lean-hero" id="home">
+        <div className="container lean-hero__inner">
+          <div className="lean-hero__content">
+            <span className="lean-label hero-anim hero-anim--1">Voor keuken- en badkamerbedrijven</span>
+            <h1 className="lean-hero__title hero-anim hero-anim--1">
+              15 showroomafspraken in 90 dagen. <em>Gegarandeerd.</em>
             </h1>
-            <p className="hero__subtitle hero-anim hero-anim--2">
-              Wij draaien Meta Ads en Google Ads voor keuken- en sanitairbedrijven. Campagnes die serieuze aanvragen opleveren, en opvolging die ze in je showroom krijgt. Geen generiek bureau, maar de specialist in jouw branche.
+            <p className="lean-hero__sub hero-anim hero-anim--2">
+              Wij vullen je agenda met kopers die echt in je showroom komen. Halen we de 15 niet? Dan werken we gratis door tot het wel lukt.
             </p>
-            <div className="hero__actions hero-anim hero-anim--3">
-              <Link href="/afspraak" className="btn btn--blue btn--lg">
-                Gratis strategiegesprek <ArrowRight />
+            <div className="lean-hero__actions hero-anim hero-anim--3">
+              <Link href="/afspraak" className="btn lean-btn btn--lg">
+                Plan een gratis gesprek <ArrowRight />
               </Link>
-              <Link href="/cases" className="btn btn--ghost btn--lg">Bekijk cases</Link>
+              <a href="#resultaten" className="lean-link">Bekijk resultaten</a>
             </div>
-            <div className="hero__proof hero-anim hero-anim--4">
-              <div className="hero__proof-item">
-                <span className="hero__proof-number">35+</span>
-                <span className="hero__proof-label">merken geholpen groeien</span>
-              </div>
-              <div className="hero__proof-divider" aria-hidden="true" />
-              <div className="hero__proof-item">
-                <span className="hero__proof-number">100%</span>
-                <span className="hero__proof-label">focus op ads &amp; afspraken</span>
-              </div>
-              <div className="hero__proof-divider" aria-hidden="true" />
-              <div className="hero__proof-item">
-                <span className="hero__proof-number">5,0 <span style={{color:"#c9a24c"}}>★</span></span>
-                <span className="hero__proof-label">Google beoordeling</span>
-              </div>
-            </div>
+            <ul className="lean-hero__proof hero-anim hero-anim--4">
+              <li><strong>5,0 <span className="lean-star">★</span></strong> op Google</li>
+              <li><strong>35+</strong> merken geholpen</li>
+              <li>Bekend van <strong>K&amp;D Magazine</strong></li>
+            </ul>
+          </div>
+          <div className="lean-hero__visual hero-anim hero-anim--2">
+            <Image
+              src="/images/cases/marquardt-adviesgesprek.jpg"
+              alt="Adviesgesprek in de showroom van Marquardt Amersfoort"
+              fill
+              priority
+              quality={90}
+              sizes="(min-width: 900px) 45vw, 100vw"
+              style={{ objectFit: "cover", objectPosition: "center" }}
+            />
           </div>
         </div>
       </section>
 
-      {/* LOGO STRIP */}
       <LogoStrip />
 
-      {/* SECTORSPECIALIST */}
-      <section className="specialist-strip" aria-labelledby="specialist-heading">
+      {/* PIJNPUNTEN */}
+      <section className="lean-section" id="probleem">
         <div className="container">
-          <div className="specialist-strip__inner">
-            <div className="specialist-strip__eyebrow">Sector exclusief</div>
-            <h2 className="specialist-strip__title" id="specialist-heading">
-              Wij werken <em>uitsluitend</em> voor keuken- en sanitairbedrijven.
-            </h2>
-            <p className="specialist-strip__subtitle">
-              Terwijl andere bureaus vandaag een bakkerij helpen en morgen een autogarage, doen wij maar één ding. Jouw branche. Elke dag. Dat is het verschil tussen een bureau dat jou begrijpt en één dat jou leert kennen.
-            </p>
-            <div className="specialist-strip__sectors">
-              {[
-                { icon: "home", label: "Keukenshowrooms" },
-                { icon: "bath", label: "Sanitairzaken" },
-                { icon: "grid", label: "Tegelbedrijven" },
-                { icon: "star", label: "Premium segment" },
-                { icon: "sun", label: "Midden- & hoogsegment" },
-              ].map(({ label }) => (
-                <div key={label} className="sector-pill">{label}</div>
-              ))}
-            </div>
-            <div className="specialist-strip__no-list">
-              {["Restaurants", "Kappers", "Autogarages", "Andere sectoren"].map((s) => (
-                <div key={s} className="sector-pill sector-pill--no">
-                  <span className="sector-pill__cross">✕</span> {s}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* IN DE MEDIA */}
-      <section className="media-mention-section" aria-labelledby="media-heading">
-        <div className="container">
-          <div className="media-mention__inner">
-            <ScrollReveal className="media-mention__visual">
-              <div className="media-mention__frame">
-                <Image src="/images/magazine-article.webp" alt="Groeimaten in K&D Magazine" width={480} height={320} loading="lazy" />
-                <span className="media-mention__stamp">In de media</span>
-              </div>
-            </ScrollReveal>
-            <ScrollReveal delay={2} className="media-mention__content">
-              <div className="media-mention__eyebrow">Erkend door de branche</div>
-              <h2 className="media-mention__title" id="media-heading">
-                Uitgelicht in<br /><em>K&amp;D Magazine</em>
-              </h2>
-              <p className="media-mention__text">
-                Groeimaten werd door K&amp;D Magazine uitgelicht als dé specialist voor marketing in de keuken- en sanitairsector. Een erkenning die bewijst dat onze aanpak werkt, niet alleen bij onze klanten, maar ook bij de sector zelf.
-              </p>
-              <blockquote className="media-mention__quote">"Met AI en marketing naar meer afspraken"</blockquote>
-              <div className="media-mention__publication">
-                <span>K&amp;D Magazine</span>
-                <span className="media-mention__pub-dot" />
-                <span>Keuken &amp; Bad vakblad</span>
-                <span className="media-mention__pub-dot" />
-                <a href="https://keukenendesign.nl/het-verhaal-achter-groeimaten-met-ai-en-marketing-naar-meer-afspraken/" target="_blank" rel="noopener noreferrer" style={{ color: "oklch(67% 0.09 75)", textDecoration: "none", fontWeight: 600 }}>
-                  Lees het artikel →
-                </a>
-                <span className="media-mention__pub-dot" />
-                <a href="https://keukenendesign.nl/" target="_blank" rel="noopener noreferrer" style={{ color: "oklch(67% 0.09 75)", textDecoration: "none", fontWeight: 600 }}>
-                  Bekijk de K&amp;D →
-                </a>
-              </div>
-            </ScrollReveal>
-          </div>
-        </div>
-      </section>
-
-      {/* PAIN POINTS */}
-      <section className="pain-section" id="probleem">
-        <div className="container">
-          <ScrollReveal className="pain-section__header">
-            <h2 className="pain-section__title">Klinkt dit<br /><em>bekend?</em></h2>
-            <p className="pain-section__intro">Veel keuken- en sanitairbedrijven lopen tegen dezelfde uitdagingen aan. De problemen zijn voorspelbaar. De oplossing niet.</p>
+          <ScrollReveal className="lean-head">
+            <h2 className="lean-title">Herken je dit?</h2>
           </ScrollReveal>
-          <div className="pain-grid">
-            {[
-              { n: "01", title: "Slechte leads die nooit komen opdagen", body: "Je krijgt aanvragen binnen, maar ze verschijnen nooit in de showroom. Tijdverspilling en frustratie, elke keer opnieuw." },
-              { n: "02", title: "Onvoorspelbare instroom van klanten", body: "De ene maand druk, de andere maand stil. Geen structurele aanpak betekent geen structureel resultaat." },
-              { n: "03", title: "Bureau dat jouw sector niet begrijpt", body: "Je werkt met een bureau dat ook bakkerijen en kappers bedient. Ze kennen jouw klant niet, en dat merk je aan de resultaten." },
-              { n: "04", title: "Veel tijd kwijt aan slechte leads nabellen", body: "Uren per week aan de telefoon met mensen die toch niet komen. Tijd die je niet hebt en die je liever in je vak steekt." },
-            ].map(({ n, title, body }, i) => (
-              <ScrollReveal key={n} as="article" className="pain-card" delay={(i + 1) as 1 | 2 | 3 | 4}>
-                <span className="pain-card__num" aria-hidden="true">{n}</span>
-                <h3>{title}</h3>
-                <p>{body}</p>
+          <div className="lean-pains">
+            {pains.map((p, i) => (
+              <ScrollReveal key={p.title} className="lean-pain" delay={(i + 1) as 1 | 2 | 3}>
+                <h3>{p.title}</h3>
+                <p>{p.body}</p>
               </ScrollReveal>
             ))}
           </div>
-          <ScrollReveal className="pain-cta">
-            <Link href="/afspraak" className="btn btn--blue btn--lg">Plan een gratis strategiegesprek <ArrowRight /></Link>
+          <ScrollReveal className="lean-wish">
+            <p>
+              Wat je eigenlijk wilt: <strong>elke week een volle agenda met kopers die passen bij jouw showroom.</strong>
+            </p>
           </ScrollReveal>
         </div>
       </section>
 
-      {/* KIGO */}
-      {KIGO_LIVE && <KigoTeaser />}
-
-      {/* WERKWIJZE */}
-      <section className="ww2" id="werkwijze">
+      {/* MECHANISME */}
+      <section className="lean-section lean-section--alt" id="werkwijze">
         <div className="container">
-          <ScrollReveal className="section-header">
-            <span className="section-label">Onze werkwijze</span>
-            <h2 className="section-title section-title--white">Van eerste gesprek<br /><em>tot meer klanten</em></h2>
-            <p className="section-subtitle section-subtitle--light">Vier stappen. Eerlijk en transparant.</p>
+          <ScrollReveal className="lean-head">
+            <span className="lean-label">Het Showroom-systeem</span>
+            <h2 className="lean-title">Van advertentie tot klant in je showroom</h2>
           </ScrollReveal>
-          <WerkwijzePanel />
-          <ScrollReveal className="werkwijze-cta">
-            <Link href="/afspraak" className="btn btn--blue btn--lg">Plan je gratis gesprek <ArrowRight /></Link>
-          </ScrollReveal>
+          <div className="lean-steps">
+            {steps.map((s, i) => (
+              <ScrollReveal key={s.n} className="lean-step" delay={(i + 1) as 1 | 2 | 3}>
+                <span className="lean-step__num" aria-hidden="true">{s.n}</span>
+                <h3>{s.title}</h3>
+                <p>{s.body}</p>
+              </ScrollReveal>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* REVIEWS */}
-      <ReviewsMarquee />
+      {/* GARANTIE */}
+      <section className="lean-section">
+        <div className="container">
+          <ScrollReveal className="lean-guarantee">
+            <div>
+              <span className="lean-label">Onze garantie</span>
+              <h2 className="lean-title">15 afspraken in 90 dagen, of we werken gratis door</h2>
+            </div>
+            <ul className="lean-checks">
+              <li><Check /> Alleen afspraken die echt in je showroom plaatsvinden</li>
+              <li><Check /> Maandelijks inzicht in aanvragen, afspraken en kosten</li>
+              <li><Check /> Geen account managers: je spreekt direct met ons</li>
+            </ul>
+          </ScrollReveal>
+        </div>
+      </section>
 
       {/* RESULTATEN */}
-      <section className="resultaten-section" id="resultaten">
-        <div className="resultaten-section__bg" aria-hidden="true" />
+      <section className="lean-section lean-section--alt" id="resultaten">
         <div className="container">
-          <ScrollReveal className="resultaten-header">
-            <span className="section-label">Bewezen track record</span>
-            <h2 className="section-title resultaten-header__title">Cijfers die<br />voor ons spreken</h2>
-            <p className="resultaten-header__sub">Geen bureau-praatjes. Gewoon meetbare resultaten bij klanten in jouw sector.</p>
+          <ScrollReveal className="lean-head">
+            <span className="lean-label">Resultaten</span>
+            <h2 className="lean-title">Wat het klanten oplevert</h2>
           </ScrollReveal>
-          <ScrollReveal delay={1} className="resultaten-bottom">
-            <div className="werkwijze-photo werkwijze-photo--auto">
-              <Image src="/images/founders-office.webp" alt="Jelle en Thomas van Groeimaten" fill style={{ objectFit: "cover", objectPosition: "center 50%" }} sizes="(min-width: 900px) 50vw, 100vw" quality={90} />
-              <div className="werkwijze-photo__badge">
-                <span className="werkwijze-photo__badge-num">35+</span>
-                <span className="werkwijze-photo__badge-label">merken geholpen</span>
-              </div>
-            </div>
-            <div className="resultaten-right">
-              <p className="resultaten-right__intro">Wij zijn een van de weinige marketingbureaus in Nederland die <strong>uitsluitend</strong> voor de keuken- en sanitairsector werkt. Geen leercurve, dag één direct aan de slag.</p>
-              <div className="commitments">
-                <p className="commitments__item">Een van de weinige specialisten in Nederland voor keuken- &amp; sanitairbedrijven</p>
-                <p className="commitments__item">Volledige ontzorging: van strategie tot afspraken in je agenda</p>
-                <p className="commitments__item">Directe communicatie, geen account managers, geen wachtrijen</p>
-                <p className="commitments__item">Maandelijkse rapportages met concrete cijfers</p>
-              </div>
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
-
-      {/* FOUNDERS */}
-      <section className="home-founders">
-        <div className="container">
-          <div className="home-founders__inner">
-            <ScrollReveal className="home-founders__photo">
-              <div className="home-founders__photo-stack">
-                <div className="about-photo-frame">
-                  <div className="about-photo-frame__glow" />
-                  <Image src="/images/founders-hero.webp" alt="Jelle Westerbroek en Thomas Ghobadi van Groeimaten" width={600} height={500} loading="lazy" quality={90} style={{ objectFit: "cover", objectPosition: "center 40%" }} />
-                </div>
-                <div className="founders-duo">
-                  <div className="founder-mini">
-                    <Image src="/images/jelle-portrait.webp" alt="Jelle Westerbroek" fill style={{ objectFit: "cover", objectPosition: "center 30%" }} sizes="20vw" quality={90} />
-                    <div className="founder-mini__label">
-                      <span className="founder-mini__name">Jelle Westerbroek</span>
-                      <span className="founder-mini__role">CEO · Ads &amp; Team</span>
-                    </div>
-                  </div>
-                  <div className="founder-mini">
-                    <Image src="/images/thomas-portrait.webp" alt="Thomas Ghobadi" fill style={{ objectFit: "cover", objectPosition: "center 30%" }} sizes="20vw" quality={90} />
-                    <div className="founder-mini__label">
-                      <span className="founder-mini__name">Thomas Ghobadi</span>
-                      <span className="founder-mini__role">CEO · Websites &amp; Klantcontact</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </ScrollReveal>
-            <ScrollReveal delay={2} className="home-founders__content">
-              <span className="section-label">Het team</span>
-              <h2 className="section-title section-title--white">Twee founders.<br />Één focus.</h2>
-              <p>Jelle en Thomas richten Groeimaten samen als VOF. Jelle stuurt de ads-afdeling en het team aan, het hart van wat we doen. Thomas bewaakt het klantcontact en de websites die onder de campagnes liggen. Directe communicatie, snelle uitvoering, echte resultaten.</p>
-              <p>Een van de weinige specialisten in Nederland die uitsluitend voor deze sector werkt. Meer dan 35 merken gingen al voor.</p>
-              <Link href="/over-ons" className="btn btn--outline">
-                Leer ons kennen <ArrowRight />
-              </Link>
-            </ScrollReveal>
+          <div className="lean-cases">
+            {cases.map((c, i) => (
+              <ScrollReveal key={c.name} className="lean-case" delay={(i + 1) as 1 | 2}>
+                <span className="lean-case__name">{c.name}</span>
+                <span className="lean-case__result">{c.result}</span>
+                <span className="lean-case__detail">{c.detail}</span>
+              </ScrollReveal>
+            ))}
+          </div>
+          <div className="lean-reviews">
+            {reviews.map((r) => (
+              <ScrollReveal key={r.name} as="figure" className="lean-review">
+                <div className="lean-review__stars" aria-label="5 sterren">★★★★★</div>
+                <blockquote>&ldquo;{r.text}&rdquo;</blockquote>
+                <figcaption>
+                  <img src={r.img} alt="" width={40} height={40} loading="lazy" />
+                  <span><strong>{r.name}</strong>{r.meta}</span>
+                </figcaption>
+              </ScrollReveal>
+            ))}
+          </div>
+          <div className="lean-center">
+            <Link href="/cases" className="lean-link">Bekijk alle cases <ArrowRight /></Link>
           </div>
         </div>
       </section>
 
-      {/* CASES SLIDER */}
-      <section className="cases-slider" id="cases">
-        <div className="container">
-          <ScrollReveal className="section-header">
-            <span className="section-label">Ons werk</span>
-            <h2 className="section-title section-title--white">Uitgelichte<br /><em>cases</em></h2>
-          </ScrollReveal>
-          <CasesSlider />
-          <ScrollReveal className="cases-cta">
-            <Link href="/cases" className="btn btn--blue btn--lg">Bekijk alle cases <ArrowRight /></Link>
-          </ScrollReveal>
-        </div>
-      </section>
+      {KIGO_LIVE && <KigoTeaser />}
 
-      {/* VOOR EN NA */}
-      <section className="voor-na" id="voor-na">
+      {/* FAQ */}
+      <section className="lean-section" id="faq">
         <div className="container">
-          <ScrollReveal className="section-header">
-            <span className="section-label">Transformaties</span>
-            <h2 className="section-title section-title--white">Voor &amp; na.<br /><em>Zie het verschil.</em></h2>
-            <p className="section-subtitle section-subtitle--light">Van verouderde websites naar conversiegerichte showroom-ervaringen. Sleep de lijn om te vergelijken.</p>
+          <ScrollReveal className="lean-head">
+            <h2 className="lean-title">Veelgestelde vragen</h2>
           </ScrollReveal>
-          <div className="vn-grid">
-            <ScrollReveal delay={1}>
-              <BeforeAfterSlider
-                clientName="Ter Haar Tegeltechniek"
-                description="Van drie trage, drukke en goedkoop ogende websites naar één ultrasnelle, moderne website met een luxe uitstraling die vertrouwen wekt en resultaat oplevert."
-                beforeSrc="/images/voor-na/ter-haar-oud.png"
-                afterSrc="/images/voor-na/ter-haar-nieuw.png"
-                websiteUrl="https://www.terhaarvakwerk.nl/"
-                websiteLabel="Bekijk de website van Ter Haar"
-              />
-            </ScrollReveal>
-            <ScrollReveal delay={2}>
-              <BeforeAfterSlider
-                clientName="Stoop Keukens"
-                description="Van een gedateerde website naar een moderne, snelle showroom-ervaring die veel beter vindbaar is en meer serieuze aanvragen oplevert."
-                beforeSrc="/images/voor-na/stoop-keukens-oud-v2.jpeg"
-                afterSrc="/images/voor-na/stoop-keukens-nieuw.jpeg"
-              />
-            </ScrollReveal>
-            <ScrollReveal delay={3}>
-              <BeforeAfterSlider
-                clientName="Tile Stones"
-                description="Van een rommelige structuur naar een doordachte gebruikerservaring, waarbij elk detail van het design de merkidentiteit versterkt."
-                beforeSrc="/images/voor-na/tile-stones-oud.png"
-                afterSrc="/images/voor-na/tile-stones-nieuw.png"
-              />
-            </ScrollReveal>
-          </div>
+          <FaqAccordion items={faqItems} />
         </div>
       </section>
 
       {/* CTA */}
-      <section className="page-hero page-hero--split" id="cta" style={{ paddingTop: "80px", paddingBottom: "80px" }}>
-        <div className="page-hero__glow page-hero__glow--1" aria-hidden="true"></div>
-        <div className="page-hero__glow page-hero__glow--2" aria-hidden="true"></div>
-        <div className="container">
-          <div className="page-hero__inner">
-            <ScrollReveal>
-              <div className="page-hero__content">
-                <span className="section-label section-label--blue">Groei zonder grenzen</span>
-                <h2 className="page-hero__title">Klaar om te<br /><em>groeien?</em></h2>
-                <p className="page-hero__subtitle">Plan een gratis strategiegesprek. We kijken samen naar jouw situatie en vertellen je eerlijk wat we voor jou kunnen doen.</p>
-                <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginTop: "8px" }}>
-                  <Link href="/afspraak" className="btn btn--blue btn--xl">
-                    Plan een gratis strategiegesprek
-                    <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                      <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </Link>
-                </div>
-                <p className="cta-disclaimer" style={{ marginTop: "12px" }}>Geen verplichtingen. Wel eerlijk advies.</p>
-              </div>
-            </ScrollReveal>
-            <ScrollReveal delay={2}>
-              <div className="page-hero__visual">
-                <Image
-                  src="/images/founders-discuss.webp"
-                  alt="Jelle en Thomas van Groeimaten in gesprek"
-                  width={600}
-                  height={500}
-                  style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 35%", borderRadius: "12px" }}
-                  quality={90}
-                  loading="lazy"
-                />
-              </div>
-            </ScrollReveal>
-          </div>
+      <section className="lean-cta" id="cta">
+        <div className="container lean-cta__inner">
+          <h2>Klaar voor 15 extra showroomafspraken?</h2>
+          <p>Plan een gratis gesprek van 30 minuten. We vertellen je eerlijk of het voor jouw bedrijf haalbaar is.</p>
+          <Link href="/afspraak" className="btn lean-btn btn--xl">
+            Plan een gratis gesprek <ArrowRight />
+          </Link>
         </div>
       </section>
-
-      {/* FAQ */}
-      <section className="faq-section" id="faq">
-        <div className="container">
-          <ScrollReveal className="section-header">
-            <span className="section-label">Veelgestelde vragen</span>
-            <h2 className="section-title section-title--white">Alles wat je wil weten</h2>
-          </ScrollReveal>
-          <FaqAccordion items={faqItems} />
-          <ScrollReveal className="faq-cta">
-            <Link href="/contact" className="btn btn--blue btn--lg">Nog vragen? Neem contact op <ArrowRight /></Link>
-          </ScrollReveal>
-        </div>
-      </section>
-    </>
+    </div>
   )
 }

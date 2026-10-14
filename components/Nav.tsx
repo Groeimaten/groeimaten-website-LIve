@@ -17,6 +17,9 @@ const allNavLinks = [
 
 const navLinks = allNavLinks.filter((l) => KIGO_LIVE || l.href !== "/kigo")
 
+// Pagina's met een lichte bovenkant: nav direct donker, anders valt witte tekst weg.
+const SOLID_NAV_PATHS = ["/", "/contact"]
+
 export default function Nav() {
   const pathname = usePathname()
   const [scrolled, setScrolled] = useState(false)
@@ -48,7 +51,7 @@ export default function Nav() {
   return (
     <nav
       ref={navRef}
-      className={`nav${scrolled ? " scrolled" : ""}${menuOpen ? " menu-open" : ""}`}
+      className={`nav${scrolled || SOLID_NAV_PATHS.includes(pathname) ? " scrolled" : ""}${menuOpen ? " menu-open" : ""}`}
       id="nav"
       role="navigation"
       aria-label="Hoofdnavigatie"

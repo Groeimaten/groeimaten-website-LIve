@@ -6,6 +6,7 @@
 @import "./animations.css";
 @import "./pages.css";
 @import "./theme-light.css";
+@import "./lean.css";
 
 @custom-variant dark (&:is(.dark *));
 
