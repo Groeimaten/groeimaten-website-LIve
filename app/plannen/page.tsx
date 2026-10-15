@@ -68,7 +68,7 @@ export default function PlannenPage() {
                   <em>Wij leveren de resultaten.</em>
                 </h1>
                 <p className="page-hero__subtitle">
-                  Drie plannen, elk gebouwd voor een andere groeifase. Van puur adverteren tot complete marketing. De investering stemmen we af in een persoonlijk gesprek.
+                  Drie plannen, elk gebouwd voor een andere groeifase. Van puur adverteren tot complete marketing. De investering stemmen we af in een persoonlijk gesprek. Elk traject met dezelfde belofte: 15 showroomafspraken in 90 dagen, gegarandeerd.
                 </p>
               </div>
             </ScrollReveal>
@@ -234,7 +234,7 @@ export default function PlannenPage() {
           <ScrollReveal>
             <span className="section-label section-label--blue">Klaar voor het gesprek?</span>
             <h2 className="cta-title">Plan een gratis kennismakingsgesprek</h2>
-            <p className="cta-subtitle">30 minuten. Geen verplichtingen. Wel een eerlijk beeld van wat mogelijk is voor jouw bedrijf.</p>
+            <p className="cta-subtitle">Plan een gratis gesprek. 15 showroomafspraken in 90 dagen, gegarandeerd. Halen we het niet, dan werken we gratis door.</p>
             <Link href="/afspraak" className="btn btn--blue btn--xl">
               Gratis gesprek inplannen
               <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">

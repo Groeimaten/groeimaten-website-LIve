@@ -94,7 +94,7 @@ export default function DienstenPage() {
                   <em>badkamer en bouw.</em>
                 </h1>
                 <p className="page-hero__subtitle">
-                  Advertenties staan centraal. Met Meta Ads{KIGO_LIVE ? ", Google Ads en Kigo" : " en Google Ads"} halen we serieuze aanvragen
+                  Ons doel is concreet: 15 showroomafspraken in 90 dagen, gegarandeerd. Advertenties staan centraal. Met Meta Ads{KIGO_LIVE ? ", Google Ads en Kigo" : " en Google Ads"} halen we serieuze aanvragen
                   binnen. Een snelle website en goede vindbaarheid zorgen dat die campagnes maximaal renderen.
                 </p>
               </div>
@@ -473,7 +473,7 @@ export default function DienstenPage() {
               <span className="section-label section-label--blue">Klaar om te starten?</span>
               <h2 className="cta-title">Laten we kennismaken</h2>
               <p className="cta-subtitle">
-                Plan een gratis adviesgesprek en ontdek wat Groeimaten voor jouw bedrijf kan betekenen.
+                Plan een gratis gesprek. 15 showroomafspraken in 90 dagen, gegarandeerd. Halen we het niet, dan werken we gratis door.
               </p>
               <Link href="/afspraak" className="btn btn--blue btn--xl">
                 Plan je gratis gesprek

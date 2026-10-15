@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import localFont from "next/font/local"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import OfferBand from "@/components/OfferBand"
 import Nav from "@/components/Nav"
 import Footer from "@/components/Footer"
 import ScrollRevealInit from "@/components/ScrollRevealInit"
@@ -120,6 +121,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ThemeProvider>
           <Nav />
           {children}
+          <OfferBand />
           <Footer />
           <ScrollRevealInit />
         </ThemeProvider>

@@ -69,7 +69,7 @@ export default function MeerShowroomafsprakenPage() {
                   <em>Die ook echt opdagen.</em>
                 </h1>
                 <p className="page-hero__subtitle">
-                  Het gaat niet om het aantal aanvragen. Het gaat om het aantal kwalitatieve showroomafspraken per maand. Groeimaten bouwt systemen die dat onderscheid maken.
+                  Het gaat niet om het aantal aanvragen. Het gaat om het aantal kwalitatieve showroomafspraken per maand. Groeimaten bouwt systemen die dat onderscheid maken. Daarom garanderen we 15 showroomafspraken in 90 dagen. Halen we het niet, dan werken we gratis door.
                 </p>
                 <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginTop: "28px" }}>
                   <Link href="/afspraak" className="btn btn--blue btn--lg">
