@@ -231,7 +231,7 @@ export default function HomePage() {
       </section>
 
       {/* MECHANISME */}
-      <section className="lean-section lean-section--alt" id="werkwijze">
+      <section className="lean-section lean-section--dark" id="werkwijze">
         <div className="container">
           <ScrollReveal className="lean-head">
             <span className="lean-label">Het Showroom-systeem</span>
