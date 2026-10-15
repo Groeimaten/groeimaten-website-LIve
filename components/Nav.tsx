@@ -18,7 +18,7 @@ const allNavLinks = [
 const navLinks = allNavLinks.filter((l) => KIGO_LIVE || l.href !== "/kigo")
 
 // Pagina's met een lichte bovenkant: nav direct donker, anders valt witte tekst weg.
-const SOLID_NAV_PATHS = ["/", "/contact"]
+const SOLID_NAV_PATHS = ["/contact"]
 
 export default function Nav() {
   const pathname = usePathname()

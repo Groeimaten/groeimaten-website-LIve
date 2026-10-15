@@ -138,49 +138,74 @@ export default function HomePage() {
   }
 
   return (
-    <div className="lean">
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      {/* HERO: het offer */}
-      <section className="lean-hero" id="home">
-        <div className="container lean-hero__inner">
-          <div className="lean-hero__content">
-            <span className="lean-label hero-anim hero-anim--1">Voor keuken- en badkamerbedrijven</span>
-            <h1 className="lean-hero__title hero-anim hero-anim--1">
-              15 showroomafspraken in 90 dagen. <em>Gegarandeerd.</em>
+      {/* HERO: oude foto + layout, nieuw offer */}
+      <section className="hero hero--fullscreen" id="home">
+        <div className="hero__bg">
+          <Image
+            className="hero__bg-img hero__bg-img--desktop"
+            src="/images/hero.webp"
+            alt="Groeimaten team aan het werk"
+            fill
+            priority
+            quality={90}
+            sizes="100vw"
+            style={{ objectFit: "cover", objectPosition: "center 30%" }}
+          />
+          <Image
+            className="hero__bg-img hero__bg-img--mobile"
+            src="/images/jelle-thomas-sitting.jpg"
+            alt="Jelle en Thomas van Groeimaten"
+            fill
+            priority
+            quality={90}
+            sizes="100vw"
+            style={{ objectFit: "cover", objectPosition: "center top" }}
+          />
+          <div className="hero__bg-overlay" />
+        </div>
+        <div className="container hero__inner">
+          <div className="hero__content">
+            <span className="section-label hero-anim hero-anim--1">Voor keuken- en badkamerbedrijven</span>
+            <h1 className="hero__title hero-anim hero-anim--1">
+              15 showroom&shy;afspraken in 90 dagen.<br />
+              <em>Gegarandeerd.</em>
             </h1>
-            <p className="lean-hero__sub hero-anim hero-anim--2">
+            <p className="hero__subtitle hero-anim hero-anim--2">
               Wij vullen je agenda met kopers die echt in je showroom komen. Halen we de 15 niet? Dan werken we gratis door tot het wel lukt.
             </p>
-            <div className="lean-hero__actions hero-anim hero-anim--3">
-              <Link href="/afspraak" className="btn lean-btn btn--lg">
+            <div className="hero__actions hero-anim hero-anim--3">
+              <Link href="/afspraak" className="btn btn--blue btn--lg">
                 Plan een gratis gesprek <ArrowRight />
               </Link>
-              <a href="#resultaten" className="lean-link">Bekijk resultaten</a>
+              <a href="#resultaten" className="btn btn--ghost btn--lg">Bekijk resultaten</a>
             </div>
-            <ul className="lean-hero__proof hero-anim hero-anim--4">
-              <li><strong>5,0 <span className="lean-star">★</span></strong> op Google</li>
-              <li><strong>35+</strong> merken geholpen</li>
-              <li>Bekend van <strong>K&amp;D Magazine</strong></li>
-            </ul>
-          </div>
-          <div className="lean-hero__visual hero-anim hero-anim--2">
-            <Image
-              src="/images/cases/marquardt-adviesgesprek.jpg"
-              alt="Adviesgesprek in de showroom van Marquardt Amersfoort"
-              fill
-              priority
-              quality={90}
-              sizes="(min-width: 900px) 45vw, 100vw"
-              style={{ objectFit: "cover", objectPosition: "center" }}
-            />
+            <div className="hero__proof hero-anim hero-anim--4">
+              <div className="hero__proof-item">
+                <span className="hero__proof-number">5,0 <span style={{ color: "#c9a24c" }}>★</span></span>
+                <span className="hero__proof-label">Google beoordeling</span>
+              </div>
+              <div className="hero__proof-divider" aria-hidden="true" />
+              <div className="hero__proof-item">
+                <span className="hero__proof-number">35+</span>
+                <span className="hero__proof-label">merken geholpen</span>
+              </div>
+              <div className="hero__proof-divider" aria-hidden="true" />
+              <div className="hero__proof-item">
+                <span className="hero__proof-number">K&amp;D</span>
+                <span className="hero__proof-label">bekend van K&amp;D Magazine</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
+      <div className="lean">
       <LogoStrip />
 
       {/* PIJNPUNTEN */}
@@ -297,6 +322,7 @@ export default function HomePage() {
           </Link>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   )
 }
