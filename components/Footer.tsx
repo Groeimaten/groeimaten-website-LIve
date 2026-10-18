@@ -10,7 +10,7 @@ export default function Footer() {
             <span className="logo-text">Groeimaten.</span>
           </Link>
           <p className="footer__tagline">Groei zonder grenzen</p>
-          <p className="footer__desc">De specialist in marketing voor keuken- en sanitairbedrijven in Nederland.</p>
+          <p className="footer__desc">De specialist in marketing voor keuken- en sanitairbedrijven. 15 showroomafspraken in 90 dagen, gegarandeerd.</p>
         </div>
         <nav className="footer__nav" aria-label="Diensten navigatie">
           <h3>Diensten</h3>

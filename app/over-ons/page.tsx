@@ -82,7 +82,7 @@ export default function OverOnsPage() {
                 </h1>
                 <p className="page-hero__subtitle">
                   Wij zijn geen groot corporate bureau. Wij zijn een team van specialisten met één missie: keuken- en
-                  sanitairbedrijven laten groeien.
+                  sanitairbedrijven laten groeien. Onze belofte: 15 showroomafspraken in 90 dagen, gegarandeerd.
                 </p>
               </div>
             </ScrollReveal>
@@ -487,7 +487,7 @@ export default function OverOnsPage() {
               <span className="section-label section-label--blue">Kennismaken?</span>
               <h2 className="cta-title">Wij zijn benieuwd naar jouw verhaal</h2>
               <p className="cta-subtitle">
-                Plan een vrijblijvend gesprek en ontdek of Groeimaten de juiste partner is voor jouw groeiambitie.
+                Plan een gratis gesprek. 15 showroomafspraken in 90 dagen, gegarandeerd. Halen we het niet, dan werken we gratis door.
               </p>
               <Link href="/afspraak" className="btn btn--blue btn--xl">
                 Plan je gratis gesprek

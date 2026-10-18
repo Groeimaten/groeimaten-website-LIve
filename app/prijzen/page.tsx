@@ -45,7 +45,8 @@ export default function PrijzenPage() {
             </h1>
             <p className="pricing-subtitle">
               Elk keuken- of sanitairbedrijf is anders. Daarom beginnen wij altijd met een eerlijk gesprek, zodat we
-              precies begrijpen wat jij nodig hebt, en wat het realistisch kost.
+              precies begrijpen wat jij nodig hebt, en wat het realistisch kost. Eén ding staat vast: 15 showroomafspraken in
+              90 dagen, gegarandeerd. Halen we het niet, dan werken we gratis door.
             </p>
           </div>
         </ScrollReveal>
@@ -414,7 +415,7 @@ export default function PrijzenPage() {
               <span className="section-label section-label--blue">Klaar voor het gesprek?</span>
               <h2 className="cta-title">Plan een gratis kennismakingsgesprek</h2>
               <p className="cta-subtitle">
-                30 minuten. Geen verplichtingen. Wel een eerlijk beeld van wat mogelijk is voor jouw bedrijf.
+                Plan een gratis gesprek. 15 showroomafspraken in 90 dagen, gegarandeerd. Halen we het niet, dan werken we gratis door.
               </p>
               <Link href="/afspraak" className="btn btn--blue btn--xl">
                 Gratis gesprek inplannen

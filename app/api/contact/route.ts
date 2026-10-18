@@ -19,7 +19,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Ongeldig verzoek." }, { status: 400 })
   }
 
-  const { naam, bedrijf, email, telefoon, dienst, bericht, _hp, _ts } = body as Record<string, string>
+  const { naam, bedrijf, email, telefoon, dienst, budget, bericht, _hp, _ts } = body as Record<string, string>
 
   // Honeypot: bots vullen dit verborgen veld in, mensen niet.
   if (_hp) {
@@ -32,7 +32,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ success: true })
   }
 
-  if (!naam?.trim() || !bedrijf?.trim() || !email?.trim() || !bericht?.trim()) {
+  if (!naam?.trim() || !bedrijf?.trim() || !email?.trim() || !budget?.trim() || !bericht?.trim()) {
     return NextResponse.json({ error: "Vul alle verplichte velden in." }, { status: 400 })
   }
 
@@ -47,7 +47,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ success: true })
   }
 
-  const data: ContactFormData = { naam, bedrijf, email, telefoon, dienst, bericht }
+  const data: ContactFormData = { naam, bedrijf, email, telefoon, dienst, budget, bericht }
 
   const sendEmail = (payload: object) =>
     fetch("https://api.resend.com/emails", {
