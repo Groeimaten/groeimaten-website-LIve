@@ -1261,7 +1261,7 @@ html[data-theme="light"] .theme-toggle:hover {
 html[data-theme="light"] .theme-toggle .icon-sun { display: block; }
 html[data-theme="light"] .theme-toggle .icon-moon { display: none; }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .theme-toggle { display: inline-flex; }
 }
 
