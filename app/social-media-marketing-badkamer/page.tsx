@@ -3,7 +3,7 @@ import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
 
 export const metadata: Metadata = {
-  title: "Social Media Marketing voor Badkamerbedrijven | Groeimaten",
+  title: "Social Media Marketing voor Badkamerbedrijven",
   description:
     "Social media marketing voor badkamerbedrijven via Meta Ads op Facebook en Instagram. Groeimaten bereikt potentiële klanten in de oriëntatiefase en genereert kwalitatieve badkamer leads.",
   alternates: {

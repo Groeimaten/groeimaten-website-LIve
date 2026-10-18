@@ -3,7 +3,7 @@ import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
 
 export const metadata: Metadata = {
-  title: "Leads genereren voor badkamerbedrijf: eigen aanvragen zonder tussenpersoon | Groeimaten",
+  title: "Leads genereren voor badkamerbedrijf: eigen aanvragen zonder tussenpersoon",
   description:
     "Leads voor badkamerbedrijven genereren via eigen kanalen. Groeimaten helpt badkamerbedrijven structureel aanvragen ophalen via Google Ads, SEO en Meta Ads.",
   alternates: {

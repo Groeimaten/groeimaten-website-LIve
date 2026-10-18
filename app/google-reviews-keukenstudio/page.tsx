@@ -3,7 +3,7 @@ import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
 
 export const metadata: Metadata = {
-  title: "Google reviews verzamelen als keukenstudio | Groeimaten",
+  title: "Google reviews verzamelen als keukenstudio",
   description:
     "Google reviews verzamelen als keukenstudio verhoogt je lokale vindbaarheid en bouwt vertrouwen op bij nieuwe bezoekers. Hoe doe je dat structureel en automatisch?",
   alternates: {

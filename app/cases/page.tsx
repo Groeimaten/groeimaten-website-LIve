@@ -5,7 +5,7 @@ import BeforeAfterSlider from "@/components/BeforeAfterSlider"
 import ReviewsMarquee from "@/components/ReviewsMarquee"
 
 export const metadata: Metadata = {
-  title: "Cases: Resultaten voor Keuken, Badkamer en Bouw | Groeimaten",
+  title: "Cases: Resultaten voor Keuken, Badkamer en Bouw",
   description:
     "Concrete resultaten van keuken- en badkamerbedrijven die met Groeimaten adverteren. €390.000+ omzet uit Meta Ads, tot 35x ROAS. Echte cijfers, echte cases.",
   alternates: {

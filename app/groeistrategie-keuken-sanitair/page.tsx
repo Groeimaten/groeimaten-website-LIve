@@ -3,7 +3,7 @@ import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
 
 export const metadata: Metadata = {
-  title: "Groeistrategie voor Keuken en Sanitair | Groeimaten",
+  title: "Groeistrategie voor Keuken en Sanitair",
   description:
     "Een groeistrategie voor keuken en sanitair begint bij de juiste kanalen en de juiste klant. Groeimaten bouwt systemen die structureel meer omzet genereren voor keuken en sanitairbedrijven.",
   alternates: {

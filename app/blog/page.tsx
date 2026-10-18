@@ -3,7 +3,7 @@ import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
 
 export const metadata: Metadata = {
-  title: "Blog | Groeimaten",
+  title: "Blog",
   description:
     "Praktische marketing kennis voor keuken-, badkamer- en bouwbedrijven. Artikelen over SEO, Google Ads, leadgeneratie en online groeistrategie.",
   alternates: {

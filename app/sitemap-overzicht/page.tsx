@@ -3,8 +3,9 @@ import Link from "next/link"
 import { KIGO_LIVE } from "@/lib/features"
 
 export const metadata: Metadata = {
-  title: "Sitemap | Groeimaten",
+  title: "Sitemap",
   description: "Overzicht van alle pagina's op groeimaten.com",
+  alternates: { canonical: "/sitemap-overzicht" },
   robots: { index: false },
 }
 

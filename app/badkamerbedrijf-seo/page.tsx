@@ -3,7 +3,7 @@ import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
 
 export const metadata: Metadata = {
-  title: "SEO voor Badkamerbedrijven | Groeimaten",
+  title: "SEO voor Badkamerbedrijven",
   description:
     "Groeimaten verzorgt SEO voor badkamerbedrijven in Nederland. Gevonden worden door koopklare klanten die zoeken naar badkamerrenovatie of een nieuwe badkamer.",
   alternates: {

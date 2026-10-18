@@ -6,7 +6,7 @@ import KigoTeaser from "@/components/KigoTeaser"
 import { KIGO_LIVE } from "@/lib/features"
 
 export const metadata: Metadata = {
-  title: "Marketingdiensten voor keuken, badkamer en bouw | Groeimaten",
+  title: "Marketingdiensten voor keuken, badkamer en bouw",
   description:
     KIGO_LIVE
       ? "Meta Ads, Google Ads en Kigo, onze eigen AI-tool, voor keuken-, badkamer- en bouwbedrijven. Aangevuld met websites en SEO als basis onder je campagnes."

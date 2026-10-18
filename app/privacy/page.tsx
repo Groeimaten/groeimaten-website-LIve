@@ -1,8 +1,9 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Privacybeleid | Groeimaten",
+  title: "Privacybeleid",
   description: "Het privacybeleid van Groeimaten.",
+  alternates: { canonical: "/privacy" },
   robots: { index: false, follow: false },
 }
 

@@ -3,7 +3,7 @@ import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
 
 export const metadata: Metadata = {
-  title: "Lead nurturing voor keuken en sanitair | Groeimaten",
+  title: "Lead nurturing voor keuken en sanitair",
   description:
     "Lead nurturing voor keuken en sanitair begeleidt potentiële klanten van eerste interesse naar een concrete afspraak. Hoe zet je een systeem op dat dat automatisch doet?",
   alternates: {

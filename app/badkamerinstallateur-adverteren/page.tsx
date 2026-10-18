@@ -3,7 +3,7 @@ import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
 
 export const metadata: Metadata = {
-  title: "Adverteren voor Badkamerinstallateurs | Groeimaten",
+  title: "Adverteren voor Badkamerinstallateurs",
   description:
     "Gerichte advertenties voor badkamerinstallateurs via Google Ads en Meta Ads. Groeimaten helpt je de juiste klanten te bereiken op het moment dat ze een badkamerrenovatie overwegen.",
   alternates: {

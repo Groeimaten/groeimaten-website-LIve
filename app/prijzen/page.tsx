@@ -4,9 +4,10 @@ import ScrollReveal from "@/components/ScrollReveal"
 import FaqAccordion from "@/components/FaqAccordion"
 
 export const metadata: Metadata = {
-  title: "Investering | Groeimaten",
+  title: "Investering",
   description:
     "Geen vaste pakketten. Groeimaten werkt altijd op maat, gebaseerd op jouw bedrijf, jouw situatie en jouw groeidoelen.",
+  alternates: { canonical: "/prijzen" },
 }
 
 const faqItems = [
