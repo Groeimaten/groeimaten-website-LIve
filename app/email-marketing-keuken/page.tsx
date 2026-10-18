@@ -3,7 +3,7 @@ import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
 
 export const metadata: Metadata = {
-  title: "Email marketing voor de keukenbranche | Groeimaten",
+  title: "Email marketing voor de keukenbranche",
   description:
     "Email marketing voor keukenstudio's en keukenbedrijven houdt warme leads warm totdat ze klaar zijn voor een afspraak. Hoe richt je een effectieve emailstrategie in?",
   alternates: {

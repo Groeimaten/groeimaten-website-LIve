@@ -5,14 +5,14 @@ import FaqAccordion from "@/components/FaqAccordion"
 import ContactForm from "@/components/ContactForm"
 
 export const metadata: Metadata = {
-  title: "Contact | Groeimaten — gratis gesprek inplannen",
+  title: "Contact: gratis gesprek inplannen",
   description:
     "Neem contact op met Groeimaten. 15 showroomafspraken in 90 dagen, gegarandeerd. Plan een gratis gesprek voor jouw keuken- of badkamerbedrijf.",
   alternates: {
     canonical: "https://groeimaten.com/contact",
   },
   openGraph: {
-    title: "Contact | Groeimaten — plan een gratis gesprek",
+    title: "Contact: plan een gratis gesprek | Groeimaten",
     description:
       "Neem contact op met Groeimaten. Plan een gratis gesprek voor jouw keuken- of badkamerbedrijf.",
     url: "https://groeimaten.com/contact",

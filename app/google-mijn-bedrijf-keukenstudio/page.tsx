@@ -3,7 +3,7 @@ import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
 
 export const metadata: Metadata = {
-  title: "Google Mijn Bedrijf voor Keukenstudio's | Groeimaten",
+  title: "Google Mijn Bedrijf voor Keukenstudio's",
   description:
     "Een sterk Google Mijn Bedrijf profiel is voor keukenstudio's de basis van lokale vindbaarheid. Groeimaten optimaliseert en beheert jouw profiel voor meer zichtbaarheid en aanvragen.",
   alternates: {

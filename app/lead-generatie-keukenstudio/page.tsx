@@ -3,7 +3,7 @@ import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
 
 export const metadata: Metadata = {
-  title: "Lead generatie voor keukenstudio's | Groeimaten",
+  title: "Lead generatie voor keukenstudio's",
   description:
     "Structurele lead generatie voor keukenstudio's via Meta Ads en Google Ads. Groeimaten genereert showroomafspraken van serieuze kopers voor keukenstudio's in Nederland.",
   alternates: {

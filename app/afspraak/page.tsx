@@ -4,8 +4,9 @@ import ScrollReveal from "@/components/ScrollReveal"
 import BookingWidget from "@/components/BookingWidget"
 
 export const metadata: Metadata = {
-  title: "Afspraak inplannen | Groeimaten",
+  title: "Afspraak inplannen",
   description: "Plan een gratis gesprek. 15 showroomafspraken in 90 dagen, gegarandeerd. 30 minuten, geen verplichtingen.",
+  alternates: { canonical: "/afspraak" },
 }
 
 export default function AfspraakPage() {

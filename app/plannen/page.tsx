@@ -5,9 +5,10 @@ import ScrollReveal from "@/components/ScrollReveal"
 import FaqAccordion from "@/components/FaqAccordion"
 
 export const metadata: Metadata = {
-  title: "Plannen | Groeimaten",
+  title: "Plannen",
   description:
     "Drie trajecten voor keuken- en sanitairbedrijven die willen groeien. Van adverteren tot complete marketing. Kies jouw startpunt.",
+  alternates: { canonical: "/plannen" },
 }
 
 const faqItems = [
