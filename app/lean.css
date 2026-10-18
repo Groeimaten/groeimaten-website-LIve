@@ -1,0 +1,504 @@
+/* =============================================
+   LEAN — lichte, rustige pagina's (home, contact)
+   Scope: .lean wrapper. Lichte achtergronden, grotere
+   leesbare tekst, goud alleen als accent.
+   ============================================= */
+
+.lean {
+    --lean-bg:      oklch(94% 0.012 80);   /* warm zand, niet verblindend */
+    --lean-bg-alt:  oklch(90.5% 0.014 78);
+    --lean-card:    oklch(97% 0.008 82);
+    --lean-ink:     oklch(18% 0.008 60);
+    --lean-text:    oklch(36% 0.008 70);
+    --lean-muted:   oklch(48% 0.008 70);
+    --lean-line:    oklch(88% 0.008 80);
+    --lean-gold-ink: oklch(50% 0.09 70);   /* goud dat leesbaar is op licht */
+
+    background: var(--lean-bg);
+    color: var(--lean-ink);
+}
+
+.lean h1, .lean h2, .lean h3 { color: var(--lean-ink); }
+.lean p { color: var(--lean-text); font-size: 1.05rem; line-height: 1.7; }
+.lean em { color: var(--lean-gold-ink); font-style: normal; font-weight: inherit; }
+
+/* Label */
+.lean-label {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--lean-gold-ink);
+    margin-bottom: 16px;
+}
+
+/* Knoppen */
+.lean-btn {
+    background: var(--gold);
+    color: var(--deep-black);
+    border-color: var(--gold);
+    font-weight: 700;
+}
+.lean-btn:hover {
+    background: var(--gold-dark);
+    border-color: var(--gold-dark);
+    color: oklch(99% 0 0);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px oklch(67% 0.09 75 / 0.25);
+}
+
+.lean-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 0.98rem;
+    color: var(--lean-ink);
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+}
+.lean-link:hover { color: var(--lean-gold-ink); }
+
+.lean-star { color: oklch(72% 0.14 80); }
+
+/* =============================================
+   HERO
+   ============================================= */
+.lean-hero {
+    padding: 128px 0 64px;
+    background: var(--lean-bg);
+}
+.lean-hero__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: center;
+}
+@media (min-width: 900px) {
+    .lean-hero { padding: 152px 0 88px; }
+    .lean-hero__inner { grid-template-columns: 1.25fr 0.75fr; gap: 56px; }
+}
+
+.lean-hero__title {
+    font-family: var(--font-sans);
+    font-size: clamp(2.2rem, 4.6vw, 3.7rem);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin-bottom: 20px;
+}
+.lean-hero__sub {
+    font-size: 1.18rem !important;
+    max-width: 34em;
+    margin-bottom: 32px;
+}
+.lean-hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px 28px;
+}
+.lean-hero__proof {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+    margin-top: 36px;
+    padding-top: 24px;
+    border-top: 1px solid var(--lean-line);
+    font-size: 0.95rem;
+    color: var(--lean-text);
+}
+.lean-hero__proof strong { color: var(--lean-ink); }
+
+.lean-hero__visual {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border-radius: 4px;
+}
+@media (min-width: 900px) {
+    .lean-hero__visual { aspect-ratio: 4 / 5; }
+}
+
+/* =============================================
+   SECTIES
+   ============================================= */
+.lean-section {
+    padding: 72px 0;
+    background: var(--lean-bg);
+}
+.lean-section--alt { background: var(--lean-bg-alt); }
+
+/* Donkere sectie als ritme-accent: zelfde tokens, donkere waarden */
+.lean-section--dark,
+.lean-contact__card {
+    --lean-bg:      oklch(14% 0.008 60);
+    --lean-bg-alt:  oklch(14% 0.008 60);
+    --lean-card:    oklch(19% 0.008 60);
+    --lean-ink:     oklch(97% 0.006 85);
+    --lean-text:    oklch(86% 0.006 80);
+    --lean-muted:   oklch(76% 0.008 75);
+    --lean-line:    oklch(96% 0.008 85 / 0.14);
+    --lean-gold-ink: oklch(80% 0.10 78);
+    background: var(--lean-bg);
+}
+.lean-section--dark h2, .lean-section--dark h3,
+.lean-contact__card h2 { color: var(--lean-ink); }
+.lean-section--dark p, .lean-contact__card p { color: var(--lean-text); }
+@media (min-width: 900px) {
+    .lean-section { padding: 96px 0; }
+}
+
+.lean-head {
+    max-width: 720px;
+    margin: 0 auto 48px;
+    text-align: center;
+}
+.lean-title {
+    font-family: var(--font-sans);
+    font-size: clamp(1.8rem, 3.4vw, 2.6rem);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+}
+.lean-center { text-align: center; margin-top: 40px; }
+
+/* Pijnpunten */
+.lean-pains {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+@media (min-width: 800px) { .lean-pains { grid-template-columns: repeat(3, 1fr); gap: 24px; } }
+
+.lean-pain {
+    padding: 28px;
+    border-top: 3px solid var(--gold);
+    background: var(--lean-bg-alt);
+}
+.lean-pain h3 {
+    font-family: var(--font-sans);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+.lean-pain p { margin: 0; }
+
+.lean-wish {
+    max-width: 720px;
+    margin: 48px auto 0;
+    text-align: center;
+}
+.lean-wish p { font-size: 1.2rem; color: var(--lean-text); }
+.lean-wish strong { color: var(--lean-ink); }
+
+/* Mechanisme */
+.lean-steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    counter-reset: step;
+}
+@media (min-width: 800px) { .lean-steps { grid-template-columns: repeat(3, 1fr); gap: 40px; } }
+
+.lean-step__num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: 1.5px solid var(--gold);
+    color: var(--lean-gold-ink);
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.lean-step h3 {
+    font-family: var(--font-sans);
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+/* Garantie */
+.lean-guarantee {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 40px 28px;
+    background: oklch(67% 0.09 75 / 0.12);
+    border: 1.5px solid var(--gold);
+}
+@media (min-width: 900px) {
+    .lean-guarantee { grid-template-columns: 1fr 1fr; padding: 56px; gap: 56px; align-items: center; }
+}
+.lean-checks {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.lean-checks li {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    color: var(--lean-ink);
+}
+.lean-checks svg { color: var(--lean-gold-ink); flex-shrink: 0; margin-top: 2px; }
+
+/* Resultaten */
+.lean-cases {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+@media (min-width: 700px) { .lean-cases { grid-template-columns: 1fr 1fr; gap: 24px; } }
+
+.lean-case {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 32px;
+    background: var(--lean-card);
+    border: 1px solid var(--lean-line);
+}
+.lean-case__name {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--lean-muted);
+}
+.lean-case__result {
+    font-size: clamp(1.7rem, 3vw, 2.3rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    color: var(--lean-gold-ink);
+}
+.lean-case__detail { font-size: 1rem; color: var(--lean-text); }
+
+.lean-reviews {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+@media (min-width: 700px) { .lean-reviews { grid-template-columns: 1fr 1fr; gap: 24px; } }
+
+.lean-review {
+    margin: 0;
+    padding: 28px 32px;
+    background: var(--lean-card);
+    border: 1px solid var(--lean-line);
+}
+.lean-review__stars { color: oklch(72% 0.14 80); letter-spacing: 2px; margin-bottom: 12px; }
+.lean-review blockquote {
+    font-size: 1.05rem;
+    line-height: 1.65;
+    color: var(--lean-ink);
+    margin: 0 0 20px;
+}
+.lean-review figcaption {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.92rem;
+    color: var(--lean-muted);
+}
+.lean-review figcaption img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; }
+.lean-review figcaption strong { display: block; color: var(--lean-ink); }
+
+/* FAQ op licht */
+.lean .faq-list {
+    background: var(--lean-card);
+    border: 1px solid var(--lean-line);
+    border-radius: 0;
+}
+.lean .faq-item { border-bottom-color: var(--lean-line); }
+.lean .faq-item__question {
+    color: var(--lean-ink);
+    font-size: 1.05rem;
+    padding: 22px 28px;
+}
+.lean .faq-item__question:hover,
+.lean .faq-item__question[aria-expanded="true"] {
+    color: var(--lean-ink);
+    background: var(--lean-bg-alt);
+}
+.lean .faq-item__icon,
+.lean .faq-item__question:hover .faq-item__icon,
+.lean .faq-item__question[aria-expanded="true"] .faq-item__icon { color: var(--lean-gold-ink); }
+.lean .faq-item__answer { padding: 0 28px; }
+.lean .faq-item__answer p { color: var(--lean-text); font-size: 1rem; }
+
+/* Slot-CTA: één donker vlak als afsluiter, grote leesbare tekst */
+.lean-cta {
+    background: var(--deep-black);
+    padding: 80px 0;
+    text-align: center;
+}
+.lean-cta__inner { max-width: 760px; }
+.lean-cta h2 {
+    font-family: var(--font-sans);
+    font-size: clamp(1.8rem, 3.4vw, 2.6rem);
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+    color: var(--warm-white);
+    margin-bottom: 16px;
+}
+.lean-cta p {
+    color: oklch(88% 0.006 80);
+    font-size: 1.1rem;
+    margin: 0 auto 32px;
+    max-width: 36em;
+}
+
+/* =============================================
+   CONTACT
+   ============================================= */
+.lean-contact { padding-top: 128px; }
+@media (min-width: 900px) { .lean-contact { padding-top: 152px; } }
+
+.lean-contact__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+@media (min-width: 1000px) {
+    .lean-contact__grid { grid-template-columns: 0.9fr 1.1fr; gap: 64px; align-items: start; }
+}
+.lean-contact__title { font-size: clamp(2.2rem, 4.5vw, 3.4rem); }
+
+.lean-contact__card {
+    padding: 28px;
+    background: var(--lean-bg-alt);
+    border-top: 3px solid var(--gold);
+    margin-bottom: 32px;
+}
+.lean-contact__card h2 {
+    font-family: var(--font-sans);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+.lean-contact__card p { margin-bottom: 20px; }
+
+.lean-contact__details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 24px;
+}
+.lean-contact__details dt {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--lean-muted);
+    margin-bottom: 4px;
+}
+.lean-contact__details dd { margin: 0; font-size: 1rem; color: var(--lean-ink); }
+.lean-contact__details a { color: var(--lean-ink); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--gold); }
+
+.lean-contact__form {
+    padding: 32px 24px;
+    background: var(--lean-card);
+    border: 1px solid var(--lean-line);
+}
+@media (min-width: 640px) { .lean-contact__form { padding: 44px 40px; } }
+.lean-contact__form > h2 {
+    font-family: var(--font-sans);
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+.lean-contact__form > p { margin-bottom: 28px; }
+
+/* Formulier op licht */
+.lean .form-group label { color: var(--lean-ink); font-size: 0.92rem; }
+.lean .form-group input,
+.lean .form-group select,
+.lean .form-group textarea {
+    background: var(--lean-bg);
+    border: 1px solid oklch(80% 0.008 80);
+    border-radius: 2px;
+    color: var(--lean-ink);
+    font-size: 1rem;
+}
+.lean .form-group input::placeholder,
+.lean .form-group textarea::placeholder { color: oklch(60% 0.006 70); }
+.lean .form-group input:focus,
+.lean .form-group select:focus,
+.lean .form-group textarea:focus {
+    border-color: var(--gold-dark);
+    background: var(--lean-card);
+    box-shadow: 0 0 0 3px oklch(67% 0.09 75 / 0.18);
+}
+.lean .form-group select {
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23555' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+}
+.lean .form-group select option { background: var(--lean-card); color: var(--lean-ink); }
+.lean .contact-form__submit {
+    background: var(--gold);
+    color: var(--deep-black);
+    font-weight: 700;
+}
+.lean .contact-form__submit:hover {
+    background-color: var(--gold-dark);
+    color: oklch(99% 0 0);
+}
+.lean .contact-form-success { color: var(--lean-ink); }
+.lean .contact-form-success p { color: var(--lean-text); }
+.lean .contact-form-error { color: oklch(45% 0.18 25); background: oklch(95% 0.03 25); }
+.lean .contact-form__spinner { border-color: oklch(18% 0.008 60 / 0.25); border-top-color: var(--deep-black); }
+
+/* =============================================
+   OFFER BAND — belofte boven de footer
+   ============================================= */
+.offer-band {
+    background: var(--surface);
+    border-top: 1px solid oklch(67% 0.09 75 / 0.45);
+    padding: 48px 0;
+}
+.offer-band__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+@media (min-width: 900px) {
+    .offer-band__inner { flex-direction: row; align-items: center; justify-content: space-between; gap: 48px; }
+}
+.offer-band__label {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: oklch(84% 0.07 75);
+    margin-bottom: 10px;
+}
+.offer-band__title {
+    font-family: var(--font-sans);
+    font-size: clamp(1.5rem, 2.8vw, 2.1rem) !important;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--warm-white) !important;
+    margin-bottom: 6px;
+}
+.offer-band__title em { color: var(--gold); font-style: normal; font-weight: 800; }
+.offer-band__sub {
+    font-size: 1.05rem !important;
+    color: oklch(85% 0.006 75) !important;
+    margin: 0;
+}

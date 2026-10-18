@@ -8,6 +8,7 @@ interface FormState {
   email: string
   telefoon: string
   dienst: string
+  budget: string
   bericht: string
 }
 
@@ -17,6 +18,7 @@ const INITIAL: FormState = {
   email: "",
   telefoon: "",
   dienst: "",
+  budget: "",
   bericht: "",
 }
 
@@ -176,6 +178,23 @@ export default function ContactForm() {
           <option value="seo">Google &amp; AI Ranking</option>
           <option value="compleet">Compleet pakket</option>
           <option value="anders">Anders</option>
+        </select>
+      </div>
+
+      <div className="form-group">
+        <label htmlFor="budget">Marketingbudget per maand *</label>
+        <select
+          id="budget"
+          name="budget"
+          required
+          value={form.budget}
+          onChange={update("budget")}
+          disabled={isLoading}
+        >
+          <option value="">Selecteer een optie</option>
+          <option value="<2000">Minder dan &euro;2.000</option>
+          <option value="2000-5000">&euro;2.000 tot &euro;5.000</option>
+          <option value="5000+">Meer dan &euro;5.000</option>
         </select>
       </div>
 

@@ -195,7 +195,7 @@
 /* Nav right verborgen op mobiel standaard */
 .nav__right { display: none; }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .nav__cta    { display: inline-flex; }
     .nav__burger { display: none; }
     .nav__right  { display: flex; align-items: center; gap: 12px; }

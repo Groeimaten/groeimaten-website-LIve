@@ -4,6 +4,7 @@ export interface ContactFormData {
   email: string
   telefoon?: string
   dienst?: string
+  budget?: string
   bericht: string
 }
 
@@ -14,6 +15,12 @@ const CARD_BG = "#ffffff"
 const TEXT = "#1a1a1a"
 const TEXT_MUTED = "#5a5a5a"
 const BORDER = "#e8e4dc"
+
+const budgetLabel: Record<string, string> = {
+  "<2000": "Minder dan €2.000",
+  "2000-5000": "€2.000 tot €5.000",
+  "5000+": "Meer dan €5.000",
+}
 
 const dienstLabel: Record<string, string> = {
   "meta-ads": "Meta Ads & Funnels",
@@ -87,6 +94,7 @@ const dataRow = (label: string, value: string) => `
 
 export function getLeadEmailHtml(data: ContactFormData): string {
   const dienst = data.dienst ? (dienstLabel[data.dienst] ?? data.dienst) : "Niet opgegeven"
+  const budget = data.budget ? (budgetLabel[data.budget] ?? "Onbekend") : "Niet opgegeven"
 
   const content = `
     <!-- TOP ACCENT -->
@@ -114,6 +122,7 @@ export function getLeadEmailHtml(data: ContactFormData): string {
         ${dataRow("E-mail", data.email)}
         ${dataRow("Telefoon", data.telefoon || "Niet opgegeven")}
         ${dataRow("Dienst interesse", dienst)}
+        ${dataRow("Marketingbudget p/m", budget)}
       </table>
 
       <!-- BERICHT -->
