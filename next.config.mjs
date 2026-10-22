@@ -34,6 +34,11 @@ const nextConfig = {
       },
     ]
   },
+  // Next 16 accepteert alleen kwaliteiten uit deze lijst (standaard alleen 75).
+  // Zonder deze regel werden quality={80} en quality={90} stil 75.
+  images: {
+    qualities: [75, 80, 90],
+  },
   skipTrailingSlashRedirect: true,
 }
 
