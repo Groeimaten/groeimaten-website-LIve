@@ -102,6 +102,9 @@ export default function OverOnsPage() {
         </div>
       </section>
 
+      {/* REVIEWS: hoog op de pagina */}
+      <ReviewsMarquee />
+
       {/* MISSION */}
       <section className="about-mission">
         <div className="container">
@@ -344,7 +347,7 @@ export default function OverOnsPage() {
                 <div className="value-card__number" aria-hidden="true">01</div>
                 <h3>Resultaatgericht</h3>
                 <p>
-                  Geen vage beloftes. We sturen op concrete cijfers: meer afspraken, hogere show-up rates, lagere kosten
+                  Geen vage beloftes. We sturen op concrete cijfers: meer afspraken, meer klanten die echt komen opdagen, lagere kosten
                   per lead. Elke euro die je investeert moet renderen.
                 </p>
               </div>
@@ -473,9 +476,6 @@ export default function OverOnsPage() {
           </div>
         </div>
       </section>
-
-      {/* REVIEWS */}
-      <ReviewsMarquee />
 
       {/* CTA */}
       <section className="cta-section">

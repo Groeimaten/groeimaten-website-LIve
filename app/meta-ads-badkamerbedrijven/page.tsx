@@ -1,6 +1,9 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
+import ReviewsMarquee from "@/components/ReviewsMarquee"
+import FaqAccordion from "@/components/FaqAccordion"
+import { salesFaq } from "@/lib/faq"
 
 export const metadata: Metadata = {
   title: "Meta Ads voor Badkamerbedrijven",
@@ -84,6 +87,9 @@ export default function MetaAdsBadkamerbedrijvenPage() {
           </div>
         </div>
       </section>
+
+      {/* REVIEWS: hoog op de pagina */}
+      <ReviewsMarquee />
 
       <section className="service-detail">
         <div className="container">
@@ -175,6 +181,18 @@ export default function MetaAdsBadkamerbedrijvenPage() {
               </div>
             </ScrollReveal>
           </div>
+        </div>
+      </section>
+
+      <section className="service-detail" id="faq">
+        <div className="container">
+          <ScrollReveal>
+            <div style={{ maxWidth: "680px", margin: "0 auto 40px", textAlign: "center" }}>
+              <span className="section-label">Veelgestelde vragen</span>
+              <h2 className="section-title section-title--white">Wat ondernemers ons vooraf vragen</h2>
+            </div>
+          </ScrollReveal>
+          <FaqAccordion items={salesFaq} />
         </div>
       </section>
 

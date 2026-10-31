@@ -1,6 +1,8 @@
 import ScrollReveal from "@/components/ScrollReveal"
+import { getGoogleReviews, getGoogleReviewStats } from "@/lib/google-reviews"
 
-const reviews = [
+// Vangnet als het dashboard niet bereikbaar is; normaal komen de reviews live uit Google.
+const fallbackReviews: Review[] = [
   { name: "Kim Noach", meta: "een maand geleden", img: "/images/kim-noach.png", text: '"Zeer tevreden over het contact, hoe de samenwerking wordt onderhouden en de transparantie. Communicatie is erg fijn en er wordt snel geschakeld, hun manier van werken is innovatief en met doorzettingsvermogen. Erg fijn!"' },
   { name: "Martin Stoop", meta: "Stoop Keukens · een maand geleden", img: "/images/stoop-keukens.png", text: '"Vanaf februari is onze nieuwe website echt goed vindbaar geworden. De leads worden steeds kwalitatiever, we krijgen meer serieuze aanvragen en daar komen ook daadwerkelijk opdrachten uit voort. We merken echt duidelijke groei."' },
   { name: "Tegro BV", meta: "een maand geleden", img: "/images/tegro-review.png", text: '"Deze jonge enthousiaste ondernemers hebben onze website van Tegro ontwikkeld. Het resultaat mag er zijn. Het was een fijn traject waar op alle vlakken goed meegedacht werd. Ook het onderhoud van de site wordt met veel enthousiasme verzorgd."' },
@@ -10,7 +12,18 @@ const reviews = [
   { name: "Montage Team Noord Holland B.V.", meta: "een maand geleden", img: "/images/montage-team-noord-holland.png", text: '"Gelijk was er een klik en de service die zij aanbieden is betaalbaar, helder, en wij kregen gelijk een gunfactor. De jongere generatie weet wat nu speelt en zit in de huidige markt. Wij zijn ontzettend blij hoe de samenwerking verloopt en raden iedereen aan: als je een uitbesteding wilt doen, doe het dan goed en kies voor Groeimaten."' },
 ]
 
-function ReviewCard({ r, prefix }: { r: typeof reviews[0], prefix: string }) {
+type Review = { name: string; meta: string; img: string | null; text: string }
+
+function timeAgo(iso: string) {
+  const days = Math.floor((Date.now() - new Date(iso).getTime()) / 86_400_000)
+  if (days < 1) return "vandaag"
+  if (days < 7) return days === 1 ? "1 dag geleden" : `${days} dagen geleden`
+  if (days < 30) return days < 14 ? "een week geleden" : `${Math.floor(days / 7)} weken geleden`
+  if (days < 365) return days < 60 ? "een maand geleden" : `${Math.floor(days / 30)} maanden geleden`
+  return days < 730 ? "een jaar geleden" : `${Math.floor(days / 365)} jaar geleden`
+}
+
+function ReviewCard({ r, prefix }: { r: Review, prefix: string }) {
   return (
     <div className="review-card" aria-hidden={prefix === "b" ? "true" : undefined}>
       <svg className="review-card__quote" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
@@ -26,7 +39,11 @@ function ReviewCard({ r, prefix }: { r: typeof reviews[0], prefix: string }) {
       </div>
       <p className="review-card__text">{r.text}</p>
       <div className="review-card__author">
-        <img src={r.img} alt={r.name} className="review-card__avatar" width={42} height={42} loading="lazy" />
+        {r.img ? (
+          <img src={r.img} alt={r.name} className="review-card__avatar" width={42} height={42} loading="lazy" referrerPolicy="no-referrer" />
+        ) : (
+          <span className="review-card__avatar review-card__avatar--initial" aria-hidden="true">{r.name.charAt(0)}</span>
+        )}
         <div>
           <span className="review-card__name">{r.name}</span>
           <span className="review-card__meta">{r.meta}</span>
@@ -36,7 +53,14 @@ function ReviewCard({ r, prefix }: { r: typeof reviews[0], prefix: string }) {
   )
 }
 
-export default function ReviewsMarquee() {
+export default async function ReviewsMarquee() {
+  const [live, stats] = await Promise.all([getGoogleReviews(12), getGoogleReviewStats()])
+  const reviews: Review[] = live.length
+    ? live.map((r) => ({ name: r.name, meta: timeAgo(r.date), img: r.photoUrl, text: `"${r.text}"` }))
+    : fallbackReviews
+  const score = (stats?.rating ?? 5).toFixed(1).replace(".", ",")
+  const count = stats?.count ?? 8
+
   return (
     <section className="reviews-marquee" id="testimonials">
       <ScrollReveal className="container reviews-marquee__top">
@@ -44,7 +68,7 @@ export default function ReviewsMarquee() {
           <span className="section-label">Klantervaringen</span>
           <h2 className="reviews-marquee__title">Wat klanten<br /><em>over ons zeggen</em></h2>
         </div>
-        <a href="https://www.google.com/maps?cid=390254304839502817" target="_blank" rel="noopener noreferrer" className="google-badge" aria-label="Bekijk onze Google reviews: 5,0 sterren">
+        <a href="https://www.google.com/maps?cid=390254304839502817" target="_blank" rel="noopener noreferrer" className="google-badge" aria-label={`Bekijk onze Google reviews: ${score} sterren`}>
           <svg className="google-badge__g" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
             <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" />
             <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853" />
@@ -53,7 +77,7 @@ export default function ReviewsMarquee() {
           </svg>
           <div className="google-badge__info">
             <span className="google-badge__stars" aria-hidden="true">★★★★★</span>
-            <span className="google-badge__text">5,0 · 6 reviews</span>
+            <span className="google-badge__text">{score} · {count} reviews</span>
           </div>
         </a>
       </ScrollReveal>
@@ -77,7 +101,7 @@ export default function ReviewsMarquee() {
         </a>
       </div>
       <ScrollReveal className="container reviews-marquee__stats">
-        <div className="reviews-marquee__stat"><span className="reviews-marquee__stat-num">5,0</span><span className="reviews-marquee__stat-label">Google beoordeling</span></div>
+        <div className="reviews-marquee__stat"><span className="reviews-marquee__stat-num">{score}</span><span className="reviews-marquee__stat-label">Google beoordeling</span></div>
         <div className="reviews-marquee__stat"><span className="reviews-marquee__stat-num">€279k+</span><span className="reviews-marquee__stat-label">Omzet uit ads, 1 klant</span></div>
         <div className="reviews-marquee__stat"><span className="reviews-marquee__stat-num">35x</span><span className="reviews-marquee__stat-label">ROAS, 1 klant</span></div>
         <div className="reviews-marquee__stat"><span className="reviews-marquee__stat-num">100%</span><span className="reviews-marquee__stat-label">Sectorspecialist</span></div>
