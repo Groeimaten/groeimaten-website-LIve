@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
+import ReviewsMarquee from "@/components/ReviewsMarquee"
 
 export const metadata: Metadata = {
   title: "Meer Showroomafspraken voor Keukenstudio's",
@@ -84,6 +85,9 @@ export default function MeerShowroomafsprakenPage() {
           </div>
         </div>
       </section>
+
+      {/* REVIEWS: hoog op de pagina */}
+      <ReviewsMarquee />
 
       <section className="service-detail">
         <div className="container">

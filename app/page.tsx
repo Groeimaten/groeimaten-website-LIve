@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
+import ReviewsMarquee from "@/components/ReviewsMarquee"
 import LogoStrip from "@/components/LogoStrip"
 import FaqAccordion from "@/components/FaqAccordion"
 import KigoTeaser from "@/components/KigoTeaser"
@@ -85,21 +86,6 @@ const cases = [
     name: "Marquardt Amersfoort",
     result: "30 showroomafspraken",
     detail: "Sinds januari 2026, voor minder dan €27 per aanvraag",
-  },
-]
-
-const reviews = [
-  {
-    name: "Martin Stoop",
-    meta: "Stoop Keukens",
-    img: "/images/stoop-keukens.png",
-    text: "De leads worden steeds kwalitatiever, we krijgen meer serieuze aanvragen en daar komen ook daadwerkelijk opdrachten uit voort.",
-  },
-  {
-    name: "Kim Noach",
-    meta: "Google review",
-    img: "/images/kim-noach.png",
-    text: "Communicatie is erg fijn en er wordt snel geschakeld, hun manier van werken is innovatief en met doorzettingsvermogen.",
   },
 ]
 
@@ -203,6 +189,9 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* REVIEWS: hoog op de pagina */}
+      <ReviewsMarquee />
+
       <div className="lean">
       <LogoStrip />
 
@@ -304,18 +293,6 @@ export default function HomePage() {
                 <span className="lean-case__name">{c.name}</span>
                 <span className="lean-case__result">{c.result}</span>
                 <span className="lean-case__detail">{c.detail}</span>
-              </ScrollReveal>
-            ))}
-          </div>
-          <div className="lean-reviews">
-            {reviews.map((r) => (
-              <ScrollReveal key={r.name} as="figure" className="lean-review">
-                <div className="lean-review__stars" aria-label="5 sterren">★★★★★</div>
-                <blockquote>&ldquo;{r.text}&rdquo;</blockquote>
-                <figcaption>
-                  <img src={r.img} alt="" width={40} height={40} loading="lazy" />
-                  <span><strong>{r.name}</strong>{r.meta}</span>
-                </figcaption>
               </ScrollReveal>
             ))}
           </div>

@@ -102,6 +102,9 @@ export default function OverOnsPage() {
         </div>
       </section>
 
+      {/* REVIEWS: hoog op de pagina */}
+      <ReviewsMarquee />
+
       {/* MISSION */}
       <section className="about-mission">
         <div className="container">
@@ -473,9 +476,6 @@ export default function OverOnsPage() {
           </div>
         </div>
       </section>
-
-      {/* REVIEWS */}
-      <ReviewsMarquee />
 
       {/* CTA */}
       <section className="cta-section">

@@ -144,6 +144,9 @@ export default function CasesPage() {
         </div>
       </section>
 
+      {/* REVIEWS: hoog op de pagina */}
+      <ReviewsMarquee />
+
       {/* HIGHLIGHT STATS */}
       <section className="cases-stats">
         <div className="container">
@@ -372,9 +375,6 @@ export default function CasesPage() {
 
         </div>
       </section>
-
-      {/* REVIEWS */}
-      <ReviewsMarquee />
 
       {/* CTA */}
       <section className="cta-section">

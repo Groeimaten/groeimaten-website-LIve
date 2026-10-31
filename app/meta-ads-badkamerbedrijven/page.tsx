@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
+import ReviewsMarquee from "@/components/ReviewsMarquee"
 import FaqAccordion from "@/components/FaqAccordion"
 import { salesFaq } from "@/lib/faq"
 
@@ -86,6 +87,9 @@ export default function MetaAdsBadkamerbedrijvenPage() {
           </div>
         </div>
       </section>
+
+      {/* REVIEWS: hoog op de pagina */}
+      <ReviewsMarquee />
 
       <section className="service-detail">
         <div className="container">

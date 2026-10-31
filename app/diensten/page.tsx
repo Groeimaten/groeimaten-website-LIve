@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
+import ReviewsMarquee from "@/components/ReviewsMarquee"
 import KigoTeaser from "@/components/KigoTeaser"
 import { KIGO_LIVE } from "@/lib/features"
 
@@ -107,6 +108,9 @@ export default function DienstenPage() {
           </div>
         </div>
       </section>
+
+      {/* REVIEWS: hoog op de pagina */}
+      <ReviewsMarquee />
 
       {/* SERVICE: META ADS */}
       <section className="service-detail" id="meta-ads">

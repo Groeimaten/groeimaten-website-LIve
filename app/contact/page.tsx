@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
+import ReviewsMarquee from "@/components/ReviewsMarquee"
 import FaqAccordion from "@/components/FaqAccordion"
 import ContactForm from "@/components/ContactForm"
 
@@ -93,6 +94,9 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      {/* REVIEWS: hoog op de pagina */}
+      <ReviewsMarquee />
 
       <section className="lean-section lean-section--alt">
         <div className="container">
