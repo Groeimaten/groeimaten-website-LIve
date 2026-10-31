@@ -4200,6 +4200,15 @@ html[data-theme="light"] .photo-placeholder__size {
     flex-shrink: 0;
 }
 
+.review-card__avatar--initial {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: oklch(67% 0.09 75 / 0.18);
+    color: var(--gold);
+    font-weight: 600;
+}
+
 .review-card__name {
     font-weight: 600;
     font-size: 0.85rem;
