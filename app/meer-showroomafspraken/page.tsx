@@ -116,7 +116,7 @@ export default function MeerShowroomafsprakenPage() {
                     <div>
                       <h3>Geautomatiseerde opvolging</h3>
                       <p>
-                        Bevestigingen, herinneringen en follow-ups via SMS en e-mail die no-shows drastisch verlagen.
+                        Bevestigingen, herinneringen en follow-ups via SMS en e-mail, zodat afspraken ook echt doorgaan.
                       </p>
                     </div>
                   </div>

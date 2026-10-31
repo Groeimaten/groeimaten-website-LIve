@@ -6,6 +6,7 @@ import LogoStrip from "@/components/LogoStrip"
 import FaqAccordion from "@/components/FaqAccordion"
 import KigoTeaser from "@/components/KigoTeaser"
 import { KIGO_LIVE } from "@/lib/features"
+import { salesFaq } from "@/lib/faq"
 
 const OFFER_DESCRIPTION =
   "15 echte showroomafspraken in 90 dagen, gegarandeerd. Halen we het niet, dan werken we gratis door. Meta Ads en Google Ads voor keuken- en badkamerbedrijven."
@@ -30,17 +31,30 @@ export const metadata: Metadata = {
 
 const pains = [
   {
-    title: "Aanvragen die nooit komen opdagen",
-    body: "Je belt na, plant in, en de showroom blijft leeg.",
+    title: "Je verkoopteam kan meer aan",
+    body: "Je sluit goed. Wat je groei begrenst, is het aantal serieuze klanten dat aan tafel komt.",
   },
   {
-    title: "De ene maand druk, de andere stil",
-    body: "Geen vaste instroom, dus geen grip op je omzet.",
+    title: "Pieken en dalen in de agenda",
+    body: "Druk op zaterdag, stil doordeweeks. Geen vaste instroom, dus geen grip op je omzet.",
   },
   {
-    title: "Uren kwijt aan prijsjagers",
-    body: "Mensen die alleen een offerte willen om te vergelijken.",
+    title: "Verkopers kwijt aan rondkijkers",
+    body: "Tijd die opgaat aan prijsjagers en mensen die alleen komen kijken.",
   },
+]
+
+const fitYes = [
+  "Keuken-, badkamer- of tegelzaak in Nederland met een eigen showroom",
+  "Je sluit al een groot deel van je afspraken",
+  "Je hebt verkoopcapaciteit over",
+  "Je wilt meer afspraken, gespreid over de week",
+]
+
+const fitNo = [
+  "Je showroom is nog niet open",
+  "Je bent een montage- of klusbedrijf dat werk zoekt",
+  "Je montagecapaciteit zit vol: dan zijn meer afspraken niet je probleem",
 ]
 
 const steps = [
@@ -51,13 +65,13 @@ const steps = [
   },
   {
     n: "02",
-    title: "Filteren vóór de afspraak",
-    body: "Onze funnel vraagt naar wensen, budget en planning. Wie niet past, haakt af voordat jij er tijd in steekt.",
+    title: "Nabellen en filteren vóór de afspraak",
+    body: "Ons eigen belteam belt elke aanvraag na en checkt wensen, budget en planning. Wie alleen komt rondkijken, plannen we niet in.",
   },
   {
     n: "03",
-    title: "Opvolging tot in de showroom",
-    body: "Automatische opvolging zorgt dat de aanvraag een afspraak wordt, en dat de klant ook echt komt.",
+    title: "Bevestigde afspraak in je agenda",
+    body: "Jij krijgt een bevestigde afspraak, geen lijst namen. Herinneringen zorgen dat de klant ook echt in je showroom staat.",
   },
 ]
 
@@ -94,25 +108,7 @@ const kigoFaq = {
   answer: "Kigo is een AI-tool die Groeimaten zelf heeft ontwikkeld voor keuken- en badkamerbedrijven. Je klant beleeft zijn nieuwe keuken of badkamer al voordat hij in de showroom staat, en jij krijgt een aanvraag met wensen en stijl erbij.",
 }
 
-const faqItems = [
-  {
-    question: "Wat telt als showroomafspraak?",
-    answer: "Alleen een afspraak waarbij de klant ook echt in je showroom staat. Aanvragen of no-shows tellen niet mee.",
-  },
-  {
-    question: "Wat als jullie de 15 afspraken niet halen?",
-    answer: "Dan werken we gratis door tot de 15 afspraken er zijn. Jij betaalt niets extra.",
-  },
-  {
-    question: "Voor wie is dit?",
-    answer: "Voor keuken-, badkamer- en sanitairbedrijven met een showroom die willen groeien. We werken uitsluitend in deze branche.",
-  },
-  {
-    question: "Hoe snel zie ik resultaat?",
-    answer: "Campagnes staan meestal binnen een week live. De eerste aanvragen komen vaak al in de eerste week binnen.",
-  },
-  ...(KIGO_LIVE ? [kigoFaq] : []),
-]
+const faqItems = [...salesFaq, ...(KIGO_LIVE ? [kigoFaq] : [])]
 
 const ArrowRight = () => (
   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -123,6 +119,12 @@ const ArrowRight = () => (
 const Check = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
     <path d="M5 12.5l4.5 4.5L19 7.5" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+)
+
+const Cross = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M7 7l10 10M17 7L7 17" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
   </svg>
 )
 
@@ -144,40 +146,19 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      {/* HERO: oude foto + layout, nieuw offer */}
-      <section className="hero hero--fullscreen" id="home">
-        <div className="hero__bg">
-          <Image
-            className="hero__bg-img hero__bg-img--desktop"
-            src="/images/hero.webp"
-            alt="Groeimaten team aan het werk"
-            fill
-            priority
-            quality={90}
-            sizes="100vw"
-            style={{ objectFit: "cover", objectPosition: "center 30%" }}
-          />
-          <Image
-            className="hero__bg-img hero__bg-img--mobile"
-            src="/images/jelle-thomas-sitting.jpg"
-            alt="Jelle en Thomas van Groeimaten"
-            fill
-            priority
-            quality={90}
-            sizes="100vw"
-            style={{ objectFit: "cover", objectPosition: "center top" }}
-          />
-          <div className="hero__bg-overlay" />
-        </div>
+      {/* HERO: donkere achtergrond voor leesbaarheid, showroomfoto ernaast */}
+      <section className="hero hero--split" id="home">
+        <div className="hero__glow hero__glow--1" aria-hidden="true" />
+        <div className="hero__glow hero__glow--2" aria-hidden="true" />
         <div className="container hero__inner">
           <div className="hero__content">
-            <span className="section-label hero-anim hero-anim--1">Voor keuken- en badkamerbedrijven</span>
+            <span className="section-label hero-anim hero-anim--1">Voor keuken- en badkamerzaken met showroom</span>
             <h1 className="hero__title hero-anim hero-anim--1">
               15 showroom&shy;afspraken in 90 dagen.<br />
               <em>Gegarandeerd.</em>
             </h1>
             <p className="hero__subtitle hero-anim hero-anim--2">
-              Wij vullen je agenda met kopers die echt in je showroom komen. Halen we de 15 niet? Dan werken we gratis door tot het wel lukt.
+              Meer serieuze klanten aan tafel voor je verkoopteam. Wij adverteren, bellen elke aanvraag na en zetten een bevestigde afspraak in je agenda. Halen we de 15 niet? Dan werken we gratis door.
             </p>
             <div className="hero__actions hero-anim hero-anim--3">
               <Link href="/afspraak" className="btn btn--blue btn--lg">
@@ -196,12 +177,33 @@ export default function HomePage() {
                 <span className="hero__proof-label">merken geholpen</span>
               </div>
               <div className="hero__proof-divider" aria-hidden="true" />
-              <div className="hero__proof-item">
-                <span className="hero__proof-number">K&amp;D</span>
-                <span className="hero__proof-label">bekend van K&amp;D Magazine</span>
-              </div>
+              <Link href="/over-ons#media" className="hero__proof-item hero__proof-item--press">
+                <Image
+                  src="/images/magazine-article.webp"
+                  alt=""
+                  width={56}
+                  height={38}
+                  className="hero__press-thumb"
+                />
+                <span className="hero__proof-label">bekend van<br />K&amp;D Magazine</span>
+              </Link>
             </div>
           </div>
+          <figure className="hero__photo hero-anim hero-anim--2">
+            <Image
+              src="/images/cases/marquardt-adviesgesprek.jpg"
+              alt="Adviesgesprek aan tafel in de keukenshowroom van Marquardt Amersfoort"
+              fill
+              priority
+              quality={90}
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              style={{ objectFit: "cover", objectPosition: "center 40%" }}
+            />
+            <figcaption className="hero__photo-caption">
+              <strong>Marquardt Amersfoort</strong>
+              30 showroomafspraken sinds januari 2026
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -224,9 +226,36 @@ export default function HomePage() {
           </div>
           <ScrollReveal className="lean-wish">
             <p>
-              Wat je eigenlijk wilt: <strong>elke week een volle agenda met kopers die passen bij jouw showroom.</strong>
+              Wat je eigenlijk wilt: <strong>elke week meer serieuze klanten aan tafel, gespreid over de week.</strong>
             </p>
           </ScrollReveal>
+        </div>
+      </section>
+
+      {/* VOOR WIE */}
+      <section className="lean-section lean-section--alt" id="voor-wie">
+        <div className="container">
+          <ScrollReveal className="lean-head">
+            <h2 className="lean-title">Voor wie is dit?</h2>
+          </ScrollReveal>
+          <div className="lean-fit">
+            <ScrollReveal className="lean-fit__col lean-fit__col--yes" delay={1}>
+              <h3>Wel voor jou</h3>
+              <ul>
+                {fitYes.map((t) => (
+                  <li key={t}><Check /> {t}</li>
+                ))}
+              </ul>
+            </ScrollReveal>
+            <ScrollReveal className="lean-fit__col lean-fit__col--no" delay={2}>
+              <h3>Niet voor jou</h3>
+              <ul>
+                {fitNo.map((t) => (
+                  <li key={t}><Cross /> {t}</li>
+                ))}
+              </ul>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
 

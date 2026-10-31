@@ -502,3 +502,42 @@
     color: oklch(85% 0.006 75) !important;
     margin: 0;
 }
+
+/* Voor wie (wel / niet) */
+.lean-fit {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+@media (min-width: 800px) { .lean-fit { grid-template-columns: 1fr 1fr; gap: 24px; } }
+.lean-fit__col {
+    padding: 32px 28px;
+    background: var(--lean-card);
+    border-top: 3px solid var(--gold);
+}
+.lean-fit__col--no { border-top-color: var(--lean-line); }
+.lean-fit__col h3 {
+    font-family: var(--font-sans);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.lean-fit__col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.lean-fit__col li {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--lean-text);
+}
+.lean-fit__col svg { flex-shrink: 0; margin-top: 2px; }
+.lean-fit__col--yes svg { color: var(--lean-gold-ink); }
+.lean-fit__col--no svg { color: var(--lean-muted); }

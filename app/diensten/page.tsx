@@ -145,7 +145,7 @@ export default function DienstenPage() {
                     <div>
                       <h3>Lead kwalificatie &amp; opvolging</h3>
                       <p>
-                        Geautomatiseerde opvolging via GoHighLevel. SMS, e-mail en herinneringen voor maximale show-up.
+                        Geautomatiseerde opvolging via GoHighLevel. SMS, e-mail en herinneringen, zodat de klant ook echt in je showroom staat.
                       </p>
                     </div>
                   </div>
