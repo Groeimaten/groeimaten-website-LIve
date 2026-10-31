@@ -2216,27 +2216,12 @@
 .hero__photo {
     position: relative;
     margin: 0;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 16 / 9;
     border-radius: var(--radius-lg);
     overflow: hidden;
     border: 1px solid oklch(96% 0.008 85 / 0.10);
     box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
 }
-.hero__photo-caption {
-    position: absolute;
-    left: 16px;
-    bottom: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    padding: 10px 14px;
-    background: rgba(6, 6, 6, 0.72);
-    backdrop-filter: blur(6px);
-    border-radius: 6px;
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.82);
-}
-.hero__photo-caption strong { color: var(--white); font-weight: 600; }
 
 @media (min-width: 1024px) {
     .hero--split { padding: 152px 0 96px; }
@@ -2246,8 +2231,7 @@
     .hero--split { padding: 112px 0 48px; }
     .hero--split .hero__inner { gap: 28px; }
     /* Mobiel: foto eerst, zodat direct zichtbaar is dat het om showrooms gaat */
-    .hero__photo { aspect-ratio: 16 / 9; order: -1; }
-    .hero__photo-caption { left: 10px; bottom: 10px; padding: 7px 10px; font-size: 0.72rem; }
+    .hero__photo { order: -1; }
 }
 @media (max-width: 480px) {
     .hero--split .hero__title { font-size: clamp(1.8rem, 7.5vw, 2.6rem); }

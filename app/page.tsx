@@ -191,18 +191,14 @@ export default function HomePage() {
           </div>
           <figure className="hero__photo hero-anim hero-anim--2">
             <Image
-              src="/images/cases/marquardt-adviesgesprek.jpg"
-              alt="Adviesgesprek aan tafel in de keukenshowroom van Marquardt Amersfoort"
+              src="/images/hero-showrooms.webp"
+              alt="Badkamershowroom en keukenshowroom naast elkaar"
               fill
               priority
               quality={90}
               sizes="(min-width: 1024px) 50vw, 100vw"
-              style={{ objectFit: "cover", objectPosition: "center 40%" }}
+              style={{ objectFit: "cover" }}
             />
-            <figcaption className="hero__photo-caption">
-              <strong>Marquardt Amersfoort</strong>
-              30 showroomafspraken sinds januari 2026
-            </figcaption>
           </figure>
         </div>
       </section>
