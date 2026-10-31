@@ -11,7 +11,6 @@ const HIDDEN_PATHS = [
   "/privacy",
   "/diensten",
   "/cases",
-  "/prijzen",
   "/plannen",
   "/over-ons",
   "/sitemap-overzicht",

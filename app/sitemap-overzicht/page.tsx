@@ -18,7 +18,6 @@ const SECTIONS = [
       ...(KIGO_LIVE ? [{ href: "/kigo", label: "Kigo" }] : []),
       { href: "/cases", label: "Cases" },
       { href: "/over-ons", label: "Over ons" },
-      { href: "/prijzen", label: "Prijzen" },
       { href: "/contact", label: "Contact" },
       { href: "/afspraak", label: "Afspraak plannen" },
     ],

@@ -11,7 +11,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/cases`, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/over-ons`, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/contact`, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE_URL}/prijzen`, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/plannen`, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/afspraak`, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE_URL}/privacy`, changeFrequency: 'yearly', priority: 0.3 },
