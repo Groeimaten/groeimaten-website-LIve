@@ -50,5 +50,9 @@
   {
     "source": "/blog/meer-aanvragen-dakdekker",
     "destination": "/blog/leadgeneratie-sanitairbedrijf"
+  },
+  {
+    "source": "/prijzen",
+    "destination": "/diensten"
   }
 ]
