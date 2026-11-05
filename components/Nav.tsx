@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { useCleanPathname } from "@/lib/use-clean-pathname"
 import { KIGO_LIVE } from "@/lib/features"
 
 const allNavLinks = [
@@ -20,7 +20,7 @@ const navLinks = allNavLinks.filter((l) => KIGO_LIVE || l.href !== "/kigo")
 const SOLID_NAV_PATHS = ["/contact"]
 
 export default function Nav() {
-  const pathname = usePathname()
+  const pathname = useCleanPathname()
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const navRef = useRef<HTMLElement>(null)
