@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { useCleanPathname } from "@/lib/use-clean-pathname"
 
 // Pagina's die de belofte al in hun eigen hero of CTA hebben.
 const HIDDEN_PATHS = [
@@ -18,7 +18,7 @@ const HIDDEN_PATHS = [
 ]
 
 export default function OfferBand() {
-  const pathname = usePathname()
+  const pathname = useCleanPathname()
   if (HIDDEN_PATHS.includes(pathname)) return null
 
   return (
