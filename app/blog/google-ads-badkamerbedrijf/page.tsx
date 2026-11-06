@@ -46,7 +46,45 @@ const articleSchema = {
   author: { "@type": "Person", name: "Thomas Ghobadi", sameAs: "https://www.linkedin.com/in/thomasghobadi/" },
   publisher: { "@type": "Organization", name: "Groeimaten", url: "https://groeimaten.com" },
   datePublished: "2026-06-16",
+  dateModified: "2026-11-06",
   url: "https://groeimaten.com/blog/google-ads-badkamerbedrijf",
+}
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Wat kost Google Ads voor een badkamerbedrijf per maand?",
+      acceptedAnswer: { "@type": "Answer", text: "Voor lokale vaklieden ligt de prijs per klik volgens Blurr Marketing (gecontroleerd 13 augustus 2026) tussen 2,50 en 6,00 euro. Het beheer kost bij een bureau 300 tot 1.200 euro per maand, of 10 tot 20 procent van het advertentiebudget boven 2.000 euro. Het klikbudget komt daar bovenop." },
+    },
+    {
+      "@type": "Question",
+      name: "Hoeveel advertentiebudget heeft een badkamerbedrijf nodig om te starten?",
+      acceptedAnswer: { "@type": "Answer", text: "Reken op een klikbudget waarmee je in de eerste weken genoeg bezoekers krijgt om te leren welke zoekopdrachten aanvragen opleveren. Bij 2,50 tot 6,00 euro per klik (Blurr Marketing, 13 augustus 2026) is elke 100 euro goed voor ruwweg 17 tot 40 klikken. Begin smal, in je eigen regio." },
+    },
+    {
+      "@type": "Question",
+      name: "Welke zoekwoorden werken het best voor een badkamerbedrijf?",
+      acceptedAnswer: { "@type": "Answer", text: "Zoekwoorden met koopintentie en een plaatsnaam werken het best, zoals badkamer laten renoveren in je eigen stad of badkamer installateur offerte. Zoekopdrachten als badkamer zelf renoveren of badkamer tegels zelf leggen sluit je uit met negatieve zoekwoorden, want die bezoekers zoeken geen aannemer." },
+    },
+    {
+      "@type": "Question",
+      name: "Moet ik mijn badkamerbedrijf adverteren op de homepage of op een aparte pagina?",
+      acceptedAnswer: { "@type": "Answer", text: "Stuur het verkeer naar een aparte landingspagina per dienst, met een duidelijk contactformulier en telefoonnummer. Iemand die zoekt op badkamer renoveren offerte wil direct kunnen aanvragen, niet eerst je hele site doorzoeken. Een homepage moet te veel bezoekerstypen tegelijk bedienen." },
+    },
+    {
+      "@type": "Question",
+      name: "Hoe weet ik of mijn Google Ads-campagne aanvragen oplevert?",
+      acceptedAnswer: { "@type": "Answer", text: "Meet aanvragen als conversie: een verstuurd formulier, een klik op het telefoonnummer of een ingeplande afspraak. Kijk niet alleen naar klikken, maar naar wat een aanvraag kost en hoeveel daarvan een afspraak in de showroom worden. Zonder deze meting stuur je blind." },
+    },
+    {
+      "@type": "Question",
+      name: "Wanneer is Google Ads beter dan SEO voor een badkamerbedrijf?",
+      acceptedAnswer: { "@type": "Answer", text: "Google Ads levert binnen enkele dagen verkeer op, SEO bouwt langzamer op, maar blijft bezoekers opleveren ook als je geen budget uitgeeft. Voor een badkamerbedrijf zonder zichtbaarheid is adverteren de snelste start. Voor blijvende zichtbaarheid is een combinatie met lokale vindbaarheid verstandig." },
+    },
+  ],
 }
 
 export default function BlogGoogleAdsBadkamerbedrijfPage() {
@@ -54,6 +92,7 @@ export default function BlogGoogleAdsBadkamerbedrijfPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <section className="page-hero page-hero--split" style={{ paddingBottom: "48px" }}>
         <div className="page-hero__glow page-hero__glow--1" aria-hidden="true" />
@@ -80,7 +119,7 @@ export default function BlogGoogleAdsBadkamerbedrijfPage() {
               ingestelde campagne kost in korte tijd veel geld zonder een enkele kwalitatieve aanvraag op te leveren.
             </p>
             <p style={{ color: "oklch(55% 0 0)", fontSize: "0.88rem", marginTop: "12px" }}>
-              Thomas Ghobadi · 16 juni 2026 · 5 min lezen
+              Thomas Ghobadi · 16 juni 2026 · bijgewerkt 6 november 2026 · 7 min lezen
             </p>
           </div>
         </div>
@@ -96,6 +135,11 @@ export default function BlogGoogleAdsBadkamerbedrijfPage() {
               fontSize: "1.05rem",
             }}
           >
+            <p style={{ color: "oklch(92% 0 0)", fontWeight: 600 }}>
+              Google Ads voor een badkamerbedrijf werkt als je adverteert op zoekopdrachten met koopintentie in je
+              eigen regio, het verkeer naar een aparte landingspagina stuurt en aanvragen meet. Een klik kost bij
+              lokale vaklieden 2,50 tot 6,00 euro (Blurr Marketing, 13 augustus 2026).
+            </p>
             <p>
               Google Ads werkt op basis van zoekwoorden. Jij bepaalt op welke zoekopdrachten jouw advertentie
               verschijnt. Je betaalt per klik. Hoe relevanter jouw advertentie en landingspagina voor die
@@ -203,6 +247,183 @@ export default function BlogGoogleAdsBadkamerbedrijfPage() {
             <p>
               Google Ads voor een badkamerbedrijf werkt. Maar alleen als de fundamenten kloppen: de juiste
               zoekwoorden, de juiste pagina en de juiste opvolging van aanvragen.
+            </p>
+
+            <h2
+              style={{
+                color: "oklch(95% 0 0)",
+                fontSize: "clamp(1.3rem, 3vw, 1.75rem)",
+                fontWeight: 700,
+                marginTop: "52px",
+                marginBottom: "20px",
+                lineHeight: "1.3",
+              }}
+            >
+              Wat kost Google Ads voor een badkamerbedrijf?
+            </h2>
+            <p>
+              De kosten bestaan uit twee delen: het budget dat naar Google gaat en het beheer van de campagne.
+              Volgens Blurr Marketing (gecontroleerd 13 augustus 2026) kost een klik voor lokale vaklieden
+              2,50 tot 6,00 euro. Beheer door een bureau kost 300 tot 1.200 euro per maand, of 10 tot 20 procent
+              van het advertentiebudget zodra dat boven 2.000 euro ligt. Dat zijn marktbrede bedragen, geen
+              garantie voor jouw regio. In een stad met veel badkamershowrooms ligt de klikprijs hoger dan in
+              een dunbevolkt gebied.
+            </p>
+            <div style={{ overflowX: "auto", marginTop: "24px", marginBottom: "8px" }}>
+              <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.98rem" }}>
+                <thead>
+                  <tr>
+                    <th style={{ textAlign: "left", padding: "10px 12px", borderBottom: "1px solid oklch(30% 0 0)", color: "oklch(92% 0 0)" }}>Kostenpost</th>
+                    <th style={{ textAlign: "left", padding: "10px 12px", borderBottom: "1px solid oklch(30% 0 0)", color: "oklch(92% 0 0)" }}>Bedrag</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style={{ padding: "10px 12px", borderBottom: "1px solid oklch(20% 0 0)" }}>Prijs per klik, lokale vaklieden</td>
+                    <td style={{ padding: "10px 12px", borderBottom: "1px solid oklch(20% 0 0)" }}>2,50 tot 6,00 euro</td>
+                  </tr>
+                  <tr>
+                    <td style={{ padding: "10px 12px", borderBottom: "1px solid oklch(20% 0 0)" }}>Beheer door een bureau</td>
+                    <td style={{ padding: "10px 12px", borderBottom: "1px solid oklch(20% 0 0)" }}>300 tot 1.200 euro per maand</td>
+                  </tr>
+                  <tr>
+                    <td style={{ padding: "10px 12px", borderBottom: "1px solid oklch(20% 0 0)" }}>Beheer bij budget boven 2.000 euro</td>
+                    <td style={{ padding: "10px 12px", borderBottom: "1px solid oklch(20% 0 0)" }}>10 tot 20 procent van het budget</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style={{ fontSize: "0.85rem", color: "oklch(55% 0 0)", marginTop: "8px" }}>
+                Bron: Blurr Marketing, gecontroleerd op 13 augustus 2026.
+              </p>
+            </div>
+            <h2
+              style={{
+                color: "oklch(95% 0 0)",
+                fontSize: "clamp(1.3rem, 3vw, 1.75rem)",
+                fontWeight: 700,
+                marginTop: "52px",
+                marginBottom: "20px",
+                lineHeight: "1.3",
+              }}
+            >
+              Welke instellingen bepalen of je geld verspilt?
+            </h2>
+            <p>
+              Drie instellingen in Google Ads bepalen vooral of een badkamerbedrijf voor de verkeerde klikken
+              betaalt. De eerste is het zoektype per zoekwoord: bij exact en zinsdeel matchende zoekwoorden
+              verschijnt je advertentie alleen bij zoekopdrachten die erg lijken op jouw zoekwoord, bij breed
+              matchen ook bij losse verwanten. De tweede is de lijst met negatieve zoekwoorden, waarmee je
+              zoekopdrachten als &ldquo;badkamer zelf renoveren&rdquo; of &ldquo;badkamer tegels zelf
+              leggen&rdquo; uitsluit. De derde is de locatie: stel in dat je alleen mensen bereikt die in je
+              werkgebied zijn of daar interesse in hebben, anders klikken mensen uit een regio waar je niet
+              werkt.
+            </p>
+            <p>
+              Controleer daarnaast elke week het zoektermenrapport in Google Ads. Daar zie je de exacte
+              woorden waarop mensen hebben geklikt. Staat er een zoekopdracht tussen die geen aannemer zoekt,
+              dan voeg je die toe aan de negatieve zoekwoorden. Zo wordt de campagne elke week een stukje
+              scherper, zonder dat het budget omhoog hoeft.
+            </p>
+            <h2
+              style={{
+                color: "oklch(95% 0 0)",
+                fontSize: "clamp(1.3rem, 3vw, 1.75rem)",
+                fontWeight: 700,
+                marginTop: "52px",
+                marginBottom: "20px",
+                lineHeight: "1.3",
+              }}
+            >
+              Hoe meet je of Google Ads aanvragen oplevert?
+            </h2>
+            <p>
+              Een klik is geen aanvraag. Stel daarom meting in op drie momenten: een verstuurd
+              offerteformulier, een klik op het telefoonnummer en een ingeplande afspraak voor je showroom.
+              Deel het advertentiebudget door het aantal aanvragen en je weet wat een aanvraag kost. Deel dat
+              bedrag door het aandeel aanvragen dat een afspraak wordt, en je weet wat een bezoeker in de
+              showroom kost. Dat getal vergelijk je met de marge op een gemiddelde badkamer.
+            </p>
+            <p>
+              Neem aanvragen uit advertenties direct op in je opvolging. Een aanvraag die dagen blijft liggen
+              heeft de advertentiekosten al gekost zonder dat er een afspraak uit komt.
+            </p>
+            <h2
+              style={{
+                color: "oklch(95% 0 0)",
+                fontSize: "clamp(1.3rem, 3vw, 1.75rem)",
+                fontWeight: 700,
+                marginTop: "52px",
+                marginBottom: "20px",
+                lineHeight: "1.3",
+              }}
+            >
+              Wanneer past Google Ads beter dan SEO?
+            </h2>
+            <p>
+              Google Ads levert binnen enkele dagen bezoekers op, maar die stoppen zodra je het budget stopt.
+              SEO duurt langer om op te bouwen, maar blijft werken zolang je pagina&apos;s goed zijn. Voor een
+              badkamerbedrijf dat nog nergens zichtbaar is, is adverteren de snelste manier om aanvragen te
+              krijgen. Voor blijvende zichtbaarheid is lokale vindbaarheid de aanvulling, zie ons artikel over{" "}
+              <Link href="/badkamerbedrijf-seo" style={{ color: "oklch(65% 0.09 75)" }}>
+                SEO voor badkamerbedrijven
+              </Link>
+              , en de aanpak voor{" "}
+              <Link href="/blog/badkamer-leads-genereren" style={{ color: "oklch(65% 0.09 75)" }}>
+                badkamer leads genereren
+              </Link>
+              . Een tweede kanaal naast Google is{" "}
+              <Link href="/meta-ads-badkamerbedrijven" style={{ color: "oklch(65% 0.09 75)" }}>
+                Meta Ads voor badkamerbedrijven
+              </Link>
+              .
+            </p>
+            <h2
+              style={{
+                color: "oklch(95% 0 0)",
+                fontSize: "clamp(1.3rem, 3vw, 1.75rem)",
+                fontWeight: 700,
+                marginTop: "52px",
+                marginBottom: "20px",
+                lineHeight: "1.3",
+              }}
+            >
+              Veelgestelde vragen over Google Ads voor badkamerbedrijven
+            </h2>
+            <h3 style={{ color: "oklch(92% 0 0)", fontSize: "1.1rem", fontWeight: 600, marginTop: "28px", marginBottom: "8px" }}>
+              Wat kost Google Ads voor een badkamerbedrijf per maand?
+            </h3>
+            <p>
+              Voor lokale vaklieden ligt de prijs per klik volgens Blurr Marketing (gecontroleerd 13 augustus 2026) tussen 2,50 en 6,00 euro. Het beheer kost bij een bureau 300 tot 1.200 euro per maand, of 10 tot 20 procent van het advertentiebudget boven 2.000 euro. Het klikbudget komt daar bovenop.
+            </p>
+            <h3 style={{ color: "oklch(92% 0 0)", fontSize: "1.1rem", fontWeight: 600, marginTop: "28px", marginBottom: "8px" }}>
+              Hoeveel advertentiebudget heeft een badkamerbedrijf nodig om te starten?
+            </h3>
+            <p>
+              Reken op een klikbudget waarmee je in de eerste weken genoeg bezoekers krijgt om te leren welke zoekopdrachten aanvragen opleveren. Bij 2,50 tot 6,00 euro per klik (Blurr Marketing, 13 augustus 2026) is elke 100 euro goed voor ruwweg 17 tot 40 klikken. Begin smal, in je eigen regio.
+            </p>
+            <h3 style={{ color: "oklch(92% 0 0)", fontSize: "1.1rem", fontWeight: 600, marginTop: "28px", marginBottom: "8px" }}>
+              Welke zoekwoorden werken het best voor een badkamerbedrijf?
+            </h3>
+            <p>
+              Zoekwoorden met koopintentie en een plaatsnaam werken het best, zoals badkamer laten renoveren in je eigen stad of badkamer installateur offerte. Zoekopdrachten als badkamer zelf renoveren of badkamer tegels zelf leggen sluit je uit met negatieve zoekwoorden, want die bezoekers zoeken geen aannemer.
+            </p>
+            <h3 style={{ color: "oklch(92% 0 0)", fontSize: "1.1rem", fontWeight: 600, marginTop: "28px", marginBottom: "8px" }}>
+              Moet ik mijn badkamerbedrijf adverteren op de homepage of op een aparte pagina?
+            </h3>
+            <p>
+              Stuur het verkeer naar een aparte landingspagina per dienst, met een duidelijk contactformulier en telefoonnummer. Iemand die zoekt op badkamer renoveren offerte wil direct kunnen aanvragen, niet eerst je hele site doorzoeken. Een homepage moet te veel bezoekerstypen tegelijk bedienen.
+            </p>
+            <h3 style={{ color: "oklch(92% 0 0)", fontSize: "1.1rem", fontWeight: 600, marginTop: "28px", marginBottom: "8px" }}>
+              Hoe weet ik of mijn Google Ads-campagne aanvragen oplevert?
+            </h3>
+            <p>
+              Meet aanvragen als conversie: een verstuurd formulier, een klik op het telefoonnummer of een ingeplande afspraak. Kijk niet alleen naar klikken, maar naar wat een aanvraag kost en hoeveel daarvan een afspraak in de showroom worden. Zonder deze meting stuur je blind.
+            </p>
+            <h3 style={{ color: "oklch(92% 0 0)", fontSize: "1.1rem", fontWeight: 600, marginTop: "28px", marginBottom: "8px" }}>
+              Wanneer is Google Ads beter dan SEO voor een badkamerbedrijf?
+            </h3>
+            <p>
+              Google Ads levert binnen enkele dagen verkeer op, SEO bouwt langzamer op, maar blijft bezoekers opleveren ook als je geen budget uitgeeft. Voor een badkamerbedrijf zonder zichtbaarheid is adverteren de snelste start. Voor blijvende zichtbaarheid is een combinatie met lokale vindbaarheid verstandig.
             </p>
 
             <div
