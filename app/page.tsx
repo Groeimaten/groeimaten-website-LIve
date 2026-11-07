@@ -189,11 +189,12 @@ export default function HomePage() {
         </div>
       </section>
 
+      <LogoStrip />
+
       {/* REVIEWS: hoog op de pagina */}
       <ReviewsMarquee />
 
       <div className="lean">
-      <LogoStrip />
 
       {/* PIJNPUNTEN */}
       <section className="lean-section" id="probleem">
