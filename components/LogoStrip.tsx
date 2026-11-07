@@ -9,8 +9,6 @@ const logos = [
   { src: "/logos/sanisale-slider.png",  alt: "Sanisale",                  noFilter: true },
   { src: "/logos/ter-haar-new.svg",     alt: "Ter Haar",                  noFilter: true },
   { src: "/logos/kort-slider.svg",      alt: "Kort Keukens",              noFilter: true },
-  { src: "/logos/bakker-slider.png",    alt: "Bakker Tegels & Badkamers", noFilter: true },
-  { src: "/logos/via-slider.png",       alt: "VIA Creaties",              noFilter: true },
   { src: "/logos/keukensale-slider.png", alt: "Keukensale",               noFilter: true },
 ]
 
