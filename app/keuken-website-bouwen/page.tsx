@@ -104,7 +104,12 @@ export default function KeukenstudioWebsiteBouwenPage() {
                 <p>
                   Groeimaten bouwt websites voor keukenstudio&apos;s vanuit die klantperspectief. Dat betekent
                   een snel ladende site, een sterk portfolio, duidelijke contactmogelijkheden en pagina&apos;s
-                  die geoptimaliseerd zijn voor de zoektermen die jouw klanten gebruiken.
+                  die geoptimaliseerd zijn voor de zoektermen die jouw klanten gebruiken. Een checklist en onze
+                  eigen laadtijdmeting staan in{" "}
+                  <Link href="/blog/website-laten-maken-keukenbedrijf" style={{ color: "oklch(65% 0.09 75)" }}>
+                    website laten maken als keukenbedrijf
+                  </Link>
+                  .
                 </p>
 
                 <div className="service-features">

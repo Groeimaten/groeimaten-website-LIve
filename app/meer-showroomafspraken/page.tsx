@@ -103,6 +103,11 @@ export default function MeerShowroomafsprakenPage() {
                 </p>
                 <p>
                   Groeimaten lost dit op met een combinatie van gerichte advertenties, kwalificatie voor de afspraak en geautomatiseerde opvolging. Alleen aanvragers die voldoen aan jouw criteria komen in jouw agenda. En die weten ook waarom ze komen.
+                  De basis daarvoor is een website die bezoekers naar een afspraak leidt, zie{" "}
+                  <Link href="/blog/website-laten-maken-keukenbedrijf" style={{ color: "oklch(65% 0.09 75)" }}>
+                    website laten maken als keukenbedrijf
+                  </Link>
+                  .
                 </p>
 
                 <div className="service-features">
