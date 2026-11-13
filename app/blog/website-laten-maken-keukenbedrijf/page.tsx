@@ -145,7 +145,7 @@ export default function BlogWebsiteKeukenbedrijfPage() {
               }}
             >
               <p style={{ margin: 0 }}>
-                <strong style={{ color: "oklch(92% 0 0)" }}>Kort antwoord:</strong> een website voor een keukenbedrijf of keukenwinkel moet vooral showroomafspraken opleveren. Dat lukt met eigen projectfoto&apos;s, een laadtijd onder de 2,5 seconde, een concrete afspraakknop op elke pagina en antwoorden op de vragen die klanten anders in de showroom stellen. Een uitgebreide prijslijst en generieke stockfoto&apos;s kun je overslaan.
+                <strong style={{ color: "oklch(92% 0 0)" }}>Kort antwoord:</strong> een website voor een keukenbedrijf moet showroomafspraken opleveren. Dat lukt met eigen projectfoto&apos;s, een laadtijd onder 2,5 seconde, een afspraakknop op elke pagina en antwoorden op showroomvragen. Onze eigen homepage ging zo van ruim 6 seconden (augustus 2026) naar 1,1 seconde (november 2026).
               </p>
             </div>
             <p>
