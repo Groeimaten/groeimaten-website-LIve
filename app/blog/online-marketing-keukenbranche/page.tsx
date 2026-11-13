@@ -208,7 +208,12 @@ export default function BlogOnlineMarketingKeukenbranchePage() {
               omzet in een concrete aanvraag. Dat betekent duidelijke calls-to-action, een laagdrempelig formulier of
               directe belmogelijkheid, sterke foto&apos;s van afgeronde projecten en bij voorkeur reviews van tevreden
               klanten. Vertrouwen opbouwen gaat bij een keukenaankoop van tienduizenden euro&apos;s vanzelf trager dan
-              bij een impulsaankoop. De website moet dat proces ondersteunen.
+              bij een impulsaankoop. De website moet dat proces ondersteunen. Wat er concreet op moet staan, lees je
+              in{" "}
+              <Link href="/blog/website-laten-maken-keukenbedrijf" style={{ color: "oklch(65% 0.09 75)" }}>
+                website laten maken als keukenbedrijf
+              </Link>
+              .
             </p>
             <p>
               Online marketing voor de keukenbranche is geen trucje. Het is een systeem van kanalen die samenwerken om
