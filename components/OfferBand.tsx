@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { useCleanPathname } from "@/lib/use-clean-pathname"
+import { TAART_BEDRIJVEN } from "@/lib/taartaanval"
 
 // Pagina's die de belofte al in hun eigen hero of CTA hebben.
 const HIDDEN_PATHS = [
@@ -15,6 +16,8 @@ const HIDDEN_PATHS = [
   "/over-ons",
   "/sitemap-overzicht",
   "/kigo",
+  // Taartaanval-pagina's: niet pushen naar een afspraak
+  ...TAART_BEDRIJVEN.map((b) => `/${b.slug}`),
 ]
 
 export default function OfferBand() {
