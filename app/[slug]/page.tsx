@@ -1,7 +1,5 @@
 import type { Metadata } from "next"
-import Image from "next/image"
 import { notFound } from "next/navigation"
-import BookingWidget from "@/components/BookingWidget"
 import TaartVideo from "@/components/TaartVideo"
 import { TAART_BEDRIJVEN, getTaartBedrijf } from "@/lib/taartaanval"
 
@@ -42,46 +40,6 @@ export default async function TaartPage({ params }: { params: Promise<{ slug: st
             Thomas heeft een korte video opgenomen, speciaal voor {b.naam}.
           </p>
           <TaartVideo slug={b.slug} naam={b.naam} video={b.video} />
-        </div>
-      </section>
-
-      <section className="booking-section taart-booking" id="plannen">
-        <div className="container">
-          <div className="booking-inner">
-            <div className="booking-left">
-              <span className="section-label">Volgende stap</span>
-              <h2 className="booking-title">
-                Plan een gesprek<br /><em>met Thomas</em>
-              </h2>
-              <p className="booking-sub">
-                30 minuten, geen verplichtingen. We kijken samen hoeveel extra showroomafspraken er voor {b.naam} in {b.plaats} en omgeving te halen zijn.
-              </p>
-              <ul className="booking-checklist">
-                <li>15 showroomafspraken in 90 dagen, gegarandeerd</li>
-                <li>Concreet advies voor jullie regio</li>
-                <li>Wij werken uitsluitend voor keuken &amp; sanitair</li>
-              </ul>
-              <div className="booking-thomas">
-                <div className="booking-thomas__photo">
-                  <Image
-                    src="/images/thomas-portrait.webp"
-                    alt="Thomas Ghobadi, Groeimaten"
-                    fill
-                    style={{ objectFit: "cover", objectPosition: "center 20%" }}
-                    sizes="200px"
-                    quality={90}
-                  />
-                </div>
-                <div className="booking-thomas__info">
-                  <strong>Thomas Ghobadi</strong>
-                  <span>CEO · Groeimaten</span>
-                </div>
-              </div>
-            </div>
-            <div className="booking-right">
-              <BookingWidget />
-            </div>
-          </div>
         </div>
       </section>
     </>

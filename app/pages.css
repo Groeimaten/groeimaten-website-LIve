@@ -4695,7 +4695,7 @@ html[data-theme="light"] .kigo-card { box-shadow: 0 20px 56px oklch(10% 0.006 60
    TAARTAANVAL (groeimaten.com/<bedrijf>)
    ============================================ */
 .taart-hero {
-    padding: 150px 0 40px;
+    padding: 150px 0 110px;
 }
 
 .taart-hero__inner {
