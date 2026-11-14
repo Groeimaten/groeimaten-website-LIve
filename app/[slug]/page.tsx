@@ -38,7 +38,7 @@ export default async function TaartPage({ params }: { params: Promise<{ slug: st
           </h1>
           <p className="taart-haakje">{b.haakje}</p>
           <p className="taart-sub">
-            Thomas heeft een korte video opgenomen, speciaal voor {b.naam}.
+            Thomas heeft een korte video opgenomen, speciaal voor jullie.
           </p>
           <TaartVideo slug={b.slug} naam={b.naam} video={b.video} />
         </div>
