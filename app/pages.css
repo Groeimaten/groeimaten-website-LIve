@@ -4137,8 +4137,18 @@ html[data-theme="light"] .photo-placeholder__size {
     animation: reviewsScroll 48s linear infinite;
 }
 
-.reviews-marquee__track:hover {
-    animation-play-state: paused;
+@media (hover: hover) {
+    .reviews-marquee__track:hover { animation-play-state: paused; }
+}
+
+.reviews-marquee__track[data-held] { animation-play-state: paused; }
+
+@media (hover: none) {
+    .reviews-marquee__track {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
 }
 
 @keyframes reviewsScroll {
@@ -4768,4 +4778,25 @@ html[data-theme="light"] .kigo-card { box-shadow: 0 20px 56px oklch(10% 0.006 60
 .taart-hero .section-label {
     white-space: normal;
     max-width: 100%;
+}
+
+/* Mobiel: kleinere kaarten, zodat er meer in beeld past */
+@media (max-width: 640px) {
+    .reviews-marquee__track { gap: 12px; }
+    .reviews-marquee__track-wrap::before,
+    .reviews-marquee__track-wrap::after { width: 32px; }
+    .review-card { width: 250px; padding: 20px; }
+    .review-card__quote { top: 14px; right: 14px; width: 20px; height: 20px; }
+    .review-card__stars { margin-bottom: 12px; }
+    .review-card__text {
+        font-size: 0.78rem;
+        line-height: 1.6;
+        margin-bottom: 16px;
+        display: -webkit-box;
+        -webkit-line-clamp: 9;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .review-card__author { padding-top: 12px; gap: 10px; }
+    .review-card__avatar { width: 34px; height: 34px; }
 }

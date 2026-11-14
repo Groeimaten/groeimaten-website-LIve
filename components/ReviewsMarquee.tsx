@@ -1,4 +1,5 @@
 import ScrollReveal from "@/components/ScrollReveal"
+import ReviewsTrack from "@/components/ReviewsTrack"
 import { getGoogleReviews, getGoogleReviewStats } from "@/lib/google-reviews"
 
 // Vangnet als het dashboard niet bereikbaar is; normaal komen de reviews live uit Google.
@@ -82,10 +83,10 @@ export default async function ReviewsMarquee() {
         </a>
       </ScrollReveal>
       <div className="reviews-marquee__track-wrap">
-        <div className="reviews-marquee__track">
+        <ReviewsTrack>
           {reviews.map((r, i) => <ReviewCard key={`a-${i}`} r={r} prefix="a" />)}
           {reviews.map((r, i) => <ReviewCard key={`b-${i}`} r={r} prefix="b" />)}
-        </div>
+        </ReviewsTrack>
       </div>
       <div className="reviews-marquee__cta-wrap">
         <a
