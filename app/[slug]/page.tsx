@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
+import ReviewsMarquee from "@/components/ReviewsMarquee"
 import TaartVideo from "@/components/TaartVideo"
 import { TAART_BEDRIJVEN, getTaartBedrijf } from "@/lib/taartaanval"
 
@@ -42,6 +43,8 @@ export default async function TaartPage({ params }: { params: Promise<{ slug: st
           <TaartVideo slug={b.slug} naam={b.naam} video={b.video} />
         </div>
       </section>
+
+      <ReviewsMarquee />
     </>
   )
 }
