@@ -34,7 +34,7 @@ export default async function TaartPage({ params }: { params: Promise<{ slug: st
         <div className="container taart-hero__inner">
           <span className="section-label">Voor het team van {b.naam}</span>
           <h1 className="taart-title">
-            Smaakte de taart, <em>{b.kort}</em>?
+            Smaakte de taart, <em>{b.naam}, {b.plaats}</em>?
           </h1>
           <p className="taart-haakje">{b.haakje}</p>
           <p className="taart-sub">
