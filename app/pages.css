@@ -4709,7 +4709,7 @@ html[data-theme="light"] .kigo-card { box-shadow: 0 20px 56px oklch(10% 0.006 60
 }
 
 .taart-hero__inner {
-    max-width: 900px;
+    max-width: 1000px;
 }
 
 .taart-title {
@@ -4843,4 +4843,50 @@ html[data-theme="light"] .kigo-card { box-shadow: 0 20px 56px oklch(10% 0.006 60
     }
     .review-card__author { padding-top: 12px; gap: 10px; }
     .review-card__avatar { width: 34px; height: 34px; }
+}
+
+/* Taartaanval: video + Google-reviewkaart naast elkaar */
+.taart-hero__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    align-items: center;
+}
+
+@media (min-width: 820px) {
+    .taart-hero__grid { grid-template-columns: 380px minmax(0, 420px); gap: 56px; }
+}
+
+.taart-google {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 32px;
+    border: 1px solid rgba(184,154,90,0.25);
+    border-radius: 12px;
+    background: rgba(255,255,255,0.03);
+    text-decoration: none;
+    color: var(--warm-white);
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.taart-google:hover { border-color: var(--gold); background: rgba(255,255,255,0.05); }
+
+.taart-google__head { display: flex; align-items: center; gap: 12px; }
+.taart-google__label { font-size: 1.05rem; font-weight: 600; }
+
+.taart-google__score { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.taart-google__num { font-size: 3rem; font-weight: 800; line-height: 1; letter-spacing: -0.02em; }
+.taart-google__stars { display: inline-flex; gap: 2px; }
+
+.taart-google__count { font-size: 0.95rem; color: rgba(255,255,255,0.65); margin: 0; }
+
+.taart-google__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--gold);
 }

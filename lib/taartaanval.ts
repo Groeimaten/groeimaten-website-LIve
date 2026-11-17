@@ -133,3 +133,8 @@ export const THOMAS_TEL = { href: "tel:+31629193444", label: "06 29 19 34 44" }
 /** Video per zaak: public/taart/<slug>.mp4 met poster public/taart/<slug>.jpg */
 export const taartVideo = (b: TaartBedrijf) => b.video ?? `/taart/${b.slug}.mp4`
 export const taartPoster = (b: TaartBedrijf) => `/taart/${b.slug}.jpg`
+
+/** True als de plaatsnaam al in de bedrijfsnaam staat (bv. Kitchenstudio Den Haag, Den Haag) */
+export const plaatsInNaam = (b: TaartBedrijf) => b.naam.toLowerCase().includes(b.plaats.toLowerCase())
+/** "Bouwton, Katwijk", maar "Kitchenstudio Den Haag" (nooit de plaats dubbel) */
+export const naamMetPlaats = (b: TaartBedrijf) => (plaatsInNaam(b) ? b.naam : `${b.naam}, ${b.plaats}`)

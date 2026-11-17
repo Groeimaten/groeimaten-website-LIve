@@ -3,8 +3,9 @@ import Image from "next/image"
 import { notFound } from "next/navigation"
 import BookingWidget from "@/components/BookingWidget"
 import ReviewsMarquee from "@/components/ReviewsMarquee"
+import TaartGoogleCard from "@/components/TaartGoogleCard"
 import TaartVideo from "@/components/TaartVideo"
-import { TAART_BEDRIJVEN, THOMAS_TEL, getTaartBedrijf, taartPoster, taartVideo } from "@/lib/taartaanval"
+import { TAART_BEDRIJVEN, THOMAS_TEL, getTaartBedrijf, naamMetPlaats, plaatsInNaam, taartPoster, taartVideo } from "@/lib/taartaanval"
 
 // Persoonlijke taartaanval-pagina's (groeimaten.com/<slug>). Alleen de slugs uit
 // lib/taartaanval.ts bestaan; al het andere geeft een 404. Niet indexeren.
@@ -36,9 +37,12 @@ export default async function TaartPage({ params }: { params: Promise<{ slug: st
         <div className="container taart-hero__inner">
           <span className="section-label">Voor het team van {b.naam}</span>
           <h1 className="taart-title">
-            Smaakte de taart, <em>{b.naam}, {b.plaats}</em>?
+            Smaakte de taart, <em>{naamMetPlaats(b)}</em>?
           </h1>
-          <TaartVideo slug={b.slug} naam={b.naam} video={taartVideo(b)} poster={taartPoster(b)} tel={THOMAS_TEL} />
+          <div className="taart-hero__grid">
+            <TaartVideo slug={b.slug} naam={b.naam} video={taartVideo(b)} poster={taartPoster(b)} tel={THOMAS_TEL} />
+            <TaartGoogleCard />
+          </div>
         </div>
       </section>
 
@@ -51,7 +55,7 @@ export default async function TaartPage({ params }: { params: Promise<{ slug: st
                 Plan een gesprek<br /><em>met Thomas</em>
               </h2>
               <p className="booking-sub">
-                30 minuten, geen verplichtingen. We kijken samen hoeveel extra showroomafspraken er voor {b.naam} in {b.plaats} en omgeving te halen zijn.
+                30 minuten, geen verplichtingen. We kijken samen hoeveel extra showroomafspraken er voor {b.naam}{plaatsInNaam(b) ? "" : ` in ${b.plaats} en omgeving`} te halen zijn.
               </p>
               <ul className="booking-checklist">
                 <li>15 showroomafspraken in 90 dagen, gegarandeerd</li>
