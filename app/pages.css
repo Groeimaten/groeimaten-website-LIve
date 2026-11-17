@@ -4742,33 +4742,77 @@ html[data-theme="light"] .kigo-card { box-shadow: 0 20px 56px oklch(10% 0.006 60
 .taart-video {
     position: relative;
     width: 100%;
-    aspect-ratio: 16 / 9;
+    max-width: 380px;
+    aspect-ratio: 478 / 850;
+    max-height: 78vh;
     border-radius: 12px;
     overflow: hidden;
     background: #000;
     border: 1px solid rgba(184,154,90,0.25);
+    margin-top: 8px;
 }
 
-.taart-video video,
-.taart-video iframe {
+.taart-video video {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
-    border: 0;
     object-fit: contain;
 }
 
-.taart-video__overlay {
+.taart-video__einde {
     position: absolute;
     inset: 0;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
     padding: 24px;
-    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.1) 60%);
-    color: var(--warm-white);
-    font-size: 0.95rem;
+    background: rgba(0,0,0,0.72);
 }
+
+.taart-video__bel {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 280px;
+    white-space: nowrap;
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.taart-video__opnieuw {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 280px;
+    padding: 14px 20px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.35);
+    color: var(--warm-white);
+    font: inherit;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.taart-video__opnieuw:hover { border-color: var(--gold); color: var(--gold); }
+
+.taart-tel {
+    margin-top: 6px;
+    font-size: 0.85rem;
+    color: var(--gold);
+    text-decoration: none;
+}
+
+.taart-tel:hover { text-decoration: underline; }
 
 .taart-booking {
     padding-top: 60px;

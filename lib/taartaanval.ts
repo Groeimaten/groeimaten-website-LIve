@@ -126,3 +126,10 @@ export const TAART_BEDRIJVEN: TaartBedrijf[] = [
 ]
 
 export const getTaartBedrijf = (slug: string) => TAART_BEDRIJVEN.find((b) => b.slug === slug)
+
+/** Nummer waarop Thomas bereikbaar is (in de video: "bel me op het nummer hieronder") */
+export const THOMAS_TEL = { href: "tel:+31629193444", label: "06 29 19 34 44" }
+
+/** Video per zaak: public/taart/<slug>.mp4 met poster public/taart/<slug>.jpg */
+export const taartVideo = (b: TaartBedrijf) => b.video ?? `/taart/${b.slug}.mp4`
+export const taartPoster = (b: TaartBedrijf) => `/taart/${b.slug}.jpg`
