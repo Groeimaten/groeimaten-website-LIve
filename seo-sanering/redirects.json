@@ -54,5 +54,9 @@
   {
     "source": "/prijzen",
     "destination": "/diensten"
+  },
+  {
+    "source": "/ervaringen",
+    "destination": "/reviews"
   }
 ]
