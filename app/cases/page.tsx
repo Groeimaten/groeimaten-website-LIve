@@ -3,6 +3,7 @@ import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
 import BeforeAfterSlider from "@/components/BeforeAfterSlider"
 import ReviewsMarquee from "@/components/ReviewsMarquee"
+import { GoogleScore } from "@/components/GoogleScore"
 
 export const metadata: Metadata = {
   title: "Cases: Resultaten voor Keuken, Badkamer en Bouw",
@@ -168,7 +169,7 @@ export default function CasesPage() {
               </div>
               <div className="cases-stats__divider" aria-hidden="true"></div>
               <div className="cases-stats__item">
-                <span className="cases-stats__number">5,0 ★</span>
+                <span className="cases-stats__number"><GoogleScore /> ★</span>
                 <span className="cases-stats__label">Google review score</span>
               </div>
             </div>

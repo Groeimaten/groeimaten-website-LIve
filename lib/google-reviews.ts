@@ -76,3 +76,12 @@ export async function getGoogleReviewStats(): Promise<GoogleReviewStats | null> 
   if (!(rating >= 1 && rating <= 5) || !(count >= 1)) return null
   return { rating: Math.round(rating * 10) / 10, count }
 }
+
+/** Laatst bekende stand; alleen gebruikt als Supabase even niet bereikbaar is. */
+export const FALLBACK_REVIEW_STATS: GoogleReviewStats = { rating: 5, count: 10 }
+
+/** Eén bron voor score + aantal op de hele site. Valt nooit terug op null. */
+export async function getReviewSummary(): Promise<GoogleReviewStats & { score: string }> {
+  const stats = (await getGoogleReviewStats()) ?? FALLBACK_REVIEW_STATS
+  return { ...stats, score: stats.rating.toFixed(1).replace(".", ",") }
+}

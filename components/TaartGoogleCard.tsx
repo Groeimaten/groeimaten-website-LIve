@@ -1,12 +1,9 @@
-import { getGoogleReviewStats } from "@/lib/google-reviews"
+import { getReviewSummary } from "@/lib/google-reviews"
 
 const GOOGLE_URL = "https://www.google.com/maps?cid=390254304839502817"
 
 export default async function TaartGoogleCard() {
-  const stats = await getGoogleReviewStats()
-  const rating = stats?.rating ?? 5
-  const score = rating.toFixed(1).replace(".", ",")
-  const count = stats?.count ?? 8
+  const { rating, score, count } = await getReviewSummary()
 
   return (
     <a href={GOOGLE_URL} target="_blank" rel="noopener noreferrer" className="taart-google" aria-label={`Bekijk onze ${count} Google-reviews, ${score} sterren`}>

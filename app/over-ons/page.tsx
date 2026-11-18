@@ -3,6 +3,7 @@ import Link from "next/link"
 import ScrollReveal from "@/components/ScrollReveal"
 import ReviewsMarquee from "@/components/ReviewsMarquee"
 import { KIGO_LIVE } from "@/lib/features"
+import { GoogleScore } from "@/components/GoogleScore"
 
 export const metadata: Metadata = {
   title: "Over Groeimaten | Marketing bureau keuken, badkamer en bouw",
@@ -141,7 +142,7 @@ export default function OverOnsPage() {
                   </div>
                   <div className="about-num">
                     <div className="about-num__row">
-                      <span className="about-num__val">5,0</span>
+                      <span className="about-num__val"><GoogleScore /></span>
                       <span className="about-num__plus"> ★</span>
                     </div>
                     <span className="about-num__label">Google score</span>

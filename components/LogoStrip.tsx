@@ -8,7 +8,6 @@ const logos = [
   { src: "/logos/grando-slider.svg",    alt: "Grando",                    noFilter: true },
   { src: "/logos/sanisale-slider.png",  alt: "Sanisale",                  noFilter: true },
   { src: "/logos/ter-haar-new.svg",     alt: "Ter Haar",                  noFilter: true },
-  { src: "/logos/kort-slider.svg",      alt: "Kort Keukens",              noFilter: true },
   { src: "/logos/keukensale-slider.png", alt: "Keukensale",               noFilter: true },
 ]
 
