@@ -85,3 +85,19 @@ export async function getReviewSummary(): Promise<GoogleReviewStats & { score: s
   const stats = (await getGoogleReviewStats()) ?? FALLBACK_REVIEW_STATS
   return { ...stats, score: stats.rating.toFixed(1).replace(".", ",") }
 }
+
+/** Alle reviews van minimaal minRating sterren met tekst, volledig (voor /reviews). One-liners onder MIN_TEXT vallen weg, net als in de slider. */
+export async function getAllGoogleReviews(minRating = 4): Promise<GoogleReview[]> {
+  const rows = await rpc<
+    { reviewer_name: string | null; reviewer_photo_url: string | null; star_rating: number; comment: string; create_time: string }[]
+  >("get_public_reviews", { p_min_rating: minRating, p_limit: 200 })
+  return (rows ?? [])
+    .filter((r) => (r.comment?.trim().length ?? 0) >= MIN_TEXT)
+    .map((r) => ({
+      name: r.reviewer_name?.trim() || "Google-gebruiker",
+      photoUrl: r.reviewer_photo_url,
+      rating: r.star_rating,
+      text: r.comment.trim(),
+      date: r.create_time,
+    }))
+}

@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...(KIGO_LIVE ? [{ url: `${BASE_URL}/kigo`, changeFrequency: 'monthly' as const, priority: 0.8 }] : []),
     { url: `${BASE_URL}/cases`, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/over-ons`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/reviews`, changeFrequency: 'weekly', priority: 0.7 },
     { url: `${BASE_URL}/contact`, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/plannen`, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/afspraak`, changeFrequency: 'monthly', priority: 0.9 },
