@@ -11,6 +11,8 @@ const logos = [
   { src: "/logos/keukensale-slider.png", alt: "Keukensale",               noFilter: true },
   { src: "/logos/happy-slider.svg",     alt: "Happy Badkamers",           noFilter: true },
   { src: "/logos/carpentier-mooren-slider.png", alt: "CarpentierMooren", noFilter: true },
+  { src: "/logos/keukenstudio-fo-slider.png", alt: "Keukenstudio FO", noFilter: true },
+  { src: "/logos/ftm-slider.png", alt: "FTM Klusbedrijf", noFilter: true },
 ]
 
 function buildProgressiveBlur(container: HTMLElement, direction: "left" | "right") {
