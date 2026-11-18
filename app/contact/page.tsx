@@ -4,6 +4,7 @@ import ScrollReveal from "@/components/ScrollReveal"
 import ReviewsMarquee from "@/components/ReviewsMarquee"
 import FaqAccordion from "@/components/FaqAccordion"
 import ContactForm from "@/components/ContactForm"
+import { GoogleScore, GoogleReviewCount } from "@/components/GoogleScore"
 
 export const metadata: Metadata = {
   title: "Contact: gratis gesprek inplannen",
@@ -79,7 +80,7 @@ export default function ContactPage() {
                   <dt>Google</dt>
                   <dd>
                     <a href="https://www.google.com/maps?cid=390254304839502817" target="_blank" rel="noopener noreferrer">
-                      <span className="lean-star">★★★★★</span> 5,0 · 6 reviews
+                      <span className="lean-star">★★★★★</span> <GoogleScore /> · <GoogleReviewCount /> reviews
                     </a>
                   </dd>
                 </div>

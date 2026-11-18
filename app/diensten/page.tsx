@@ -5,6 +5,7 @@ import ScrollReveal from "@/components/ScrollReveal"
 import ReviewsMarquee from "@/components/ReviewsMarquee"
 import KigoTeaser from "@/components/KigoTeaser"
 import { KIGO_LIVE } from "@/lib/features"
+import { GoogleScore } from "@/components/GoogleScore"
 
 export const metadata: Metadata = {
   title: "Marketingdiensten voor keuken, badkamer en bouw",
@@ -199,7 +200,7 @@ export default function DienstenPage() {
                     <div className="bar" style={{ width: "100%" }}></div>
                   </div>
                   <div className="service-visual-card__stat">
-                    <span className="service-visual-card__number">5,0 ★</span>
+                    <span className="service-visual-card__number"><GoogleScore /> ★</span>
                     <span className="service-visual-card__label">Google review score</span>
                   </div>
                   <div className="service-visual-card__bar">

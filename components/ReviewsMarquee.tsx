@@ -1,6 +1,6 @@
 import ScrollReveal from "@/components/ScrollReveal"
 import ReviewsTrack from "@/components/ReviewsTrack"
-import { getGoogleReviews, getGoogleReviewStats } from "@/lib/google-reviews"
+import { getGoogleReviews, getReviewSummary } from "@/lib/google-reviews"
 
 // Vangnet als het dashboard niet bereikbaar is; normaal komen de reviews live uit Google.
 const fallbackReviews: Review[] = [
@@ -55,12 +55,10 @@ function ReviewCard({ r, prefix }: { r: Review, prefix: string }) {
 }
 
 export default async function ReviewsMarquee({ showStats = true }: { showStats?: boolean } = {}) {
-  const [live, stats] = await Promise.all([getGoogleReviews(12), getGoogleReviewStats()])
+  const [live, { score, count }] = await Promise.all([getGoogleReviews(12), getReviewSummary()])
   const reviews: Review[] = live.length
     ? live.map((r) => ({ name: r.name, meta: timeAgo(r.date), img: r.photoUrl, text: `"${r.text}"` }))
     : fallbackReviews
-  const score = (stats?.rating ?? 5).toFixed(1).replace(".", ",")
-  const count = stats?.count ?? 8
 
   return (
     <section className="reviews-marquee" id="testimonials">

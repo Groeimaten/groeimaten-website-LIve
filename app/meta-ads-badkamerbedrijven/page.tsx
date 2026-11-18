@@ -4,6 +4,7 @@ import ScrollReveal from "@/components/ScrollReveal"
 import ReviewsMarquee from "@/components/ReviewsMarquee"
 import FaqAccordion from "@/components/FaqAccordion"
 import { salesFaq } from "@/lib/faq"
+import { GoogleScore } from "@/components/GoogleScore"
 
 export const metadata: Metadata = {
   title: "Meta Ads voor Badkamerbedrijven",
@@ -171,7 +172,7 @@ export default function MetaAdsBadkamerbedrijvenPage() {
                     <div className="bar" style={{ width: "88%" }} />
                   </div>
                   <div className="service-visual-card__stat">
-                    <span className="service-visual-card__number">5,0 ★</span>
+                    <span className="service-visual-card__number"><GoogleScore /> ★</span>
                     <span className="service-visual-card__label">Google review score</span>
                   </div>
                   <div className="service-visual-card__bar">

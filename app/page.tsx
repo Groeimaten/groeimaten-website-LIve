@@ -8,6 +8,7 @@ import FaqAccordion from "@/components/FaqAccordion"
 import KigoTeaser from "@/components/KigoTeaser"
 import { KIGO_LIVE } from "@/lib/features"
 import { salesFaq } from "@/lib/faq"
+import { GoogleScore } from "@/components/GoogleScore"
 
 const OFFER_DESCRIPTION =
   "15 echte showroomafspraken in 90 dagen, gegarandeerd. Halen we het niet, dan werken we gratis door. Meta Ads en Google Ads voor keuken- en badkamerbedrijven."
@@ -154,7 +155,7 @@ export default function HomePage() {
             </div>
             <div className="hero__proof hero-anim hero-anim--4">
               <div className="hero__proof-item">
-                <span className="hero__proof-number">5,0 <span style={{ color: "#c9a24c" }}>★</span></span>
+                <span className="hero__proof-number"><GoogleScore /> <span style={{ color: "#c9a24c" }}>★</span></span>
                 <span className="hero__proof-label">Google beoordeling</span>
               </div>
               <div className="hero__proof-divider" aria-hidden="true" />
