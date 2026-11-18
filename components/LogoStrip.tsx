@@ -10,6 +10,7 @@ const logos = [
   { src: "/logos/ter-haar-new.svg",     alt: "Ter Haar",                  noFilter: true },
   { src: "/logos/keukensale-slider.png", alt: "Keukensale",               noFilter: true },
   { src: "/logos/happy-slider.svg",     alt: "Happy Badkamers",           noFilter: true },
+  { src: "/logos/carpentier-mooren-slider.png", alt: "CarpentierMooren", noFilter: true },
 ]
 
 function buildProgressiveBlur(container: HTMLElement, direction: "left" | "right") {
