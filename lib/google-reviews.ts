@@ -13,6 +13,8 @@ const CLIENT_ID = "8d61c06d-3c7f-4c92-988d-9f76064f2b0e"
 const REVALIDATE_SECONDS = 60 * 60
 /** Max. tekens per review; houdt de kaarten ongeveer even hoog. */
 const MAX_TEXT = 420
+/** Min. tekens: losse one-liners ("top!", grapjes) horen niet in de slider. */
+const MIN_TEXT = 40
 
 export type GoogleReview = {
   name: string
@@ -48,8 +50,8 @@ async function rpc<T>(fn: string, args: Record<string, unknown>): Promise<T | nu
 export async function getGoogleReviews(limit = 12, minRating = 4): Promise<GoogleReview[]> {
   const rows = await rpc<
     { reviewer_name: string | null; reviewer_photo_url: string | null; star_rating: number; comment: string; create_time: string }[]
-  >("get_public_reviews", { p_min_rating: minRating, p_limit: limit })
-  return (rows ?? []).map((r) => {
+  >("get_public_reviews", { p_min_rating: minRating, p_limit: limit + 15 })
+  return (rows ?? []).filter((r) => r.comment.trim().length >= MIN_TEXT).slice(0, limit).map((r) => {
     const text = r.comment.trim()
     return {
       name: r.reviewer_name?.trim() || "Google-gebruiker",
