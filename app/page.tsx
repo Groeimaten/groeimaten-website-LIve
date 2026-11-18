@@ -319,7 +319,7 @@ export default function HomePage() {
       <section className="lean-cta" id="cta">
         <div className="container lean-cta__inner">
           <h2>Klaar voor 15 extra showroomafspraken?</h2>
-          <p>Plan een gratis gesprek van 30 minuten. We vertellen je eerlijk of het voor jouw bedrijf haalbaar is.</p>
+          <p>Plan een gratis gesprek van een uur. We vertellen je eerlijk of het voor jouw bedrijf haalbaar is.</p>
           <Link href="/afspraak" className="btn lean-btn btn--xl">
             Plan een gratis gesprek <ArrowRight />
           </Link>

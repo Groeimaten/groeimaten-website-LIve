@@ -4,7 +4,8 @@ const GOOGLE_URL = "https://www.google.com/maps?cid=390254304839502817"
 
 export default async function TaartGoogleCard() {
   const stats = await getGoogleReviewStats()
-  const score = (stats?.rating ?? 5).toFixed(1).replace(".", ",")
+  const rating = stats?.rating ?? 5
+  const score = rating.toFixed(1).replace(".", ",")
   const count = stats?.count ?? 8
 
   return (
@@ -21,11 +22,20 @@ export default async function TaartGoogleCard() {
       <div className="taart-google__score">
         <span className="taart-google__num">{score}</span>
         <span className="taart-google__stars" aria-hidden="true">
-          {[...Array(5)].map((_, i) => (
-            <svg key={i} viewBox="0 0 24 24" width="24" height="24">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#FBBC05" />
-            </svg>
-          ))}
+          {[...Array(5)].map((_, i) => {
+            const fill = Math.max(0, Math.min(1, rating - i))
+            return (
+              <svg key={i} viewBox="0 0 24 24" width="24" height="24">
+                <defs>
+                  <linearGradient id={`taart-ster-${i}`}>
+                    <stop offset={fill} stopColor="#FBBC05" />
+                    <stop offset={fill} stopColor="rgba(255,255,255,0.18)" />
+                  </linearGradient>
+                </defs>
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill={`url(#taart-ster-${i})`} />
+              </svg>
+            )
+          })}
         </span>
       </div>
       <p className="taart-google__count">Op basis van {count} reviews van klanten</p>

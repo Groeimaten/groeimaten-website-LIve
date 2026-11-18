@@ -4890,3 +4890,22 @@ html[data-theme="light"] .kigo-card { box-shadow: 0 20px 56px oklch(10% 0.006 60
     font-weight: 600;
     color: var(--gold);
 }
+
+/* Taartaanval: rustiger koppen (sans, gouden accent zonder cursief) */
+.taart-page :is(.taart-title, .booking-title, .reviews-marquee__title) {
+    font-family: var(--font-sans);
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+}
+
+.taart-page :is(.taart-title, .booking-title, .reviews-marquee__title) em {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 800;
+    color: var(--gold);
+}
+
+/* Taartaanval: alleen logo, gecentreerd */
+.nav--minimal { position: absolute; background: transparent; }
+.nav__inner--center { justify-content: center; }

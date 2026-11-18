@@ -5,7 +5,7 @@ import BookingWidget from "@/components/BookingWidget"
 
 export const metadata: Metadata = {
   title: "Afspraak inplannen",
-  description: "Plan een gratis gesprek. 15 showroomafspraken in 90 dagen, gegarandeerd. 30 minuten, geen verplichtingen.",
+  description: "Plan een gratis gesprek. 15 showroomafspraken in 90 dagen, gegarandeerd. Een uur, geen verplichtingen.",
   alternates: { canonical: "/afspraak" },
 }
 
@@ -22,7 +22,7 @@ export default function AfspraakPage() {
               Plan een gratis<br /><em>kennismakings&shy;gesprek</em>
             </h1>
             <p className="booking-sub">
-              30 minuten, geen verplichtingen. We bespreken of 15 showroomafspraken in 90 dagen haalbaar zijn voor jouw bedrijf, en hoe we dat aanpakken.
+              Een uur, geen verplichtingen. We bespreken of 15 showroomafspraken in 90 dagen haalbaar zijn voor jouw bedrijf, en hoe we dat aanpakken.
             </p>
             <ul className="booking-checklist">
               <li>Check of jouw bedrijf in aanmerking komt voor de 90-dagen garantie</li>

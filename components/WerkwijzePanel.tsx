@@ -6,10 +6,10 @@ const steps = [
   {
     num: "1 ·",
     title: "Vrijblijvend gesprek",
-    desc: "Een gesprek van 20–30 minuten. We stellen vragen over jouw visie, situatie en wat goed en niet goed gaat. Als we het volle vertrouwen hebben dat we jou kunnen helpen, maken we een plan. Hebben we dat niet? Dan vertellen we dat eerlijk in dit gesprek.",
+    desc: "Een gesprek van een uur. We stellen vragen over jouw visie, situatie en wat goed en niet goed gaat. Als we het volle vertrouwen hebben dat we jou kunnen helpen, maken we een plan. Hebben we dat niet? Dan vertellen we dat eerlijk in dit gesprek.",
     panelNum: "01",
     panelTitle: "Vrijblijvend gesprek",
-    panelSub: "20–30 min · Eerlijk & zonder verplichtingen",
+    panelSub: "1 uur · Eerlijk & zonder verplichtingen",
     img: "/images/founders-office.webp",
     imgPos: "center center",
   },

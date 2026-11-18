@@ -4,6 +4,10 @@ import { useEffect, useRef, useState } from "react"
 import Link from "next/link"
 import { useCleanPathname } from "@/lib/use-clean-pathname"
 import { KIGO_LIVE } from "@/lib/features"
+import { TAART_BEDRIJVEN } from "@/lib/taartaanval"
+
+// Taartaanval-pagina's: geen menu, alleen het logo (klikbaar naar home), gecentreerd.
+const MINIMAL_NAV_PATHS = TAART_BEDRIJVEN.map((b) => `/${b.slug}`)
 
 const allNavLinks = [
   { href: "/", label: "Home" },
@@ -45,6 +49,18 @@ export default function Nav() {
 
   function closeMenu() {
     setMenuOpen(false)
+  }
+
+  if (MINIMAL_NAV_PATHS.includes(pathname)) {
+    return (
+      <header className="nav nav--minimal">
+        <div className="container nav__inner nav__inner--center">
+          <Link href="/" className="nav__logo" aria-label="Groeimaten homepage">
+            <span className="logo-text">Groeimaten.</span>
+          </Link>
+        </div>
+      </header>
+    )
   }
 
   return (

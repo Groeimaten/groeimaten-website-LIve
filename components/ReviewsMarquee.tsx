@@ -54,7 +54,7 @@ function ReviewCard({ r, prefix }: { r: Review, prefix: string }) {
   )
 }
 
-export default async function ReviewsMarquee() {
+export default async function ReviewsMarquee({ showStats = true }: { showStats?: boolean } = {}) {
   const [live, stats] = await Promise.all([getGoogleReviews(12), getGoogleReviewStats()])
   const reviews: Review[] = live.length
     ? live.map((r) => ({ name: r.name, meta: timeAgo(r.date), img: r.photoUrl, text: `"${r.text}"` }))
@@ -101,12 +101,14 @@ export default async function ReviewsMarquee() {
           </svg>
         </a>
       </div>
-      <ScrollReveal className="container reviews-marquee__stats">
-        <div className="reviews-marquee__stat"><span className="reviews-marquee__stat-num">{score}</span><span className="reviews-marquee__stat-label">Google beoordeling</span></div>
-        <div className="reviews-marquee__stat"><span className="reviews-marquee__stat-num">€279k+</span><span className="reviews-marquee__stat-label">Omzet uit ads, 1 klant</span></div>
-        <div className="reviews-marquee__stat"><span className="reviews-marquee__stat-num">35x</span><span className="reviews-marquee__stat-label">ROAS, 1 klant</span></div>
-        <div className="reviews-marquee__stat"><span className="reviews-marquee__stat-num">100%</span><span className="reviews-marquee__stat-label">Sectorspecialist</span></div>
-      </ScrollReveal>
+      {showStats && (
+        <ScrollReveal className="container reviews-marquee__stats">
+          <div className="reviews-marquee__stat"><span className="reviews-marquee__stat-num">{score}</span><span className="reviews-marquee__stat-label">Google beoordeling</span></div>
+          <div className="reviews-marquee__stat"><span className="reviews-marquee__stat-num">€279k+</span><span className="reviews-marquee__stat-label">Omzet uit ads, 1 klant</span></div>
+          <div className="reviews-marquee__stat"><span className="reviews-marquee__stat-num">35x</span><span className="reviews-marquee__stat-label">ROAS, 1 klant</span></div>
+          <div className="reviews-marquee__stat"><span className="reviews-marquee__stat-num">100%</span><span className="reviews-marquee__stat-label">Sectorspecialist</span></div>
+        </ScrollReveal>
+      )}
     </section>
   )
 }

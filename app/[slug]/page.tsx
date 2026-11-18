@@ -32,7 +32,7 @@ export default async function TaartPage({ params }: { params: Promise<{ slug: st
   if (!b) notFound()
 
   return (
-    <>
+    <div className="taart-page">
       <section className="taart-hero">
         <div className="container taart-hero__inner">
           <span className="section-label">Voor het team van {b.naam}</span>
@@ -55,7 +55,7 @@ export default async function TaartPage({ params }: { params: Promise<{ slug: st
                 Plan een gesprek<br /><em>met Thomas</em>
               </h2>
               <p className="booking-sub">
-                30 minuten, geen verplichtingen. We kijken samen hoeveel extra showroomafspraken er voor {b.naam}{plaatsInNaam(b) ? "" : ` in ${b.plaats} en omgeving`} te halen zijn.
+                Een uur, geen verplichtingen. We kijken samen hoeveel extra showroomafspraken er voor {b.naam}{plaatsInNaam(b) ? "" : ` in ${b.plaats} en omgeving`} te halen zijn.
               </p>
               <ul className="booking-checklist">
                 <li>15 showroomafspraken in 90 dagen, gegarandeerd</li>
@@ -87,7 +87,7 @@ export default async function TaartPage({ params }: { params: Promise<{ slug: st
         </div>
       </section>
 
-      <ReviewsMarquee />
-    </>
+      <ReviewsMarquee showStats={false} />
+    </div>
   )
 }
