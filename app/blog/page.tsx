@@ -284,9 +284,9 @@ const blogPosts = [
   },
   {
     slug: "online-marketing-badkamerbedrijf",
-    titel: "Online marketing voor je badkamerbedrijf: van zichtbaarheid naar boekingen",
+    titel: "Online marketing voor badkamer- en sanitairbedrijven: van zichtbaarheid naar showroomafspraken",
     samenvatting:
-      "Een badkamer is geen impulsaankoop. Welke marketingkanalen werken echt voor badkamerbedrijven en wat kun je veilig overslaan?",
+      "Een badkamer is geen impulsaankoop. Welke marketingkanalen werken echt voor badkamer- en sanitairbedrijven, met marktcijfers en eigen metingen?",
     datum: "22 juni 2026",
     keyphrase: "Online marketing badkamerbedrijf",
   },

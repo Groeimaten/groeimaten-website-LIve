@@ -202,6 +202,13 @@ export default function BlogBadkamerLeadsGenerenPage() {
               afgerond badkamerproject. Dat herinnert hen aan het bedrijf op het moment dat ze verder
               oriënteren. Het verhoogt de kans dat ze contact opnemen merkbaar.
             </p>
+            <p>
+              Hoe Google Ads, Meta Ads en SEO samen een plan vormen, lees je in{" "}
+              <Link href="/blog/online-marketing-badkamerbedrijf" style={{ color: "oklch(65% 0.09 75)" }}>
+                online marketing voor badkamer- en sanitairbedrijven
+              </Link>
+              .
+            </p>
 
             <div
               style={{

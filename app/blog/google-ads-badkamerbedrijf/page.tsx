@@ -375,6 +375,10 @@ export default function BlogGoogleAdsBadkamerbedrijfPage() {
               <Link href="/meta-ads-badkamerbedrijven" style={{ color: "oklch(65% 0.09 75)" }}>
                 Meta Ads voor badkamerbedrijven
               </Link>
+              . Hoe alle kanalen samenwerken lees je in{" "}
+              <Link href="/blog/online-marketing-badkamerbedrijf" style={{ color: "oklch(65% 0.09 75)" }}>
+                online marketing voor badkamerbedrijven
+              </Link>
               .
             </p>
             <h2
