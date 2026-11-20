@@ -203,6 +203,13 @@ export default function BlogLeadgeneratieSanitairbedrijfPage() {
               aanzienlijk. Die automatisering is geen luxe voor grote bedrijven, maar een praktisch hulpmiddel
               voor elk sanitairbedrijf dat structureel wil groeien.
             </p>
+            <p>
+              Welke kanalen die aanvragen opleveren, met marktcijfers en eigen metingen, staat in{" "}
+              <Link href="/blog/online-marketing-badkamerbedrijf" style={{ color: "oklch(65% 0.09 75)" }}>
+                online marketing voor sanitairbedrijven
+              </Link>
+              .
+            </p>
 
             <div
               style={{
